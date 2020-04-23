@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>La Miel en México</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.13/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Atlas Nacional de las Abejas <br>y Derivados Apícolas <br>(Versión Preliminar)</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Introducción
+  </a>
+</li>
+<li>
+  <a href="cap2.html">
+    <span class="fa fa-forumbee"></span>
+     
+    Abejas y Apicultura
+  </a>
+</li>
+<li>
+  <a href="cap3.html">
+    <span class="fa fa-globe"></span>
+     
+    La Miel en México
+  </a>
+</li>
+<li>
+  <a href="cap4.html">
+    <span class="fa fa-vial"></span>
+     
+    Propóleos
+  </a>
+</li>
+<li>
+  <a href="cap5.html">
+    <span class="fa fa-chart-bar"></span>
+     
+    Estadísticas
+  </a>
+</li>
+<li>
+  <a href="cap6.html">
+    <span class="fa fa-map"></span>
+     
+    Mapas
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">La Miel en México</h1>
+
+</div>
+
+
+<p><img src="imag/3_La_Miel.gif" style="display: block; margin: auto;" /></p>
+<div class=text-justify>
+
+
+
+<div id="historia-de-la-apicultura-en-méxico" class="section level2">
+<h2>3.1. Historia de la Apicultura en México</h2>
+<hr />
+<p>Por <a href="#a001">Laura G. Espinosa Montaño</a></p>
+<p>Describir los eventos históricos que caracterizaron el desarrollo de la apicultura en México merece iniciar considerando que desde épocas prehispánicas se desarrolló una actividad muy importante en la región mesoamericana por parte de pobladores mayas, quienes cultivaron diversas variedades de abejas nativas de los géneros <em>Trigona</em> y <em>Melipona</em>, conocidas genéricamente como meliponinos, y dentro de los cuales destacó la especie Melipona beecheii Bennett (en maya llamada <em>Xuna’an Kab</em>, <em>Kolel’Kab</em> o <em>Po’ol Kab</em>, la cual, al igual que otros meliponinos, presenta como característica física primordial el carecer de aguijón, situación que les diferencia de las abejas <em>Apis mellifera</em> oriundas del viejo mundo.</p>
+<p>Es pues así que la actividad que se desarrolló con los meliponinos (meliponicultura), a decir de los conquistadores españoles, presentaba gran semejanza con la apicultura que se realizaba con gran auge en la España de los siglos XVI al XVIII con abejas de la especie <em>A. mellifera</em>. Ya Fernández de Oviedo en su obra “Historia General y Natural de las Indias”, describe las actividades y cuidados que los mayas daban a sus abejas, las cuales criaban en colmenas rústicas conocidas como hobones (troncos huecos gruesos, con aberturas de los extremos cubiertas con discos de madera sellados con lodo) los cuales se colocaban sobre delgados troncos inclinados y protegidos dentro de chozas cubiertas de palmas de guano. Estas características, aunadas a los manejos que se les daba a estas abejas, dieron lugar a considerar que esta actividad estaba más extendida que la apicultura en cualquier otra parte de Europa.</p>
+<p>La miel obtenida tuvo múltiples aplicaciones, como alimento, como remedio medicinal y hasta ritual, esto último quedando de manifiesto a través de su uso en festividades religiosas, como aquella que se celebraba en honor al Dios maya de las abejas “Ah-Muzen-cab” donde se preparaba una bebida suave de maíz hervido llamada “sac-ha” para consumo de las mujeres y otra para los varones denominada “balché” la cual además se preparaba con agua y la corteza de un árbol del mismo nombre (<em>Lonchocarpus longistylus pitier</em>).</p>
+<p>La evidencia de las actividades que llevaban a cabo los mayas con estas abejas quedaron documentadas en el códice Troano, Maya o de Madrid. Igualmente Fray Diego de Landa documentó las festividades religiosas en honor al Dios de las abejas que se celebraban durante los meses de noviembre (Tzec) y diciembre (Mol) para asegurar un buen flujo de néctar. La miel se comercializaba desde Tabasco por mar hacia Honduras y Nicaragua, mientras que la cera se comercializaba desde los puertos de Sisal, Yuc. y de Campeche, Camp. (de ahí que a la cera se le conociera como “Cera de Campeche”) hacia el puerto de Veracruz y a otros pertenecientes al Imperio Español; probablemente a cambio de la miel y cera, los mayas recibían cacao y piedras preciosas.</p>
+<p>Se dice que la introducción de las abejas <em>Apis mellifera</em> a México, especialmente a la Península de Yucatán, no ocurrió inmediatamente durante la conquista ya que, por lo que respecta a esta región, los mayas mantenían el suministro de la miel y la cera que obtenían de los meliponinos como tributo a los españoles, sobre todo de este segundo producto el cual se utilizaba de manera creciente en las actividades religiosas de los españoles, máxime porque los cargamentos de cera de España no cubrían esta clase de necesidad.</p>
+<p>La primera referencia que se tiene de la introducción de abejas de la subespecie <em>Apis mellifera</em> a un territorio que en aquel entonces era de posesión española fue Florida, dado que al parecer se quería incrementar su contribución a la corona española, sin embargo no se tuvo el éxito deseado por lo que colonias de esa misma subespecie se introdujeron a Cuba en 1764, donde se expandió la apicultura, lo cual aparentemente influyó para que a partir de esta isla y a fines de los 1760´s o principios de los 1770´s se transportaban abejas al continente, teniendo como destino el centro de la Nueva España; algunas referencias indirectas además de citarse la presencia de estas abejas por F.J. Clavijero en su obra “Historia Antigua de México” respaldan esta hipótesis.</p>
+<p>Por lo que respecta a la península de Yucatán, se estima que las primeras abejas <em>A. m. mellifera</em> fueron introducidas al estado de Yucatán a fines de los 1800 o principios de los 1900, empleándose las colmenas Dadant lo que generó un gran auge de la apicultura en el poblado de Izamal y de ahí al resto del estado, dando inicio a las exportaciones de miel a través del surgimiento de algunas sociedades apícolas.</p>
+<p>Para el año 1911 se introduce la raza <em>Apis mellifera ligústica</em>, la cual, conjuntamente con el advenimiento de nuevas tecnologías, dentro de las que destaca la utilización de la colmena con marcos móviles, dio lugar a la expansión de una apicultura moderna a partir de 1920, determinándose un gran potencial de crecimiento futuro de las actividades apícolas en función de las características eco-geográficas que en aquel entonces se presentaban en el país, caracterizadas por la abundancia de recursos apibotánicos.</p>
+<p>En la década de los años 1930´s comenzaron a conformarse algunas organizaciones de apicultores, primordialmente en los estados de Yucatán, Jalisco, Michoacán, Puebla y Veracruz. Más tarde, al surgir la Ley de Asociaciones Ganaderas y su Reglamento, en 1964 nace la Unión Nacional de Apicultores (UNAPI) constituyéndose legalmente en 1965 y formando parte de la Confederación Nacional Ganadera. Adosadas a esta agrupación se integraron 76 Asociaciones de apicultores en 25 estados de la república. Destaca que en el sur del país surge una importante organización denominada Consejo Apícola del Sureste, al cual se agruparon diversas sociedades de producción rural como por ejemplo Apícola Maya de Mérida Yucatán, Miel de Abeja de Campeche, Apícola de Tabasco, entre otras, algunas de ellas contando con alrededor de 5,000 apicultores y plantas para la recepción de miel para exportación. En 1977 se constituye el Comité Nacional de Planificación Apícola que se integró por los representantes de la UNAPI, del Consejo Apícola del Sureste, representantes de dependencias oficiales como la Secretaría de Agricultura y Recursos Hidráulicos (SARH), la Secretaría de la Reforma Agraria, Secretaría de Educación Pública, Instituto Nacional Indigenista y del Banco Nacional de Crédito Rural.</p>
+<p>En el año de 2001, se publica el decreto de la Ley de Desarrollo Sustentable de la cual emanaron los Sistemas-Producto, que para este caso involucraría al Sistema Producto Apícola constituido por el Comité Sistema Producto Apícola Nacional, el Comité Regional Sistema Producto Apícola y los Comités Estatales Sistema Producto Apícola y dentro de los cuales participaron representantes de diversos sectores involucrados en el área.</p>
+<p>En el año 2005, la UNAPI cambia su denominación a ONA (Organización Nacional de Apicultores), recibiendo la resolución de aceptación del cambio de nombre por parte del Registro Nacional Agropecuario en marzo de 2006; dependiendo de la ONA se crea la Asociación Nacional de Apicultores A.C. La ONA a través de muchos años organizó el Seminario Americano de Apicultura, foro en el cual se presentaban los avances tecnológicos y de investigación en el área.</p>
+<p>Referente a organizaciones de especialistas, en el año 1993 se constituye la Asociación Nacional de Médicos Veterinarios Especialistas en Abejas A.C. (ANMVEA), con el fin básico de atender las necesidades y problemáticas del sector. Al igual que la ONA, año con año se organiza un evento de carácter científico y tecnológico denominado Congreso Internacional de Actualización Apícola, que al momento de escribir este documento llega a su 25ava edición.</p>
+<p>Destaca que estas agrupaciones así como dependencias oficiales federales y estatales, han participado con gran esmero en la conformación de Normas Oficiales Mexicanas, Normas Mexicanas, publicaciones de manuales, además de que algunos agremiados forman parte de institutos de investigación, instituciones educativas y de investigación, organismos internacionales como OIRSA y FAO así como en empresas privadas o el ejercicio libre de la actividad.</p>
+<p>Tal como antes se mencionó, la apicultura en México fue creciendo, con cantidades importantes de producción y exportación de miel, lo que permitió que el país se ubicara en lugares preponderantes en ambos rubros a nivel mundial, no obstante, en el año de 1986 se registra oficialmente el ingreso de la “Abeja Africanizada” en Chiapas, híbrido específicamente derivado de la cruza de la subespecie Apis mellifera scutellata con abejas europeas locales que ocurrió durante su migración desde Brasil en 1957.</p>
+<p>Esta situación dio pie a que, desde que se conocieron sus efectos negativos, la SARH creara el Programa Nacional para el Control de la Abeja Africana” que se publicó en el Diario Oficial de la Federación el diciembre de 1984 con el fin de implementar medidas de prevención y control de este insecto. En septiembre de 1987 la SARH y el Departamento de Agricultura de los Estados Unidos de Norteamérica, (USDA) formalizaron un convenio de colaboración con el fin de establecer un programa de manejo integrado para el control de la abeja africanizada (Programa Cooperativo SARH-USDA para el control de la Abeja Africanizada), mismo que tuvo como objetivo, retardar o frenar el avance de esta abeja hacia el norte del país y así ganar tiempo para que se desarrollara tecnología para su control, manteniendo la producción de miel lo más alto posible y minimizar los problemas asociados a estas abejas; dos fueron las unidades operativas establecidas para coadyuvar con sus fines: la del pacífico (Centro Operativo ubicado en Puerto, Escondido, Oaxaca) y la del golfo (Centro Operativo ubicado en Jalapa, Ver.).</p>
+<p>Años más tarde otro problema afectó a la apicultura nacional: la llegada del ácaro ectoparásito de las abejas melíferas <em>Varroa destructor</em> (antes conocido como <em>Varroa jacobsoni</em>) oficialmente detectado en el estado de Veracruz en 1992, el cual igualmente traería repercusiones negativas como las que se presentaban en Europa y Estados Unidos. Esta situación motivó la creación del Programa de la Campaña Nacional Contra la Varroasis de las Abejas, dependiente del Programa Nacional para el Control de la Abeja Africanizada oficializándose en 1992 en el Diario Oficial de la Federación.</p>
+<p>Si bien todo lo anteriormente escrito se ha basado en la apicultura, es importante mencionar el gran esfuerzo que diversas instituciones como El Colegio de la Frontera Sur, la Universidad Autónoma de Yucatán (Campus de Ciencias Biológicas y Agropecuarias), la Universidad de Guadalajara (Campus Centro Universitario de la Costa Sur), la Universidad Autónoma de Chiapas, el Colegio de Posgraduados y la ANMVEA y empresas o centros de capacitación como AIPROCOPA S.A., el CISEAT ubicado en Ciudad de México, Desarrollo y Consultoría Apícola de Quintana Roo S.C., entre otras, han realizado en pro de rescatar y fortalecer la meliponicultura del país. A este respecto sobresale la organización de Seminarios sobre Abejas sin Aguijón que surgieron en el año 1999 derivado de la inquietud de notables académicos e investigadores , eventos que ya también se llevan a cabo en diferentes países de Centroamérica y que al igual que en México tienen como fin promover el desarrollo de las abejas nativas sin aguijón.</p>
+<p><br/></p>
+<p><strong><em>Referencias:</em></strong></p>
+<p>Cajero-Avelar, S. <em>Avances en las acciones para el control de la abeja africana en México, antecedentes.</em> Memorias del 3er Seminario Americano de Apicultura. Acapulco Gro. Septiembre-octubre, 1990. p.1-3</p>
+<p>González-Ruíz, J.J. <em>Descripción del área de trabajo y acciones del Programa Cooperativo SARH-USDA para el control de la abeja africanizada, en la costa de Oaxaca.</em> Memorias del 3er Seminario Americano de Apicultura. Acapulco Gro. Septiembre-octubre, 1990. p.33-38</p>
+<p>Labougle-Rentería, J.M. y Zozaya-Rubio, J.A. <em>La Apicultura en México.</em> Rev. Ciencia y Desarrollo. CONACyT. Julio-agosto, 1986. Num. 69, año XII. p.17-36</p>
+<p>Martínez-López, J.F. <em>Apicultura. 3ª. Ed.</em> Consejo Apícola de Yucatán. Mérida, Yucatán. 1963.</p>
+<p>Medina-Camacho M. <em>Cómo nació el Congreso Mesoamericano de Abejas Nativas.</em> Memorias del VIII Congreso Mesoamericano de Abejas Nativas. 26-31 Agosto, 2013, Costa Rica. p.13-14.</p>
+<p>Cubierta trasera del <em>Compendio Científico-Técnico Apícola 2018.</em> 25o Congreso Internacional de Actualización Apícola. ANMVEA A.C. 16-18 Mayo 2018, Querétaro.</p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="qué-es-la-miel" class="section level2">
+<h2>3.2. ¿Qué es la Miel?</h2>
+<hr />
+<p>Por <a href="#a001">Laura G. Espinosa Montaño</a></p>
+<p><strong>¿Qué es la Miel?</strong></p>
+<p>Con base en el <em>Codex Alimentarius</em> de la FAO, se entiende por miel a la sustancia dulce natural producida por las abejas melíferas a partir de néctar de plantas o a partir de secreciones de partes vivas de éstas o de excreciones de insectos succionadores de partes vivas de plantas, y que las abejas recolectan, transforman a través de combinar sustancias específicas propias, depositan, deshidratan, almacenan y dejan en el panal para que madure y añeje.</p>
+<p>En cuanto a su composición, en la miel se encuentran presentes diferentes azúcares, predominantemente fructuosa y glucosa, así como otras sustancias, tales como ácidos orgánicos, enzimas y partículas sólidas derivadas de su cosecha. El color de la miel varía desde el casi incoloro al café obscuro. Su consistencia puede ser fluida, viscosa o incluso cristalizada. El sabor y el aroma varían, pero se derivan de la planta de origen.</p>
+<p>Por todo lo anterior, no debe considerarse como miel a los jarabes neutros o con diferentes sabores que se expenden bajo diferentes marcas comerciales y que sirven para endulzar bebidas, postres y otros alimentos, ya que en la composición de éstos predomina la fructuosa de maíz o la glucosa, aún cuando por su consistencia líquida y viscosa semejen a la miel.</p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="cosecha-y-procesos-de-la-miel" class="section level2">
+<h2>3.3. Cosecha y Procesos de la Miel</h2>
+<hr />
+<p><strong>¿Cuáles son los procesos para la obtención de la miel?</strong></p>
+<p>Para obtener la miel de las abejas se deben reunir condiciones que las estimulen a recolectar el néctar y lo almacenen en las celdas de sus panales; esto ocurre cuando comienzan las temporadas en las que las flores aparecen en los campos o en los cultivos. En estos períodos, las abejas recolectan el néctar y lo llevan a la colmena para almacenarlo y madurarlo con el fin de tener reservas energéticas, en caso de que se presenten condiciones de escasez.</p>
+<p>La maduración ocurre por procesos físicos y químicos. En el primer caso, las abejas evaporan el exceso de humedad que tiene el néctar a través de aletear dentro de la colmena para provocar corrientes de aire que expulsen la humedad interna. Por otro lado, las transformaciones químicas involucran la adición de sustancias tales como enzimas que producen las abejas y que actúan sobre el azúcar del néctar, que es la sacarosa, para desdoblarla en dos azúcares simples: glucosa y fructuosa.</p>
+<p>Una vez llevados a cabo estos procesos, las abejas sellan con un tapón de cera impermeable, llamado opérculo, la superficie de las celdas que contienen la miel ya madurada, de esta manera se evita que absorba la humedad que pueda existir dentro de la colmena. Así, las abejas van llenando cada vez más celdas, de tal forma que los apicultores, al revisar las colmenas, se dan cuenta que los panales se van saturando de néctar, miel y de crías (larvas y pupas). En este momento, los apicultores colocan sobre la cámara de cría de las colmenas (cubo inferior de la colmena, donde se encuentra la reina depositando huevos que se convertirán en larvas y pupas, así como celdas conteniendo polen y miel como reservas alimenticias de la población) unos cubos llamados alzas, los cuales contienen panales para que las abejas depositen el néctar y lo conviertan en miel, de tal suerte que se despeje la cámara de cría para que no se saturen las celdas, y así evitar que las abejas abandonen la colmena por falta de espacio, situación que se asocia con el comportamiento reproductivo de la colonia de abejas denominada “enjambrazón”.</p>
+<p>Pasados unos días y conforme se van llenando los panales con miel madura (operculada), los apicultores retiran dichos panales quitando a las abejas para transportarlos a establecimientos o locales llamados “plantas o locales de extracción”, lugares donde se extrae la miel de los panales. La extracción de la miel hasta su envasado en frascos, cubetas o tambores de miel para exportación, conlleva los siguientes procesos:</p>
+<p><strong>Desoperculado:</strong> Consiste en retirar los tapones de cera que cubren las celdas. Este procedimiento comúnmente se realiza cortando la capa de opérculos de los panales, con miel, con un cuchillo que cuenta con una resistencia para calentarlo, de tal manera que se facilite dicho corte. Cuando este procedimiento se realiza de manera industrial o semi industrial se utilizan máquinas desoperculadoras.</p>
+<p><strong>Extracción:</strong> Consiste en depositar los panales ya desoperculados, con sus respectivos bastidores, en el interior de un cilindro que tiene una canastilla interna y que se mueve con fuerza centrífuga ya sea manualmente o con un motor. Dichos cilindros reciben el nombre de extractores, los cuales además pueden ser tangenciales o radiales, o bien de eje vertical u horizontal.</p>
+<p><strong>Colado:</strong> Después de que sale la miel del extractor se hace pasar por un colador, de tal manera que se retiren impurezas como restos de cera que pudieron mezclarse con la miel al momento de extraerse. La miel circulará por una tubería para depositarse en otros contenedores para que se sedimente.</p>
+<p><strong>Sedimentación:</strong> La miel que llega a los tanques de sedimentación pasará un promedio de 24 horas en reposo, con el fin de permitir que las partículas de cera que no pudieron separarse con el colador, floten sobre la superficie de la miel; así podrán retirarse de la superficie dichas impurezas, mientras que la miel más limpia pasará por la parte inferior de los tanques de sedimentación para depositarse en otros tanques que funcionan como envasadoras.</p>
+<p><strong>Envasado:</strong> Es un proceso en el cual la miel se deposita en diferentes tipos de envases, ya sea para venta al menudeo, medio mayoreo o mayoreo, esto es, desde envases de aproximadamente ¼ de kilo hasta tambos de 300 kg.</p>
+<p>Algunas empresas tienen procesos intermedios como la homogenización, el calentado y el filtrado de la miel. En el primer caso, cuando la miel sale de los extractores y es colada, pasa a unos tanques donde se mezcla con otras mieles procedentes de diferentes apiarios. Este paso tiene como principal objetivo homologar el color de las mieles para producir lotes uniformes.</p>
+<p>Por lo que respecta al calentado, este es un proceso en el cual la miel se somete a un calentamiento y luego rápidamente se enfría, ello con el fin de destruir levaduras que puedan ocasionar que la miel fermente, y también para retardar el proceso de cristalización.</p>
+<p><a name=a001></a></p>
+<p>En cuanto al filtrado, es un proceso más fino que el colado, y tiene como propósito retirar de la miel partículas más pequeñas para asegurar la ausencia de materias extrañas. No obstante, todos estos procesos pueden demeritar la calidad del producto.</p>
+<p><a name=a001></a></p>
+<p>Elaboró:</p>
+<p><strong>Laura G. Espinosa Montaño:</strong> <em>Profesora Asociada C, TC. Departamento de Medicina y Zootecnia de Abejas, Conejos y Organismos Acuáticos. Facultad de Medicina Veterinaria y Zootecnia. Universidad Nacional Autónoma de México. Correo electrónico: <a href="mailto:laugespi@unam.mx">laugespi@unam.mx</a> Tel.(55) 56-22-59-29 ext 6.</em></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="usos-de-la-miel" class="section level2">
+<h2>3.4. Usos de la Miel</h2>
+<hr />
+<p>La miel es apreciada en todas partes como un alimento dulce y apetitoso. En períodos de escasez es una fuente útil de carbohidratos que contiene oligoelementos y agrega una diversidad nutritiva en un régimen alimenticio demasiado pobre. La miel ocupa un lugar importante en la preparación de alimentos tradicionales.</p>
+<p>En muchas partes del mundo la miel es utilizada como medicina o jarabe y como tratamiento especial para niños. La medicina moderna está aumentando el uso de la miel en una gran variedad de tratamientos.</p>
+<p>La miel fresca local es siempre considerada de mejor calidad que la miel de importación. Muchos apicultores venden sus productos directamente a los consumidores. La miel es usada con frecuencia como un bien de intercambio en algunas aldeas, especialmente en áreas remotas o aisladas por la guerra o bloqueos económicos. La miel es un bien estable que se conserva por mucho tiempo. Si es cosechada cuidadosamente, puede ser conservada por varios años, en un ambiente fresco, seco preferentemente en un frasco con cierre hermético y cuidándola de no exponer al sol y/o altas temperaturas.</p>
+<p>La miel es usada ampliamente como una fuente de azúcares para producir vino y cerveza de miel. Tiene también un alto valor para las industrias cosmética y farmacéutica, pues cada vez son más los productos de belleza como cremas, jabones, shampoos, y preparaciones medicinales que la incluyen como ingrediente.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.fao.org/3/y5110s/y5110s06.htm#bm06" target="_blank">Nicola Bradbear(2005). <em>FAO. La apicultura y los medios de vida sostenibles.</em> 2005.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="manejo-y-comercialización-de-la-miel" class="section level2">
+<h2>3.5. Manejo y Comercialización de la Miel</h2>
+<hr />
+<p>Aunque México exporta miel a Estados Unidos, Japón, Alemania se mantiene como el primer destino de las exportaciones mexicanas de este producto, con 15.3% de las mismas, en 2017. Esto es una evidencia de que la calidad y sabor de la miel mexicana es bien vista en los mercados internacionales, lo que acarrea beneficios a los pequeños productores y mujeres emprendedoras de zonas rurales del país, principalmente.</p>
+<p>En un comunicado, la SADER informó que en 2017 se lograron producir 50,955 toneladas de este endulzante natural, por lo que implementa programas y acciones que fomentan la actividad apícola en el país, con el fin de recuperar el volumen histórico promedio de producción. Refirió que de acuerdo con el <em>Servicio de Información Agroalimentaria y Pesquera</em> (SIAP), noviembre y diciembre fueron los meses de mayor producción durante 2017, al alcanzar 9,477 y 8,048 toneladas, respectivamente.</p>
+<p>Para garantizar a los consumidores que la miel mexicana cumple con altos estándares de inocuidad, el <em>Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria</em> (SENASICA) lleva a cabo un programa de monitoreo permanente de residuos tóxicos y contaminantes, y trabaja de la mano con los productores para preservar su inocuidad. A través del <em>Programa de Monitoreo de Residuos Tóxicos y Contaminantes a Bienes de Origen Animal, Acuícola y Pesquero</em>, explicó que el personal del SENASICA comprueba que la miel producida en México no tiene contaminantes físicos, químicos o microbiológicos que pudieran afectar su calidad de exportación.</p>
+<p>Los verificadores sanitarios recolectan muestras de manera aleatoria en las unidades de producción de miel orgánica o convencional de todo el país y las canalizan al Centro Nacional de Servicios de Constatación en Salud Animal (CENAPA), para su análisis. Este centro realiza los estudios con base en los lineamientos establecidos en las regulaciones internacionales, el <em>Codex Alimentarius</em> de la FAO, y la Unión Europea, en referencia a los límites máximos de residuos para asegurar la inocuidad y calidad del producto. Todo ello con la finalidad de ofrecer cada vez mayores garantías a los consumidores nacionales y extranjeros de que los productos mexicanos son sanos y libres de contaminantes.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p>SADER. <em>Comunicado de prensa.</em> Enero, 2018. <br/> <br/> <br/></p>
+</div>
+<div id="los-costos-en-la-producción-de-miel" class="section level2">
+<h2>3.6. Los Costos en la Producción de Miel</h2>
+<hr />
+<p>En un estudio realizado en la zona comunitaria maya del litoral en el centro del estado de Yucatán, se encontró que la estructura porcentual de los costos de producción de la miel se compone mayoritariamente por el costo variable (alrededor de ¾ partes), cuyos principales rubros fueron el valor del azúcar y el desembolso por mano de obra. Por su parte, el costo fijo lo constituyó principalmente la depreciación en infraestructura. La ganancia fue positiva en los estratos considerados; el rendimiento y el precio de la miel, determinantes del ingreso, fueron los principales elementos de la variación en la rentabilidad que se obtiene en el proceso de producción apícola.</p>
+<p>La información base del estudio se obtuvo mediante una encuesta por muestreo estadístico a productores apícolas del municipio de Motul, considerado como caso de estudio representativo de la región maya del Litoral Centro de Yucatán, el cual comprendió parte de la anterior zona henequenera. En la encuesta se utilizó una cédula de entrevista con diversos apartados como la tenencia de colmenas, prácticas de manejo, infraestructura e información económica. La muestra preliminar se integró al azar con 30% del marco lista integrado por productores de la cabecera del municipio de interés y de las localidades de Kaxatah, Kiní, Ucí, Santa Teresa, Dzununcán, Santa Cruz Pachón, Kopté y San Pedro Chacabal. La muestra final fue de 55 productores, inferior al de la muestra preliminar. A la primer categoría (productores que explotaban hasta 25 colmenas) le correspondió 58 % de la muestra, 28% al segundo estrato (de 26 a 50 colmenas), y 14% a la tercera categoría (de 51 a 100 colonias).</p>
+<p>La apicultura enfrenta problemas socioeconómicos y técnicos, los cuales han tenido considerables consecuencias en la estructura de los costos y, por tanto, en los beneficios económicos. Los problemas principales son la falta de adopción de tecnologías actuales acordes a las exigencias de inocuidad del mercado, las formas de comercialización, principalmente hacia el exterior, donde sólo participan exportadores con un esquema de intermediarismo. Aunado a esto se encuentra el cambio climático que ha provocado modificaciones en la temperatura, precipitación pluvial, modificación de las estaciones, lo que repercute negativamente en la producción. Al variar la producción apícola, la rentabilidad sufre el mismo cambio. Como resultado de esta investigación se tiene que la disponibilidad de activos fijos se asocia al bajo nivel tecnológico.</p>
+<p>El estudio reveló que la variable que más influye en la rentabilidad de un apiario es el rendimiento de las colmenas, expresado como la capacidad de producción en kg/colmena. Asimismo, otra causa importante de la probable variación en el nivel de rentabilidad de las explotaciones apícolas en el territorio nacional lo constituye la caída del ingreso por la venta de miel, debido a una baja de precios del producto.</p>
+<p>Se observó que el precio de los insumos aumentan constantemente, que los rendimientos por colmena varían con relación al manejo técnico y a los factores climáticos adversos, además de que el precio de venta está sujeto a las condiciones que imponen los intermediarios locales. A pesar de lo anterior, se encontró que los ingresos del apicultor, fueron superiores a los costos de producción, por lo que la actividad apícola en la región presentó un superávit con márgenes elevados, mismo que es aprovechado por los productores para invertir en infraestructura básica, como equipo de extracción, que ante las exigencias imperantes de los países importadores se ven en la necesidad de modernizar tanto sus equipos como sus prácticas de manejo de la colonia, esto para cumplir con las normas de inocuidad de la miel.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/67452917007.pdf" target="_blank">Contreras Uc L., y Magaña Magaña M. <em>Costos y rentabilidad de la apicultura a pequeña escala en comunidades mayas del Litoral Centro de Yucatán, México.</em> Investigación y Ciencia, 25 (71), p. 52-58. 2017.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="consumo-per-cápita-de-miel-en-méxico" class="section level2">
+<h2>3.7. Consumo Per Cápita de Miel en México</h2>
+<hr />
+<p>México produce 57,995 toneladas de miel en promedio por año (periodo 2014-2018) y es el octavo productor a nivel mundial. Mientras que la mitad de la producción se consume a nivel nacional, el <strong>consumo anual per cápita es de alrededor de 300 gramos</strong> y el país continúa siendo el tercer mayor exportador del mundo. Actualmente hay alrededor de 43,000 apicultores en todo el país, con más de 30% de la producción concentrada en Yucatán, Campeche y Quintana Roo: 17,000 apicultores que manejan más de 0.5 millones de colmenas. México es también uno de los mayores exportador mundial de miel orgánica en el mundo.</p>
+<p>Existen nuevas oportunidades de mercado en la diferenciación de variedades de miel, especialmente si se aumenta la producción de miel de la abeja nativa Maya Real, que puede generar precios de alrededor de US$30 por 900 gramos. En los últimos años, las tendencias del mercado mundial han demostrado que los consumidores prefieren un producto claramente identificado por su origen floral, lo que es otra oportunidad de mercado que requiere de un entrenamiento en la producción, certificación y etiquetado.</p>
+<p>La venta al por mayor se realiza principalmente en tambores de miel a granel, de 300 kg en promedio; la mayor parte para la exportación. Una pequeña cantidad es envasada para el mercado nacional, y también algunos subproductos como cera, veneno y jalea real. La mayoría de los grupos de productores tienen personalidad jurídica (cooperativas) y también se agrupan en asociaciones. Varias de estas asociaciones se encuentran en proceso de transición hacia esquemas de certificación orgánica. Algunas ya han tenido éxito. También están intentando posicionarse en el mercado de la miel diferenciada por su origen botánico (por ejemplo, miel de cafetales), y la venta de miel con marca propia en el mercado interno.</p>
+<p><br/></p>
+<p><strong><em>Fuentes:</em></strong></p>
+<p><a href="http://www.fao.org/faostat/es/#data/QL" target="_blank">FAOSTAT, 2017.</a></p>
+<p><a href="https://www.biodiversidad.gob.mx/SPSB/apicultura.html" target="_blank">Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO). <em>Sistemas productivos sostenibles y biodiversidad.</em> 2018.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="el-problema-de-la-adulteración-de-la-miel" class="section level2">
+<h2>3.8. El Problema de la Adulteración de la Miel</h2>
+<hr />
+<p>La miel es una sustancia dulce natural que las abejas (<em>Apis mellifera</em>) elaboran al transformar o combinar el néctar o secreciones que producen las flores, con sustancias específicas propias.</p>
+<p>Las características de la miel dependen de la fuente donde las abejas recolectan el néctar, sin embargo, el producto no debe tener sabor ni aroma desagradables, debe estar libre de materia extraña y de contaminantes químicos; tampoco debe contener aditivos alimentarios para su conservación, estar diluida en agua o mezclada con almidones, melazas, glucosas, dextrina, fructosa u otros azúcares, de acuerdo con lo que establece el Proyecto de Norma Oficial Mexicana <a href="https://dof.gob.mx/nota_detalle.php?codigo=5546962&amp;fecha=20/12/2018" target="_blank"><strong>NOM-004-SAG/GAN-2018, Producción de miel y especificaciones.</strong></a>. Esta Norma Oficial, por aprobarse, establece las características generales para la producción de miel que propicien el cuidado de las abejas melíferas y su correcto desarrollo, así como, las especificaciones que la miel debe cumplir para su comercialización, ya sea para consumo directo y/o procesamiento; a fin de coadyuvar en el desarrollo de la apicultura nacional y la competitividad de la cadena de la miel.</p>
+<p>La anterior se complementa con la Norma <a href="pdfs/NMX-F-036-1981.PDF" target="_blank"><strong>NMX-F-036-NORMEX-2006. Alimentos, Miel. Especificaciones y métodos de prueba.</strong></a>, que establece las especificaciones que debe cumplir la miel de abeja destinada para consumo humano directo en envases menores de 10 Kgs, y también la Norma <a href="pdfs/NOM-145-SCFI-2001.PDF" target="_blank"><strong>NOM-145-SCFI-2001. Información comercial. Etiquetado de miel en sus diferentes presentaciones</strong></a>, que establece los lineamientos para el etiquetado de miel en sus diferentes presentaciones.</p>
+<p>En particular, el <em>Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria</em> (SENASICA), publicó desde 2012 un <a href="pdfs/Manual_de_Buenas_Pr_cticas_en_el_Manejo_y_Envasado_de_Miel_oct.pdf" target="_blank">Manual de Buenas Prácticas de Manejo y Envasado de la Miel</a>, con el objetivo de reducir los riesgos de contaminación de la miel durante las distintas etapas que comprenden las fases de extracción, sedimentación, filtrado, envasado y transporte de la miel.</p>
+<p><br/></p>
+<p align="center">
+<strong>Cuadro 7. Composición nutricional característica de la miel</strong> <a href="tabs/nutrientes_miel.csv"><i class="fas  fa-download "></i></a>
+</p>
+<p><br/></p>
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+NUTRIENTE
+</th>
+<th style="text-align:right;">
+CANTIDAD PROMEDIO EN 100 g
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Carbohidratos (totales)
+</td>
+<td style="text-align:right;">
+82.4 g
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fructosa
+</td>
+<td style="text-align:right;">
+38.5 g
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Glucosa
+</td>
+<td style="text-align:right;">
+31.0 g
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Maltosa
+</td>
+<td style="text-align:right;">
+7.20 g
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sucrosa
+</td>
+<td style="text-align:right;">
+1.50 g
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Proteínas
+</td>
+<td style="text-align:right;">
+0.50 g
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Energía
+</td>
+<td style="text-align:right;">
+304 Kcal
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Grasas (lípidos)
+</td>
+<td style="text-align:right;">
+0.0 g
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Colesterol
+</td>
+<td style="text-align:right;">
+0.0 g
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Vitaminas Tiamina
+</td>
+<td style="text-align:right;">
+&lt; 0.00 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Riboflavina
+</td>
+<td style="text-align:right;">
+&lt; 0.06 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Niacina
+</td>
+<td style="text-align:right;">
+&lt; 0.36 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ácido pantoténico
+</td>
+<td style="text-align:right;">
+&lt; 0.11 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Piridoxina (B6)
+</td>
+<td style="text-align:right;">
+&lt; 0.32 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ácido ascórbico
+</td>
+<td style="text-align:right;">
+2.2 - 2.4 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Calcio
+</td>
+<td style="text-align:right;">
+4.4 - 9.20 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cobre
+</td>
+<td style="text-align:right;">
+0.003 - 0.10 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fierro
+</td>
+<td style="text-align:right;">
+0.06 - 1.5 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Magnesio
+</td>
+<td style="text-align:right;">
+1.2 - 3.50 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Manganeso
+</td>
+<td style="text-align:right;">
+0.02 - 0.4 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fósforo
+</td>
+<td style="text-align:right;">
+1.9 - 6.30 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Potasio
+</td>
+<td style="text-align:right;">
+13.2 - 16.8 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sodio
+</td>
+<td style="text-align:right;">
+0.0 - 7.6 mg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Zinc
+</td>
+<td style="text-align:right;">
+0.03 - 0.4 mg
+</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<p>Diversas técnicas analíticas se utilizan para la determinación de la autenticidad de la miel, como son los análisis enzimáticos, métodos cromatográficos, electroquímicos y espectrométricos. Sin embargo, aunque estas técnicas son precisas, son complicadas, consumen tiempo, y requieren una preparación especial de las muestras. La espectroscopia infrarroja (FTIR) permite el análisis de muestras de miel con una poca o ninguna preparación de esta, reduciendo así el tiempo, el costo y la complejidad del análisis.</p>
+<p>Entre las alteraciones comunes podemos encontrar: presencia de glucosas o fructuosas, almidones, harinas, yeso y exceso de humedad.</p>
+<p>Una miel madura sólo se consigue si se extrae de panales con celdas bloqueadas por cera, si se obtiene de panales con celdas que no están tapadas con cera, la miel carecerá de sus azúcares naturales y contendrá mucha humedad.</p>
+<p>Para detectar las adulteraciones con glucosas, que son las más frecuentes, se requieren análisis en laboratorios especializados. No obstante, es importante señalar que la miel de abeja pura cristaliza por naturaleza. Una miel que no cristaliza muy posiblemente está adulterada con algún tipo de fructosa o glucosa como retardante para la cristalización.</p>
+<p>Desafortunadamente, el incremento de la demanda mundial de miel no solo es una oportunidad para aumentar los ingresos para las regiones productoras de ésta, sino que también ha provocado un alza en las prácticas fraudulentas en las que se adiciona jarabe de maíz, soya o arroz a la miel para aumentar su volumen.</p>
+<p>También existe otro fraude en la industria apícola, que se relaciona con su origen, es decir, miel importada de otros países (principalmente de China) que es re-etiquetada y vendida como producto de origen nacional a un precio muy bajo. Esto impacta negativamente en toda la industria apícola mexicana.</p>
+<p><br/></p>
+<p><strong><em>Fuentes:</em></strong></p>
+<p><a href="pdfs/Estudio_de_Calidad_Miel_de_Abeja.pdf" target="_blank">Estudio de calidad: miel de abeja.* PROFECO. Revista del Consumidor, Junio, 2018.</a></p>
+<p><a href="http://www.conacytprensa.mx/index.php/centros-conacyt/20873-ciencia-tecnologia-apicultura" target="_blank">CONACyT. <em>¿Miel de México o de China?</em> Abril, 2018.</a></p>
+<p><a href="pdfs/RC456_Estudio_Calidad_de_Miel_de_Abejas.pdf" target="_blank"><em>Estudio de calidad: miel de abeja.</em> PROFECO. Revista del Consumidor, Febrero, 2015.</a></p>
+<p><a href="pdfs/CIII-80.pdf" target="_blank">Ríos Corripio M. A. y Rojas López M. <em>Analisis de adulteracion en miel de abeja de la region Puebla-Tlaxcala empleando espectroscopia infrarroja.</em> Presentado en el XIV Congreso Nacional de Biotecnología y Bioingeniería. Nov., 2012.</a></p>
+<p><a href="pdfs/Estudio_Miel_de_abejas_30-42_Junio_2011.pdf" target="_blank"><em>Estudio de calidad: miel de abeja.</em> PROFECO. Revista del Consumidor, Junio, 2011.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="certificación-y-normas-oficiales-de-manejo-y-producción" class="section level2">
+<h2>3.9. Certificación y Normas Oficiales de Manejo y Producción</h2>
+<hr />
+<div class="figure" style="text-align: center">
+<img src="imag/manbpra.jpg" alt="**Fig. 8 Manual de Buenas Prácticas para la Producción de Miel en México.**" width="80%" />
+<p class="caption">
+<strong>Fig. 8 Manual de Buenas Prácticas para la Producción de Miel en México.</strong>
+</p>
+</div>
+<p><br/></p>
+<p>El crecimiento poblacional aunado a la diversificación de los mercados ha originado un cambio constante en las condiciones de comercio. Cada día, los requisitos que deben cumplir los productos, especialmente los alimentos, son más estrictos.</p>
+<p>Aun cuando ciertos principios de calidad de los alimentos dependen de los gustos y exigencias del público, existen criterios generales para calificar un determinado producto. Actualmente, la demanda de los consumidores se orienta hacia productos que no perjudiquen su salud. Dicho reclamo se fundamenta en los riesgos reales causados por sustancias que en forma accidental o inducida contaminan los alimentos, tales como antibióticos, plaguicidas, hormonas, fertilizantes agrícolas, conservadores, etc.</p>
+<p>En este sentido, las nuevas condiciones del mercado requieren la adopción de sistemas de producción más eficientes y con estrictos controles de calidad. Estos procedimientos deben considerar las actividades que se realizan en la obtención de la materia prima, hasta la venta del producto. Su correcta aplicación no depende solamente de la implementación de programas gubernamentales, sino de la participación comprometida de productores, envasadores y comercializadores.</p>
+<p>La miel, que desde siempre ha contado con un amplio reconocimiento como alimento puro y natural no puede quedar exenta de esta dinámica. Es por eso, que quienes participan en su producción, extracción, envasado y comercialización deben corresponder a la responsabilidad que implica participar en este proceso.</p>
+<p>Consciente de esta preocupación, la Secretaría de Agricultura y Desarrollo Rural (SADER), a través de la Coordinación General de Ganadería (CGG) y del Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria (SENASICA) se han enfocado en la tarea de actualizar un <a href="pdfs/Manual_BPP_en_la_Producci_n_primaria_de_Miel_octubre_2018.pdf" target="_blank"><strong>Manual de buenas prácticas pecuarias en la producción de miel (2018)</strong></a> para que sirva como una herramienta necesaria para reducir los riesgos de contaminación de la miel durante las distintas etapas que comprende la fase de producción, con el firme propósito de contribuir a que el consumidor final tenga acceso a un producto inocuo y de alta calidad.</p>
+<p>De acuerdo al Programa Nacional de Inocuidad y Calidad de la Miel, las medidas recomendadas en este Manual dan oportunidad a los productores de atender los requerimientos del mercado nacional e internacional. Asimismo, se podrá contar con un padrón nacional de productores confiables y elegibles para la comercialización.</p>
+<p>Cabe mencionar, que la aplicación de estas técnicas implica algunos costos adicionales al productor y requiere de más atención hacia su trabajo en campo, con la responsabilidad que implica la producción de alimentos, brindándole a cambio la obtención de un producto de óptima calidad e inocuidad y el incalculable beneficio que representa mantener la competitividad de la miel en los mercados local, nacional e internacional.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/Manual_BPP_en_la_Producci_n_primaria_de_Miel_octubre_2018.pdf" target="_blank">SADER. <em>Buenas Prácticas Pecuarias en la producción de Producción de Miel.</em> 2018.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="requisitos-aranceles-y-normas-para-la-exportación-de-la-miel-mexicana" class="section level2">
+<h2>3.10. Requisitos, Aranceles y Normas para la Exportación de la Miel Mexicana</h2>
+<hr />
+<div id="normas-técnicas" class="section level3">
+<h3>3.10.1. Normas Técnicas</h3>
+<p>Las normas son la herramienta fundamental para el desarrollo industrial y comercial de un país. Sirven como base para mejorar la calidad en la gestión de las empresas, en el diseño y fabricación de los productos y en la prestación de servicios, aumentando la competitividad en los mercados nacionales e internacionales. Protegen a los consumidores, usuarios y a la sociedad en general, permitiéndoles obtener una referencia para conocer el nivel de calidad y seguridad que deben exigir a los productos o servicios que utilizan.</p>
+<p>Algunos de los problemas en el comercio bilateral con la Unión Europea (UE) resultan de la existencia de diferentes normas o procedimientos de evaluación de conformidad que podrían ser en parte solucionados gracias a un conocimiento más profundo de los respectivos sistemas y a una mayor concordancia con las normas internacionales existentes.</p>
+<p>El Proyecto de Facilitación del Tratado de Libre Comercio entre México y la Unión Europea (PROTLCUEM) prevé fomentar el desarrollo de las actividades de normalización, promoviendo la utilización y creación de normas, reglamentos técnicos y procedimientos de evaluación de la conformidad conforme a prácticas, normas y lineamientos internacionales e incrementando el conocimiento y entendimiento mutuo de las mismas, con el fin de facilitar los intercambios comerciales de bienes y servicios entre México y la UE, y una estrecha cooperación entre todas las partes interesadas de ambas partes en los campos técnico, científico y económico.</p>
+<p>En el caso de la miel para exportación, además de la normatividad exigida por la UE, el producto debe cumplir con la <a href="http://www.dof.gob.mx/normasOficiales/3980/salud/salud.htm" target="_blank"><em>NORMA Oficial Mexicana NOM-251-SSA1-2009, Prácticas de higiene para el proceso de alimentos, bebidas o suplementos alimenticios.</em></a></p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Normas_Tecnicas" target="_blank">Secretaría de Economía. <em>Normas Técnicas.</em> 2010.</a></p>
+<p><br/></p>
+</div>
+<div id="aduanas" class="section level3">
+<h3>3.10.2. Aduanas</h3>
+<p>Las administraciones de aduanas son los organismos gubernamentales encargados de controlar y gestionar la entrada y salida de mercancías a los respectivos territorios aduaneros. El comercio internacional es el motor fundamental de la prosperidad económica y las administraciones de aduanas están llamadas a garantizar la fluidez del comercio global de modo que no impida, sino que, por el contrario, facilite la circulación de las mercancías.</p>
+<p>Las competencias de las administraciones de aduanas tales como: la autorización para inspeccionar la carga y las mercancías que entran y salen del país o que circulan dentro del mismo, así como la facilitación o prohibición de entrada o salida de mercancías y la facultad para solicitar información previa sobre las mercancías objeto de importación o exportación, hacen que las aduanas puedan y deban desempeñar un papel fundamental en la seguridad y la facilitación del comercio global.</p>
+<p>En este contexto, el PROTLCUEM pretende alcanzar la mejora del intercambio de información y la cooperación entre las aduanas de México y la Unión Europea (UE), promover la formación y capacitación del personal de la aduana mexicana fortaleciendo la capacidad de la Administración General de Aduanas (AGA) en la aplicación del Tratado en el ámbito del componente Aduanas, así como el incremento de la eficiencia del funcionamiento de las aduanas relevantes para el comercio entre México y la UE Todo ello debe contribuir a fomentar la circulación fluida y segura de las mercancías a través de la cadena logística, la facilitación del comercio entre las partes, reforzar la cooperación entre las administraciones de aduanas y mejorar la capacidad para detectar envíos de alto riesgo.</p>
+<p><br/> <strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Aduanas" target="_blank">Secretaría de Economía. <em>Aduanas.</em> 2010.</a></p>
+<p><br/></p>
+</div>
+<div id="medidas-sanitarias-y-fitosanitarias-msf" class="section level3">
+<h3>3.10.3. Medidas Sanitarias y Fitosanitarias (MSF)</h3>
+<p>El problema que sustenta la aplicación de medidas sanitarias y fitosanitarias se basa en la pregunta: ¿cómo garantizar que se suministren a los consumidores de un país alimentos inocuos, esto es, “inocuos” con arreglo a los criterios que se consideren apropiados? Y al mismo tiempo, ¿cómo se puede garantizar que la aplicación de normas estrictas de salud y seguridad no sea una excusa para proteger a los productores nacionales?</p>
+<p>La Organización Mundial del Comercio (OMC) establece, en uno de sus Acuerdos, las reglas básicas sobre la adopción de medidas gubernamentales relativas a la inocuidad de los alimentos, la salud de los animales y la preservación de los vegetales (MSF).</p>
+<p>En este marco general, el PROTLCUEM promueve una mayor cooperación técnica entre las autoridades y organismos nacionales de regulación sanitaria, las entidades de acreditación, los organismos de certificación y laboratorios de México y de la Unión Europea (UE) para la utilización de medidas sanitarias y fitosanitarias y de procedimientos de evaluación de la conformidad, acordes con la OMC y con base en los estándares y recomendaciones de organismos internacionales, y mejorando la transparencia y el acceso de las empresas a la información sobre requisitos y procedimientos de certificación en las dos partes.</p>
+<p><br/> <strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Med_Sanit" target="_blank">Secretaría de Economía. <em>Medidas Sanitarias y Fitosanitarias.</em> 2010.*</a></p>
+<p><br/></p>
+</div>
+<div id="requisitos-y-trámites" class="section level3">
+<h3>3.10.4. Requisitos y Trámites</h3>
+<p><strong>Requisitos de la Unión Europea para exportar miel natural.</strong></p>
+<p>En la página del PROTLCUEM se encuentra publicada una Guía de <a href="http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_requisitosm" target="_blank">Requisitos y Trámites</a> para la exportación de miel a países de la Comisión Europea, elaborada para facilitar a los países en vías de desarrollo el acceso a los mercados de la Unión Europea.</p>
+<p>En dicha página se debe de acceder al menú indicado en la Guía y escribir el número de la fracción arancelaria del producto que se quiere exportar hacia la Unión Europea, en este caso, para la miel es 04090000.</p>
+<p>Después, se debe seleccionar el país de origen, en este caso México, y seleccionar el país destino de la Unión Europea donde se piensa comercializar el producto y activar la búsqueda con el botón <em>Ver</em>.</p>
+<p>Es conveniente observar las Normas Oficiales Mexicanas para cumplir con estándares de calidad. Los requisitos que se deben cumplir, además de dicha Norma, son:</p>
+<p><br/></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>El registro de una marca</strong> no es un requisito obligatorio, sin embargo, es recomendable obtenerlo para tener el derecho exclusivo de uso. Para registrar una marca, aviso o nombre comercial se debe acudir ante el Instituto Mexicano de la Propiedad Industrial (IMPI), o ante las subdelegación de la Secretaria de Economía (SE) en los estados.</p></li>
+<li><p><strong>El código de barras</strong> o código de producto tiene como objetivo identificar cada producto a través de un lenguaje universal y común. De esta manera se hacen eficientes los procesos de logística, distribución y almacenamiento. La institución encargada en México para asignar el código de barras a las empresas que lo soliciten es la Asociación Mexicana de Estándares para el Comercio Electrónico (AMECE).</p></li>
+<li><p><strong>Cupos.</strong> La miel fresca, de acuerdo con la Secretaría de Economía (SE), tiene un cupo negociado con la Unión Europea por el método “Primero en Tiempo, Primero en Derecho”</p></li>
+<li><p><strong>Requisitos y trámites ante las dependencias gubernamentales:</strong></p>
+<p>Solicitud de Certificado para Exportación en la Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS) de la Secretaría de Salud (SSA).</p>
+<p>Solicitud de Certificado Zoosanitario de Exportación para productos y subproductos de origen animal ante SENASICA (SADER).</p>
+<p>Solicitud de Certificado de Origen de la Secretaria de Economía.</p></li>
+<li><p>Es muy recomendable <strong>contratar los servicios de un agente aduanal</strong> certificado por la Confederación de Agentes Aduanales de la República Mexicana. El agente aduanal se hace cargo de las exportaciones de comercio exterior a nombre del exportador. El exportador debe entregar al agente aduanal para elaborar el pedimento:</p>
+<p>La factura comercial</p>
+<p>Los documentos que acrediten cumplir con las restricciones no arancelarias. (Pago de derechos).</p>
+<p>También debe enviar al socio comercial:</p>
+<p>Certificados Fitosanitarios</p>
+<p>Certificado de Origen</p>
+<p>Certificados Sanitarios</p></li>
+<li><p>El exportador debe <strong>elegir el Régimen de Exportación</strong>, que puede ser temporal o definitivo, para el pago de derechos.</p></li>
+<li><p><strong>Realizar el pago de derechos</strong> de acuerdo a la Ley de los Impuestos Generales de Importación y de Exportación (LIGIE), así como verificar si es necesario pagar aranceles de exportación.</p></li>
+</ol>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_requisitosm" target="_blank">Secretaría de Economía. <em>Requisitos y Trámites para Exportación a la Unión Europea.</em> 2010.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+</div>
+<div id="importancia-sociocultural-de-la-apicultura-en-méxico" class="section level2">
+<h2>3.11. Importancia Sociocultural de la Apicultura en México</h2>
+<hr />
+<p>La apicultura en México tiene una gran importancia socioeconómica y ecológica, ya que es considerada como una de las principales actividades pecuarias, dedicada a la crianza de las abejas, además de que la miel es un factor de beneficio en cuestiones de salud y belleza para los humanos; también se procesan productos no menos importantes como el polen, jalea real, ceras, propóleos y veneno de abejas.</p>
+<p>Las abejas son fundamentales para un equilibrio del medio ambiente ya que al obtener el alimento de las flores fomentan en las plantas la capacidad de fecundarse, actividad llamada polinización cruzada, con ésta, las plantas generan el oxígeno suficiente para la vida y, además, aumentan el rendimiento en los cultivos, lo que favorece un incremento en alimentos de origen vegetal, materia prima textil, e insumos agropecuarios.</p>
+<p>Las actividades de un apicultor oscilan entre primavera y verano normalmente para trabajar con las abejas realizando inspecciones de control de población y extracción de la miel, sin embargo, durante el invierno o estación de receso, el trabajo consiste en el mantenimiento de la población de abejas sanas (colonia) y en buenas condiciones, así como la preparación de material de madera para la temporada que viene, en donde alojará las nuevas familias, así como advertir posibles enfermedades o plagas de las poblaciones de abejas para poder tratarlas a tiempo.</p>
+<p>Los medios de vida y desarrollo en la apicultura se basan en la presencia de recursos naturales: abejas, plantas en flor y el agua. En forma silvestre, las abejas recogen la goma y la resina usando las plantas y los árboles como hábitat para sus panales. Las abejas son un recurso libremente disponible en la naturaleza.</p>
+<p>Siempre que no hayan sido contaminadas, dañadas o perjudicadas, éstas volarán por todas partes donde se encuentren plantas en flor. Las áreas silvestres o cultivadas, las zonas deprimidas e incluso aquellas áreas donde podría haber campos minados, tienen un valor inestimable para la apicultura. Esta actividad se puede desarrollar en áreas áridas, o terrenos donde la siembra u otras modalidades de cultivo han fracasado, ya que las raíces de los árboles que producen néctar pueden alcanzar el nivel freático muy por debajo de la superficie. Esto hace que la apicultura sea factible en condiciones marginales, lo que es muy importante para la gente que desee rehabilitar sus medios de vida y desarrollo o crear nuevos.</p>
+<p>La apicultura se integra fácilmente con una buena cantidad de sistemas de vida y desarrollo, porque utiliza los mismos recursos, por ejemplo: la silvicultura, la agricultura y las actividades de conservación. Garantiza una excelente ventaja adicional a la cosecha porque solamente las abejas son capaces de recoger el néctar y el polen, sin entrar en competencia con otros insectos o animales por estos recursos que, de no ser por ellas, serían inalcanzables para el hombre.</p>
+<p>La importancia de la actividad apícola se ha vinculado a la función directa que tiene para elevar la productividad de ciertas hortalizas o frutos. En Estados Unidos en particular en California, se ha generalizado el uso de colmenas para aumentar la producción de casi cualquier tipo de cultivo, con resultados positivos en términos económicos.</p>
+<p>El valor de la polinización es difícil de medir, pero si pudiera ser calculado, sería el más alto de todos los elementos que componen la apicultura. Por su definición, un sistema de vida y desarrollo debería fortalecer las capacidades sin deteriorar los recursos naturales de base. La apicultura va más allá, porque ayuda a preservar los recursos naturales. En todo el mundo, desde siempre, la apicultura ha formado parte de la agricultura de los poblados.</p>
+<p>Los recursos sociales, tales como las redes y asociaciones de productores y comerciantes, son de fundamental importancia para el desarrollo de la apicultura. Las asociaciones locales ponen a disposición de los apicultores los medios para que den a conocer su trabajo, ejerzan presión a favor de la protección de las abejas, organicen en colectividad la transformación de la miel y la cera de abeja, y tengan acceso al mercado. El acceso a las redes a un nivel superior, por medio de las organizaciones no gubernamentales y asociaciones de carácter regional o nacional, ayuda a obtener contactos en el ámbito nacional e internacional, a encontrar fuentes de capacitación y mercados, a tener acceso a los resultados de investigaciones recientes y a mejorar sus conocimientos sobre la apicultura.</p>
+<p><strong>Abejas Nativas</strong></p>
+<p>Una mención aparte, merece el desarrollo de estudios recientes en el país respecto a las especies de abejas nativas. En América (y por lo tanto en México) las únicas abejas sociales nativas que nos pueden proporcionar miel son las abejas sin aguijón. La abeja melífera y su variedad africana, de las cuales generalmente tomamos su miel, son originarias de Europa, África y Asia, y fueron introducidas al continente americano. En México se reportan 46 especies de abejas sin aguijón agrupadas en 16 géneros. Los estados que tienen mayor número de especies son: Oaxaca, Chiapas, Veracruz, y Quintana Roo.</p>
+<p>A los apicultores de abejas nativas se les denomina meliponicultores. En México, actualmente se trabaja en la meliponicultura con alrededor de 19 de las 46 especies de abejas sin aguijón que existen en el país.</p>
+<p><br/></p>
+<p><strong><em>Fuentes:</em></strong></p>
+<p><a href="https://www.gob.mx/firco/articulos/apicultura-actividad-de-gran-importancia-para-la-economia-y-el-medio-ambiente-en-mexico?idiom=es" target="_blank">Fideicomiso de Riesgo Compartido. <em>Apicultura, Actividad De Gran Importancia Para La Economía Y El Medio Ambiente En México.</em> SADER, Diciembre, 2016.</a></p>
+<p><a href="http://www.fao.org/docrep/008/y5110s/y5110s02.htm" target="_blank">FAO. <em>La apicultura ayuda a crear sistemas de vida sostenibles.</em> 2005.</a></p>
+<p><a href="pdfs/ABEJAS_SIN_AGUIJON_OAXACA.pdf" target="_blank">Noemi Arnold, Raquel Zepeda, Marco Vásquez Dávila y Miriam Aldasoro Maya. <em>Las abejas sin aguijón y su cultivo en Oaxaca, México: con catálogo de especies.</em> ECOSUR-CONABIO, México, 2018.</a></p>
+<p>Ayala, R. <em>Revisión de las abejas sin aguijón de México (Hymenoptera: Apidae: Meliponini)</em>. Folia Entomológica México 106, 1–123 (1999).</p>
+<p>Ayala, R., González, V. H. &amp; Engel, M. S. <em>Mexican Stingless Bees (Hymenoptera:Apidae): Diversity, Distribution, and Indigenous Knowledg.</em> En Pot-Honey: A legacy of stingless bees (eds. Vit, P., Pedro, S. R. M. &amp; Roubik, D. W.) 135–152 (Springer New York, 2013).</p>
+<p>Ayala, R., Griswold, T. L. &amp; Yanega, D. <em>Apoidea (Hymenoptera). En Biodiversidad, taxonomía y biogeografía de artrópodos de México: Hacia una síntesis de su conocimiento</em>. (eds. Llorente Bousquets, J. E., García Aldrete, A. N. &amp; González Soriano, E.) 423–464 (UNAM y CONABIO, 1996).</p>
+<p>Arnold, N., Ayala, R., Mérida, J., Sagot, P. &amp; Aldasoro, M. <em>Nuevos registros de abejas sin aguijón (Apidae: Meliponini) para los estados de Chiapas y Oaxaca, México.</em> Revista Mexicana de Biodiversidad (en imprenta).</p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="organización-de-productores-apícolas" class="section level2">
+<h2>3.12. Organización de Productores Apícolas</h2>
+<hr />
+<p>Es de suma importancia que los apicultores se organicen en asociaciones locales o regionales para intercambiar conocimientos, crear redes de cooperación técnica y de financiamiento, representarse como gremio frente a las autoridades, presionar por apoyos gubernamentales y hacer frente común a amenazas a sus actividades.</p>
+<p>En lo referente a organización de productores apícolas, la Unión Nacional de Apicultores (UNAPI) en 2005, se modificó para constituir la Organización Nacional de Apicultores (ONA), como organismo cúpula de este sector productivo. En marzo de 2015 se constituyó la Unión Nacional de Asociaciones de Apicultores de México (UNAAMEX), y está también la Federación Mexicana de Apicultores. La existencia de diversas asociaciones de carácter nacional pone en evidencia la necesidad de coordinar los esfuerzos de estas organizaciones que persiguen objetivos comunes.</p>
+<p>Adicionalmente, otras figuras asociativas se han fortalecido en los últimos años a nivel regional, entre ellas las Cooperativas y Sociedades de Solidaridad Social (SSS) y Sociedades de Producción Rural (SPR), sólo por citar algunas. Respecto a exportadores, La Asociación Nacional de Exportadores de Miel de Abeja (ANEMAAC), con 10 socios; La Asociación Ganadera Nacional de Criadores de Abejas Reina y Núcleos, que albergan entre 40 y 50 socios; La Asociación Nacional de Médicos Veterinarios Especialistas en Abejas, A. C. (ANMVEA) con aproximadamente 40 agremiados.</p>
+<p>Las 8 sociedades cooperativas con mayor número de socios son: <em>Miel y Cera de Campeche</em> y <em>Mielera de Champotón</em> en el estado de Campeche, agremiando a 3,000 productores; en Yucatán existe la <em>Cooperativa Sociedad de Solidaridad Social Apícola Maya</em> con más de 4,000 agremiados y en el estado de Quintana Roo hay 5 Cooperativas con un total de 2,000 asociados. Aunado a estos, existen grupos de Solidaridad Social, Grupo de Mujeres Apicultoras, Grupos Solidarios con la Comisión Nacional para el Desarrollo de los Pueblos Indígenas y apicultores independientes.</p>
+<p>Las empresas más importantes en la producción, acopio y envasado de miel son: <em>Miel Carlota</em> (Grupo Herdez) y <em>Miel Abarca</em>, en la Ciudad de México; <em>Tía Trini</em> y <em>Miel Oro</em>, en Jalisco; <em>Hermez Honey</em>, en Chihuahua; <em>Rucker de México</em>, en Morelos; <em>Oaxaca Miel</em>, en Oaxaca; <em>Mimiel</em>, en Yucatán; <em>Miel Morelia</em>, en Michoacán, y <em>Vita Real</em>, en el Estado de México.</p>
+<p>En el <a href="cap2.html#a002"><strong>Capítulo 2.7</strong></a> se muestra un directorio con las principales asociaciones de apicultores del país. Adicionalmente, puede consultarse el directorio de <a href="http://vinculando.org/organicos/directorio_de_agricultores_organicos_en_mexico/productores_de_miel_de_abeja_organica_en_mexico_por_estad.html" target="_blank">Productores de Miel de Abeja Orgánica en México por Estado, 2005.</a></p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/ca199-3.pdf" target="_blank">SADER. Revista Claridades Agropecuarias. <em>Situación actual y perspectiva de la apicultura en México.</em>, Núm. 199, , p. 3-34, marzo, 2010.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="factores-climáticos-que-influyen-en-la-producción-apícola" class="section level2">
+<h2>3.13. Factores Climáticos que Influyen en la Producción Apícola</h2>
+<hr />
+<p>El clima se define como aquellas condiciones del aire, agua y tierra que se esperan en un determinado tiempo, dichas condiciones meteorológicas promedio, determinan un clima normal. Cuando ocurre alguna variación de las propiedades meteorológicas, se presenta “El Cambio Climático”, si esto ocurre, el sistema requiere ajustes, de acuerdo al periodo de tiempo en el que se presenta ya que pueden ser de corto, mediano y largo plazo.</p>
+<p>Hoy en día, uno de los principales cambios climáticos se da en la atmósfera cerca de la superficie, ya que se observa un aumento en la temperatura. Esta variación se conoce como <em>Calentamiento Global</em>. Lo que genera un impacto significativo en la actividad humana así como en la biodiversidad de insectos.</p>
+<p>El cambio climático representa el mayor reto para la humanidad en el siglo XXI, el calentamiento global implícito ha incrementado en 1 °C la temperatura global con respecto al inicio de la era industrial, por las emisiones de gases efecto invernadero (GEI), que provocan efectos negativos ambientales, económicos y sociales.</p>
+<p>El impacto del Cambio Climático sobre la Apicultura, radica en la importancia de ésta en el Medio Ambiente; la función principal de las abejas va más allá del procesamiento de la miel, éstas juegan un papel muy importante en la generación de alimentos y oxígeno para los seres vivos a través de la polinización.</p>
+<p><br/></p>
+<div id="existen-dos-tipos-de-impactos-del-clima-en-la-actividad-apícola-directos-e-indirectos." class="section level4">
+<h4><strong>Existen dos tipos de impactos del clima en la actividad apícola, directos e indirectos.</strong></h4>
+<p><br/></p>
+</div>
+<div id="impactos-directos" class="section level4">
+<h4><strong>Impactos directos</strong></h4>
+<p>Lo constituyen la <strong>influencia del cambio climático en la vegetación</strong> referente a los cambios en la vegetación como resultado de variaciones (aumento) en la temperatura y la acumulación de dióxido de carbono, que influyen directamente en la floración de las especies; asimismo, los procesos de erosión, lixiviación, sequía y lluvias torrenciales asociados al calentamiento global, incrementan el riesgo de pérdida de nutrientes, la disposición de los mismos, y en consecuencia, la concentración y volumen de producción de néctar de las flores a las que las abejas acuden.</p>
+<p>Un factor de suma importancia en este sentido, es el incremento de temporadas de <strong>sequía</strong> e incluso el avance de un proceso de desertificación en ciertas regiones. El agua es indispensable para las abejas tanto para su consumo como para la regulación de la temperatura interna de la colmena, el retraso en las lluvias o falta de agua, origina disminución de producción y calidad de cultivos, e interrumpe el desarrollo de diversas fases vegetativas, por lo que además de no encontrar fuentes de agua, tienen problemas para encontrar alimento suficiente. El aumento de temperatura que se presenta durante las sequías reduce la cantidad de néctar y calidad del polen, afectando la disponibilidad de alimento y el desarrollo de la cría; en ocasiones, existe la presencia de flores, pero éstas no tienen la humedad suficiente para producir néctar.</p>
+<p>Pero no sólo son periodos de sequía lo que debe preocupar del cambio climático. Como consecuencia del calentamiento y la desertificación mencionada, se encuentran condiciones cada vez más extremosas de temperatura en zonas habitualmente templadas. Las <strong>heladas</strong> fuera de temporada invernal son cada vez más comunes. El enfriamiento del aire por debajo de 0° C, provoca el congelamiento del agua al interior de los tejidos vegetales, que al cristalizarse afectan las paredes de las células sin que exista regeneración alguna, por lo que la planta afectada se pierde. Si una helada se presenta en épocas de floración, se rompe el flujo de néctar hacia la colmena, lo que deja sin alimento a las abejas y sin cosecha a los apicultores.</p>
+<p>Del mismo modo, si bien el agua es importante para el correcto desarrollo de las colonias de abejas, los <strong>periodos largos y discontinuos de lluvia</strong> originan alteraciones en las épocas de floración, la lluvia diluye el néctar y éstas pierden atractivo para las abejas, además, debido a que no pueden salir de las colmenas con la misma frecuencia, se incrementa el tiempo de resguardo, acompañado de un incremento en la humedad, favoreciendo la incidencia de enfermedades. Por otra parte, las tormentas tropicales y huracanes que actualmente se registran con más fuerza destructiva originadas por el cambio climático, pueden destruir apiarios por completo.</p>
+<p>Por otro lado, aunque en general los insectos responden de manera rápida a los cambios de temperatura y precipitación en el ambiente, por ser organismos <em>ectotérmicos</em> y con ciclos de vida cortos, están limitados en su distribución por las temperaturas registradas en las diferentes latitudes. El incremento en la temperatura que trae consigo el cambio climático proyecta un cambio en la distribución de estas especies hacia latitudes más elevadas, permitiendo a las poblaciones de insectos ampliar y movilizar su hábitat, pero restringiéndolo a zonas cada vez más frías, con menor alimento disponible.</p>
+<p>En particular <em>Apis mellifera L.</em> es una especie de abeja que requiere de condiciones de temperatura (34-35°C) dentro de la colmena para su óptimo desarrollo, por lo que la temperatura del ambiente representa el factor abiótico más importante que influye directamente en el óptimo desarrollo de la cría y por consiguiente en el comportamiento y actividades de la población.</p>
+<p>Con base en el incremento en la temperatura global y los cambios en los patrones de lluvia de los escenarios de proyección, se espera que las abejas respondan limitando la postura de huevos y disminuyan la actividad en el pecoreo de néctar y polen, por agua. Está demostrado que la especie <em>A. florae</em> disminuye su actividad de pecoreo en cultivos de mango, con temperaturas superiores a 32°C y <em>A. mellifera</em> presenta un comportamiento similar, bajo las mismas condiciones de temperatura, dejando en evidencia la vulnerabilidad del género y la especie ante los incrementos de temperatura, principalmente. Lo anterior, sumado a la presencia de otros factores climáticos que interfieren en las actividades de una colmena, como se describió anteriormente.</p>
+<p><br/></p>
+</div>
+<div id="impactos-indirectos" class="section level4">
+<h4><strong>Impactos indirectos</strong></h4>
+<p>El desequilibrio entre la <em>fenología</em> (parte de la meteorología que estudia las repercusiones del clima sobre los fenómenos biológicos de ritmo periódico, como el florecimiento o la migración de aves) de las plantas y la dinámica de las abejas, producto de las variaciones climáticas, ocasiona que el inicio prematuro de las floraciones se desfase con el ciclo de vida de las colmenas, ocasionando que el acopio de miel pueda ser deficiente, y como consecuencia, reducir el volumen de cosecha de miel para el apicultor, quien debe de modificar sus labores de manejo para mantener la producción y la salud de las colmenas.</p>
+<p>La escasez de alimento, el desajuste en la dinámica poblacional y las limitaciones de pecoreo no son los únicos impactos potenciales a consecuencia del cambio climático. Los incrementos de temperatura y la presencia prolongada de lluvia y humedad, incrementan la vulnerabilidad hacia la presencia de enfermedades y plagas propias de las abejas, como <em>Varroa destructor</em>, ectoparásito considerado la principal plaga que amenaza las colmenas y que debe sus niveles de infestación a la dinámica reproductiva de la propia abeja y las condiciones climáticas prevalecientes, debilitando las colmenas por desnutrición animal y favoreciendo el desarrollo de otros patógenos que limitan la producción de miel.</p>
+<p><br/></p>
+<p><strong><em>Fuentes:</em></strong></p>
+<p><a href="pdfs/1%20Cambio.pdf" target="_blank">Medellín-Pi, Rodrigo A. <em>Impacto del Cambio Climático en la Agricultura.</em> SADER - UNAM.FMVZ. 2011.</a></p>
+<p><a href="pdfs/2016_%202.pdf" target="_blank">Castellanos Potenciano B. P., Gallardo López F., Sol Sánchez A., Landeros Sánchez C., Díaz Padilla G., Sierra Figueredo P., Santibañez Galarza J. L. <em>Impacto Potencial del Cambio Climático en la Apicultura.</em> Revista Iberoamericana de Bioeconomia y Cambio Climático, Vol. 2, Núm. 1, p. 1-19, 2016.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+</div>
+<div id="plantas-productoras-de-néctar-y-polen" class="section level2">
+<h2>3.14. Plantas Productoras de Néctar y Polen</h2>
+<hr />
+<div class="figure" style="text-align: center">
+<img src="imag/IMAG0469.png" alt="**Fig. 9 Abeja extrayendo néctar**" width="80%" />
+<p class="caption">
+<strong>Fig. 9 Abeja extrayendo néctar</strong>
+</p>
+</div>
+<p><br/></p>
+<p>Como ya se ha mencionado, dentro de la problemática para el desarrollo de la apicultura destaca el deterioro de los recursos naturales vinculados a la producción de miel, ya que la mayor parte de la producción y del mantenimiento de las colmenas depende de la floración de especies nativas.</p>
+<p>Debido a la ausencia de estudios sobre el mantenimiento de las colmenas es necesario centrar esfuerzos regionales para caracterizar y ubicar la flora con amplitud melífera con la finalidad de apoyar a los apicultores en cuanto al manejo y movilidad de las colmenas. En relación a esto, algunas entidades del país presentan características idóneas para la producción de miel, debido a la cobertura vegetal natural e inducida de que disponen, lo que ha favorecido el desarrollo de una gran variedad de especies de plantas útiles para la apicultura.</p>
+<p>La siguiente es una lista de los documentos disponibles sobre las especies vegetales que se pueden encontrar en cada entidad federativa.</p>
+<p><a href="https://www.uaa.mx/direcciones/dgdv/editorial/catalogo/cca_floraapicola_9786078227938.html" target="_blank">Universidad Autónoma de Aguascalientes. <strong>Flora Apícola del Estado de Aguascalientes.</strong> 2012.</a></p>
+<p><a href="pdfs/FloraNectarifera%20y%20polinifera%20Chiapas.pdf" target="_blank">SADER. <strong>Flora Nectarífera y Polinífera en el Estado de Chiapas.</strong> 2000.</a></p>
+<p><a href="pdfs/Flora%20Nectarífera%20y%20polinifera%20en%20Guanajuato.pdf" target="_blank">INIFAP. <strong>Flora Nectarífera y Polinífera de Guanajuato.</strong> 2016.</a></p>
+<p><a href="pdfs/Flora%20Nectarífera%20y%20polinifera%20en%20Guerrero.pdf" target="_blank">SADER. <strong>Flora Nectarífera y Polinífera en el Estado de Guerrero.</strong> 2002.</a></p>
+<p><a href="https://drive.google.com/open?id=1two-4KxlzEBlmii9fuz_8kTmiy4cgckD" target="_blank">SADER. <strong>Flora Nectarífera y Polinífera en el Estado de Hidalgo.</strong> 2012.</a></p>
+<p><a href="pdfs/FloraNectarifera%20y%20polinifera%20Michoacan.pdf" target="_blank">SADER. <strong>Flora Nectarífera y Polinífera en el Estado de Michoacán.</strong> 1999.</a></p>
+<p><a href="https://drive.google.com/open?id=1ztuiUm1BGpq4xg451btfl4Kq-E1grdxy" target="_blank">SADER. <strong>Flora Nectarífera y Polinífera en el Estado de Tabasco.</strong> 2004.</a></p>
+<p><a href="pdfs/Flora%20Nectarífera%20y%20polinifera%20Tamaulipas.pdf" target="_blank">SADER. <strong>Flora Nectarífera y Polinífera en el Estado de Tamaulipas.</strong> 2003.</a></p>
+<p><a href="https://drive.google.com/open?id=1wbZCgujzgn0rF9v-J-HtkRb9N4c1hMIW" target="_blank">SADER. <strong>Flora Nectarífera y Polinífera en el Estado de Veracruz.</strong> 2000.</a></p>
+<p><a href="https://drive.google.com/open?id=1Lgo-deiR-qunIR0t5S9VtWKTOolEjVx2" target="_blank">SADER. <strong>Flora Nectarífera y Polinífera en la Península de Yucatán.</strong> 1998.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="regiones-apícolas-en-méxico" class="section level2">
+<h2>3.15. Regiones Apícolas en México</h2>
+<hr />
+<p>Debido a los diferentes climas y floraciones que existen en México, se registran diversos grados de desarrollo de los apicultores con gran variedad en su producción de mieles en cuanto a sus características de humedad, color, aroma y sabor. Por lo que, para clasificar algunas características semejantes, se divide en cinco regiones apícolas. Estas regiones son:</p>
+<p><br/></p>
+<p><strong>Región Norte</strong>: Caracterizada principalmente por la miel de mezquite, de color ámbar extra clara cuya producción en su mayoría se destina al mercado de los EE.UU. El precio de esta miel es uno de los mejores a nivel nacional. Los estados que integran esta región son Baja California, Baja California Sur, Sonora, Chihuahua, Durango, Zacatecas, Coahuila, Nuevo León y partes del norte de Tamaulipas y del altiplano de San Luis Potosí. Esta región representa en promedio el 7.4% de la producción nacional.</p>
+<p><strong>Región Golfo</strong>: Destaca por poseer una gran producción de miel de cítricos, de colores ámbar clara producida principalmente a partir de la flor del naranjo, siendo esta una miel muy apreciada en el mercado internacional. También se obtienen mieles de color obscuro. Esta región se compone por el estado de Veracruz y parte de los estados de Tabasco, Tamaulipas y la región Huasteca de San Luis Potosí, Hidalgo y Querétaro. Esta región representa en promedio el 9% de la producción nacional.</p>
+<p><strong>Región Costa del Pacífico</strong>: Se caracteriza por producir mieles de origen multiflora y de mangle, siendo principalmente de color obscuras, aunque también se obtienen las de color ámbar y ámbar clara. Forman parte de esta región los estados de Sinaloa, Nayarit, poniente de los estados de Jalisco y Michoacán, Colima, así como las regiones costeras de los estados de Guerrero, Oaxaca y Chiapas. Esta región representa en promedio el 21.4% de la producción nacional.</p>
+<p><strong>Región Altiplano</strong>: Se distingue por tener mieles de color ámbar y ámbar clara, y algunas mieles llamadas <em>miel mantequilla</em>, derivado de su consistencia, y que por su presentación tiene mucha demanda del mercado europeo. El origen principal de esta miel es multiflora, así como del acahual y la acetilla principalmente. Esta región se compone de los estados de Tlaxcala, Puebla, Morelos, Guanajuato, Aguascalientes, Estado de México, la parte oriente de los estados de Jalisco, Michoacán, Guerrero, Oaxaca y Chiapas; parte poniente de Hidalgo y Querétaro; la región media de San Luis Potosí, así como las delegaciones rurales de la Ciudad de México. Esta región representa en promedio el 29.8% de la producción nacional.</p>
+<p><strong>Región Península de Yucatán</strong>: La más importante en cuanto a volumen de producción de miel y por ubicar a la mayor parte de las colmenas del país. Está conformada por los estados de Campeche, Yucatán y Quintana Roo y parte de los estados de Chiapas (Noreste) y Tabasco (Oriente). La miel de esta zona goza de gran prestigio nacional y sobre todo internacional, ya que se caracteriza por tener su origen en floraciones únicas, como son la de Tzitzilche y Tajonal, quienes proporcionan el 85% de la producción de miel, destinada en su mayoría a la exportación. Esta región representa en promedio el 32.4% de la producción nacional.</p>
+<p><br/></p>
+<p><strong><em>Fuente</em></strong></p>
+<p><a href="pdfs/ca199-3.pdf" target="_blank">SADER. Revista Claridades Agropecuarias. <em>Situación actual y perspectiva de la apicultura en México.</em>, Núm. 199, p. 3-34, marzo, 2010.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="zonas-productoras-de-miel-orgánica" class="section level2">
+<h2>3.16. Zonas Productoras de Miel Orgánica</h2>
+<hr />
+<p>Ante una creciente demanda por productos orgánicos, parte de la producción apícola se ha ido enfocando a la obtención de miel orgánica, principalmente, en áreas geográficas libres de aplicación de químicos.</p>
+<p>Si bien la obtención de ésta implica costos adicionales por el equipo y los procesos de certificación necesarios, así como por la aplicación indispensable de técnicas diferentes que aseguren la producción libre de químicos, la tendencia es creciente, ya que se hace rentable por el mejor precio de esta de miel, superior hasta en un 30% con relación al precio de la miel convencional.</p>
+<p>En 2008, la producción de miel orgánica alcanzó las 701 toneladas, destacando los estados de Oaxaca, Chiapas, Yucatán, Quintana Roo, Zacatecas, Jalisco, Veracruz y Campeche.</p>
+<p><br/></p>
+<p><strong><em>Fuente</em></strong></p>
+<p><a href="pdfs/ca199-3.pdf" target="_blank">SADER. Revista Claridades Agropecuarias. <em>Situación actual y perspectiva de la apicultura en México.</em>, Núm. 199, p. 3-34, marzo, 2010.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="comportamiento-estacional-de-la-producción-de-las-abejas" class="section level2">
+<h2>3.17. Comportamiento Estacional de la Producción de las Abejas</h2>
+<hr />
+<p>La producción de miel está supeditada a las condiciones del medio ambiente y a la disponibilidad del néctar de las flores, por lo que en la mayor parte del país ésta se presenta fundamentalmente en dos épocas del año. La primera, en las regiones Sureste y Costas del país, donde la producción se obtiene entre los meses de marzo y mayo (primavera-verano), generando el 40 por ciento de la producción. La segunda, se obtiene en el Altiplano y Norte del país, entre los meses de septiembre y de noviembre (otoño-invierno), obteniendo el 60 por ciento restante de la producción. Es importante señalar que, en el caso de la Península de Yucatán, ésta se da durante los meses de diciembre a junio.</p>
+<p><br/></p>
+<p><strong><em>Fuente</em></strong></p>
+<p><a href="pdfs/ca199-3.pdf" target="_blank">SADER. Revista Claridades Agropecuarias. <em>Situación actual y perspectiva de la apicultura en México.</em>, Núm. 199, p. 3-34, marzo, 2010.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="ranking-nacional-de-la-producción-apícola" class="section level2">
+<h2>3.18. Ranking Nacional de la Producción Apícola</h2>
+<hr />
+<p>La siguiente es una tabla donde se muestra la posición de cada entidad federativa, como productoras de miel, durante el periodo 2003 - 2019. Se aprecia el predominio de las entidades de la península de Yucatán como los mayores productores, seguidos por Veracuz y Jalisco, principalmente. <br/> <br/></p>
+<div id="htmlwidget-d897faf10bd3192b68fc" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d897faf10bd3192b68fc">{"x":{"filter":"top","filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;AGUASCALIENTES&quot;,&quot;BAJA CALIFORNIA&quot;,&quot;BAJA CALIFORNIA SUR&quot;,&quot;CAMPECHE&quot;,&quot;CHIAPAS&quot;,&quot;CHIHUAHUA&quot;,&quot;COAHUILA&quot;,&quot;COLIMA&quot;,&quot;DISTRITO FEDERAL&quot;,&quot;DURANGO&quot;,&quot;GUANAJUATO&quot;,&quot;GUERRERO&quot;,&quot;HIDALGO&quot;,&quot;JALISCO&quot;,&quot;MÉXICO&quot;,&quot;MICHOACÁN&quot;,&quot;MORELOS&quot;,&quot;NAYARIT&quot;,&quot;NUEVO LEÓN&quot;,&quot;OAXACA&quot;,&quot;PUEBLA&quot;,&quot;QUERÉTARO&quot;,&quot;QUINTANA ROO&quot;,&quot;SAN LUIS POTOSÍ&quot;,&quot;SINALOA&quot;,&quot;SONORA&quot;,&quot;TABASCO&quot;,&quot;TAMAULIPAS&quot;,&quot;TLAXCALA&quot;,&quot;VERACRUZ&quot;,&quot;YUCATÁN&quot;,&quot;ZACATECAS&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"32\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32"],["AGUASCALIENTES","BAJA CALIFORNIA","BAJA CALIFORNIA SUR","CAMPECHE","COAHUILA","COLIMA","CHIAPAS","CHIHUAHUA","DISTRITO FEDERAL","DURANGO","GUANAJUATO","GUERRERO","HIDALGO","JALISCO","MÉXICO","MICHOACÁN","MORELOS","NAYARIT","NUEVO LEÓN","OAXACA","PUEBLA","QUERÉTARO","QUINTANA ROO","SAN LUIS POTOSÍ","SINALOA","SONORA","TABASCO","TAMAULIPAS","TLAXCALA","VERACRUZ","YUCATÁN","ZACATECAS"],[27,30,28,2,26,25,6,18,31,19,14,5,16,4,15,10,23,17,24,9,7,32,8,13,12,21,29,20,22,3,1,11],[27,30,28,2,26,25,6,13,31,20,16,5,17,4,12,10,22,23,24,9,7,32,8,15,14,18,29,19,21,3,1,11],[28,23,29,2,27,25,6,14,31,19,18,5,20,3,12,10,17,24,26,7,9,32,8,15,13,21,30,22,16,4,1,11],[26,29,27,2,28,24,6,20,31,19,21,5,17,3,12,10,16,25,23,8,7,32,9,15,14,18,30,22,13,4,1,11],[24,29,27,1,28,26,6,19,31,18,16,5,14,3,12,10,15,22,25,7,8,32,9,13,21,17,30,20,23,4,2,11],[26,31,27,2,28,25,6,22,32,17,18,5,14,3,12,10,15,24,23,8,7,30,9,16,19,20,29,21,13,4,1,11],[26,30,27,2,28,25,5,19,32,17,22,6,16,3,12,11,15,23,20,7,8,31,9,14,21,24,29,18,13,4,1,10],[25,30,28,2,27,26,4,20,32,17,21,7,16,3,12,10,14,24,22,6,8,31,9,15,19,23,29,18,13,5,1,11],[26,32,28,2,27,25,4,22,31,20,19,8,16,3,12,10,14,24,17,6,7,30,9,15,23,21,29,18,13,5,1,11],[27,32,29,2,28,25,4,18,31,19,22,8,15,3,12,10,16,20,21,6,7,30,9,14,24,23,26,17,13,5,1,11],[25,32,28,2,29,22,4,24,31,19,18,9,15,3,13,11,12,20,21,6,8,30,7,16,26,23,27,17,14,5,1,10],[25,31,27,2,29,23,4,17,32,20,19,9,15,3,13,10,12,22,24,6,8,30,7,16,28,21,26,18,14,5,1,11],[19,32,29,2,28,23,4,17,31,22,24,9,13,3,15,11,12,21,26,6,8,30,7,16,27,20,25,18,14,5,1,10],[20,31,27,2,26,23,3,19,30,22,18,10,13,5,15,9,12,24,29,6,8,32,7,14,28,21,25,17,16,4,1,11],[18,31,26,6,27,22,2,23,30,21,19,9,13,1,16,12,11,25,28,5,8,32,7,14,29,20,24,17,15,3,4,10],[20,31,28,2,26,21,4,23,32,22,18,9,13,3,16,12,10,24,27,6,8,30,7,14,29,19,25,17,15,5,1,11],[19,30,27,2,26,22,4,17,31,23,21,10,13,3,15,9,12,24,28,6,8,32,7,14,29,20,25,18,16,5,1,11]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Estado<\/th>\n      <th>rank2003<\/th>\n      <th>rank2004<\/th>\n      <th>rank2005<\/th>\n      <th>rank2006<\/th>\n      <th>rank2007<\/th>\n      <th>rank2008<\/th>\n      <th>rank2009<\/th>\n      <th>rank2010<\/th>\n      <th>rank2011<\/th>\n      <th>rank2012<\/th>\n      <th>rank2013<\/th>\n      <th>rank2014<\/th>\n      <th>rank2015<\/th>\n      <th>rank2016<\/th>\n      <th>rank2017<\/th>\n      <th>rank2018<\/th>\n      <th>rank2019<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"scrollX":true,"fixedColumns":true,"language":{"info":"Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros","paginate":{"previous":"Anterior","next":"Siguiente"},"search":"Buscar:","lengthMenu":"Mostrar _MENU_ registros"},"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<p><br/></p>
+<p align="center">
+<strong>Cuadro 8. Posición que ocuparon las entidades por nivel de producción de miel de abeja, 2003-2019</strong> <a href="tabs/Ranking_tab_1_s.csv"><i class="fas  fa-download "></i></a>
+</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp" target="_blank">Servicio de Información Agroalimentaria y Pesquera (SIAP). <em>Avance mensual de la producción pecuaria.</em> 2018.</a></p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="principales-centros-de-investigación-y-experimentación" class="section level2">
+<h2>3.19. Principales Centros de Investigación y Experimentación</h2>
+<hr />
+<div id="centro-de-investigaciones-en-abejas-ciabe." class="section level4">
+<h4><strong>Centro de Investigaciones en Abejas (CIABE).</strong></h4>
+<p>Ubicado en Ciudad Guzmán, Jalisco, en el Centro Universitario del Sur, es un centro de investigación dependiente de la Universidad de Guadalajara, creado en diciembre del 2015.</p>
+<p>El CIABE es una unidad académica adscrita al Departamento de Desarrollo Regional, orientado a generar conocimiento mediante investigación científica, ya que cuenta con recursos humanos, materiales, equipo e infraestructura especializadas en el área de la apicultura, lo que le permite atender la problemática referente al aprovechamiento de las diferentes especies de abejas que están presentes en el estado de Jalisco, así como proponer alternativas de producción al sector apícola.</p>
+<p>Forma además, recursos humanos científicos y profesionales, ya que está fuertemente vinculado con la formación académica de pregrado a través de los programas educativos de las carreras de Medicina Veterinaria y Zootecnia, Licenciatura en Nutrición, Agronegocios y Derecho; promueve también la incorporación temprana a la investigación de alumnos de los citados programas educativos. Contribuye también a la formación de recursos humanos técnicos con capacidad para resolver problemas relacionados con el cultivo de las abejas, vinculados con el sector productivo, mediante la impartición de cursos especializados de actualización o de capacitación.</p>
+<p>Con el fin de fortalecer sus líneas y proyectos de investigación, establece vínculos con otras instituciones de educación superior e investigación, nacionales e internacionales, formando redes de colaboración en las que participan cuerpos académicos, grupos de investigación e investigadores afines al área apícola.</p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.cusur.udg.mx/es/ciabe" target="_blank">Página Web del CIABE</a></p>
+<p><br/></p>
+</div>
+<div id="colegio-de-la-frontera-sur-departamento-de-agricultura-sociedad-y-ambiente.-equipo-abejas." class="section level4">
+<h4><strong>Colegio de la Frontera Sur, Departamento de Agricultura, Sociedad y Ambiente. Equipo Abejas.</strong></h4>
+<p>El Equipo Abejas lo conforman estudiantes, técnicos, coordinadores de proyectos e investigadores.</p>
+<p>Frente a las problemáticas contemporáneas relacionadas con los cambios globales, como la pérdida de biodiversidad o las desigualdades sociales, el equipo busca armonizar la relación entre la sociedad y la naturaleza.</p>
+<p>Trabajan con dos grupos de abejas:</p>
+<ol style="list-style-type: decimal">
+<li><p>En torno a la abeja productora de miel <em>Apis mellifera</em>, desarrollan conocimientos, prácticas y procesos relacionados con la producción de miel y de una apicultura sana y amigable con el ambiente.</p></li>
+<li><p>Con Abejas nativas (por ejemplo, abejorros y abejas sin aguijón) estudian aspectos básicos de su ecología, así como su papel en los sistemas agrícolas, en la producción de miel y la polinización.</p></li>
+</ol>
+<p>Entre sus objetivos, se encuentra incluir la conservación del medio ambiente en los modos de producción agrícola, así como fortalecer los vínculos en las comunidades y organizaciones campesinas involucradas, lo que permite contribuir también a su autonomía y bienestar.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="https://www.ecosur.mx/abejas/quienes-somos/" target="_blank">Página Web del Equipo Abejas</a></p>
+<p><br/></p>
+</div>
+<div id="unam.-escuela-nacional-de-estudios-superiores-enes-unidad-morelia-laboratorio-nacional-de-análisis-y-síntesis-ecológica-lanase." class="section level4">
+<h4><strong>UNAM. Escuela Nacional de Estudios Superiores (ENES) Unidad Morelia, Laboratorio Nacional de Análisis y Síntesis Ecológica (LANASE).</strong></h4>
+<p>A través del Area de Investigación: <em>Declive de polinizadores</em>, y especificamente, con los proyectos encabezados por el Dr. Mauricio Quesada:</p>
+<p><br/></p>
+<p><strong><em>Monitoreo poblacional y genético del decline de polinizadores usando como modelo Apis mellifera.</em></strong></p>
+<p>Los objetivos generales de este proyecto son monitorear, analizar y documentar:</p>
+<p>• El comportamiento espacial-temporal de los polinizadores (abejas melíferas), a través del uso de micro-sensores de radiofrecuencia.</p>
+<p>• La mezcla racial y variabilidad genética de las poblaciones de polinizadores.</p>
+<p>• Los niveles nutricionales y composición florística de polen.</p>
+<p>En general el estudio de estos objetivos (comportamiento, genética y nutrición de las abejas) permitirá conocer bajo en qué condiciones agroambientales, ciertas poblaciones de abejas presentan cambios de comportamiento o variaciones en la fuente de recurso nutricionales, que pudiesen afectar su tamaño de población o sus reservas de alimento.</p>
+<p>Además, se podrían conocer qué patrones genéticos son los más exitosos para un productivo manejo de colmena. En conjunto, todo el conocimiento generado permitiría crear programas de asistencia, capacitación o mejoramiento genético de abejas, lo que se reflejaría en una mejor producción agrícola y apícola en México.</p>
+<p><br/></p>
+<p><strong><em>Evaluación de los impactos del cambio climático y cambio de uso de suelo sobre los polinizadores y sus consecuencias potenciales en el sector agrícola en México.</em></strong></p>
+<p>El objetivo del proyecto es evaluar los impactos del cambio climático y cambio de uso de suelo sobre los polinizadores, y sus consecuencias potenciales en el sector agrícola en México a través de modelos de nicho ecológico, datos empíricos y experimentales. Este análisis es crucial para tomar medidas que mitiguen el impacto del cambio climático en los cultivos y en sus polinizadores, resaltando la conservación de polinizadores como prioridad nacional para asegurar el suministro de alimentos para la población mexicana.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.lanase.unam.mx/es/proyectos_investigacion.php?ra=1" target="_blank">Laboratorio Nacional de Análisis y Síntesis Ecológica.</a></p>
+<p><br/></p>
+</div>
+<div id="instituto-nacional-de-investigaciones-forestales-agrícolas-y-pecuarias-inifap-perteneciente-a-la-secretaría-de-agricultura-y-desarrollo-rural-sader." class="section level4">
+<h4><strong>Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP), perteneciente a la Secretaría de Agricultura y Desarrollo Rural (SADER).</strong></h4>
+<p>En seguimiento al plan estratégico de impulso a la apicultura nacional, la SADER realiza diversas acciones orientadas a fortalecer la apicultura.</p>
+<p>En esta dinámica, el <a href="https://www.gob.mx/inifap" target="_blank">INIFAP</a> realiza trabajos de investigación en apicultura, apoyando los procesos de transferencia de conocimiento y tecnología, acorde a las necesidades de los productores de México.</p>
+<p>Lo anterior contribuye a un desarrollo productivo competitivo, equitativo y sustentable, en especial con el acompañamiento técnico y capacitación a pequeños productores, mujeres y jóvenes emprendedores.</p>
+<p>Entre las aportaciones del instituto destacan las investigaciones para el control de la Varroa (<em>Varroa destructor</em>), sin que se contamine la miel, mediante productos orgánicos, lo que permite combatir a este ácaro, que ha ocasionado mermas a la producción apícola en las colmenas de la península de Yucatán.</p>
+<p>Asimismo, contribuye con diferentes componentes tecnológicos de los cuales se cuenta con información disponible y actualizada con el desarrollo de tecnologías para el manejo de la colmena, la suplementación de alimento en épocas críticas, prevención de enfermedades y diversificación de los productos de la colmena, entre otros.</p>
+<p>El INIFAP cuenta con diferentes publicaciones sobre apicultura disponibles en sus campos experimentales, como manuales prácticos para la producción de miel en el trópico y de la manufactura de la miel, además de los de polinización apícola, de patología apícola, para la elaboración de velas y figuras de cera de abeja; así como de cría de abejas reina, entre otros.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="https://infoagro.com/mexico/fortalece-sagarpa-produccion-apicola-con-transferencia-de-tecnologia/" target="_blank"><em>Fortalece SAGARPA producción apícola con transferencia de tecnología.</em> Agosto, 2017.</a></p>
+<p><br/></p>
+</div>
+<div id="centro-de-investigación-y-asistencia-en-tecnología-y-diseño-del-estado-de-jalisco-a.c.-ciatej." class="section level4">
+<h4><strong>Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco, A.C. (CIATEJ).</strong></h4>
+<p>Perteneciente a la Coordinación de Medio Ambiente, Salud y Alimentación del Sistema de Centros Públicos de Investigación (CPI) del Consejo Nacional de Ciencia y Tecnología (CONACyT), lleva a cabo actividades de Investigación, Desarrollo Tecnológico e Innovación, además de servicios tecnológicos y de formación de recursos humanos especializados con programas de posgrado (maestrías y doctorados), educación continua (capacitación) e iniciación a la investigación (estancias y tesistas de pregrado). Todo ello para ofrecer soluciones tecnológicas y de capital humano que contribuyan a mejorar la competitividad de los sectores agropecuario, alimentos y bebidas, salud animal y humana, medio ambiente y energía sustentable.</p>
+<p>En el ámbito apícola, realiza investigaciones sobre el impacto de los plaguicidas sobre las poblaciones de abejas y la apicultura en general, entre otras.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="https://ciatej.mx/" target="_blank">Página Web del CIATEJ</a></p>
+<p><br/></p>
+</div>
+<div id="laboratorio-de-análisis-de-propóleos-en-la-fes-cuautitlán." class="section level4">
+<h4><strong>Laboratorio de Análisis de Propóleos en la FES Cuautitlán.</strong></h4>
+<p>Laboratorio de Microbiología de la Unidad de Investigación Multidisciplinaria (UIM) de la FES (Facultad de Estudios Superiores) Cuautitlán se ubica el Laboratorio de Análisis de Propóleos, cuyo objetivo es principalmente el análisis de mieles y propóleos.</p>
+<p>Este grupo impulsó la creación de la <a href="http://www.dof.gob.mx/normasOficiales/6794/sagarpa11_C/sagarpa11_C.html" target="_blank"><strong>Norma Oficial Mexicana NOM-003-SAG/GAN-2017, Propóleos, producción y especificaciones para su procesamiento.</strong></a> Norma de observancia obligatoria en todo el territorio nacional, publicada en el DOF 06/10/2017, y que tiene por objeto establecer las especificaciones de producción, características físicas, químicas y microbiológicas, que deben cumplir los propóleos y sus extractos para su procesamiento y comercialización en el país.</p>
+<p>Este laboratorio ofrece el servicio de evaluación del propóleo mediante pruebas que garantizan al apicultor la calidad de su producto: la valoración física a partir del análisis del color, olor, sabor y consistencia de temperatura ambiente (parámetros que no pueden estandarizarse pues el propóleo es recolectado de la vegetación que hay alrededor de las colmenas) y el análisis químico, estudiando la presencia de fenoles y flavonoides, compuestos que recibe de la actividad biológica.</p>
+<p>Otro parámetro examinado es la actividad antimicrobiana frente a microorganismos como <em>Staphylococcus aureus</em>, principal responsable de enfermedades respiratorias; <em>Escherichia coli</em>, causante de padecimientos gastrointestinales, y <em>Candida albicans</em>, uno de los hongos que más afecta a la salud humana.</p>
+<p>Además, el servicio implementado en la FES Cuautitlán permite que se realice un mapeo nacional de los diferentes propóleos que hay en el territorio, con el objetivo de conocer sus propiedades particulares.</p>
+<p>El laboratorio, finalmente, impacta en los ámbitos social, económico y de la salud, porque propiciará la producción y se difundirán los beneficios que conlleva su uso para el ser humano.</p>
+<p>Los siguientes videos muestran algunas de las actividades de este laboratorio.</p>
+<p><br> <br></p>
+<div class="text-center">
+<video width="710" height="427" src="media/laboratorio_analisis_propoleos.mp4" controls type="video/mp4">
+</video>
+<p><br> <br></p>
+<video width="710" height="427" src="media/laboratorio_analisis_propoleos_unam_global.mp4" controls type="video/mp4">
+</video>
+</div>
+<div class="text-justify">
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.gaceta.unam.mx/20170316/primer-laboratorio-de-analisis-de-propoleos-en-la-fes-cuautitlan/" target="_blank">Gaceta Digital, UNAM. <em>Primer laboratorio de análisis de propóleos en la FES Cuautitlán.</em> Marzo, 2017.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="ubicación-de-criaderos-de-reinas-y-material-biológico-apícola-certificado">3.20. Ubicación de Criaderos de Reinas y Material Biológico Apícola Certificado</h2>
+<hr />
+<div class="figure" style="text-align: center">
+<img src="imag/IMG_6800.png" alt="**Fig. 10 Inseminación Instrumental en Abejas, elemento importante para la certificación.**" width="80%" />
+<p class="caption">
+<strong>Fig. 10 Inseminación Instrumental en Abejas, elemento importante para la certificación.</strong>
+</p>
+</div>
+<p><br/></p>
+<p>Una de las principales estrategias para evitar altos niveles de africanización en los apiarios (reemplazo de genes europeos por africanos en las abejas), es la sustitución de abejas reina en las colmenas, empleando reinas de ecotipos europeos, fecundadas con zánganos europeos o africanizados, o bien reinas africanizadas producidas bajo un programa de selección y mejoramiento genético, orientado a fijar características deseables (mayor actividad, menor defensividad y menor susceptibilidad a las enfermedades).</p>
+<p>Con el propósito de inducir la producción de estas abejas la SADER, a través del PNPCAA, supervisa los criaderos de abejas reina y de núcleos de abejas para la emisión de la certificación genética y sanitaria de sus criaderos; con ello se vigila que la las abejas se produzcan y comercialicen en estricto apego a la normativa oficial.</p>
+<p><br/></p>
+<p><strong>La certificación se emite en dos modalidades:</strong></p>
+<p>• Certificación genética y sanitaria: dirigida criaderos de abejas reina comerciales o F1 y a abejas reina progenitoras; además de las condiciones sanitarias se revisa el pie de cría empleado para la producción de abejas reina y de los zánganos para su fecundación.</p>
+<p>• Certificación genética y sanitaria: dirigida a apiarios productores de núcleos de abejas.</p>
+<p><br/></p>
+<h4 id="a-continuación-se-enlistan-los-criaderos-de-abejas-certificados-en-2017-y-2018."><strong>A continuación, se enlistan los criaderos de abejas certificados en 2017 y 2018.</strong></h4>
+<p><br/> <br/></p>
+<p align="center">
+<strong>Cuadro 9. Criaderos de Abejas Reina F1 certificados durante 2017-2018 (Certificación genética y sanitaria).</strong> <a href="tabs/t001.csv"><i class="fas  fa-download "></i></a>
+</p>
+<p><br/></p>
+<div id="htmlwidget-eaa88b8b1859bb42bb9d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eaa88b8b1859bb42bb9d">{"x":{"filter":"top","filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Campeche&quot;,&quot;Chihuahua&quot;,&quot;Coahuila&quot;,&quot;Colima&quot;,&quot;Estado de México&quot;,&quot;Michoacán&quot;,&quot;Morelos&quot;,&quot;Nayarit&quot;,&quot;Oaxaca&quot;,&quot;Q. Roo&quot;,&quot;Veracruz&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Apiarios Reina Maya - M. C. Ana Rosa Parra Canto&quot;,&quot;Apícola Elite - Marco Antonio Muñoz Enríquez&quot;,&quot;Apícola Los Pibes&quot;,&quot;Apícola Purépecha - Julián Cuauhtémoc Rodríguez Álvarez&quot;,&quot;Apícola Real del Valle S. P. R. de R. L. - C. Cristina Martínez Aquino&quot;,&quot;Apícola Valladolid - Ing. Martín Alejandro Saldaña Munguía&quot;,&quot;Criadero Magoc - C. Manuel Jesús Gómez Coral&quot;,&quot;Criadero Palajos  -  C. José Juan Pale Lara&quot;,&quot;Dionicio Cándia García&quot;,&quot;Distribuidora de Productos Apícolas Naturales&quot;,&quot;Enrique Estrada de la Mora&quot;,&quot;Felipe de Jesús Santana Colector&quot;,&quot;Instituto Tecnológico Superior de Hopelchén&quot;,&quot;Juan Antonio Pliego Quintos&quot;,&quot;Juan Paredes González&quot;,&quot;La Casa de la Abeja S. C. de R. L. de C. V.&quot;,&quot;Luis Ponciano Santana  Colector&quot;,&quot;Manuel Octavio Ramírez Salcido&quot;,&quot;Miel López - Ricardo López Hernández&quot;,&quot;Miel Santa Rosa - Ing. Jose Luis Garcia Nava&quot;,&quot;Mieles y Derivados del Sur S.P.R. de R.L.&quot;,&quot;Pedro Noel Morales Vidal.&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Ahuacatlán, Nay.&quot;,&quot;Cuernavaca, Mor.&quot;,&quot;Delicias, Chih.&quot;,&quot;Emiliano Zapata, Mor.&quot;,&quot;Felipe Carrillo Puerto, Q. Roo &quot;,&quot;Hopelchén, Camp.&quot;,&quot;Huatusco, Ver. &quot;,&quot;Jonacatepec, Mor.&quot;,&quot;Morelia, Mich.&quot;,&quot;Pátzcuaro, Mich.&quot;,&quot;Puente de Ixtla, Mor.&quot;,&quot;San Pablo Huixtepec, Oax.&quot;,&quot;Tecomán, Col.&quot;,&quot;Temixco, Mor.&quot;,&quot;Teocelo, Ver. &quot;,&quot;Toluca, Mex.&quot;,&quot;Torreón, Coah.&quot;,&quot;Uruapan, Mich.&quot;,&quot;Xochitepec, Mor&quot;,&quot;Yecapixtla, Mor.&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1200\" data-max=\"30000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22"],["Campeche","Coahuila","Colima","Chihuahua","Estado de México","Michoacán","Michoacán","Michoacán","Morelos","Morelos","Morelos","Morelos","Morelos","Morelos","Morelos","Morelos","Morelos","Nayarit","Oaxaca","Q. Roo","Veracruz","Veracruz"],["Instituto Tecnológico Superior de Hopelchén","Miel López - Ricardo López Hernández","Miel Santa Rosa - Ing. Jose Luis Garcia Nava","Manuel Octavio Ramírez Salcido","Juan Antonio Pliego Quintos","Apícola Los Pibes","Apícola Valladolid - Ing. Martín Alejandro Saldaña Munguía","Apícola Purépecha - Julián Cuauhtémoc Rodríguez Álvarez","Dionicio Cándia García","Distribuidora de Productos Apícolas Naturales","Enrique Estrada de la Mora","Felipe de Jesús Santana Colector","Juan Paredes González","La Casa de la Abeja S. C. de R. L. de C. V.","Luis Ponciano Santana  Colector","Mieles y Derivados del Sur S.P.R. de R.L.","Pedro Noel Morales Vidal.","Apícola Elite - Marco Antonio Muñoz Enríquez","Apícola Real del Valle S. P. R. de R. L. - C. Cristina Martínez Aquino","Apiarios Reina Maya - M. C. Ana Rosa Parra Canto","Criadero Magoc - C. Manuel Jesús Gómez Coral","Criadero Palajos  -  C. José Juan Pale Lara"],["Hopelchén, Camp.","Torreón, Coah.","Tecomán, Col.","Delicias, Chih.","Toluca, Mex.","Uruapan, Mich.","Morelia, Mich.","Pátzcuaro, Mich.","Emiliano Zapata, Mor.","Cuernavaca, Mor.","Temixco, Mor.","Xochitepec, Mor","Puente de Ixtla, Mor.","Jonacatepec, Mor.","Cuernavaca, Mor.","Cuernavaca, Mor.","Yecapixtla, Mor.","Ahuacatlán, Nay.","San Pablo Huixtepec, Oax.","Felipe Carrillo Puerto, Q. Roo ","Huatusco, Ver. ","Teocelo, Ver. "],[1200,2000,3000,12500,2000,5000,30000,8000,4000,10500,5000,6000,5600,4500,10000,5200,3000,24000,7000,2500,10000,25000]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Estado<\/th>\n      <th>Nombre<\/th>\n      <th>Ubicación<\/th>\n      <th>Capacidad de producción<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"language":{"info":"Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros","paginate":{"previous":"Anterior","next":"Siguiente"},"search":"Buscar:","lengthMenu":"Mostrar _MENU_ registros"},"columnDefs":[{"className":"dt-right","targets":4},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<p><br/> <br/> <br/></p>
+<p align="center">
+<strong>Cuadro 10. Criaderos de Abejas Reina Progenitora certificados durante 2017-2018 (Certificación Genética y Sanitaria).</strong> <a href="tabs/t0002.csv"><i class="fas  fa-download "></i></a>
+</p>
+<p><br/></p>
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Estado
+</th>
+<th style="text-align:left;">
+Nombre
+</th>
+<th style="text-align:left;">
+Ubicación
+</th>
+<th style="text-align:left;">
+Capacidad de producción
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Chihuahua
+</td>
+<td style="text-align:left;">
+Manuel Octavio Ramírez Salcido
+</td>
+<td style="text-align:left;">
+Delicias, Chih.
+</td>
+<td style="text-align:left;">
+120
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Morelos
+</td>
+<td style="text-align:left;">
+Distribuidora de Productos Apícolas Naturales
+</td>
+<td style="text-align:left;">
+Cuernavaca, Mor.
+</td>
+<td style="text-align:left;">
+Según demanda
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Morelos
+</td>
+<td style="text-align:left;">
+Enrique Estrada de la Mora
+</td>
+<td style="text-align:left;">
+Temixco, Mor.
+</td>
+<td style="text-align:left;">
+Según demanda
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Veracruz
+</td>
+<td style="text-align:left;">
+Criadero Palajos - José Juan Pale Lara
+</td>
+<td style="text-align:left;">
+Teocelo, Ver
+</td>
+<td style="text-align:left;">
+50
+</td>
+</tr>
+</tbody>
+</table>
+<p><br/> <br/> <br/></p>
+<p align="center">
+<strong>Cuadro 11. Productores de Núcleos certificados durante 2017-2018. (Certificación sanitaria).</strong> <a href="tabs/t0003.csv"><i class="fas  fa-download "></i></a>
+</p>
+<p><br/></p>
+<p><div id="htmlwidget-d3ba496780ae91ca92f9" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d3ba496780ae91ca92f9">{"x":{"filter":"top","filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Campeche&quot;,&quot;Chihuahua&quot;,&quot;Coahuila&quot;,&quot;Durango&quot;,&quot;Estado de México&quot;,&quot;Michoacán&quot;,&quot;Morelos&quot;,&quot;Nayarit&quot;,&quot;Oaxaca&quot;,&quot;Q. Roo&quot;,&quot;Quintana Roo&quot;,&quot;Veracruz&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Agropecuaria Real Maya S. P. R. de R. L. - Keny Abigail Ku Can&quot;,&quot;Altenza S. A. de C. V.   -  Ing. Felipe de Jesús González Chan&quot;,&quot;Apiarios Reina Maya  -  M. C. Ana Rosa Parra Canto&quot;,&quot;Apícola Los Pibes - Tec. Pedro José Ibañez&quot;,&quot;Apícola Purépecha - MVZ Julián Cuauhtémoc Rodríguez Álvarez&quot;,&quot;Apícola Real del Valle S. P. R. de R. L. - C. Cristina Martínez Aquino&quot;,&quot;Apícola Santa Rosa  -  Eugenia Cruz Villavicencio&quot;,&quot;Apícola Valladolid  -  Ing. Martín Alejandro Saldaña Munguía&quot;,&quot;Apicultores Mayas de Maní S.C. de R.L.  -  Rubén Darío Parra Canto&quot;,&quot;APIDEA Productos de la colmena y suministros apícolas. - MVZ Cuauhtémoc López Domínguez&quot;,&quot;Asesoría, Servicio y Producción Sima SC de RL de CV - Héctor Eduardo Sima Noh&quot;,&quot;Beatriz Candelaria Pech Can&quot;,&quot;Blanca Alonso Silva&quot;,&quot;Carmen Notario López&quot;,&quot;Centinela del Campo Rural S.P.R. de R.I.&quot;,&quot;Criadero Palajos  -  José Juan Pale Lara&quot;,&quot;Distribuidora de Productos Apícolas Naturales&quot;,&quot;Emilio Cervantes Martínez&quot;,&quot;Eugenia Cruz Villavicencio&quot;,&quot;Felipe de Jesús Santana Colector&quot;,&quot;Fernando Morales Chávez&quot;,&quot;Flores del Campo de Dzitbalché S.P.R de R.I.&quot;,&quot;Francisco Salazar Talavera&quot;,&quot;Grupo Solidario de Pustunich&quot;,&quot;Hecelchakan Península S.P.R. de R. I. - Carlos Rafael Ortegón Cervera &quot;,&quot;Héctor Alejandro Gálvez Licea&quot;,&quot;Ing. Jesús Socorro Márquez Morales&quot;,&quot;Jennifer Pamela Villarreal Salgado&quot;,&quot;Jesús del Angel Cahuich Chan&quot;,&quot;Jorge Valverde Galindo&quot;,&quot;José Armando Mas Pool&quot;,&quot;Juan Antonio Pliego Quintos&quot;,&quot;Juan Paredes González&quot;,&quot;Julio Sansores Sansores&quot;,&quot;La Casa de la Abeja S. C. de R. L. de C. V.&quot;,&quot;Luis Emilio Espinosa Herrera&quot;,&quot;Luis Ponciano Santana  Colector&quot;,&quot;Manuel Octavio Ramírez Salcido&quot;,&quot;Marcos Antonio Poot Chan&quot;,&quot;María Beatriz Martínez Rodríguez&quot;,&quot;Miel San Francisco S. P. R de R. L.&quot;,&quot;Mieles y Derivados del Sur S.P.R. de R.L.&quot;,&quot;Paulo Saul Rodríguez Castillo&quot;,&quot;Pedro Gonzalo Moo Chan&quot;,&quot;Pedro Noel Morales Vidal.&quot;,&quot;Proveedora de Productos del Campo Xbonil S.P.R. de R.I.&quot;,&quot;Ricardo López Hernández&quot;,&quot;Rosa Domínguez Gómez&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Bethania, Campeche&quot;,&quot;Calakmul Camp.&quot;,&quot;Calkini, Camp.&quot;,&quot;Canatlán, Dgo.&quot;,&quot;Carmen, Camp.&quot;,&quot;Cd. Cuauhtémoc, Chih.&quot;,&quot;Champotón, Camp.&quot;,&quot;Champotón, Camp. &quot;,&quot;China, Campeche&quot;,&quot;Cuernavaca, Mor.&quot;,&quot;Delicias, Chih.&quot;,&quot;Durango, Dgo.&quot;,&quot;Emiliano Zapata, Mor.&quot;,&quot;Escárcega, Camp.&quot;,&quot;Felipe Carrillo Puerto Quintana Roo.&quot;,&quot;Felipe Carrillo Puerto, Q. Roo&quot;,&quot;Gómez Palacio, Dgo.&quot;,&quot;Hecelchakan, Camp.&quot;,&quot;Hopelchén, Camp.&quot;,&quot;Jonacatepec, Mor.&quot;,&quot;Morelia, Mich.&quot;,&quot;Pátzcuaro, Mich.&quot;,&quot;Puente de Ixtla, Mor.&quot;,&quot;San Juan Lachao Nuevo, Oax.&quot;,&quot;San Juan Ozolotepec, Oax.&quot;,&quot;San Pablo Huixtepec, Oax.&quot;,&quot;Teocelo, Ver.&quot;,&quot;Tepic, Nay.&quot;,&quot;Toluca, Mex&quot;,&quot;Torreón, Coah.&quot;,&quot;Uruapan, Mich.&quot;,&quot;Valle De Zaragoza, Chih. &quot;,&quot;Villa de Tututepec de Melchor Ocampo, Oax.&quot;,&quot;Xochitepec, Mor.&quot;,&quot;Yecapixtla, Mor.&quot;,&quot;Zinapécuaro, Mich.&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"127\" data-max=\"3000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49"],["Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Campeche","Chihuahua","Chihuahua","Chihuahua","Chihuahua","Coahuila","Coahuila","Durango","Durango","Durango","Estado de México","Michoacán","Michoacán","Michoacán","Michoacán","Morelos","Morelos","Morelos","Morelos","Morelos","Morelos","Morelos","Morelos","Morelos","Nayarit","Oaxaca","Oaxaca","Oaxaca","Oaxaca","Q. Roo","Q. Roo","Quintana Roo","Veracruz"],["Agropecuaria Real Maya S. P. R. de R. L. - Keny Abigail Ku Can","Asesoría, Servicio y Producción Sima SC de RL de CV - Héctor Eduardo Sima Noh","Beatriz Candelaria Pech Can","Carmen Notario López","Centinela del Campo Rural S.P.R. de R.I.","Emilio Cervantes Martínez","Flores del Campo de Dzitbalché S.P.R de R.I.","Grupo Solidario de Pustunich","Hecelchakan Península S.P.R. de R. I. - Carlos Rafael Ortegón Cervera ","Jesús del Angel Cahuich Chan","José Armando Mas Pool","Julio Sansores Sansores","Luis Emilio Espinosa Herrera","María Beatriz Martínez Rodríguez","Marcos Antonio Poot Chan","Pedro Gonzalo Moo Chan","Proveedora de Productos del Campo Xbonil S.P.R. de R.I.","Ing. Jesús Socorro Márquez Morales","Manuel Octavio Ramírez Salcido","Manuel Octavio Ramírez Salcido","Paulo Saul Rodríguez Castillo","Francisco Salazar Talavera","Ricardo López Hernández","Fernando Morales Chávez","Jorge Valverde Galindo","Miel San Francisco S. P. R de R. L.","Juan Antonio Pliego Quintos","Apícola Los Pibes - Tec. Pedro José Ibañez","Apícola Valladolid  -  Ing. Martín Alejandro Saldaña Munguía","Apícola Purépecha - MVZ Julián Cuauhtémoc Rodríguez Álvarez","APIDEA Productos de la colmena y suministros apícolas. - MVZ Cuauhtémoc López Domínguez","Distribuidora de Productos Apícolas Naturales","Felipe de Jesús Santana Colector","Jennifer Pamela Villarreal Salgado","Juan Paredes González","La Casa de la Abeja S. C. de R. L. de C. V.","Luis Ponciano Santana  Colector","Mieles y Derivados del Sur S.P.R. de R.L.","Pedro Noel Morales Vidal.","Rosa Domínguez Gómez","Héctor Alejandro Gálvez Licea","Apícola Real del Valle S. P. R. de R. L. - C. Cristina Martínez Aquino","Apícola Santa Rosa  -  Eugenia Cruz Villavicencio","Blanca Alonso Silva","Eugenia Cruz Villavicencio","Altenza S. A. de C. V.   -  Ing. Felipe de Jesús González Chan","Apiarios Reina Maya  -  M. C. Ana Rosa Parra Canto","Apicultores Mayas de Maní S.C. de R.L.  -  Rubén Darío Parra Canto","Criadero Palajos  -  José Juan Pale Lara"],["Escárcega, Camp.","Bethania, Campeche","Hopelchén, Camp.","Carmen, Camp.","China, Campeche","Champotón, Camp.","Calkini, Camp.","Champotón, Camp.","Hecelchakan, Camp.","Champotón, Camp.","Calkini, Camp.","Hopelchén, Camp.","Hopelchén, Camp.","Champotón, Camp. ","Hopelchén, Camp.","Carmen, Camp.","Calakmul Camp.","Valle De Zaragoza, Chih. ","Delicias, Chih.","Delicias, Chih.","Cd. Cuauhtémoc, Chih.","Torreón, Coah.","Torreón, Coah.","Gómez Palacio, Dgo.","Durango, Dgo.","Canatlán, Dgo.","Toluca, Mex","Uruapan, Mich.","Morelia, Mich.","Pátzcuaro, Mich.","Zinapécuaro, Mich.","Cuernavaca, Mor.","Xochitepec, Mor.","Cuernavaca, Mor.","Puente de Ixtla, Mor.","Jonacatepec, Mor.","Cuernavaca, Mor.","Cuernavaca, Mor.","Yecapixtla, Mor.","Emiliano Zapata, Mor.","Tepic, Nay.","San Pablo Huixtepec, Oax.","San Juan Lachao Nuevo, Oax.","San Juan Ozolotepec, Oax.","Villa de Tututepec de Melchor Ocampo, Oax.","Felipe Carrillo Puerto, Q. Roo","Felipe Carrillo Puerto Quintana Roo.","Felipe Carrillo Puerto, Q. Roo","Teocelo, Ver."],[2000,1200,1000,1200,2000,800,2000,800,2000,800,800,2000,1200,1800,1000,800,2000,1000,1500,1000,800,3000,600,600,500,1000,1000,1500,1000,1000,1500,300,500,500,500,2000,1000,200,2000,127,1600,1000,1500,1000,1400,350,1350,600,200]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Estado<\/th>\n      <th>Nombre<\/th>\n      <th>Ubicación<\/th>\n      <th>Capacidad de producción<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"language":{"info":"Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros","paginate":{"previous":"Anterior","next":"Siguiente"},"search":"Buscar:","lengthMenu":"Mostrar _MENU_ registros"},"columnDefs":[{"className":"dt-right","targets":4},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script> <br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="https://datos.gob.mx/busca/dataset/criaderos-de-abejas-reina-y-nucleos-de-abejas-certificados-de-sagarpa-creado-el-2016-01-2-18-19" target="_blank">SADER. <em>Datos abiertos</em>. 2018.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="localización-de-centros-de-acopio-y-comercializadoras-de-miel">3.21. Localización de Centros de Acopio y Comercializadoras de Miel</h2>
+<hr />
+<p>Los centros de acopio son los lugares en donde se almacena la miel de los productores.</p>
+<p><strong>En el estado de Campeche</strong>, se cuenta con un censo de casi 6,600 productores con 343,989 colmenas; los productores se agrupan en organizaciones sociales y venden su miel a empresas sociales particulares, siendo las principales:</p>
+<p>• <strong>Empresas Sociales</strong>: Apicultores de Champotón; Miel y Cera de Campeche; Indígenas Cheneros; Productores de miel y derivados de Kabitah; Kaabil Lool Dzidzia Calakmul y 20 de noviembre Calakmul.</p>
+<p>• <strong>Empresas Particulares</strong>: Agropecuaria Santa Genoveva; Flor de Miel/Secundino Pech; Oaxaca Miel de Escárcega; Industrial Apícola de Quintana Roo, F. Berrón; Agroasociación Apícola Hecelchakán, F. Berrón; Maya Honey de Escárcega, T. Pech; Miel Mex de Escárcega; Miel Mex Carrillo Puerto; Apizano, Citrofrut y Mieles del Mayab, Hopelchén.</p>
+<p><em>Apicultores de Champotón y Miel de Campeche</em>, son empresas sociales que cuentan con 31 y 68 centros de acopio respectivamente, agrupan a la mayoría de las organizaciones de productores y operan con laboratorio de control de calidad.</p>
+<p><strong>En el estado de Yucatán</strong> se cuenta con centros de acopio de miel de distintos tipos de asociaciones, seis de ellos con laboratorios propios:</p>
+<p>• <strong>Sociedades Anónimas de capital variable</strong>: Industria Apícola de Quintana Roo (antes Agro asociación apícola); Apícola de la Región Peninsular; Mieles Naturales San Pedro; Miel Mex; Mi miel y Maya Honey.</p>
+<p>• <strong>Sociedades de Solidaridad Social</strong>: Asociación Apícola Maya Felipe Carrillo Puerto; Xolicab; La Flor del Tajonal; Lol Habin y Tzulicab.</p>
+<p><br/></p>
+<p>Las principales empresas exportadoras de miel en esta región operan con capital alemán como son los casos de <em>Rucker de México</em>, <em>Alfred L. Wolf</em>, <em>Maya Honey</em> y <em>Apícola del Mayab</em>.</p>
+<p>** En el resto del país**, otras empresas de importancia son <em>Hansa Mieles de México</em> y <em>Apiexport</em>, en Veracruz; <em>Agroasociación Apícola</em>, en Yucatán; <em>Hermez Honey</em>, en Chihuahua; <em>Rucker de México</em>, en Morelos (cuya planta permite envasar miel tipo mantequilla gracias a su altura sobre el nivel del mar); <em>Apiarios del Centro</em>, en Aguascalientes; <em>Miel Huachi</em> y <em>Miel Carlota</em>, en San Luis Potosí, y <em>Miel VitaReal</em>, en el Estado de México.</p>
+<p>Mención especial requieren las organizaciones productoras, acopiadoras y exportadoras de <strong>miel orgánica</strong>, que se ubican fundamentalmente en los estados de Yucatán, Campeche, Quintana Roo, Chiapas, Morelos, Guerrero y Oaxaca.</p>
+<p>El consumo de miel en México ha sufrido importantes cambios en los últimos años, como producto de las diferentes acciones de difusión realizadas por los envasadores y apicultores con el respaldo del gobierno federal y en algunos casos, de las autoridades estatales.</p>
+<p>Los canales de comercialización de la miel son dos: el primero se da por la venta directa de los productores al consumidor, que envasan su producción y realizan la venta en su región. El segundo canal de comercialización es el que se da con la industria, la que utiliza a la miel como un ingrediente para la elaboración de alimentos como son: cereales, yogurts, dulces y panes; o bien, como materia prima para la industria tabacalera y cosmetológica que ocupa cada vez más productos de la colmena en la elaboración de productos.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/ca199-3.pdf" target="_blank">SADER. Revista Claridades Agropecuarias. <em>Situación actual y perspectiva de la apicultura en México.</em>, Núm. 199, p. 3-34, marzo, 2010.</a></p>
+<p><br/></p>
+<h4 id="plan-rector-para-promover-una-denominación-de-origen-de-mieles-de-la-península-de-yucatán."><strong>Plan Rector para promover una denominación de origen de mieles de la Península de Yucatán.</strong></h4>
+<p>En 2009, la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO), a través del Corredor Biológico Mesoamericano-México, gestionó el proyecto <em>Hacia un plan rector para promover una Denominación de Origen de mieles de la Península de Yucatán</em> con apoyo del Fondo Mixto de Cooperación de la Agencia Española de Cooperación Internacional para el Desarrollo (AECID), la Unidad Coordinadora de Asuntos Internacionales de la Secretaria de Medio Ambiente del Gobierno de México y la Secretaria de Relaciones Exteriores.</p>
+<p>El objetivo del proyecto es promover el uso de indicaciones geográficas, en especial la Denominación de Origen (DO), como instrumento de diferenciación y valorización en la producción y la comercialización de las mieles de la península de Yucatán, región con la mayor producción de miel en México.</p>
+<p>Este Plan Rector, contiene apartados que incluyen temas relevantes para la Denominación de Origen y Marcas Colectivas de las mieles de la Península, antecedentes históricos, productivos, comerciales, institucionales que pueden justificar el otorgamiento de un distintivo de calidad. Se incluyen formas de difusión y de promoción local para la valorización de las mieles a corto y mediano plazo, así como una ruta crítica para la obtención de una Denominación de Origen. Un primer paso sería establecer Marcas Colectivas para aprender de ellas y con el tiempo implementar una Denominación de Origen de mieles de la Península de Yucatán.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/PlanRector_DenominaOrigenMielesPeninsulaYucatan.pdf" target="_blank">CONABIO. AECID. <em>Plan Rector para Promover una Denominación de Origen de mieles de la Península de Yucatán. Propuesta.</em> 2011.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="eventos-de-exposiciones-programas-técnico-científicos-y-ferias-apícolas">3.22 Eventos de exposiciones, programas técnico-científicos y ferias apícolas</h2>
+<hr />
+<p>Del 2 al 5 de febrero de 2018, en las instalaciones del Casino de la Feria Nacional de San Marcos en Aguascalientes, se realizaron simultánemente: el <strong><em>5º Congreso Mexicano de Apicultura</em></strong>, el <strong><em>4º Encuentro Apícola del Altiplano</em></strong> y la <strong><em>4ª Feria de la Miel</em></strong>.</p>
+<p>En dicho evento, se abordaron temas como: genética, cría de reinas, agroquímicos, nutrición, manejo integral de la colmena, varroa, pequeño escarabajo, inocuidad de la miel, desarrollo empresarial y buenas prácticas de apicultura.</p>
+<p>Ya en 2019, nuevamente en Aguascalientes, se llevó a cabo el <strong><em>5º Encuentro Apícola del Altiplano Aguascalientes 2019</em></strong>, la <strong><em>1a. Convención Nacional del Sector Apícola</em></strong> y <strong><em>5ª Feria de la Miel</em></strong>, del 1º al 4 de febrero, donde se dieron cita ponentes nacionales e internacionales, y personal del INEGI tuvo la oportunidad de presentar el Atlas Nacional de las Abejas y Derivados Apícolas.</p>
+<p>Eventos como los anteriores son de suma importancia para la transmisión de conocimientos y experiencias entre apicultores, organizaciones, especialistas, proveedores, instituciones y público en general interesado en la actividad apícola, con el fin de mejorar los procesos y métodos a lo largo de la cadena de actividades en la apicultura.</p>
+<p>Por último, del 22 al 24 de mayo de 2019 en las instalaciones de la Expo Chihuahua en dicha ciudad, se desarrolló el <strong><em>XXVI Congreso Internacional de Actualización Apícola</em></strong>, evento en el que se dieron cita investigadores de México y otras partes del mundo, para compartir experiencias y conocimientos sobre la ciencia detrás de la apicultura, desde temas de genética y manejo de enfermedades, hasta aspectos para mejorar la administración y economía de los apiarios.</p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Introducción</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Atlas Nacional de las Abejas <br>y Derivados Apícolas <br>(Versión Preliminar)</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Introducción
+  </a>
+</li>
+<li>
+  <a href="cap2.html">
+    <span class="fa fa-forumbee"></span>
+     
+    Abejas y Apicultura
+  </a>
+</li>
+<li>
+  <a href="cap3.html">
+    <span class="fa fa-globe"></span>
+     
+    La Miel en México
+  </a>
+</li>
+<li>
+  <a href="cap4.html">
+    <span class="fa fa-vial"></span>
+     
+    Propóleos
+  </a>
+</li>
+<li>
+  <a href="cap5.html">
+    <span class="fa fa-chart-bar"></span>
+     
+    Estadísticas
+  </a>
+</li>
+<li>
+  <a href="cap6.html">
+    <span class="fa fa-map"></span>
+     
+    Mapas
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Introducción</h1>
+
+</div>
+
+
+<p><img src="imag/Portada5.gif" style="display: block; margin: auto;" /></p>
+<div class="text-justify">
+<p></br> </br></p>
+<p>El <strong>Atlas Nacional de las Abejas y Derivados Apícolas</strong> integra la información existente en torno a la apicultura en México, desde las características de la miel, hasta aspectos relacionados con la actividad económica en torno a las especies domesticadas, de carácter técnico referentes a la crianza de abejas, los apoyos gubernamentales que existen y el volumen de producción de las entidades federativas, entre otros temas, acompañada de datos históricos sobre la apicultura.</p>
+<p>Dada la importancia del tema, y en cumplimientorgda con el artículo 3° de la Ley del Sistema Nacional de Información Estadística y Geográfica (SNIEG), que establece la finalidad de suministrar a la sociedad y al Estado, información de calidad, pertinente, veraz y oportuna, a efecto de coadyuvar al desarrollo nacional, el <strong>Instituto Nacional de Estadística y Geografía (INEGI)</strong>, en coordinación con la <strong>Secretaría de Agricultura y Desarrollo Rural (SADER, antes SAGARPA)</strong>, y otras Unidades de Estado que integran el SNIEG, presentan la <strong>versión preliminar del proyecto denominado <em>Atlas Nacional de las Abejas y Derivados Apícolas</em></strong>, mismo que ya se encuentra en proceso de publicación oficial.</p>
+<p>Este proyecto compila por primera vez en un mismo lugar, tanto información que ya se encuentra disponible en publicaciones y páginas web de las Unidades de Estado que colaboran en este proyecto, y de otros estudios relacionados, como datos que dichas unidades acordaron compartir con el INEGI, y que se han analizado y procesado para presentarse en forma dinámica, a efecto de ofrecer a usuarios específicos y al público en general, toda la información disponible hasta el momento en un único sitio web, con datos verificables y actualizables.</p>
+<p></br> </br> </br></p>
+<h1 id="justificación">Justificación</h1>
+<p><img src="imag/1_Just.gif" style="display: block; margin: auto;" /></p>
+<p>Actualmente existe una fuerte tendencia a realizar <em>Investigación Reproducible</em>, es decir, presentar reportes científicos o publicaciones donde los datos y el código utilizado estén disponibles para que otros puedan verificar los hallazgos, o enriquecerlos al contribuir en ellos, lo cual promueve la trasparencia y confianza en los resultados. En ese contexto, se presenta el <em>Atlas Nacional de las Abejas y Derivados Apícolas</em>, con la finalidad de tener un producto robusto y que sea punto de partida para detectar las necesidades de información sobre la apicultura, y con ello impulsar el desarrollo de esta importante actividad, de manera responsable y sustentable.</p>
+<p>El <em>Atlas Nacional de las Abejas y Derivados Apícolas</em> surge de la necesidad de identificar la situación en que se encuentran estos insectos, la cual es preocupante. El informe de la <a href="pdfs/SPM_Pollination_ES.pdf" target="_blank">Plataforma Intergubernamental Científico-Normativa sobre Diversidad Biológica y Servicios de los Ecosistemas</a> de las Naciones Unidas (IPBES, por sus siglas en inglés) advierte que el 40% de los polinizadores invertebrados, en particular algunos tipos de abejas y mariposas, podrían estarse enfrentando en este momento, a un proceso de extinción.</p>
+<p>Las abejas no son los únicos polinizadores, ya que hay muchos otros insectos que realizan esa labor. De hecho, el término <em>abejas</em> es muy inconcreto, pues existen unas 20,000 especies de abejas, de las que sólo un 5% son abejas de la miel o <em>Apis mellifera</em>. Es de resaltar que la abeja de la miel es una de las polinizadoras más eficientes, pues prospera en casi todos los ambientes del planeta, trabaja la mayor parte del año, forma poblaciones muy numerosas, y cada abeja suele ser fiel a un tipo de flor concreta, aumentando por tanto el índice de reproducción de las especies vegetales.</p>
+<p>La zoopolinización desempeña una función vital como regulador de los ecosistemas en la naturaleza. A nivel mundial, casi el 90% de las fitoespecies florales silvestres dependen, al menos parcialmente, de la transferencia de polen por los animales. Esas plantas son fundamentales para el funcionamiento continuo de los ecosistemas en tanto proporcionan alimentos, constituyen hábitats, y proveen otros recursos para una amplia variedad de otras especies. De la misma forma, se estima que entre 5% y 8% de la actual producción agrícola mundial depende directamente de la zoopolinización.</p>
+<p>En este contexto, el papel de la abeja melífera occidental se vuelve preponderante, debido a que es el polinizador gestionado de mayor diseminación en todo el planeta, y a nivel mundial existen alrededor de 81 millones de colmenas que, según estimaciones, producen anualmente 1.6 millones de toneladas de miel. La apicultura proporciona, en este sentido, una importante fuente de ingresos para muchas personas, sobre todo en el ámbito rural.</p>
+<p>La protección de las abejas y de polinizadores, y en general de la biodiversidad, pasa por el conocimiento de la especie. Este trabajo pretende contribuir en dicha tarea con al menos una de ellas, que es la más cotizada por sus productos.</p>
+<p>A modo ilustrativo, se muestra el siguiente video del 2014, en el que una tienda situada en Providence, Rhode Island, en los Estados Unidos, realiza un experimento muy interesante, retirando de sus anaqueles todos aquellos productos cuya existencia es posible gracias a la intervención de las abejas como polinizadores de sus cultivos. El resultado es muy impactante.</p>
+</div>
+<p><br></p>
+<div class="text-center">
+<iframe width="710" height="430" src="https://www.youtube.com/embed/aio9iKtkUxw" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<p></br> </br></p>
+<div class="text-justify">
+<h1 id="marco-normativo">Marco Normativo</h1>
+<p></br></p>
+<p>El Atlas surge como una necesidad de información explicitada en un exhorto enviado por la Cámara de Diputados en septiembre de 2017, en el que se solicita al INEGI que, con base en sus facultades como organismo coordinador del Sistema Nacional de Información Estadística y Geográfica, emprenda la elaboración de un <em>Atlas Nacional de Abejas y Derivados Apícolas</em>, para ser el encargado de recolectar, sistematizar e integrar la información necesaria para el <em>Atlas</em> con apoyo de la SADER (entonces SAGARPA).</p>
+<p>La facultades a que se refiere el párrafo anterior, están contempladas en la Ley del Sistema Nacional de Información Estadística y Geográfica, donde se mencionan los indicadores referentes a especies animales en su artículo 27: <em>“El Subsistema Nacional de Información Geográfica y del Medio Ambiente, en su componente del medio ambiente, <strong><em>procurará describir el estado y las tendencias del medio ambiente, considerando los medios naturales, las especies de plantas y animales, y otros organismos que se encuentran dentro de estos medios</em></strong>. El Subsistema referido en el párrafo anterior, deberá generar, como mínimo, indicadores sobre los siguientes temas: atmósfera, agua, suelo, flora, <strong><em>fauna</em></strong>, residuos peligrosos y residuos sólidos.”</em></p>
+<p>Por otra parte, el artículo 28 de la misma, complementa las facultades del INEGI al respecto: <em>“<strong><em>El Instituto elaborará, con la colaboración de las Unidades</em></strong>, los indicadores a que se refieren los dos artículos anteriores a partir de la información básica proveniente de: I. El Sistema Nacional de Información Ambiental y de Recursos Naturales; II. Un sistema integrado de inventarios y encuestas sobre recursos naturales y medio ambiente, y III. Los registros administrativos que permitan obtener Información en la materia.”</em></p>
+<p>Claramente, la ley faculta al INEGI no sólo como generador primario de información, sino también como entidad que puede coordinarse con otras Unidades del Estado para producir indicadores o información a partir de datos que dichas unidades posean.</p>
+<p><br></p>
+<p>Del mismo modo, en el Reglamento Interior del INEGI, documento que reglamenta la forma y términos en que el Instituto ejerce las atribuciones y facultades que la ley le confiere, se describen las siguientes atribuciones específicas de la Dirección General de Geografía y Medio Ambiente:</p>
+<p><em>Artículo 24, Fracción VII. Coadyuvar en el marco del Subsistema Nacional de Información Geográfica y del Medio Ambiente, en su componente del medio ambiente, <strong><em>en la descripción del estado y las tendencias del medio ambiente, considerando los medios naturales, las especies de plantas y animales</em></strong>, y otros organismos que se encuentran dentro de estos medios.</em></p>
+<p><em>Artículo 24, Fracción X. Coordinar la integración y actualización del acervo de información geográfica y del medio ambiente, <strong><em>al cual se incorporará la generada por las Unidades del Estado</em></strong> en los términos que al efecto determine la Dirección General de Coordinación del Sistema Nacional de Información Estadística y Geográfica.</em></p>
+<p><em>Artículo 24, Fracción XXXII. <strong><em>Generar e integrar estadísticas básicas y derivadas con base en</em></strong> encuestas en hogares y en establecimientos económicos, en encuestas especiales, en los censos nacionales de gobierno, y en <strong><em>la explotación de registros administrativos que aporten información sobre el estado de los recursos naturales y el medio ambiente.</em></strong></em></p>
+<p><br></p>
+<p>Y para la Dirección General Adjunta de Recursos Naturales y Medio Ambiente (DGARNMA), dicho reglamento confiere también atribuciones al respecto:</p>
+<p><em>Artículo 26, Fracción IV. <strong><em>Coadyuvar en la integración de la información generada por las distintas Unidades del Estado productoras de datos estadísticos de recursos naturales</em></strong> y medio ambiente, en coordinación con la Dirección General Adjunta de Integración de la Información.</em></p>
+<p><em>Artículo 26, Fracción VI. <strong><em>Coordinar y concertar con las Unidades del Estado generadoras de información las acciones necesarias para</em></strong> el diseño de la infraestructura conceptual y <strong><em>la producción de información estadística básica e indicadores del medio ambiente</em></strong> para unificar la generación de información por parte de las Unidades del Estado.</em></p>
+<p><em>Artículo 26, Fracción XIX. Integrar, con la colaboración de las Unidades del Estado, un sistema de inventarios y encuestas sobre recursos naturales y medio ambiente, cuya información permita la elaboración de indicadores, como mínimo, sobre los siguientes temas: recursos naturales y clima, así como atmosfera, agua, suelo, flora, fauna, residuos peligrosos y residuos sólidos.</em></p>
+<p><em>Artículo 26, Fracción XXIII. Coordinar y concertar con las Unidades del Estado acciones para la producción y actualización de información de recursos naturales y medio ambiente.</em></p>
+<p><br></p>
+<p>En este conjunto de esfuerzos que han dado origen al Atlas Nacional de las Abejas y Derivados Apícolas, el INEGI funge en su calidad de organismo coordinador del Sistema Nacional de Información Estadística y Geográfica, con el fin de realizar las gestiones y el acopio de información necesario ante otras Unidades del Estado, asi como el diseño, sistematización, procesamiento, difusión y actualización de los datos del Atlas.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

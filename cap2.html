@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Abejas y apicultura</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Atlas Nacional de las Abejas <br>y Derivados Apícolas <br>(Versión Preliminar)</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Introducción
+  </a>
+</li>
+<li>
+  <a href="cap2.html">
+    <span class="fa fa-forumbee"></span>
+     
+    Abejas y Apicultura
+  </a>
+</li>
+<li>
+  <a href="cap3.html">
+    <span class="fa fa-globe"></span>
+     
+    La Miel en México
+  </a>
+</li>
+<li>
+  <a href="cap4.html">
+    <span class="fa fa-vial"></span>
+     
+    Propóleos
+  </a>
+</li>
+<li>
+  <a href="cap5.html">
+    <span class="fa fa-chart-bar"></span>
+     
+    Estadísticas
+  </a>
+</li>
+<li>
+  <a href="cap6.html">
+    <span class="fa fa-map"></span>
+     
+    Mapas
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Abejas y apicultura</h1>
+
+</div>
+
+
+<p><img src="imag/4_Estadis.gif" style="display: block; margin: auto;" /></p>
+<div class="text-justify">
+<p><br/></p>
+<h2 id="biología-y-comportamiento-de-las-abejas">2.1. Biología y Comportamiento de las Abejas</h2>
+<p>La palabra abeja es el nombre común que reciben los insectos pertenecientes a la superfamilia <em>Apoidea</em> del orden <em>Himenóptera</em> (alas membranosas). En la actualidad, existen más de 20 mil especies de abejas en el mundo clasificadas en 9 familias, de las cuales 6 están presentes en México, con más de 1,800 especies descritas. Dentro de la familia <em>Apidae</em>, se clasifican las abejas del género <em>Bombus</em> (abejorros), <em>Melipona</em>, <em>Trigona</em>, <em>Euglossa</em> y <em>Apis</em>, siendo este último el más conocido por sus características de producción a través de las abejas <em>Apis mellifera</em>. Una colonia de abejas se conforma por tres castas: <em>reina</em>, <em>zángano</em> y <em>obrera</em>; específicamente una del género <em>Apis</em> puede llegar a tener hasta 60 mil abejas, de las cuales una es reina, cientos son zánganos y miles son obreras. Cada casta de la colonia presenta diferentes características:</p>
+<p><strong>Reina</strong>. Es la encargada de poner los huevos de donde nacerán todas las obreras y zánganos de la colmena. Presenta una metamorfosis de 16 días, proviene de un huevo fecundado y es alimentada con jalea real durante todo el tiempo que permanece en estado larval. Se estima que puede llegar a vivir hasta 5 años en vida silvestre.</p>
+<p><strong>Zángano</strong>. Su función principal es fecundar a la reina; presenta una metamorfosis de 24 días, proviene de un huevo sin fecundar (partenogénesis) y en etapa larvaria se alimenta con jalea real solo por tres días, después recibe néctar y polen de las abejas obreras; su tiempo de vida es variado, ya que después de fecundar a la reina se muere, y aquellos que no se reproducen viven el mismo tiempo que dura el periodo de floración, ya que dejan de ser alimentados al término de dicho periodo.</p>
+<p><strong>Obrera</strong>. Realiza diversas actividades de acuerdo a su desarrollo fisiológico. Presenta una metamorfosis de 21 días, su origen es a partir de un huevo fecundado y en etapa de larva es alimentada con jalea real por tres días, y después recibe pan de las abejas, alimento elaborado a base de miel y polen; su tiempo de vida en época de floración se estima en 45 días, o hasta 3 meses si no hay actividades de pecoreo.</p>
+<p><br/></p>
+<p><strong>COMPORTAMIENTO</strong></p>
+<p>Las abejas se pueden clasificar según sus rasgos de socialidad en abejas solitarias y abejas eusociales. Las de este último tipo, se caracterizan por utilizar un mismo nido, cooperar en el cuidado de la cría mediante un sistema de castas y tener generaciones superpuestas donde las crías ayudan a los adultos.</p>
+<p>Las abejas melíferas son consideradas como uno de los mejores insectos eusociales y su comportamiento es determinado por un conjunto de substancias químicas llamadas feromonas, las cuales son secretadas por diversas glándulas presentes en su cuerpo como son: la glándula hipofaríngea, mandibular y cerígena, entre otras. Cada feromona origina un comportamiento específico en las abejas. Por lo general, las feromonas contienen más de un componente químico y se pueden sintetizar en cualquier momento, ya sea durante un periodo de tiempo o solo por algún evento esporádico.</p>
+<p>Se pueden identificar feromonas que estimulan un comportamiento inmediato y reversible en cuanto son percibidas (liberadoras). Un ejemplo son las <em>feromonas de alarma</em>, cuya liberación desencadena un comportamiento defensivo entre las obreras. Existen otras feromonas que producen cambios en las respuestas fisiológicas (iniciadoras). Un ejemplo típico es la <em>feromona real</em>, que inhibe el desarrollo de los ovarios de las obreras de la colmena.</p>
+<p>De forma general, las actividades de las abejas a partir del día que emergen de la celdilla son:</p>
+<p>• <em>Obreras</em>. Dentro de los primeros cinco días, realizan actividades de limpieza y regulación de la temperatura interna de la colmena; posteriormente, cuando se desarrolla la glándula hipofaríngea, tienen la capacidad de producir jalea real, por lo que se dedican a alimentar a la cría hasta llegar a los 12 días. Durante un periodo que va de los 13 a los 18 días, pueden realizar diferentes actividades conforme a las necesidades de la colonia; es posible identificar abejas que se encargan de la construcción de los panales y del opérculo, gracias a la formación de cera mediante las glándulas cerígenas; otras que se encargan de recibir las cargas de alimento, agua y propóleos para depositarlos dentro de las celdillas o en lugares donde son necesarios. Ya más avanzadas de edad (día 19 al 21) y una vez que son capaces de producir veneno a través de ciertas glándulas, realizan actividades de guardia y protección; y finalmente, aproximadamente a los 22 días y hasta que termina su vida, se dedican a realizar actividades de pecoreo para traer néctar, polen y demás recursos necesarios para la colonia.</p>
+<p>• <em>Reina</em>. Durante los primeros 20 días pasa por diferentes procesos hasta alcanzar su madurez sexual y realizar vuelos de apareamiento con varios zánganos, posteriormente se dedica a ovopositar, llegando a colocar de mil a dos mil huevos al día.</p>
+<p>• <em>Zángano</em>. Durante los primeros 12 días se reúne en zonas de congregación con otros zánganos, donde tras desarrollar su madurez sexual, puede realizar vuelos de apareamiento con una abeja reina.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/Manual_BPP_en_la_Producci_n_primaria_de_Miel_octubre_2018.pdf" target="_blank">SADER. <em>Buenas Prácticas Pecuarias en la producción de Producción de Miel.</em> 2018.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="la-apicultura-como-actividad-económica">2.2. La Apicultura como Actividad Económica</h2>
+<hr />
+<p>La apicultura es una actividad agropecuaria orientada a la crianza de abejas, que se ha desarrollado a la par del surgimiento de las civilizaciones.</p>
+<p>En nuestro país tiene un alto valor social y económico, de ella dependen más de 43 mil productores, cuyo esfuerzo permite que nuestro país se ubique como el tercer exportador de miel en el mundo, después de China y Argentina.</p>
+<p>A pesar de los problemas que implican la presencia de la <em>abeja africana</em> en México (desde 1986) y la <em>Varroa</em> (desde 1992), los cambios climáticos y el deterioro de los recursos naturales vinculados a la producción apícola en los últimos años, la apicultura nacional ha mantenido sus niveles de producción, lo que refleja el arduo trabajo de los apicultores mexicanos, y el impacto positivo que han tenido los programas de apoyo gubernamental como el <em>Programa de Adquisición de Activos Productivos</em> y el <em>Programa Soporte en Inocuidad Pecuaria</em>.</p>
+<p>La producción de miel en México en el periodo 2014-2018, registró variaciones, reportándose un promedio de producción anual de 57,995 toneladas. En materia de exportaciones, durante el mismo periodo se estuvieron enviando al extranjero alrededor de 34,000 toneladas anuales, teniendo como destinos principales: Estados Unidos, Alemania, Bélgica, Arabia Saudita y Reino Unido; generando por este medio, un ingreso promedio anual de 124 millones de dólares, lo que confirma que la apicultura es una importante fuente de divisas para la economía mexicana.</p>
+<p>Actualmente, en todo el mundo se están impulsando proyectos para que los pequeños productores implementen la apicultura como una forma de ayudar a la gente a fortalecer su economía, promover el desarrollo de las comunidades y asegurar la continuidad del hábitat y de la diversidad biológica.</p>
+<p><br/></p>
+<h4 id="beneficios-de-la-apicultura"><strong>Beneficios de la apicultura:</strong></h4>
+<p>• La polinización de las plantas en flor, salvajes o cultivadas, es indispensable para que la vida continúe sobre la tierra. Este proceso esencial es de un valor inestimable.</p>
+<p>• A la gente de todo el mundo le gusta la miel: el más popular de los productos de la apicultura. Tradicionalmente, en casi todas las sociedades, la miel ha tenido una función medicinal y nutritiva. Ya sea comercializada a granel o envasada, la miel produce ganancias, y es capaz de crear medios de vida y desarrollo en varios sectores dentro de una sociedad.</p>
+<p>• La cera de abeja es un producto importante de la apicultura. La mayor parte del abastecimiento mundial proviene de los países en vías de desarrollo.</p>
+<p>• Los demás productos de la apicultura, como el polen, propóleos y la jalea real pueden ser comercializados, aunque se necesiten técnicas y materiales específicos para obtenerlos.</p>
+<p>• Los apicultores y otros miembros de la comunidad pueden generar bienes usando la miel y la cera de abeja en la elaboración de productos derivados, tales como candelas, ungüentos para la piel y hasta cerveza. La comercialización de un producto derivado generalmente se traduce en mejores ganancias al productor que la venta de la materia bruta.</p>
+<p>• Los productos de la apicultura son usados para la <em>Apiterapia</em>, en muchas sociedades.</p>
+<p>• La miel de abeja, la cera y sus productos derivados, tales como velas y productos alimenticios, tienen valor cultural en algunos lugares, y pueden ser usados en rituales para nacimientos, casamientos, funerales y ceremonias religiosas.</p>
+<p>• Los apicultores generalmente son respetados por el trabajo que desempeñan. Las abejas y los apicultores tienen una buena reputación.</p>
+<p>Estos beneficios fortalecen el sistema de vida y desarrollo de la población. La apicultura puede contribuir a reducir la vulnerabilidad económica de las comunidades, sobre todo en los estratos más pobres, y a promover un entorno de desarrollo económico sustentable.</p>
+<p><strong><em>Fuentes:</em></strong></p>
+<p><a href="pdfs/ABEJAS_CONEJOS_ORGANISMOS_ACUATICOS_MEMORIAS.pdf" target="_blank">Memorias de la <em>Reunión Internacional de Ciencias Veterinarias. UNAM. Facultad de Medicina Veterinaria y Zootecnista.</em> Junio, 2016.</a></p>
+<p><a href="http://www.fao.org/docrep/008/y5110s/y5110s00.htm" target="_blank">Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). <em>La apicultura ayuda a crear sistemas de vida sostenibles</em>. La apicultura y los medios de vida sostenibles (Folleto de la FAO sobre diversificación), 2005.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="las-abejas-promotoras-del-equilibrio-ecológico">2.3. Las Abejas, Promotoras del Equilibrio Ecológico</h2>
+<hr />
+<p>En general, los insectos tienen un papel crucial en los ecosistemas naturales, pues forman parte fundamental de la biodiversidad.</p>
+<p>En el caso específico de las abejas, su rol con respecto al equilibrio ecológico es clave, dado su relevante papel en la polinización. La pérdida de biodiversidad que sobrevendría si las abejas desaparecieran o se vieran minimizadas, significaría una catástrofe ambiental. En términos de nutrición humana, la seguridad alimentaria se vería comprometida, pues alrededor de un 35% de la producción mundial de alimentos depende directamente de la polinización que ellas producen.</p>
+<p>Para la mayor parte de las especies vegetales, la reproducción necesita el traslado del polen desde las anteras, o partes masculinas de una flor, hasta los estigmas, o sea, sus partes femeninas, ya sea de la misma planta o de otras plantas que se encuentren a cierta distancia; lo anterior es lo que se denomina <em>polinización</em>. Después de miles de años de evolución y de adaptación a los ambientes locales, cada especie vegetal tiene exigencias específicas para el transporte de su polen; muchas de las cuales dependen de los insectos forrajeadores que lo trasladan de flor en flor. Muchas especies de insectos visitan las flores para buscar su néctar o polen y, mientras lo hacen, transportan los gránulos que contribuirán a la polinización.</p>
+<p>Las abejas melíferas son insectos polinizadores altamente eficaces, ya que tienen el cuerpo cubierto de pelos que recogen fácilmente miles de gránulos de polen cuando se mueven al interior de las flores; además, visitan solamente una especie de flor durante cada uno de sus viajes. En una sola jornada una abeja puede visitar miles de flores de una misma especie, recogiendo el néctar y el polen y esparciendo en todo momento los gránulos de polen por todas las flores que visita.</p>
+<p>Más allá del aspecto económico, la polinización adquiere relevancia en términos de supervivencia, puesto que asegura la continuidad de las especies vegetales en el planeta. Si este proceso falla, la cadena trófica también lo hará. Por ello, incluso una leve disminución en la eficacia de la polinización, se traduciría en irremediables pérdidas de especies animales y vegetales, contando con aquellos que el ser humano necesita para asegurar su alimentación.</p>
+<p>Abejas y plantas forman de este modo, un pilar que alimenta y enriquece el ecosistema, y que a su vez nutre a multitud de insectos, aves y mamíferos.</p>
+<p>La Secretaría de Agricultura y Desarrollo Rural (SADER) señala que la apicultura en México tiene una gran importancia socioeconómica y ecológica, ya que las abejas son fundamentales para el equilibrio del medio ambiente, por ello, es importante implementar acciones que favorezcan su conservación y protección en el país.</p>
+<p><strong><em>Fuentes:</em></strong></p>
+<p><a href="http://www.fao.org/docrep/008/y5110s/y5110s00.htm" target="_blank">Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). <em>Las abejas son los diligentes polinizadores de las frutas y cultivos</em>. La apicultura y los medios de vida sostenibles (Folleto de la FAO sobre diversificación), 2005.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="instalación-manejo-y-mantenimiento-de-apiarios">2.4. Instalación, Manejo y Mantenimiento de Apiarios</h2>
+<hr />
+<div class="figure" style="text-align: center">
+<img src="imag/_MG_2917.JPG" alt="**Fig. 2 Apiario con núcleos de fecundación**" width="80%" />
+<p class="caption">
+<strong>Fig. 2 Apiario con núcleos de fecundación</strong>
+</p>
+</div>
+<p>Del lugar y condiciones de que dispongan las abejas dependerá en gran medida que los resultados del apiario sean satisfactorios. Si las abejas cuentan con los medios para fortalecer y desarrollar su colonia, acopiarán en abundancia néctar y polen, lo que se traducirá en beneficios económicos para el apicultor.</p>
+<p>La instalación de los apiarios debe hacerse en terrenos que al momento de la floración no estén sujetos a la aplicación de plaguicidas agrícolas y otras sustancias tóxicas, debe evitarse instalar los apiarios cerca de desagües de aguas negras, granjas pecuarias, a pie de carretera, fábricas o zonas urbanas y escolares, principalmente.</p>
+<p>En México se lleva a cabo un proceso de africanización, por lo que existe el riesgo de problemas por ataques de abejas a personas y animales. Para evitar esta situación, se recomienda ubicar los apiarios en zonas que ofrezcan el máximo de seguridad a la comunidad. Estas y otras sugerencias son fundamentales para la buena instalación de un apiario. El apicultor debe estar atento a las condiciones que puedan beneficiar o afectar a las abejas y a la calidad de sus productos, en todo momento, a fin de evitar riesgos innecesarios.</p>
+<p>Asímismo, en la instalación de apiarios se debe evitar colocar las colmenas en lugares húmedos. En regiones muy calurosas se recomienda ubicarlas en sitios de sombra y procurar que no sean completamente cerradas. El lugar en donde se instalen las colmenas debe estar limpio de maleza, sin hormigueros u otros enemigos de las abejas alrededor. Las colmenas se deben colocar sobre una base resistente de metal, piedras o ladrillos para que no estén directamente sobre el piso, y alcancen una altura mínima de 20 cm del suelo, lo que facilitará su manejo y favorecerá la ventilación de la colmena. La instalación de apiarios debe contar con el espacio suficiente entre colmenas y deberá estar debidamente señalizado, y procurar que tenga buen acceso todo el año para el vehículo o equipo que se use en el traslado o recolección de alzas.</p>
+<p>Se sugiere también que el apiario se sitúe preferentemente en un lugar nivelado y seco, con espacio suficiente, de tal forma que se transite libremente por detrás de las colmenas para realizar las diferentes prácticas de manejo. Se recomienda de 2 a 3 metros de separación entre cada colmena.</p>
+<p>El manejo en las colmenas reúne una serie de actividades y procedimientos destinados a aumentar la reproducción de las abejas y posteriormente su productividad. Incluye las consideraciones para la compra y uso de cera estampada; así como la alimentación artificial.</p>
+<p><strong><em>Fuentes:</em></strong></p>
+<p><a href="pdfs/ABEJAS_CONEJOS_ORGANISMOS_ACUATICOS_MEMORIAS.pdf" target="_blank">Universidad Nacional Autónoma de México (UNAM). Facultad de Medicina Veterinaria y Zootecnista (FMVZ). Memorias de la <em>Reunión Internacional de Ciencias Veterinarias.</em> Junio, 2016.</a></p>
+<p><a href="pdfs/Manual_BPP_en_la_Producci_n_primaria_de_Miel_octubre_2018.pdf" target="_blank">SADER. <em>Buenas Prácticas Pecuarias en la producción de Producción de Miel.</em> 2018.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="multiplicación-de-colmenas">2.5. Multiplicación de Colmenas</h2>
+<p><strong>Formas distintas de hacer divisiones para multiplicar las colmenas.</strong></p>
+<p>Una división es la toma de una o varias colmenas de abejas capaces de formar una nueva colonia. La división es para aumentar el número de colmenas en producción en la época de cosecha; es una práctica que se realiza 2 meses antes de primavera en trópico; es decir en los meses de enero y marzo con la finalidad de poseer gran número de colmenas ya sea en el año en curso o en la siguiente cosecha.</p>
+<p>Otra de las razones de las divisiones es para disminuir la fiebre de la enjambrazón, control de las enfermedades y para aumentar los ingresos por la venta de los núcleos resultantes de las divisiones. Antes de hacer la enjambrazón artificial primero se debe tener un conocimiento general de su pasado de las colonias participantes como colonia madre, edad de la reina, provisiones, patrón de postura, estado de salud y su nivel de producción en los últimos dos años.</p>
+<p>Existen muchas formas de enjambrar artificialmente a las colmenas, pero en este apartado únicamente se explicará 3 maneras que son las más usadas en la apicultura como son:</p>
+<p><em>División en dos a partir de una colmena.</em> La colmena se divide en dos partes iguales, tomando igual número de cuadros, abejas para ambas nuevas familias, y la reina queda en la colmena madre. La colonia huérfana o nueva colonia, se coloca en el sitio de la cepa madre con el fin de reforzar con las pecoreadoras que estaban fuera al momento de realizar la división. La cepa madre es llevada a 20 metros del sitio original, para evitar que las abejas sin reina se cambien de caja, ya que no están acostumbradas a vivir sin reina.</p>
+<div class="figure" style="text-align: center">
+<img src="imag/2_5_Dia1.png" alt="**Diagrama 1. División en dos a partir de una colmena**" width="70%" />
+<p class="caption">
+<strong>Diagrama 1. División en dos a partir de una colmena</strong>
+</p>
+</div>
+<p><br/></p>
+<p><em>Método de abanico.</em> Se toman 8 cuadros con abejas sin reina de la cepa madre y se trasladan a una caja nueva, esto es colocada en el sitio de la madre para reforzar con las pecoreadoras que llegan de recolectar néctar y polen, por lo que la colmena original con dos cuadros junto con la reina es llevada a 20 metros de su sitio original. La colmena con 8 cuadros sin reina se divide en 4 nuevas colonias. Después de 8 a 10 días se considera un periodo suficiente para que las abejas construyan celdas realeras. <br/><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/2_5_Dia2.png" alt="**Diagrama 2. Método de abanico**" width="70%" />
+<p class="caption">
+<strong>Diagrama 2. Método de abanico</strong>
+</p>
+</div>
+<p><em>Método provenzal.</em> Es un método similar al método de abanico solo que los dos cuadros con abejas y sin reina se lleva lejos del sitio original, mientras los otros 8 cuadros más la presencia de la reina permanece en el sitio original de la colmena madre.</p>
+<div class="figure" style="text-align: center">
+<img src="imag/2_5_Dia3.png" alt="**Diagrama 3. Método provenzal**" width="70%" />
+<p class="caption">
+<strong>Diagrama 3. Método provenzal</strong>
+</p>
+</div>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/ftapicultura.pdf" target="_blank">Universidad Autónoma Chapingo. <em>Manual de Apicultura.</em> 2012.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="acciones-y-programas-gubernamentales-en-pro-de-la-apicultura">2.6. Acciones y Programas Gubernamentales en Pro de la Apicultura</h2>
+<hr />
+<h3 id="programa-de-fomento-ganadero-de-la-sader-en-apoyo-a-la-apicultura">2.6.1. Programa de Fomento Ganadero de la SADER en Apoyo a la Apicultura</h3>
+<p>En los últimos años, en los planes nacionales de desarrollo se ha establecido como una de las cinco metas nacionales, la construcción de un sector agropecuario y pesquero productivo que garantice la seguridad alimentaria del país, mediante cinco estrategias: Impulsar la productividad a través de la inversión en el desarrollo de capital físico, humano y tecnológico; el aprovechamiento sustentable de los recursos naturales del país; así como los modelos de asociación que generen economías de escala y mayor valor agregado de los productores del sector agroalimentario.</p>
+<p>Por otra parte, la Ley Federal de Presupuesto y Responsabilidad Hacendaria establece que la Cámara de Diputados en el Presupuesto de Egresos, podrá señalar los programas, a través de los cuales se otorguen subsidios, y que deberán sujetarse a reglas de operación, con el objeto de asegurar que la aplicación de los recursos públicos se realice con eficiencia, eficacia, economía, honradez y transparencia.</p>
+<p>Bajo ese contexto, las reglas de operación de los programas de la SADER se integran con una estructura dirigida a desarrollar y potencializar la productividad y eficiencia de los productores del sector agropecuario, pesquero y acuícola; definen los diferentes tipos de apoyo que se otorgan en efectivo o en especie, señalando montos o unidades a entregar por beneficiario.</p>
+<p>Los programas y sus componentes están sujetos al presupuesto autorizado en el Presupuesto de Egresos de la Federación para el año fiscal correspondiente; incluyen estímulos de diferente orden, y sus objetivos, componentes y conceptos se complementan para atender las necesidades de los productores.</p>
+<p>El objetivo del <em>Programa de Fomento Ganadero</em> es la inversión en el sector pecuario para incrementar la producción de alimentos de origen animal en las unidades económicas pecuarias.</p>
+<p><br/></p>
+<p>Los componentes a los cuales se puede acceder para capitalizar las unidades de producción apícola son:</p>
+<p><strong>I. Capitalización Productiva Pecuaria.</strong></p>
+<p>A través de: Infraestructura, Maquinaria y Equipo para la transformación de productos pecuarios.</p>
+<p><strong>II. Estrategias Integrales para la Cadena Productiva.</strong></p>
+<p>Comprende:</p>
+<ol style="list-style-type: decimal">
+<li>Incentivos a la Postproducción Pecuaria.<br />
+</li>
+<li>Reproducción y Material Genético Pecuario.</li>
+</ol>
+<p><strong>III. Investigación, Innovación y Desarrollo Tecnológico Pecuarios.</strong></p>
+<p>Consta de:</p>
+<ol style="list-style-type: decimal">
+<li>Investigación, Innovación y Desarrollo Tecnológico Pecuarios.<br />
+</li>
+<li>Recursos Zoogenéticos Pecuarios.</li>
+</ol>
+<p><br/> <br/></p>
+<p><strong>Requisitos específicos por componente:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Infraestructura, Maquinaria y Equipo para la transformación de productos pecuarios.</strong> <em>Solicitud de Apoyo Programa de Fomento Ganadero</em>; <em>Listado de Productores Integrantes de la Persona Moral Solicitante</em>; y <em>Proyecto de Inversión</em>, apegado al guión único incluido en las reglas de operación, para inversiones mayores a quinientos mil pesos.</p></li>
+<li><p><strong>Reproducción y Material Genético Pecuario.</strong> Sementales, semen, embriones de las distintas especies pecuarias y material genético apícola. Se ajustarán a lo establecido en los <em>Elementos Técnicos y Valores de Referencia</em> de los conceptos de <em>Apoyo al Programa de Fomento Ganadero</em>.</p></li>
+<li><p><strong>Paquete Tecnológico Reproductivo.</strong> El paquete tecnológico reproductivo deberá ser autorizado por la Unidad Responsable a solicitud de la Instancia Ejecutora.</p></li>
+<li><p><strong>Investigación, Innovación y Desarrollo Tecnológico Pecuarios.</strong> Solicitud de Apoyo Programa de Fomento Ganadero; Listado de Productores Integrantes de la Persona Moral Solicitante; Guión para elaboración de Proyectos del Componente de Investigación, Innovación y Desarrollo Tecnológico Pecuarios (incluido en las reglas de operación del programa).</p></li>
+</ol>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="https://www.gob.mx/agricultura/documentos/documentos-del-programa-de-fomento-ganadero-2019" target="_blank">Programa de Fomento Ganadero, 2019. SADER</a></p>
+<p><br/></p>
+<h3 id="programa-nacional-para-el-control-de-la-abeja-africana-pnpcaa">2.6.2. Programa Nacional para el Control de la Abeja Africana (PNPCAA)</h3>
+<p><strong>La abeja africana se reportó por primera vez en México en 1986</strong>; estas abejas se caracterizan por presentar elevado comportamiento reproductivo, escaso almacenamiento de miel, abandono o evasión de las colmenas ante situaciones de riesgo o falta de alimento y un marcado instinto de defensa. Su comportamiento puede ocasionar pérdidas en la infraestructura (colmenas despobladas), disminución de la producción apícola, mayores costos de producción para los apicultores (por la necesidad de usar equipo de protección, la reubicación de sus apiarios hacia zonas más alejadas y el cambio de abejas reina), y frecuentes ataques a personas y animales domésticos, lo que adicionalmente ocasiona el rechazo de la población a la presencia de apiarios. Todo esto, puede llevar al abandono de la actividad por parte del apicultor. Paradójicamente, la abeja africana tiene un alto potencial para generar abejas con buenas características, mediante selección y mejoramiento genético.</p>
+<p>Previo al arribo de la abeja africana a México, y con el propósito de evitar un impacto negativo en la apicultura, similar a lo registrado en Sur y Centroamérica, el 30 de octubre de 1984, se emitió el decreto presidencial por el cual se considera de orden público e interés social la prevención y control de la abeja africana. Posteriormente, la entonces <em>Secretaría de Agricultura y Recursos Hidráulicos</em> (ahora SADER), creó el <strong>Programa Nacional Para el Control de la Abeja Africana</strong>, el 3 de diciembre de 1984; y el 10 de abril de 1985 se publicó el acuerdo por el cual se establece el Comité Consultivo, como instrumento de coordinación y asesoría para el cumplimiento del Programa.</p>
+<p>Tomando como base el proceso de africanización en el sur del continente y ante el inminente arribo, dispersión y establecimiento de la abeja africana en nuestro país, se consideraron cuatro fases en la estrategia de acciones a adoptarse en la actividad apícola, para afrontar a la abeja africana y sus posibles efectos:</p>
+<p>• La primera fase, denominada de <em>PREVENCIÓN</em>, comprendió las actividades de los apicultores previo al ingreso de las abejas africanas a su región, a fin de que afrontaran el problema con la mayor capacidad y preparación.</p>
+<p>• En la segunda fase, de <em>CONTENCIÓN</em>, se consideró la vigilancia y notificación del arribo de los primeros enjambres, así como la ejecución de acciones para retrasar la dispersión y multiplicación de colonias africanas. Se inició la captura del máximo posible de enjambres africanos, así como la protección de la comunidad y los animales domésticos.</p>
+<p>• La tercera fase, llamada de <em>CONTROL</em> correspondió a la reproducción de las colonias africanas. En esta fase, se requirió intensificar las acciones de control, sobre todo orientadas a inducir el cambio de reinas, a fin de mantener las características favorables de las abejas producto de la cruza de reinas europeas y zánganos africanos; así como el desarrollo de investigación científica sobre la abeja africana.</p>
+<p>• La cuarta fase, de <em>MEJORAMIENTO</em>, fue aplicable tras la saturación. En ella, se han mantenido acciones y técnicas de control conocidas. Se aplica el mejoramiento genético y el desarrollo de estudios tendientes al aprovechamiento óptimo de las colonias africanas seleccionadas.</p>
+<p>Tal como fue previsto, <strong>actualmente existe presencia de abejas africanas en todas las regiones apícolas del país</strong>, representando un riesgo latente para la producción apícola y para la sociedad. Al no existir una tecnología que permita su erradicación, se requieren acciones de control en forma permanente, para evitar altos niveles de africanización en los apiarios (reemplazo de genes europeos por africanos en las abejas) y los efectos mencionados.</p>
+<p><br/></p>
+<h4 id="servicios-proporcionados-a-través-del-pnpcaa"><strong>Servicios proporcionados a través del PNPCAA</strong></h4>
+<p>Con el propósito de <strong>proteger el valor social y económico de la apicultura en México</strong>, de los riesgos inherentes a la presencia de la abeja africana, a través del Programa Nacional para el Control de la Abeja africana se proporcionan diversos servicios a los apicultores, destacando:</p>
+<ol style="list-style-type: decimal">
+<li><p>El acompañamiento técnico a los productores apícolas sobre la importancia, prevención y control de los riesgos derivados de la presencia de la abeja africanizada y las acciones inherentes como son: la correcta instalación de apiarios, el manejo, control y aprovechamiento de enjambres, y la sustitución de abejas reina, entre otros.</p></li>
+<li><p>La <strong>supervisión y asesoría a productores o criadores de abejas reina y de núcleos de abejas interesados en obtener la certificación genética y sanitaria</strong> de la producción del material biológico apícola, para garantizar que éste se obtenga, comercialice y movilice en estricto apego a la normativa oficial. Adicionalmente, esta acción permite a los productores ser proveedores de este material biológico en los programas de apoyo de la SADER.</p></li>
+<li><p>La asesoría para el desarrollo de programas de selección y mejoramiento genético apícola, a fin de que los productores, especialmente en las zonas con alta presencia de abeja africana, aprovechen las características favorables de esta abeja (mayor actividad y menor susceptibilidad a la presencia de enfermedades) y reducir la frecuencia de aquellos comportamientos negativos, para que una vez seleccionada, puedan emplearla como pie de cría en la producción de abejas reina.</p></li>
+<li><p><strong>Asesoría para la prevención de accidentes en personas y animales</strong>, como mecanismo para reducir riesgos a la población, el rechazo a la práctica apícola en zonas rurales por temor a las abejas, y posicionar la importancia de la apicultura entre la población.</p></li>
+<li><p>La atención de solicitudes de servicios de <strong>capacitación en el manejo y control de enjambres</strong> para la prevención de accidentes, dirigidos a los cuerpos de seguridad, como son los cuerpos de bomberos y de policía municipal, así como las brigadas de protección civil, entre otras.</p></li>
+<li><p>La promoción e inducción, directamente con las instancias de protección civil en sus distintos niveles, para la integración de los comités para el control de la abeja africana. Asimismo, la inducción de campañas de promoción a la prevención de accidentes por abejas, en coordinación con las instituciones vinculadas a la protección de la ciudadanía.</p></li>
+<li><p>La coadyuvancia con las instancias municipales de protección civil para prevenir accidentes por abejas en la población.</p></li>
+<li><p>La organización y realización de <strong>eventos para la promoción del consumo de la miel y otros productos de las abejas</strong>, y la promoción a la importancia de la apicultura (y en especial de las abejas), como mecanismo para generar mayores ingresos a los productores, necesarios para afrontar el incremento en sus costos de producción, derivados de la presencia de la abeja africana. Entre estas acciones se encuentran:</p>
+<p>8.1. <em>Eventos de degustación de miel y subproductos apícolas (EXPOMIEL)</em>, en los cuales los propios apicultores realizan la comercialización de sus productos y asesoran al público en general acerca de sus propiedades y de la forma en la que pueden prevenir fraudes por la venta de productos adulterados o apócrifos.</p>
+<p>8.2. <em>Organización del Concurso de Dibujo Infantil</em>, realizado año con año, a nivel estatal y nacional, en coordinación con instancias de educación, consistente en la difusión de la importancia de la abeja y sus productos, a través de pláticas en escuelas y la convocatoria para que los niños elaboren dibujos con dicha temática.</p></li>
+<li><p><strong>La capacitación especializada, para la adopción de tecnología</strong> y la diversificación de la actividad apícola; sustituyendo el esquema tradicional de producción exclusiva de miel y su comercialización a granel, por la producción adicional de polen, propóleos, jalea real y su agregación de valor mediante la industrialización, para generar subproductos, como complementos alimenticios y cosméticos, entre otros.</p></li>
+<li><p><strong>Acompañamiento técnico en la adopción de las Buenas Prácticas de Producción Apícola</strong>, a fin de que los productores apícolas puedan integrarse a las cadenas productivas y se mantenga la competitividad de la miel mexicana en el mundo, aún cuando se trabaja con abejas africanizadas. Como parte de esta acción, se realiza la supervisión de unidades de producción y se emite un reconocimiento a los productores que modifican su infraestructura y procedimientos productivos conforme a los <em>Manuales de Buenas Prácticas de Producción de Miel</em>, elaborados y difundidos por la SADER.</p></li>
+</ol>
+<p><br/></p>
+<p>Los distintos servicios <strong>se proporcionan a demanda y de forma gratuita</strong>, a través del personal adscrito a este programa en las delegaciones y en las oficinas centrales de la SADER, siendo susceptibles de atención todos los productores y organizaciones solicitantes, de acuerdo a la disponibilidad de recursos.</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/_MG_3483.JPG" alt="**Fig. 6 Oficina en Aguascalientes para el apoyo a la apicultura.**" width="80%" />
+<p class="caption">
+<strong>Fig. 6 Oficina en Aguascalientes para el apoyo a la apicultura.</strong>
+</p>
+</div>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://dof.gob.mx/nota_detalle.php?codigo=5455751&amp;fecha=05/10/2016" target="_blank">Norma Oficial Mexicana NOM-002-SAG/GAN-2016, Actividades técnicas y operativas aplicables al Programa Nacional para el Control de la Abeja Africana.</a></p>
+<p><br/> <br/> <br/></p>
+<p><a name=a002></a></p>
+<h2 id="asociaciones-nacionales-y-locales-de-apicultores-profesionales-e-investigadores">2.7. Asociaciones Nacionales y Locales de Apicultores, Profesionales e Investigadores</h2>
+<hr />
+<p>El siguiente, es un directorio de algunas de las más importantes instituciones especializadas, cámaras empresariales, asociaciones de industriales, y centros editoriales vinculados al giro.</p>
+<p><br/></p>
+<p align="center">
+<strong>Cuadro 1. Asociaciones, cámaras, instituciones y publicaciones relacionadas con la apicultura.</strong> <a href="tabs/asociaciones_api2.csv"><i class="fas  fa-download "></i></a>
+</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+NOMBRE
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+DIRECCIÓN Y TELÉFONO
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Notiabeja. Publicación bimestral editada por: El Programa Nacional para el Control de la Abeja Africana
+</td>
+<td style="text-align:left;">
+Av. Municipio Libre No. 377, Col. Santa Cruz Atoyac, Alcaldía de Benito Juárez, C.P. 03310, Ciudad de México Tel. 38711000 Ext. 33929
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apicultura Moderna. Instituto de Investigación Apícola de México A.C. Publicación Semestral, editada por Francisco J. Trujillo Flores
+</td>
+<td style="text-align:left;">
+Apartado Postal 5-885, Guadalajara, Jalisco, CP 04500 Tel. (33) 3619-35-25
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gaceta Apícola. Publicación semestral. Editada por Enrique Estrada de la Mora.
+</td>
+<td style="text-align:left;">
+Paseo de los Burgos No. 385; Frac. Burgos, Cuernavaca, Morelos CP 62580 Tel. 52 (73) 26-02-69.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cámara Nacional de la Industria de la Transformación. (CANACINTRA)
+</td>
+<td style="text-align:left;">
+San Antonio No. 256; Col. Ampliación Nápoles, 03849, México, D.F. Tel. 5563-3400, 5563-0501
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Confederación de Cámaras Industriales de los Estados Unidos Mexicanos (CONCAMIN)
+</td>
+<td style="text-align:left;">
+Manuel Mª Contreras 133, piso 1 Col. Cuauhtémoc, C.P. 06500, México, D.F. Tel. 5566-7822, 5703-2591, 5703-2773.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Jesús María, Ags.
+</td>
+<td style="text-align:left;">
+Cadena No. 605 CP 20900,  Jesús María, Aguascalientes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Arteaga, Coah.
+</td>
+<td style="text-align:left;">
+Hidalgo Nte. No. 2378, Col. República Oriente, Saltillo, Coahuila
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Torreón Coahuila
+</td>
+<td style="text-align:left;">
+Av. Sta. María No. 731 Ote.; Col. Moderna, Torreón, Coahuila
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Colima
+</td>
+<td style="text-align:left;">
+Col. Doroteo López No. 525, Colima, Colima.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de San Fernando, Chis.
+</td>
+<td style="text-align:left;">
+1a Poniente s/n, San Fernando, Chiapas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Hidalgo del Parral
+</td>
+<td style="text-align:left;">
+km. 2 Carr. Parral-Durango, CP 33800, Hidalgo del Parral, Chihuahua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Nuevo Casas Grandes, Chih.
+</td>
+<td style="text-align:left;">
+Av. Benito Juárez Ezq. D. Alfaro Siqueiros, Col. Dublán, CP 31700, Nuevo Casas Grandes, Chihuahua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Chihuahua, Chih.
+</td>
+<td style="text-align:left;">
+Priv. de Trias No. 2009 CP 33270, Chihuahua, Chihuahua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Cd. Delicias, Chihuahua
+</td>
+<td style="text-align:left;">
+5 de Febrero No. 409 Col. Obrera, Cd. Delicias, Chihuahua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Camargo, Chih.
+</td>
+<td style="text-align:left;">
+Aldama No. 307 CP 33700, Cd. Camargo, Chihuahua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Xochimilco
+</td>
+<td style="text-align:left;">
+Bugambilia No. 6 Barrio Xaltocán, CP 16090 Xochimilco, D.F. México
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de la Laguna de Gómez Palacio
+</td>
+<td style="text-align:left;">
+Vía Apia No. 236 Frac. Villa Nápoles, Gómez Palacio, Durango
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Canatlán, Dgo.
+</td>
+<td style="text-align:left;">
+Abasolo No. 403 Nte. CP 34400, Canatlán, Durango
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Nombre de Dios, Dgo.
+</td>
+<td style="text-align:left;">
+Fray Jerónimo Mendoza No. 402 , Nombre de Dios, Durango
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Apaseo el Alto, Gto.
+</td>
+<td style="text-align:left;">
+Calle 5 de Mayo s/n. Belem, Apaseo el Alto, Guanajuato
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de León, Gto.
+</td>
+<td style="text-align:left;">
+Ixtlacihuatl No. 610 Col. Piletas CP 37310, León, Guanajuato
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Pénjamo
+</td>
+<td style="text-align:left;">
+5 de Mayo 3-C Zona Centro CP 36900, Pénjamo, Guanajuato
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de San Miguel de Allende, Gto.
+</td>
+<td style="text-align:left;">
+Calle Real No. 24 Santa María, San Miguel de Allende, Guanajuato,
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Acámbaro, Gto.
+</td>
+<td style="text-align:left;">
+Calle Vicente Guerrero No. 47 Zona Centro CP 38600, Acámbaro, Guanajuato
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Acapulco, Gro.
+</td>
+<td style="text-align:left;">
+Morelos No. 2 Col. Santa Cruz, Acapulco, Guerrero
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Tlaquepaque, Jal.
+</td>
+<td style="text-align:left;">
+Venustiano Carranza No. 232, Zona Centro CP. 45500, Tlaquepaque, Jalisco
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Toluca, Mex.
+</td>
+<td style="text-align:left;">
+Valentín Gómez Farías No. 706 Pte. CP 50080, Toluca, Edo. de México
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Chalco, Mex.
+</td>
+<td style="text-align:left;">
+29 de Septiembre, No. 63 Barrio San Miguel, Ayotzingo, Chalco, Edo. de México
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Ecatepec
+</td>
+<td style="text-align:left;">
+Dalias No. 67, Fracc. Icalli, Ecatepec, Edo. de México
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Morelia
+</td>
+<td style="text-align:left;">
+Tlatelolco No. 43, Col. Gpe. CP 58140, Morelia, Michoacán
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Purépero
+</td>
+<td style="text-align:left;">
+Álvaro Obregón No. 736 CP 58760, Purépero, Michoacán
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Zinapécuaro
+</td>
+<td style="text-align:left;">
+Santa Cruz No. 36, Zinapécuaro, Michoacán
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Tepic
+</td>
+<td style="text-align:left;">
+Manuel Lozada No. 282, Nte. Col. l. Mateos Tepic, Nayarit
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Allende
+</td>
+<td style="text-align:left;">
+Sr. Ramón Moreno Rodríguez, Carr. Nacional y Lázaro Garza Ayala, Allende, Nuevo León
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Tuxtepec
+</td>
+<td style="text-align:left;">
+Arista No. 342 Esq. 5 de Mayo, Tuxtepec, Oaxaca
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Acatzingo
+</td>
+<td style="text-align:left;">
+Av. 2 Poniente No. 104-A, Acatzingo, Puebla
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Tehuacán
+</td>
+<td style="text-align:left;">
+1 Norte No. 905, Centro, Tehuacán, Puebla
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Huaquechula
+</td>
+<td style="text-align:left;">
+E. Zapata No.4, Col. San Diego Acapulco, Atlixco, Puebla
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Querétaro
+</td>
+<td style="text-align:left;">
+Manuel Medina No. 207 Col. Burócrata, CP 76070, Querétaro, Querétaro
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de San Juan del Río
+</td>
+<td style="text-align:left;">
+Jalpan No. 75 Granjas Banthi, CP 76808, San Juan del Río, Querétaro
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de San Luis Potosí
+</td>
+<td style="text-align:left;">
+Retorno Sevilla y Olmedo No. 110, San Luis Potosí, S.L.P.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Hermosillo
+</td>
+<td style="text-align:left;">
+Gral. Piña No. 151 Sur, Col. San Benito, CP 83000 Hermosillo, Sonora
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Ahome - Sr. Rogaciano Carrera
+</td>
+<td style="text-align:left;">
+Prog. Ganad. Sagar, G.Prieto y M.Ordoñez-Los Mochis, Sin.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Rosario
+</td>
+<td style="text-align:left;">
+Juan Carrasco N. 9 CP 82800, Rosario, Sinaloa
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Villahermosa
+</td>
+<td style="text-align:left;">
+Andrés García N. 240 Col. 1 de Mayo, Villahermosa, Tabasco
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Aldama
+</td>
+<td style="text-align:left;">
+Apdo. Post. 13, CP 89670, Aldama, Tamaulipas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Altamira
+</td>
+<td style="text-align:left;">
+Salón del Ejido Maclovio Herrera km. 40 Carr. Tamp-Mante CP. 89600, Altamira, Tamaulipas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Mante
+</td>
+<td style="text-align:left;">
+Galeana No. 106 Norte, CP 89800, Mante, Tamaulipas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Juamave
+</td>
+<td style="text-align:left;">
+Juárez No. 53, Juamave, Tamaulipas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Huamantla
+</td>
+<td style="text-align:left;">
+Ricardo Flores Magón No. 20, Col. Morelos, Huamantla, Tlaxcala
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Tlaxcala
+</td>
+<td style="text-align:left;">
+Av. Tlahuicole No. 38, Col. López M. CP 90040, Tlaxcala, Tlaxcala
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de M. de la Torre
+</td>
+<td style="text-align:left;">
+Vicente Guerrero No. 15-1 CP 93600, Martínez de la Torre, Veracruz
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Álamo
+</td>
+<td style="text-align:left;">
+Allende No. 6 Col. Centro, Álamo, Veracruz
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Poza Rica
+</td>
+<td style="text-align:left;">
+Casa N Col. Medial Lomas (Int. Pemex), Poza Rica, Veracruz
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Córdoba
+</td>
+<td style="text-align:left;">
+Hidalgo No. 12, Omealca, Veracruz
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Mérida
+</td>
+<td style="text-align:left;">
+Calle No. 31-D No. 212, Nueva Alemán, Mérida, Yucatán
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Ojo Caliente
+</td>
+<td style="text-align:left;">
+Calle Independencia No. 48-B, Ojo Caliente, Zacatecas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de Fresnillo
+</td>
+<td style="text-align:left;">
+Calle Costa Rica s/n, Col. Américas, Fresnillo, Zacatecas
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asociación de Apicultores de García de la Cadena
+</td>
+<td style="text-align:left;">
+Hidalgo No. 29, García de la Cadena, Zacatecas
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.contactopyme.gob.mx/guiasempresariales/guias.asp?s=8&amp;guia=38&amp;giro=1" target="_blank">Secretaría de Economía. Instituto Nacional del Emprendedor. <em>Guías empresariales. Miel</em> 2019.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="inventarios-de-activos-productivos-apícolas">2.8. Inventarios de Activos Productivos Apícolas</h2>
+<hr />
+<p>Para el 2017, el SIAP reportó un inventario de 1.9 millones de colmenas, en donde laboraron 43 mil productores apícolas. La producción de miel en México en el periodo 2014-2018, registró variaciones, reportándose un promedio de producción anual de 57,995 toneladas.</p>
+<p>México ocupa el octavo lugar mundial como productor (fuente FAOSTAT promedio 2013-2017) de miel de abeja y el tercero como exportador (fuente FAOSTAT promedio 2010-2016) a exigentes mercados internacionales de Europa, Asia y Medio Oriente. Esto debido a sus altos estándares de calidad e inocuidad, y porque la miel mexicana es de las más cotizadas en el mundo. Entre 120 y 140 mil colmenas se utilizan en promedio para la polinización. Desde hace más de cinco décadas se ha comercializado el producto en Alemania, Estados Unidos, Gran Bretaña, Irlanda del Norte, Arabia Saudita y Bélgica; además, en Japón existe una alta demanda de miel de cítrico procedente de Nuevo León y San Luís Potosí.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="http://www.fao.org/faostat/es/#data/QL" target="_blank">FAOSTAT, 2017.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="impacto-de-la-polinización-de-cultivos-y-la-agricultura">2.9. Impacto de la Polinización de Cultivos y la Agricultura</h2>
+<hr />
+<p>Si bien la polinización no es un producto, sino un servicio que presta la apicultura, en muchas zonas del país es una fuente alterna de ingresos y de hecho, en entidades como Sinaloa, Chihuahua y Coahuila, se ha convertido en el fin principal de la explotación de las abejas, quedando como actividad secundaria la obtención de miel.</p>
+<p>En 2008, más de 135 mil 500 colmenas fueron destinadas a la polinización de cultivos hortícolas y frutícolas, presentando una marcada recuperación en los últimos años en número de colmenas y en superficies agrícolas atendidas, redituando ganancias muy importantes tanto para el apicultor como para el agricultor.</p>
+<p>Los cultivos beneficiados con la polinización por abejas son principalmente los orientados a obtener productos destinados a la exportación, destacando el pepino, berenjena, calabacita, sandia, melón, cártamo, manzana, fresa, aguacate, cítricos, entre otros.</p>
+<p align="center">
+<strong>Cuadro 2. Colmenas utilizadas en polinización durante el 2008.</strong> <a href="tabs/poliniza_colm.csv"><i class="fas  fa-download "></i></a>
+</p>
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+DELEGACIÓN SADER
+</th>
+<th style="text-align:left;">
+CULTIVOS
+</th>
+<th style="text-align:right;">
+COLMENAS
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Sinaloa
+</td>
+<td style="text-align:left;">
+Pepino, melón, sandia, calabaza y cártamo
+</td>
+<td style="text-align:right;">
+35,000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sonora
+</td>
+<td style="text-align:left;">
+Hortalizas, cucurbitáceas
+</td>
+<td style="text-align:right;">
+24,018
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chihuahua
+</td>
+<td style="text-align:left;">
+Pepino, melón, manzana
+</td>
+<td style="text-align:right;">
+20,000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Michoacán
+</td>
+<td style="text-align:left;">
+Aguacate, fresa, melón
+</td>
+<td style="text-align:right;">
+20,000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Colima
+</td>
+<td style="text-align:left;">
+Mango, melón, sandia
+</td>
+<td style="text-align:right;">
+8,000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Tamaulipas
+</td>
+<td style="text-align:left;">
+Hortalizas, cítricos
+</td>
+<td style="text-align:right;">
+8,000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+San Luis Potosí
+</td>
+<td style="text-align:left;">
+Cítricos, melón, sandia y hortalizas
+</td>
+<td style="text-align:right;">
+6,200
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Baja California
+</td>
+<td style="text-align:left;">
+Fresa
+</td>
+<td style="text-align:right;">
+2,150
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Durango
+</td>
+<td style="text-align:left;">
+Manzana
+</td>
+<td style="text-align:right;">
+2,000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Coahuila
+</td>
+<td style="text-align:left;">
+Manzana
+</td>
+<td style="text-align:right;">
+1,800
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Guanajuato
+</td>
+<td style="text-align:left;">
+Pepinillo, calabacita
+</td>
+<td style="text-align:right;">
+1,600
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+La Laguna
+</td>
+<td style="text-align:left;">
+Melón y sandia
+</td>
+<td style="text-align:right;">
+1,530
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nuevo León
+</td>
+<td style="text-align:left;">
+Cítricos
+</td>
+<td style="text-align:right;">
+1,500
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nayarit
+</td>
+<td style="text-align:left;">
+Aguacate, melón, sandia, mango
+</td>
+<td style="text-align:right;">
+1,200
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Otras
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+2,588
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Total
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+135,586
+</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/ca199-3.pdf" target="_blank">SADER. Revista Claridades Agropecuarias. <em>Situación actual y perspectiva de la apicultura en México.</em>, Núm. 199, marzo 2010, p. 3-34.</a></p>
+<p><br/> <br/></p>
+<p>Según datos del <a href="pdfs/ipbes_4_19_annex_ii_spm_pollination_es.pdf" target="_blank"><em>informe de evaluación de la Plataforma Intergubernamental Científico-normativa sobre Diversidad Biológica y Servicios de los Ecosistemas sobre polinizadores, polinización y producción de alimentos</em></a>, las especies polinizadoras son en su inmensa mayoría silvestres, e incluyen más de 20.000 especies de abejas, algunas especies de moscas, mariposas, polillas, avispas, escarabajos, tisanópteros, aves, murciélagos y otros vertebrados. La gestión de algunas especies de abejas está muy extendida, entre ellas la abeja melífera occidental (Apis mellifera), la abeja melífera oriental (Apis cerana), algunos abejorros, abejas sin aguijón y algunas abejas solitarias. La abeja melífera occidental es el polinizador gestionado mas extendido del planeta: se calcula que en el mundo existen alrededor de 81 millones de colmenas que producen 1,6 millones de toneladas de miel al año.</p>
+<p>El siguiente video, realizado en 2018 por dicho organismo, resalta este importante aspecto:</p>
+</div>
+<p><br></p>
+<div class="text-center">
+<iframe width="710" height="427" src="https://www.youtube.com/embed/6362aJNNt1s" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+<div class="text-justify">
+<p><br/> <br/> <br/></p>
+<h2 id="trashumancia-y-movilización-de-colmenas">2.10. Trashumancia y Movilización de Colmenas</h2>
+<hr />
+<p>Se denomina <strong>trashumancia</strong>, al movimiento de colmenas de una localización geográfica a otro lugar. La apicultura trashumante es la que realizan los apicultores que movilizan sus colmenas según las diferencias térmicas y climáticas debidas a la latitud, longitud y altitud, que repercuten sobre la floración de interés apícola. De esta manera se introdujeron al continente americano y australiano la especie de <em>Apis mellifera</em>.</p>
+<p>Cuando las floraciones se producen de forma muy distanciada, se ralentiza la oviposición de la reina, disminuye el relevo generacional y desciende la población. Si las abejas tienen que recurrir a las reservas de los panales, motivadas por un cese de los aportes a la colmena, entonces la puesta se detiene por completo, la colmena se somete a restricciones, e incluso a la expulsión de los zánganos como una adaptación obligada a esa situación de penuria. Esto perjudica al apicultor al no generar excedentes de miel sobre los panales.</p>
+<p>En México, Jaime Rodríguez López, delegado federal de la SADER en Michoacán, informó en 2017 que en dicho estado los servicios de polinización que demandan los productores de melón, pepino, fresa, zarzamora, frambuesa, arándanos y aguacate, favorecieron la trashumancia, al registrar movilizaciones de colmenas procedentes de otros estados y del interior de la misma entidad, de alrededor de 20 mil colmenas para este propósito, lo cual seguirá incrementándose, ya que se requieren poco más de 600 mil colmenas aproximadamente, para cubrir la demanda de dicho servicio.</p>
+<p>Es importante considerar que para realizar esta práctica en México, se debe contar con el <a href="https://www.gob.mx/tramites/ficha/solicitud-para-la-expedicion-del-certificado-zoosanitario-de-movilizacion/SENASICA4996" target="_blank">Certificado Zoosanitario de Movilización</a>, expedido por SENASICA, en particular con los requisitos referentes a las abejas.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="https://www.gob.mx/sader/michoacan/articulos/destacada-la-actividad-de-la-apicultura-senala-sagarpa-michoacan?idiom=es" target="_blank">Delegación SADER Michoacán. <em>Destacada la Actividad de la Apicultura, Señala SADER Michoacán.</em> Mayo, 2017.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="investigación-y-mejoramiento-genético-apícola">2.11. Investigación y Mejoramiento Genético Apícola</h2>
+<hr />
+<p>Tradicionalmente, se considera que una colonia de abejas superior es aquella que es buena productora de miel; otro enfoque considera que son las que presentan mayor habilidad de polinización, resistencia a enfermedades, o bien, abejas muy dóciles. Es muy difícil encontrar líneas de abejas que reúnan muchas características deseadas. Por tanto, la superioridad o calidad de una colmena depende de los objetivos del apicultor y de las condiciones de la región donde éstas se exploten.</p>
+<p>Los programas de mejoramiento genético permiten reducir costos de producción, mejorar la eficiencia de la producción y, en consecuencia, la rentabilidad de la actividad; ya que de esta manera se obtienen abejas con mayor instinto de pecoreo, se reduce la posibilidad del ataque de enfermedades y parásitos y por tanto, la necesidad de controlarlas mediante el uso de costosos productos químicos, potenciales contaminantes de la miel.</p>
+<p>Las abejas de buena calidad responden satisfactoriamente a las buenas prácticas de manejo, conformando colonias vigorosas en el momento justo antes del ciclo de producción; lo que permite beneficiar y aprovechar al máximo los recursos forestales naturales, así como reducir los riesgos que las abejas con alto grado defensivo y de enjambrazón representan para la sociedad.</p>
+<p>Las características productivas que observamos (<em>fenotipo</em>) en un organismo vivo, dependen en mayor o menor grado del material genético (<em>genotipo</em>) que le transmiten sus padres, de la calidad del ambiente donde se encuentra y de la manera que ese genotipo responde a dicho ambiente (<em>interacción genotipo-ambiente</em>). Los <em>programas de mejoramiento genético</em> consisten en identificar y propiciar la reproducción de individuos que, en el ambiente donde se encuentran, manifiestan el comportamiento deseado, asegurando que esa habilidad se transmita de generación a generación (padres a hijos).</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/MG_131143.png" alt="**Fig. 7 Abeja reina ovipositando**" width="50%" />
+<p class="caption">
+<strong>Fig. 7 Abeja reina ovipositando</strong>
+</p>
+</div>
+<p><br/></p>
+<p><strong>BASES PARA ESTABLECER UN PROGRAMA DE MEJORAMIENTO GENÉTICO EN ABEJAS</strong></p>
+<p><br/></p>
+<ol style="list-style-type: decimal">
+<li><strong>Definir los objetivos de producción.</strong> Lo primero que se debe definir antes de iniciar una empresa apícola, es establecer los objetivos de producción en la misma; esto es, conocer qué se quiere obtener con la crianza de las abejas. Una vez establecidos los objetivos de producción, se definen las estrategias a seguir para lograrlos, considerando las características más relacionadas con éstos.</li>
+</ol>
+<p><br/></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p><strong>Establecer controles de producción.</strong> Los controles de producción consisten en registrar en papel los datos que permitan clasificar adecuadamente a cada una de las colmenas, de acuerdo a su comportamiento real para la(s) característica(s) de importancia para el productor. Con base en esa clasificación, se pueden tomar decisiones acerca de cuáles abejas reproducir, y hacer el manejo adecuado para mejorar su desempeño. Es indispensable identificar cada colmena con un sistema individual (de preferencia numérico); no deben existir identificaciones repetidas en colmenas del mismo productor.</p>
+<p>2.1 <strong>¿Qué características registrar?</strong></p>
+<p>La superioridad de las abejas depende de muchas características económicamente importantes, por lo que cada una de éstas deberá ser cuantificada; lo cual es difícil, porque éstas pueden presentarse de forma diferente de un ambiente a otro. El ambiente incluye la temperatura, humedad ambiental, condición de la flora, topografía de terreno, competencia con otras abejas o insectos diferentes, incidencia de enfermedades, tipo de manejo de la colmena, entre otras; es decir, son factores que influencian positiva o negativamente sobre la manifestación de un determinado genotipo y muchos de ellos no pueden ser controlados por el hombre. Dentro de las principales características de importancia económica a considerar en la apicultura comercial, independientemente de sus objetivos, podemos mencionar las siguientes:</p>
+<p>• Cantidad y calidad de postura de la abeja reina</p>
+<p>• Sanidad de la colonia</p>
+<p>• Capacidad de pecoreo, que se puede estimar en base a la cantidad de miel y polen almacenados en la colmena</p>
+<p>• Grado de docilidad</p>
+<p>• Nivel de enjambrazón</p>
+<p>• Tamaño (condición) de la población</p></li>
+</ol>
+<p><br/></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p><strong>Selección.</strong> Es una herramienta del mejoramiento genético que consiste en propiciar la reproducción y multiplicación de las colonias de abejas que presentan el comportamiento deseado por el productor. De esta forma se fija más fácilmente el tipo de material genético deseado en la población. Su efectividad depende fuertemente de la influencia del ambiente sobre la expresión de la característica de interés; cuanto más influya el ambiente sobre una característica, menores serán los beneficios de la selección. La superioridad de un individuo no se transmite de padres a hijos, si el ambiente juega un papel preponderante. Sin embargo, siempre hay que escoger como padres de la siguiente generación a aquellos individuos que presenten el mejor comportamiento dentro de un grupo, en el cual todos tuvieron la misma oportunidad (todos manejados de forma similar en el mismo ambiente).</p>
+<p>3.1 <strong>Métodos de Selección</strong></p>
+<p>3.1.1 <em>Selección gamética.</em> Es la que se realiza a través de los zánganos. El material genético de éstos depende solo de su madre, ya que provienen de huevos no fertilizados. Los zánganos hijos de reinas de buena calidad genética, son buenos candidatos para su utilización en programas de inseminación artificial. Es recomendable inducir a las reinas de alta calidad genética a producir zánganos, con el fin de incrementar la proporción de éstos en las áreas naturales de apareamientos.</p>
+<p>3.1.2 <em>Selección individual.</em> Los individuos son seleccionados para ser padres de la siguiente generación, mediante el comportamiento particular de cada colonia. Un ejemplo de selección individual podría ser que un grupo de reinas seleccionadas producen reinas vírgenes y otro grupo produce zánganos. Tiene la ventaja de ser un método más controlado, y disminuye el riesgo de consanguinidad (apareamiento entre parientes). Es el primer método usado en poblaciones que no han sido mejoradas, ofreciendo grandes avances iniciales.</p>
+<p>3.1.3 <em>Selección por la progenie.</em> Este método se basa en el comportamiento de la progenie de la reina, sus hijas o las colonias de ellas. Es más eficiente, pero muy dependiente de la información de terceros. Es más específica para empresas cuyos objetivos son los de la producción y comercialización de abejas reina.</p></li>
+</ol>
+<p><br/></p>
+<p>Para obtener las abejas reinas con la calidad genética deseada, se requiere de trabajo especializado y, sobre todo, enfocado específicamente a eso. El apicultor comercial, debe identificar aquellos criaderos de abejas reina que le ofrezcan la calidad deseada. Pero también puede, a pequeña escala, utilizar los métodos de selección gamética y la individual en sus apiarios.</p>
+<p>La sola práctica de cambiar la abeja reina una vez al año a la colonia comercial de abejas, provoca un gran avance en el mejoramiento genético de las mismas; por lo tanto, el logro del mejoramiento genético en la apicultura comercial depende fuertemente de la calidad y cantidad de abejas reinas introducidas.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/Generalidades%20del%20mejoramiento%20genetico%20de%20las%20abejas.pdf" target="_blank">SADER. Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP). <em>Generalidades del Mejoramiento Genético en Abejas.</em> Noviembre, 2008.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="enfermedades-y-plagas-de-las-colmenas">2.12. Enfermedades y Plagas de las Colmenas</h2>
+<hr />
+<h3 id="enfermedades-de-la-cría-presentes-en-méxico">2.12.1. Enfermedades de la Cría Presentes en México</h3>
+<p><br/></p>
+<p align="center">
+<strong>Cuadro 3. Principales enfermedades de las crías de abejas en México.</strong> <a href="tabs/cua_enferm_1s.csv"><i class="fas  fa-download "></i></a>
+</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+ENFERMEDAD
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+TIPO
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+CAUSADO POR
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+AFECTA A
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+SIGNOS
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+DIAGNÓSTICO EN LABORATORIO
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+TRATAMIENTO
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Loque Americana
+</td>
+<td style="text-align:left;">
+BACTERIANA
+</td>
+<td style="text-align:left;">
+Paenibacillus larvae subespecie larvae
+</td>
+<td style="text-align:left;">
+Cría de obrera/zángano, ocasionalmente reina
+</td>
+<td style="text-align:left;">
+<em>cría salteada </em>opérculos oscuros, hundidos con aspecto grasiento, algunos presentan una pequeña perforación. *olor fétido
+</td>
+<td style="text-align:left;">
+Exámenes microscópicos, pruebas bioquímicas, inmunológicas y moleculares
+</td>
+<td style="text-align:left;">
+Desinfección de equipo Reforzamiento de colonias Buenas prácticas de manejo Destrucción de equipo/abejas en casos severos de enfermedad
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Loque Europea
+</td>
+<td style="text-align:left;">
+BACTERIANA
+</td>
+<td style="text-align:left;">
+Melissococcus plutonius
+</td>
+<td style="text-align:left;">
+Cría de obrera/zángano, ocasionalmente reina
+</td>
+<td style="text-align:left;">
+<em>cría salteada </em>olor a vinagre/mantequilla rancia
+</td>
+<td style="text-align:left;">
+Exámenes microscópicos, pruebas bioquímicas, inmunológicas y moleculares
+</td>
+<td style="text-align:left;">
+Reforzamiento de colonias Buenas prácticas de manejo
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cría de Cal
+</td>
+<td style="text-align:left;">
+MICÓTICA
+</td>
+<td style="text-align:left;">
+Ascosphaera apis
+</td>
+<td style="text-align:left;">
+Las tres castas, recurrente en cría de zángano
+</td>
+<td style="text-align:left;">
+<em>larvas con apariencia de pedazos de yeso. </em>color blanquecino, pardo u obscuro, dependiendo del estadio reproductivo del hongo
+</td>
+<td style="text-align:left;">
+Exámenes microscópicos y pruebas moleculares
+</td>
+<td style="text-align:left;">
+Buenas prácticas de manejo Selección de abejas que presenten comportamiento higiénico
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cría de Piedra
+</td>
+<td style="text-align:left;">
+MICÓTICA
+</td>
+<td style="text-align:left;">
+Aspergillus flavus, ocasionalmente Aspergillus fumigatus.
+</td>
+<td style="text-align:left;">
+Las tres castas, mayormente cría de zángano
+</td>
+<td style="text-align:left;">
+Las larvas presentan coloración gris verdosa o amarillo verdosa, sobre todo en la zona de la cabeza Consistencia de piedra
+</td>
+<td style="text-align:left;">
+Identificación microscópica del hongo
+</td>
+<td style="text-align:left;">
+Buenas prácticas de manejo Selección de abejas que presenten comportamiento higiénico
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cría Ensacada
+</td>
+<td style="text-align:left;">
+VIRALES
+</td>
+<td style="text-align:left;">
+Virus ARN hexagonal de 30 nm
+</td>
+<td style="text-align:left;">
+Las tres castas
+</td>
+<td style="text-align:left;">
+<em>cría muerta dentro de un saco lleno de fluidos con la cabeza estirada. </em>cría seca adquiere apariencia de una “costra”
+</td>
+<td style="text-align:left;">
+Exámenes microscópicos, pruebas inmunoló­gicas y métodos moleculares
+</td>
+<td style="text-align:left;">
+No existen medicamentos específicos Cambio de reina Destrucción de panales en casos severos
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Celda Real Negra
+</td>
+<td style="text-align:left;">
+VIRALES
+</td>
+<td style="text-align:left;">
+Virus de ARN de 30 nm de diámetro
+</td>
+<td style="text-align:left;">
+Cría de reina
+</td>
+<td style="text-align:left;">
+<em>larvas de color amarillento y contenidas en un saco (inicio) </em>Celda real adquiere tono negruzco (final)
+</td>
+<td style="text-align:left;">
+Técnicas moleculares
+</td>
+<td style="text-align:left;">
+Cambio de reinas Buenas prácticas de manejo
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Si desea saber más sobre las enfermedades que afectan a las abejas y su tratamiento consulta el <a href="pdfs/PATOLOGIA_DIAGN_CNTRL_ENFRMDDS_ABEJAS_MELIFERAS.pdf" target="_blank">Manual de Patología, Diagnóstico y Control de las Principales Enfermedades y Plagas de las Abejas Melíferas.</a> SADER, 2012.</p>
+<p><br/> <br/></p>
+<h3 id="enfermedades-de-las-abejas-adultas-presentes-en-méxico">2.12.2. Enfermedades de las Abejas Adultas Presentes en México</h3>
+<p><br/></p>
+<p align="center">
+<strong>Cuadro 4. Principales enfermedades de las abejas adultas en México.</strong> <a href="tabs/cua_enferm_2s.csv"><i class="fas  fa-download "></i></a>
+</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+ENFERMEDAD
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+TIPO
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+CAUSADO POR
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+AFECTA A
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+SIGNOS
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+DIAGNÓSTICO EN LABORATORIO
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+TRATAMIENTO
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Varroosis
+</td>
+<td style="text-align:left;">
+PARASITARIA
+</td>
+<td style="text-align:left;">
+Varroa destructor
+</td>
+<td style="text-align:left;">
+Las tres castas (cría y abejas adultas), mayormente cría de zánganos
+</td>
+<td style="text-align:left;">
+<em>Ácaros al interior de celdas de cría operculadas/sobre el cuerpo de abejas adultas </em>Disminución de la población de abejas *Abejas inquietas, de menor tamaño, deformes, algunas sin alas o con alas arrugadas
+</td>
+<td style="text-align:left;">
+Campo: Observación directa del ácaro sobre abejas adultas o al interior de celdas de cría operculadas (sobre todo de zángano) Laboratorio: Observación directa del ácaro. Prueba oficial David de Jong, para determinación del porcentaje de infestación
+</td>
+<td style="text-align:left;">
+<em>Uso del panal trampa </em>Uso de abejas mejoradas/desarrollo de abejas resistentes a varroa *Uso de acaricidas naturales y/o sintéticos, con registro específico para su uso en abejas, siguiendo la dosis y método de aplicación indicados
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Acariosis Traqueal
+</td>
+<td style="text-align:left;">
+PARASITARIA
+</td>
+<td style="text-align:left;">
+Acarapis woodi
+</td>
+<td style="text-align:left;">
+Las tres castas
+</td>
+<td style="text-align:left;">
+Evidentes sólo en infestaciones severas siendo los siguientes: <em>Abejas con alas dislocadas, abanicándolas sin conseguir volar </em>Abdomen distendido <em>Abejas muertas/moribundas frente a la piquera </em>Tórax negro y brillante (desprovisto de vellosidades) *Pérdida del instinto de picar/aguijonear
+</td>
+<td style="text-align:left;">
+Análisis microscópico de las tráqueas
+</td>
+<td style="text-align:left;">
+<em>Uso de abejas mejoradas/desarrollo de abejas resistentes al parásito </em>Uso de acaricidas naturales y/o sintéticos, con registro específico para su uso en abejas, siguiendo la dosis y método de aplicación indicados
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nosemosis
+</td>
+<td style="text-align:left;">
+MICÓTICAS
+</td>
+<td style="text-align:left;">
+Nosema ceranae
+</td>
+<td style="text-align:left;">
+Las tres castas
+</td>
+<td style="text-align:left;">
+En casos severos debilitamiento y muerte prematura de las abejas
+</td>
+<td style="text-align:left;">
+Análisis molecular de ADN
+</td>
+<td style="text-align:left;">
+Fumigación del equipo Buenas prácticas de manejo
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Aspergilosis
+</td>
+<td style="text-align:left;">
+MICÓTICAS
+</td>
+<td style="text-align:left;">
+Aspergillus flavus, ocasionalmente Aspergillus fumigatus.
+</td>
+<td style="text-align:left;">
+Las tres castas
+</td>
+<td style="text-align:left;">
+En abejas vivas: <em>Nerviosismo </em>Debilidad <em>Parálisis </em>Abdomen distendido <em>No consiguen volar En abejas muertas: </em>Abdomen endurecido de color obscuro, no se pudren
+</td>
+<td style="text-align:left;">
+Identificación microscópica del hongo
+</td>
+<td style="text-align:left;">
+Buenas prácticas de manejo Selección de abejas que presenten comportamiento higiénico
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Alas Deformes
+</td>
+<td style="text-align:left;">
+VIRALES
+</td>
+<td style="text-align:left;">
+Virus de las alas deformes (ARN 30 nm)
+</td>
+<td style="text-align:left;">
+Las tres castas
+</td>
+<td style="text-align:left;">
+Similar a los presentes en nosema y acariosis traqueal, además: *Abdomen reducido y descolorido, particularmente con alas cortas y arrugadas
+</td>
+<td style="text-align:left;">
+A través de pruebas inmunológicas y/o moleculares
+</td>
+<td style="text-align:left;">
+<em>Controlar las infestaciones por varroa </em>Cambio de reinas de colonias afectadas *Buenas prácticas de manejo
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Parálisis Aguda y Crónica
+</td>
+<td style="text-align:left;">
+VIRALES
+</td>
+<td style="text-align:left;">
+Varios tipos de virus ARN, los más comunes: Virus de la Parálisis Aguda, Virus de la Parálisis Aguda Israelí y Virus de la Parálisis Crónica
+</td>
+<td style="text-align:left;">
+Las tres castas
+</td>
+<td style="text-align:left;">
+Similar a los presentes en nosema y acariosis traqueal particularmente por la presencia de abejas: <em>“negras” (sin vellos en el tórax) </em>Temblorosas *Dificultad para moverse y/o volar
+</td>
+<td style="text-align:left;">
+A través de pruebas inmunológicas y/o moleculares
+</td>
+<td style="text-align:left;">
+<em>Controlar las infestaciones por varroa </em>Cambio de reinas de colonias afectadas *Buenas prácticas de manejo
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Si desea saber más sobre las enfermedades que afectan a las abejas y su tratamiento consulta el <a href="pdfs/PATOLOGIA_DIAGN_CNTRL_ENFRMDDS_ABEJAS_MELIFERAS.pdf" target="_blank">Manual de Patología, Diagnóstico y Control de las Principales Enfermedades y Plagas de las Abejas Melíferas.</a> SADER, 2012.</p>
+<p><br/> <br/></p>
+<h3 id="principales-plagas-de-la-abeja-melífera-en-méxico">2.12.3. Principales Plagas de la Abeja Melífera en México</h3>
+<p><br/></p>
+<p align="center">
+<strong>Cuadro 5. Principales plagas de las abejas en México.</strong> <a href="tabs/cua_plaga_4s.csv"><i class="fas  fa-download "></i></a>
+</p>
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+PLAGA
+</th>
+<th style="text-align:left;">
+TIPO
+</th>
+<th style="text-align:left;">
+CAUSADO POR
+</th>
+<th style="text-align:left;">
+DAÑOS
+</th>
+<th style="text-align:left;">
+PRESENCIA EN MÉXICO
+</th>
+<th style="text-align:left;">
+PREVENCIÓN
+</th>
+<th style="text-align:left;">
+CONTROL
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Polillas, palomillas o alevillas de la Cera (causa enormes pérdidas económicas por la gran cantidad de panales que destruye)
+</td>
+<td style="text-align:left;">
+MELÍFERA
+</td>
+<td style="text-align:left;">
+Galleria Mellonella (polilla mayor de la cera) Achroia grisella (polilla menos de la cera)
+</td>
+<td style="text-align:left;">
+<em>Panales perforados/destruidos </em>Túneles con seda y pelusa *Presencia del capullo
+</td>
+<td style="text-align:left;">
+El problema es par­ticularmente serio en las cos­tas y Sur del país
+</td>
+<td style="text-align:left;">
+<em>Mantener colonias fuertes </em>Equipo en buen estado *Buenas prácticas de manejo
+</td>
+<td style="text-align:left;">
+<em>Fumigación de panales </em>Biocontrol (agentes biológicos registrados y autorizados en el país) *Congelamiento de panales
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pequeño Escarabajo de la Colmena (PEC)
+</td>
+<td style="text-align:left;">
+MELÍFERA
+</td>
+<td style="text-align:left;">
+Aethina tumida Murray
+</td>
+<td style="text-align:left;">
+Fase adulta y larvaria las más dañinas <em>Se alimenta de las crías y/o miel </em>Destruye panales con cría <em>Fermenta la miel </em>Aumenta la suscepti­bilidad de las abejas hacia otras enfermedades
+</td>
+<td style="text-align:left;">
+En el año 2007
+</td>
+<td style="text-align:left;">
+<em>Mantener colonias fuertes </em>Equipo en buen estado <em>Seleccionar abejas con alto comportamiento higiénico </em>Buenas prácticas de manejo
+</td>
+<td style="text-align:left;">
+*Remover la tierra frente a las colmenas para cortar el ciclo de desarrollo de las pupas de la plaga
+</td>
+</tr>
+</tbody>
+</table>
+<p>Las larvas del PEC pueden confundirse con las de la polilla de la cera, por lo que el diagnóstico diferencial entre ambas es necesario.</p>
+<p><br/></p>
+<p>Además de las anteriores, las abejas pueden ser infestadas por otras plagas:</p>
+<p><br/></p>
+<p align="center">
+<strong>Cuadro 6. Otros tipos de plagas de las abejas.</strong> <a href="tabs/cua_otras_6s.csv"><i class="fas  fa-download "></i></a>
+</p>
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Plaga por
+</th>
+<th style="text-align:left;">
+Tipo
+</th>
+<th style="text-align:left;">
+Daños
+</th>
+<th style="text-align:left;">
+Control/Prevención
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+INSECTO
+</td>
+<td style="text-align:left;">
+Avispa
+</td>
+<td style="text-align:left;">
+<em>Consumen miel </em>Depredan abejas adultas
+</td>
+<td style="text-align:left;">
+<em>Mantener colonias fuertemente pobladas </em>Reducción de la piquera * Destrucción de nidos de avispas cercanos al apiario
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+INSECTO
+</td>
+<td style="text-align:left;">
+Mosca
+</td>
+<td style="text-align:left;">
+*Se alojan al interior del cuerpo de abejas adultas o larvas, alimentándose de sus tejidos
+</td>
+<td style="text-align:left;">
+<em>Mantener colmenas fuertemente pobladas </em>Reducción de la piquera *Equipo en buen estado
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+INSECTO
+</td>
+<td style="text-align:left;">
+Piojo de la Abeja (Braula coeca)
+</td>
+<td style="text-align:left;">
+<em>Deposita sus huevos sobre los opérculos de las celdillas que contienen miel </em>Las larvas hacen pequeños túneles en la cera
+</td>
+<td style="text-align:left;">
+<em>Contar con abejas de estirpes resistentes </em>Buenas prácticas de manejo
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+REPTIL Y BATRACIO
+</td>
+<td style="text-align:left;">
+Lagartija
+</td>
+<td style="text-align:left;">
+*Se alimentan de abejas adultas. Los sapos son los más dañinos, pueden comer más de 300 abejas en un día cada uno
+</td>
+<td style="text-align:left;">
+<em>Colocar las colmenas sobre bases a por lo menos 75 cm. encima del suelo </em>Cercar el apiario a una altura de por lo menos 60 cm del suelo *Reducir las piqueras
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+REPTIL Y BATRACIO
+</td>
+<td style="text-align:left;">
+Rana y sapo
+</td>
+<td style="text-align:left;">
+*Se alimentan de abejas adultas. Los sapos son los más dañinos, pueden comer más de 300 abejas en un día cada uno
+</td>
+<td style="text-align:left;">
+<em>Colocar las colmenas sobre bases a por lo menos 75 cm. encima del suelo </em>Cercar el apiario a una altura de por lo menos 60 cm del suelo *Reducir las piqueras
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VERTEBRADO MAYOR
+</td>
+<td style="text-align:left;">
+Pájaro insectívoro
+</td>
+<td style="text-align:left;">
+*Se alimentan de abejas adultas
+</td>
+<td style="text-align:left;">
+*Cambiar el apiario de lugar
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+VERTEBRADO MAYOR
+</td>
+<td style="text-align:left;">
+Ratón y zorrillo
+</td>
+<td style="text-align:left;">
+Rato­nes (roedores más destructivos): <em>Se alimentan de polen, miel y abejas muertas </em>Tienden a anidar en colmenas con colonias dé­biles, destruyendo parte de los panales de la cámara de cría Zorrillos: <em>Se alimentan de abejas adultas </em>Destruyen el equipo (rascan la piquera para atraer a las abejas)
+</td>
+<td style="text-align:left;">
+<em>Elevar las colmenas del piso </em>Reducir las piqueras <em>Cercar el apiario </em>Colocar trampas
+</td>
+</tr>
+</tbody>
+</table>
+<p><br/> <br/> <br/></p>
+<h2 id="la-africanización-de-las-abejas-en-méxico">2.13. La Africanización de las Abejas en México</h2>
+<hr />
+<p>Desde 1986, la apicultura nacional se ve afectada por la Africanización de las abejas, la cual consiste en el establecimiento de las características dominantes de la abeja africana <em>Apis mellifera scutellata</em> sobre las colonias de abejas locales de origen europeo, denominándose abejas africanizadas, mismas que presentan un mayor comportamiento defensivo, de enjambrazón, evasión y pillaje, lo que incrementa los costos de producción hasta un 30% debido al cambio anual de abejas reina, compra de equipo de protección, manejos específicos y reubicación de apiarios, entre otros. Además, debido a su alta defensividad, aumenta el número de incidentes por picadura de abejas en personas o animales, lo que ocasiona un malestar entre la población, incitando a la destrucción de apiarios y el abandono de la actividad.</p>
+<p>Tras los daños causados por la abeja africana en Sudamérica y con el fin de reducir su impacto negativo para proteger el valor social y económico de la apicultura en México, se creó en 1984 mediante un decreto presidencial el <em>Programa Nacional para el Control de la Abeja Africana</em> (PNPCAA) con el objeto de implementar cuatro fases en la estrategia de acciones para proteger la actividad apícola: prevención, contención, control y mejoramiento.</p>
+<p>Desde la llegada de las abejas africanizadas a México, el impacto sobre la producción de miel se observó en el rendimiento promedio por colmena, el cual disminuyó aproximadamente 25%; esto aunado a la reducción en el inventario apícola, ocasionó que la producción nacional de miel se redujera en un 34% al cabo de diez años de su introducción.</p>
+<p>La africanización se considera como un problema socioeconómico y de salud pública que enfrenta la apicultura nacional, debido a que presenta mayores efectos negativos que positivos, sin embargo, al ser un problema de carácter genético, el control debe ser continuo para que los genes que expresan la defensividad en las abejas no sean mayores a los que expresan las características de producción, acciones encaminadas en el aprovechamiento de algunas características de estas abejas, ya que diferentes estudios señalan que colonias de abejas con niveles de africanización menores al 25% pueden ser manejables de forma adecuada y presentar un control activo contra las enfermedades.</p>
+<p>Actualmente la Coordinación General de Ganadería a través del PNPCAA, mantiene e impulsa acciones relacionadas con el mejoramiento genético de abejas reinas para disminuir los efectos negativos de la africanización; esto a través de la supervisión técnica de criaderos que implementan programas de selección y mejoramiento genético. En promedio, se cuenta a nivel nacional con cuarenta criaderos certificados en la producción de abejas reinas comerciales y/o productores de núcleos de abejas, así como tres criaderos de abejas reinas progenitoras. Se estima una producción anual de más de 200 mil abejas reinas seleccionadas con buenas características de producción y control de enfermedades, que fomentan la sana convivencia de la apicultura productiva con las abejas africanizadas.</p>
+<p>Adicionalmente el PNPCAA, proporciona diferentes servicios como la capacitación especializada y transferencia de tecnología apícola a productores y técnicos en relación al manejo integral de la colmena, así como a brigadistas de protección civil y de los cuerpos de bomberos en la prevención y control de enjambres.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/v42n2a5.pdf" target="_blank">Guzmán Novoa E.,Correa Benítez A., Espinosa Montaño L. G., Guzmán Novoa G. <em>Colonización, impacto y control de las abejas melíferas africanizadas en México.</em> Veterinaria México (Publicación de la Facultad de Medicina Veterinaria y Zootecnia, UNAM), Vol.42, No.2, México, abr-jun, 2011.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="problemas-de-las-abejas-derivados-del-cambio-climático">2.14. Problemas de las Abejas Derivados del Cambio Climático</h2>
+<hr />
+<p>El clima se define como aquellas condiciones de aire, agua y temperatura que ocurren en un determinado tiempo. Dichas condiciones meteorológicas determinan un clima normal, y cuando ocurre alguna variación de éstas, se presenta un <em>cambio climático</em>. Fenómenos de este tipo normalmente permiten el desarrollo de la vida, por ejemplo, la energía del sol que penetra hasta la superficie es absorbida por la tierra mediante gases de efecto invernadero (GEI) como el dióxido de carbono, ozono y metano, entre otros; este proceso ha permitido mantener la temperatura media del planeta en unos 15°C, haciendo posible la vida. De lo contrario se encontraría en -18°C.</p>
+<p>El problema inicia cuando se rompe ese delicado equilibrio y los cambios no permiten una adaptación, por ejemplo, las emisiones de GEI se han ido incrementando notablemente, lo que genera mayor retención de energía en la atmósfera, dando como resultado un aumento en la temperatura promedio, siendo el <em>calentamiento global</em> uno de los principales problemas que genera un impacto significativo en el ambiente y su biodiversidad.</p>
+<p>El cambio climático altera el comportamiento y fisiología de las abejas, si bien éstas son capaces de adaptarse para sobrellevar las condiciones ambientales, la presión del ambiente que hoy en día se presenta es mayor a su capacidad adaptativa. Una ola de calor extrema y/o prolongada origina que la mayoría de las abejas se encaucen en recolectar más agua para regular la temperatura de la colonia, es decir que se tienen menos abejas dedicadas a recolectar néctar o polen.</p>
+<p>En algunas regiones donde la temperatura llega a alcanzar más de 40°C, la cera comienza a derretirse dentro de la colmena. Por otro lado, un periodo prolongado de bajas temperaturas condiciona comportamientos de diapausa, retardando el desarrollo de las actividades dentro y fuera de la colmena. De igual forma, durante los periodos de lluvias las abejas permanecen dentro de la colmena por mayor tiempo, lo que favorece la presencia de enfermedades, principalmente aquellas originadas por hongos.</p>
+<p>La presión del medio también origina que las abejas permanezcan en un estado de estrés constante, lo que debilita su sistema inmunológico y favorece la presencia de enfermedades. Estos problemas originados por el cambio climático impulsan a las abejas a realizar migraciones para encontrar distribuciones geográficas con características ambientales óptimas para su desarrollo, generando nuevas relaciones entre especies, parásitos, plagas y depredadores.</p>
+<p>Lo anterior puede llegar a ocasionar problemas, por ejemplo, en los últimos años el Continente Europeo se ha visto afectado por una sobrepoblación de enjambres de avispas <em>Vespa velutina</em> y <em>Vespa tropica</em>, provenientes del Continente Asiático. Los enjambres de abejas huyen para eludir a estas especies de avispones, que son sus depredadores naturales, además de que los enjambres de avispas provocan accidentes por picaduras entre la población, ocasionando un problema social para países como España, donde no existía ese tipo de insectos. Esta problemática tuvo origen debido a los cortos periodos de invierno causados por el calentamiento global, lo que permitió a las avispas ampliar las regiones de desarrollo de sus colonias.</p>
+<p>Por todo lo anterior, es importante que el productor este pendiente de las variaciones climáticas que puedan poner en riesgo la supervivencia de las abejas, y poder implementar acciones encaminadas en contrarrestar los efectos negativos del cambio climático, por ejemplo, brindarles una fuente cercana de agua potable, alimentos ricos en nutrientes, zonas de sombra, control de enfermedades, entre otros, ya que de no realizar alguna acción pertinente, las probabilidades de que la colonia sucumba se incrementan.</p>
+<p>Mitigar los efectos del cambio climático, no es solo compromiso de los productores, se requiere la participación de toda la población en general; por lo que se debe promover la búsqueda de formas sustentables de las actividades humanas, coherentes con las necesidades del medio ambiente.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p>Medellín-Pico RA. <em>Impacto del Cambio Climático en la Apicultura.</em> Memorias del 3er Encuentro Latinoamericano de Apicultores. La Habana, Cuba. Abril, 2012.</p>
+<p><br/> <br/> <br/></p>
+<h2 id="las-abejas-y-los-pesticidas">2.15. Las Abejas y los Pesticidas</h2>
+<hr />
+<p>De acuerdo a la información arrojada por apicultores de diversos estados, se estima haber perdido desde un 30 hasta un 88 porciento de colmenas entre 2015 y 2016. De los estados más afectados, Jalisco ha tenido pérdidas de 50 mil colmenas, el equivalente a 2,500 millones de abejas y 750 toneladas de miel. Diversos factores han sido atribuidos como causantes de este fenómeno, tales como el cambio climático, plagas e infecciones, así como el uso de plaguicidas de uso agrícola.</p>
+<p>Sin embargo, aunque México aún carece de información al respecto, el punto común es que todos los apicultores que han sufrido pérdida masiva de colmenas lo relacionan a la aplicación de plaguicidas en cultivos cercanos. Es por ello que el Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco, A.C. (CIATEJ), ha contribuido generando información sobre la relación que existe entre el uso de plaguicidas, con este problema. El CIATEJ es un Centro de Investigación que pertenece a la Coordinación de Medio Ambiente, Salud y Alimentación del Sistema de Centros Públicos de Investigación (CPI) del Consejo Nacional de Ciencia y Tecnología (CONACYT).</p>
+<p>El Dr. Octavio Gaspar, del CIATEJ, se especializa en toxicología ambiental y molecular, y junto con su equipo de trabajo, ha construido una plataforma analítica para identificar y cuantificar sustancias tóxicas, en este caso plaguicidas en diversas matrices ambientales y alimentarias, entre ellas, miel, ceras y abejas. De esta manera, se ha podido establecer una cercanía con diversos grupos de apicultores para atender casos muy particulares de aquellos que han sufrido pérdidas importantes de colmenas.</p>
+<p>Entre los insecticidas pueden encontrarse sustancias como los <em>neonicotinoides</em> y el <em>fipronil</em>, entre otros, incluso a dosis letales, lo cual explica la mortandad masiva de abejas, dentro o alrededor de sus propias colmenas. Caso contrario a la comarca Lagunera en donde se han hallado mezclas de <em>neonicotinoides</em> y <em>organofosforados</em> en muestras de miel y cera a concentraciones muy bajas. En este caso, las abejas abandonaron las colmenas, posiblemente por desorientación espacial debida a la exposición a dosis subletales de los pesticidas.</p>
+<p>Todo plaguicida es tóxico; sin embargo, la dosis es la que determina el efecto. Científicamente está comprobado que los insecticidas actúan sobre el sistema nervioso de la abeja generando daños irreversibles como la pérdida de la memoria, parálisis y muerte, en este sentido, dosis subletales resultan en desorientación y pérdida de la memoria, es por ello que las abejas salen de sus colmenas en busca de alimento y ya no regresan, así que la colmena colapsa. De todas las familias de insecticidas, los neonicotinoides son de los más tóxicos, por ejemplo, solo una dosis oral de 5 nanogramos de <em>imidacloprid</em> es suficiente para matar a una abeja.</p>
+<p>Debido a que este es un problema emergente y de gran relevancia en México, la cámara de diputados ha solicitado información y apoyo científico para fortalecer exhortos dirigidos a la SADER, a la Secretaría de Medio Ambiente y Recursos Naturales (SEMARNAT) y a la Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS).</p>
+<p>Asimismo, es necesario impulsar iniciativas que establezcan la regulación, la vigilancia, el buen uso o, en su caso, la prohibición de plaguicidas altamente peligrosos. Sin embargo, ante la prioridad de la mortandad de abejas, se debe proteger al sector apícola a través de una estrecha comunicación entre autoridades, agricultores y apicultores; asimismo, hacer efectivas las recomendaciones que da el manual de buenas prácticas de la SADER. tras la aplicación de plaguicidas en cultivos.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="https://ciatej.mx/el-ciatej/comunicacion/Noticias/El-impacto-de-los-plaguicidas-en-el-sector-apicola/34" target="_blank">CIATEJ. <em>El impacto de los plaguicidas en el sector apícola.</em> Agosto, 2017.</a></p>
+<p><br/> <br/> <br/></p>
+<h2 id="síndrome-del-colapso-de-la-colonia">2.16. Síndrome del Colapso de la Colonia</h2>
+<hr />
+<p>El Síndrome del Colapso de la Colonia (SCC), bautizado así en los Estados Unidos en el año 2006 para definir la inexplicable desaparición abrupta de abejas, a diferencia de los sucesos que recientemente el sector apícola mexicano ha comenzado a sufrir, por mortandad masiva de abejas relacionada con el mal de uso de agroquímicos.</p>
+<p>Es un fenómeno caracterizado porque las abejas obreras desaparecen abruptamente de una colmena, lo que conduce a su colapso y cuya causa no es conocida y se relaciona con diversos factores. Actualmente se desconoce si este fenómeno de alta mortandad de colonias se trata de una enfermedad en particular, sin que hasta el momento se haya identificado un factor causal único, los investigadores sugieren considerarlo como un síndrome de origen multifactorial.</p>
+<p>Este síndrome tiene fuertes implicaciones económicas y biológicas, ya que al perderse grandes poblaciones de abejas se reduce el número de agentes polinizadores, lo que trae como consecuencia pérdidas económicas de consideración, debido a una insuficiente polinización de cultivos agrícolas lo que afecta a la cadena alimenticia; además, el impacto en la biodiversidad es enorme, pues su valor ecológico es incalculable.</p>
+<p>La cantidad de factores que se han mencionado como posibles responsables del SCC es innumerable, pero la evidencia científica hasta ahora disponible, limita la lista a los siguientes factores: patógenos, insecticidas, acaricidas, apicultura migratoria, manejo deficiente y cambio climático.</p>
+<p>El único signo relevante y común en todos los casos es el colapso de la colonia. Sin embargo, pudieran observarse uno o varios de los siguientes signos:</p>
+<ol style="list-style-type: decimal">
+<li><p>Colonias débiles sin causa aparente, lo que conduce a un insuficiente número de obreras para mantener a las crías.</p></li>
+<li><p>Las abejas dejan de consumir el alimento suministrado (jarabe o suplementos proteicos).</p></li>
+</ol>
+<p>Por otro lado, una colonia que ha colapsado pudiera presentar una o varias de las siguientes condiciones:</p>
+<ol style="list-style-type: decimal">
+<li><p>Ausencia completa de abejas adultas vivas y de cadáveres de abejas dentro de las colmenas.</p></li>
+<li><p>Presencia de cría operculada.</p></li>
+<li><p>Presencia de reservas (miel y polen).</p></li>
+</ol>
+<p>Como recomendación, se sugiere controlar, en la medida de lo posible, los factores que pudieran causar el SCC:</p>
+<p>• Control contra patógenos como <em>V. destructor</em>, <em>Nosema spp</em> y los virus de asociación.</p>
+<p>• Buenas prácticas de manejo que incluyan: el cambio anual de reinas mejoradas, alimentación artificial en épocas de escasez y revisión frecuente para corregir problemas que pudieran llevar a la pérdida de colonias.</p>
+<p><br/></p>
+<p><strong><em>Fuente:</em></strong></p>
+<p><a href="pdfs/PATOLOGIA_DIAGN_CNTRL_ENFRMDDS_ABEJAS_MELIFERAS.pdf" target="_blank">SADER (Compilador). <em>Manual de Patología, Diagnóstico y Control de las Principales Enfermedades y Plagas de las Abejas Melíferas.</em> 2012</a></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

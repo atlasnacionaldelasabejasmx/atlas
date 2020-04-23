@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Propóleo</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.13/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Atlas Nacional de las Abejas <br>y Derivados Apícolas <br>(Versión Preliminar)</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Introducción
+  </a>
+</li>
+<li>
+  <a href="cap2.html">
+    <span class="fa fa-forumbee"></span>
+     
+    Abejas y Apicultura
+  </a>
+</li>
+<li>
+  <a href="cap3.html">
+    <span class="fa fa-globe"></span>
+     
+    La Miel en México
+  </a>
+</li>
+<li>
+  <a href="cap4.html">
+    <span class="fa fa-vial"></span>
+     
+    Propóleos
+  </a>
+</li>
+<li>
+  <a href="cap5.html">
+    <span class="fa fa-chart-bar"></span>
+     
+    Estadísticas
+  </a>
+</li>
+<li>
+  <a href="cap6.html">
+    <span class="fa fa-map"></span>
+     
+    Mapas
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Propóleo</h1>
+
+</div>
+
+
+<p><img src="imag/6_Propoleo.gif" style="display: block; margin: auto;" /></p>
+<div class="text-justify">
+<h2 id="introducción-a-propóleo">Introducción a propóleo</h2>
+<p>Por <a href="#a001">Betsabé Rodríguez Pérez y Tonatiuh A. Cruz Sánchez</a></p>
+<p>Existen alrededor de 20 mil especies a nivel mundial que están agrupadas en siete familias. Una de éstas se llama <em>Apidae</em> y contiene a la subfamilia <em>Apinae</em>, en donde se ubican diferentes tribus, como la de las abejas sin aguijón (<em>Meliponini</em>), la de los abejorros (<em>Bombini</em>), la de las abejas melíferas (<em>Apini</em>), la de las abejas de las orquídeas (<em>Euglossini</em>) y otras que son menos conocidas.</p>
+<p>Entre las abejas sociales destacan dos grupos: las que son primitivamente sociales (como los abejorros) y las altamente sociales, como las abejas melíferas (género Apis) y las abejas sin aguijón.</p>
+<p>La abeja melífera o conocida también como abeja europea (Nombre científico: <em>Apis mellifera</em>) es aquella que presenta en su cuerpo color negro con amarillo y con un aguijón.</p>
+<p>Sólo este último grupo (las que son altamente sociales) forma colonias permanentes en donde almacenan miel y polen en grandes cantidades</p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_I_Fig1.png" alt="**Figura 1. Agrupación jerárquica de las abejas (Arnold et al.,  2018)**" width="60%" />
+<p class="caption">
+<strong>Figura 1. Agrupación jerárquica de las abejas (Arnold et al., 2018)</strong>
+</p>
+</div>
+<p>En México se reportan 46 especies de abejas sin aguijón, seis agrupadas en 16 géneros. Los estados que tienen mayor número de especies son: Oaxaca, Chiapas, Veracruz, y Quintana Roo (Arnold et al., 2018).</p>
+<p><strong>Propóleo</strong></p>
+<p>El término propóleo etimológicamente proviene del griego <em>pro</em> “para o en defensa de” y <em>polis</em> “ciudad” haciendo referencia a la defensa de la colmena (Bedascarrasbure, 2006). Es una sustancia de composición compleja elaborada por las abejas a partir de resinas de la vegetación de alrededor de las colmenas y que es utilizada en la colmena como material de sellado, agente microbicida y desinfectante, por lo tanto, es el responsable directo de garantizar la asepsia de la colmena, siendo ésta un ambiente prolífero para el desarrollo de microorganismos, debido a sus condiciones de temperatura y humedad (Palomino et al., 2010) como se muestra en la Figura 2.</p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_I_Fig2.png" alt="**Figura 2. A: abejas recolectando resinas. B: usos en la colmena (Rodríguez, 2019) **" width="60%" />
+<p class="caption">
+<strong>Figura 2. A: abejas recolectando resinas. B: usos en la colmena (Rodríguez, 2019) </strong>
+</p>
+</div>
+<p>Las características físicas del propóleo como color, aroma, sabor y consistencia, están relacionadas con la fuente vegetal y clima de la región donde es recolectado. El color puede variar desde rojo, amarillo-rojizo, amarillo oscuro, verde castaño, pardo o negro (Figura 3); presenta un olor resinoso (madera) o balsámico (cera), sabor suave a picante y consistencia a temperatura ambiente maleable o rígida (González, 1997; Kuropatnicki et al., 2013; DOF, 2017).</p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_I_Fig3.png" alt="**Figura 3.Propóleos en greña (Rodríguez, 2019) **" width="60%" />
+<p class="caption">
+<strong>Figura 3.Propóleos en greña (Rodríguez, 2019) </strong>
+</p>
+</div>
+</div>
+<p><br></p>
+<div class="text-center">
+<video width="100%" height="100%" src="media/Propóleo.mp4" controls type="video/mp4">
+</video>
+</div>
+<div class=text-justify>
+
+<p><br/></p>
+<p><strong>Propóleo de abejas nativas de México</strong></p>
+<p>Ya desde tiempo atrás, por ejemplo, en Atzalan, Veracruz, el propóleo de abejas nativas de México, se conoce con el nombre local de tacahuite y se usa para picaduras, heridas infectadas, infecciones en vías respiratorias, “estirón” y golpes internos. En la Sierra Norte de Puebla lo llaman takahuil y es usado como emplasto para curar heridas. Entre los testimonios de uso que se han colectado están el de cicatrizar heridas, curar infecciones en la piel y en los oídos, infecciones respiratorias e intestinales, inflamación de encías, hongos en la piel, así como otros usos no medicinales como los de protector de madera, repelente de plagas en hortalizas y sus aplicaciones en heridas de animales como vacas y gallinas. A pesar del conocimiento que existe sobre sus propiedades medicinales, son pocos los meliponicultores que aprovechan su utilidad, lo que convierte al propóleo en un área potencial de desarrollo (Arnold,N. et al,2018).</p>
+<p><em>Referencias:</em></p>
+<p>• Rodríguez Pérez, Betsabé. 2019. Potencialización antimicrobiana de dos propóleos mexicanos para su aplicación en casos de Medicina Veterinaria. Tesis de Doctorado. Universidad Nacional Autónoma de México.</p>
+<p>• Bedascarrasbure, E. 2006. Propóleos. Caracterización y normalización de propóleos argentinos. Revisión y actualización de componentes y propiedades químicas. Argentina: Magna.</p>
+<p>• Chil, N., Pavón, S., Galvéz, H., Cuéllar, C. y Ávila, B. 2002. Estudio de algunos parámetros para la caracterización del extracto blando de propóleos procedente de la región de Manzanillo como materia prima para la industria nacional. <em>Revista Cubana de Química.</em> XIV:34 - 41.</p>
+<p>• Palomino, L., Martínez, J., García, C., Gil, J. y Durango, D. 2010. Caracterización fisicoquímica y actividad antimicrobiana del propóleos en el Municipio de La Unión (Antioquia, Colombia). <em>Revista Facultad Nacional de Agronomía Medellín.</em> 63(1): 5373-5383.</p>
+<p>• León González, V. (2012). Estudio químico de un propóleo recolectado en la zona rural del Distrito Federal, evaluación de su actividad antibacteriana contra bacterias patógenas orales. Tesis de Licenciatura, Universidad Nacional Autónoma de México. México.</p>
+<p>• González G., A. 1997. Propóleos: un camino hacia la salud. 1ª Ed. Pablo de la Torriente. La Habana, Cuba.</p>
+<p>• Kuropatnicki, A., Szliszka E. y Wojciech, K. 2013. Historical Aspects of Propolis Research in Modern Times. <em>Evidence-Based Complementary and Alternative Medicine.</em> 2013. 1-11.</p>
+<p>• Diario Oficial de la Federación (DOF). 2017. Norma Oficial Mexicana: Propóleos, producción y especificaciones para su procesamiento.NOM-003-SAG/GAN-2017. Tomo DCCLXIX (6). 27-35.</p>
+<p>• Alves, F. E., Guzmán, D., Figueroa, J., Tello, J. y De Oliveira, D. 2011. Caracterización antimicrobiana y fisicoquímica de propóleos de <em>Apis mellifera</em> L. (Hymenoptera: apidae) de la región Andina Colombiana. Acta Biológica Colombiana. 16: 175-184.</p>
+<p>• Tovalino, M., Sacsaquispe, S., Ceccarelli, J. y Alania-Mallqui, J. 2012. Propóleo Peruano: Una nueva alternativa terapéutica antimicrobiana en Estomatología. <em>Revista Estomatológica Herediana.</em> 22:50-58.</p>
+<p>• Sosa-López, Á., Cabrera, M. y Álvarez, M. 2017. Vegetación de origen como parámetro de caracterización microbiana de los propóleos. <em>Journal of the Selva Andina Biosphere.</em> 4(1):3-23.</p>
+<p>• Gimeno Creus, E. 2004. Compuestos fenólicos: un análisis de sus beneficios para la salud. <em>Offarm.</em> 23:80-84.</p>
+<p>• Arnold,N., Zepeda, R., Vásquez, M. y Aldasoro, M. (2018). Las abejas sin aguijón y su cultivo en Oaxaca, México. San Cristóbal de Las Casas, Chiapas, México: El Colegio de la Frontera Sur: Comisión Nacional para el Conocimiento y Uso de la Biodiversidad: Rémy Benoit Marie Vandame. 1° Ed. <a href="http://bioteca.biodiversidad.gob.mx/janium/Documentos/14197.pdf" class="uri">http://bioteca.biodiversidad.gob.mx/janium/Documentos/14197.pdf</a></p>
+<p>• Norma Oficial Mexicana NOM-003-SAG/GAN-2017, Propóleos, producción y especificaciones para su procesamiento. <a href="http://diariooficial.gob.mx/normasOficiales.php?codp=6794&amp;view=si" class="uri">http://diariooficial.gob.mx/normasOficiales.php?codp=6794&amp;view=si</a></p>
+<p><br/> <br/> <br/></p>
+<div id="composición-química" class="section level2">
+<h2>4.1 Composición Química</h2>
+<p>Por <a href="#a001">Dr. José Guillermo Penieres Carrillo</a></p>
+<p><strong>Composición general de los propóleo</strong></p>
+<p>Con base a que las abejas forman todos y cada uno de los productos de la colmena visitando la vegetación que circunda a la misma,es de esperarse que debido a la gran diversidad de plantas en el planeta, los constituyentes de esas plantas tendrán que reflejarse en contenido químico de los productos apícolas, como es el caso de los propóleos, es decir, el origen vegetal delos propóleos determina su diversidad química.<sup>1</sup> Por ejemplo, actualmente se conoce muy bien que en las zonas templadas de todo el mundo, la principal fuente de propóleo es el exudado resinoso de los álamos,principalmente el “álamo negro” (<em>Populusnigra</em>), árboles que solo son comunes en esas zonas y no crecen en zonas tropicales ni en regiones subtropicales, por lo que en estas últimas las abejas tienen que encontrar otras fuentes vegetales. Como resultado, los propóleos de las regiones tropicales tienen diferente composición química que los propóleos generados de los álamos.</p>
+<p>Por esta razón, los propóleos son difíciles de clasificar en un orden específico en cuanto a su contenido químico, ya quesu composición química es compleja y depende de varios factores como son la región geográfica,<sup>2</sup>,<sup>3</sup> clima, época de recolección,<sup>4</sup> el relieve, la vegetación natural, las cuencas hidrográficas,entre otros.Además, la técnica de recolección del propóleo empleada por el apicultor, es otro factor que influye en su contenido.Sin embargo, hasta la fecha existen buenos intentos para su clasificación.<sup>5</sup></p>
+<p>Está comprobado que la distancia de vuelo de las abejas para recolectar miel y polen puede variar entre unos pocos centímetros y más de 10 kilómetros. Esto último sucede cuando hay una extrema escasez de alimentos. Lo normal es que no se alejen más allá de un kilómetro de la colmena, con lo que una colonia explota las 300 hectáreas que hay a su alrededor. Al volar, pueden alcanzar hasta 25 kilómetros por hora, gracias a sus potentes alas, que se mueven a razón de 200 veces por segundo.<sup>6</sup></p>
+<p>De manera general, los propóleos están formados por diferentes componentes, los que se pueden clasificar como se observa en el Cuadro 4.1.1.,<sup>7</sup> presentado diferentes valores promedio, aunque también está compuesto de polen, vitaminas y aminoácidos esenciales e impurezas, como restos de abejas, astillas, entre otros.</p>
+<p><strong>Cuadro 4.1.1. Componentes químicos identificados en los propóleos.</strong></p>
+<table style="width:53%;">
+<colgroup>
+<col width="30%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Clase de componentes</th>
+<th>Compuesto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Resinas/Bálsamos (40 a 70%)</td>
+<td>Compuestos fenólicos. fenoles, ácidos fenólicos, éstes, flavonoides, ácidos alifáticos, alcoholes, aldehídos, cetonas, ácido benzoico y ésteres</td>
+</tr>
+<tr class="even">
+<td>Ceras (20 a 35 %)</td>
+<td>Componentes de cera de abejas</td>
+</tr>
+<tr class="odd">
+<td>Aceites esenciales (7 %)</td>
+<td>Monoterpenos y sesquiterpenos</td>
+</tr>
+<tr class="even">
+<td>Otros 5%</td>
+<td>Minerales, polisacáridos, proteínas, aminoácidos, aminas, amidas, trazas de carbohidratos, lactonas, quinonas, esteroides y vitaminas.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Según el diccionario de la Real Academia Española,<sup>9</sup> la definición de los primeros tres componentes del Cuadro 4.1.1., es:</p>
+<p><strong>Resina</strong>: “Sustancia sólida o de consistencia pastosa, insoluble en el agua, soluble en el alcohol y en los aceites esenciales, y capaz de arder en contacto con el aire, obtenida naturalmente como producto que fluye de varias plantas”. Dentro de las resinas naturales puede hablarse de <strong>bálsamos</strong> (una secreción que se usa como purificador o desodorizador), gomorresinas (emulsiona al mezclarse con agua) y lactorresinas (procedente del látex coagulado), entre otros tipos.</p>
+<p><strong>Cera</strong>: “Sustancia sólida, blanda, amarillenta y fundible que segregan las abejas para formar las celdillas de los panales y que se emplea principalmente para hacer velas. También la fabrican algunos otros insectos”. Las ceras biológicas son ésteres de los ácidos grasos de cadena larga (C<sub>14</sub>-C<sub>36</sub>) con alcoholes de peso molecular elevado, es decir, de cadena larga (C<sub>16</sub> a C<sub>30</sub>). Son moléculas que se obtienen por esterificación, reacción química entre un ácido carboxílico y un alcohol. Aceite esencial: “Líquido muy oloroso de algunos vegetales”. Estos aceites están constituidos por compuestos orgánicos volátiles de tipo terpénico presentes en las plantas.</p>
+<p>Algunos de los componentes más significativos en las resinas/bálsamosen este producto apícola son los que se muestran en la Tabla 1. Tabla 1 Componentes químicos del propóleo y algunos ejemplos.10,11</p>
+<table style="width:53%;">
+<colgroup>
+<col width="30%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componentes</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ácidos orgánicos</td>
+<td>Ácido benzoico (C<sub>6</sub>H<sub>5</sub>-COOH), ácido gálico (C<sub>7</sub>H<sub>6</sub>O<sub>5</sub>)</td>
+</tr>
+<tr class="even">
+<td>Ácidos fenólicos</td>
+<td>Ácidocafeico(C<sub>9</sub>H<sub>8</sub>O<sub>4</sub>), Ácido cinámico(C<sub>9</sub>H<sub>8</sub>O<sub>2</sub>), Ácido(Z)-p-cumarínico (C<sub>9</sub>H<sub>8</sub>O<sub>3</sub>) y Ácido fenílico (fenol, C<sub>6</sub>H<sub>6</sub>O).</td>
+</tr>
+<tr class="odd">
+<td>Aldehídos aromáticos</td>
+<td>Vainillina(C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>), Isovainillina(C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>).</td>
+</tr>
+<tr class="even">
+<td>Cumarinas</td>
+<td>Esculetol(C<sub>9</sub>H<sub>6</sub>O<sub>4</sub>), Escopoletol (C<sub>10</sub>H<sub>8</sub>O<sub>4</sub>).</td>
+</tr>
+<tr class="odd">
+<td>Flavonas</td>
+<td>Crisina (C<sub>15</sub>H<sub>10</sub>O<sub>4</sub>), Acacetina(C<sub>16</sub>H<sub>12</sub>O<sub>5</sub>), Pectolinaringenina(C<sub>17</sub>H<sub>14</sub>O<sub>6</sub>), Tectocrisina(C<sub>16</sub>H<sub>12</sub>O<sub>4</sub>).</td>
+</tr>
+<tr class="even">
+<td>Flavanonas</td>
+<td>Pinocembrina (C<sub>15</sub>H<sub>12</sub>O<sub>4</sub>),Naringenina (C<sub>15</sub>H<sub>12</sub>O<sub>5</sub>),Pinostrobina(C<sub>16</sub>H<sub>14</sub>O<sub>4</sub>), Sakuranetina(C<sub>16</sub>H<sub>14</sub>O<sub>5</sub>).</td>
+</tr>
+<tr class="odd">
+<td>Flavonoles</td>
+<td>Quercetina (C<sub>15</sub>H<sub>10</sub>O<sub>7</sub>), Izalpinina (C<sub>16</sub>H<sub>12</sub>O<sub>5</sub>), Kaempferol(C<sub>15</sub>H<sub>10</sub>O<sub>6</sub>), Galangina(C<sub>15</sub>H<sub>10</sub>O<sub>5</sub>), Fisetina (C<sub>15</sub>H<sub>10</sub>O<sub>8</sub>), Miricetina (C<sub>15</sub>H<sub>10</sub>O<sub>8</sub>).</td>
+</tr>
+<tr class="even">
+<td>Flavanoles</td>
+<td>Catequina (C<sub>15</sub>H<sub>14</sub>O<sub>6</sub>),Pinobanksina(C<sub>15</sub>H<sub>12</sub>O<sub>5</sub>),Epicatequina(C<sub>15</sub>H<sub>14</sub>O<sub>6</sub>).</td>
+</tr>
+<tr class="odd">
+<td>Minerales</td>
+<td>Aluminio, Plata, Bario, Boro, Cromo, Cobalto, Cobre, Estaño, Hierro Magnesio, Manganeso, Molibdeno, Níquel, Plomo, Silicio, Estroncio, Titanio, Vanadio, Zinc, Calcio.</td>
+</tr>
+<tr class="even">
+<td>Vitaminas</td>
+<td>Provitamina A (β-caroteno, C<sub>40</sub>H<sub>56</sub>) y Vitamina B3 (Niacina, Ácido nicotínico, Vitamina PP, C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub>) (Rojas2008)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Rojas NM. (2008) Viabilidad biológica de los propóleos de cuba. Actas del XXII Seminario Americano de Apicultura. Julio28-31 Mérida, Yucatán, pp 59-66.</p>
+<p>En cuanto a las propiedades terapéuticas del propóleo dependen de la calidad de éste, así como de las proporciones de los elementos que la constituyen, los cuales se relacionan directamente con su origen geográfico, <strong>aunque está reconocido que algunos de sus componentes son los que otorgan principalmente esas propiedades, como los son los flavonoides y otros polifenoles</strong>.</p>
+<p>Para conocer el contenido químico de un propóleo, generalmente esto se realiza mediante la obtención de un extracto de él, empleando de manera habitual una mezcla de etanol-agua en una proporción de 70-30%, mediante un proceso de maceración, que puede durar de 1 a 2 días, aunque también se pueden utilizar otros disolventes como etanol,metanol,aceite de cereales comestibles, glicerol, propilenglicol,entre otros,<sup>12</sup>,<sup>13</sup> y se ha demostrado que el disolvente empleado para la extracción influye de manera importante en la actividad antimicrobiana de los propóleos. Además, más recientemente se emplea energía de ultrasonido (sonicación) para la obtención de extractos de propóleo, lo que representa un ahorro de tiempo, ya que requiere de menor tiempo de extracción.</p>
+<p>Una vez obtenido el extracto disuelto, éste es llevado a un proceso de evaporación de los disolventes, preferentemente a presión reducida o bien mediante el empleo de CO<sub>2</sub> supercrítico, que en todo caso debería de ser la técnica preferida, ya que requiere de temperaturas de aproximadamente de 30-35 °C, lo que garantiza la no descomposición térmica de las sustancias contenidas en los propóleos, sin embargo, esta técnica representa un gasto económico mucho mayor, sobre todo para poder emplearla a nivel de campo.</p>
+<p>Para conocer el contenido químico de los extractos de propóleo, actualmente se emplea la técnica conocida como Cromatografía de Gases acoplada a Espectrometría de Masas (CG-EM)<sup>14</sup>, que de manera simple consiste en: Cromatografía de Gases (CG): Técnica cromatográfica (de separación) de compuestos químicos mezclados, empleando una cantidad pequeña de muestra líquida (de 1 a10 μL), en donde, bajo condiciones específicas del equipo, cada compuesto de la mezcla es separado y detectado en un cromatograma, que muestra que cada compuesto presenta un “tiempo de retención” diferente, debido a su estructura y solubilidad en el disolvente empleado en la técnica. En la Figura 4.1.1 se muestra un ejemplo de un cromatograma de propóleo.<sup>15</sup></p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_1_Fig1.png" alt="**Figura 4.1.1. Cromatograma de gases de un propóleo del Estado de Puebla **" width="70%" />
+<p class="caption">
+<strong>Figura 4.1.1. Cromatograma de gases de un propóleo del Estado de Puebla </strong>
+</p>
+</div>
+<p><br/> Esta técnica de acopla electrónicamente a la de Espectrometría de Masas (EM), es decir, cada señal del cromatograma indica cada compuesto contenido en la muestra original; así, se puede elegir cada tiempo de retención, de manera independiente, y ésta se envía al equipo de EM acoplado.</p>
+<p>Espectrometría de Masas (EM): Es una técnica espectrométrica empleada en Química, en donde un compuesto es “bombardeado” por una corriente de electrones, lo que origina su fragmentación. Este rompimiento de las moléculas no es al azar, sino que sigue patrones establecidos conocidos como “patrón de fragmentación”, lo que permite establecer de manera muy precisa la identificación de cada compuesto analizado, mediante la obtención de un “espectro de masas”, que generalmente es único y específico para compuesto químico, bajo las condiciones empleadas en el equipo. En la Figura 2 se muestra un ejemplo de un espectro de masas.<sup>16</sup></p>
+<br/>
+<div class="figure" style="text-align: center">
+<img src="imag/4_1_Fig2.png" alt="**Figura 4.1.2. Espectro de masas de Eupatorina**" width="50%" />
+<p class="caption">
+<strong>Figura 4.1.2. Espectro de masas de Eupatorina</strong>
+</p>
+</div>
+<p><br/></p>
+<p>Actualmente, los equipos de CG-EM cuentan con una vasta información de espectros de masas de muchos compuestos químicos, conocida como “biblioteca”, por lo que, con base a cada espectro de masas obtenido para cada sustancia contenida en la mezcla y separada por CG, el equipo correlaciona cada espectro con alguno o algunos de los que contiene en su biblioteca, con diferentes porcentajes de aproximación, es decir, un mismo compuesto puede ser correlacionado con más de uno de los compuestos contenidos en la biblioteca, pero con diferentes grados de aproximación (una aproximación del 100%, indica que el equipo tiene una información que señala que el compuesto analizado realmente es el propuesto).En el siguiente se muestra el análisis de cromatografía de gases y la asignación del equipo de CG-EM de diferentes propóleos estudiados en la FES Cuautitlán (vínculo).</p>
+<p>FAlta pasarlo a vide Tablas de propoleo.ppsx</p>
+<p>Aunque hasta la fecha se han identificado más de 300 compuestos en los propóleos, <strong>las propiedades biológicas que ellos presentan principalmente son atribuidas a unos cuantos compuestos, principalmente flavonoides, ácidos fenólicos y algunos de sus ésteres, de los que los primeros son considerados como los mayores contribuyentes.</strong></p>
+<p><strong>Flavonoides</strong> El término genérico flavonoide (del latínflavus, “amarillo, dorado”) es con el que se identifica a una serie de compuestos polifenólicos presentes en las plantas. Actualmente se conocen más de 5000 flavonoides.<sup>17</sup></p>
+<p>Esta familia de compuestos tiene diversas funcione en las plantas que los contienen, como responsables de la resistencia de las plantas a la fotooxidación por la luz ultravioleta del sol, para la regulación del transporte de auxinas (hormonas), como defensa ante el consumo por los seres herbívoros, como atracción de los animales polinizadores, a través del color o el olor que dan a la planta o a sus flores. Hasta ahora se conoce que, en los frutos, las mayores concentraciones se encuentran en su piel.</p>
+<p>En general, la familia de los flavonoides se clasifica como flavonoides, isoflavonoides, neoflavonoides y antocianinas (también llamadas antocianos) y su estructura general se muestra en la Figura 4.1.3.,<sup>18</sup> en donde los más abundantes e importantes son los primeros.</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_1_Fig3.png" alt="**Figura 4.1.3. Clasificación general de los flavonoides.**" width="50%" />
+<p class="caption">
+<strong>Figura 4.1.3. Clasificación general de los flavonoides.</strong>
+</p>
+</div>
+<p><br/></p>
+<p>Sin embargo, Pérez Trueba divide a los flavonoides en 13 diferentes formas estructurales, como se muestra en la Figura 4.1.1.<sup>19</sup></p>
+<br/>
+<div class="figure" style="text-align: center">
+<img src="imag/4_1_Fig4.png" alt="**Figura 4.1.4. Clasificación de los flavonoides según Pérez Trueba.**" width="70%" />
+<p class="caption">
+<strong>Figura 4.1.4. Clasificación de los flavonoides según Pérez Trueba.</strong>
+</p>
+</div>
+<p><br/></p>
+<p>Referencias</p>
+<ol style="list-style-type: decimal">
+<li><p>V. Bankova (2015). Evidence-Based Complementary and Alternative Medicine,2, Article ID 108379, 29-32. <a href="doi:10.1093/ecam/neh059" class="uri">doi:10.1093/ecam/neh059</a></p></li>
+<li><p>J. M. Sforcina, V. Bankova (2011). Propolis: Is there a potential for the development of new drugs? Journal of Ethnopharmacology, 133, 253–260. <a href="doi:10.1016/j.jep.2010.10.032" class="uri">doi:10.1016/j.jep.2010.10.032</a></p></li>
+<li><p>A. Hegazi1, A. M. Abdou, F. A. Allah (2014). Egyptian Propolis 11: Its antimicrobial activity with comparison with different localities, Int.J.Curr.Microbiol.App.Sci, 3(9), 530-538.</p></li>
+<li>D. Valencia, E. Alday, R. Robles, A. Garibay, J.C. Gálvez, M. Salas, M. Jiménez, E. Velázquez, J. Hernández, C. Velázquez (2012). Seasonal effect on chemical composition and biological activities of Sonoran propolis, Food Chemistry, 131, 645–651.<a href="doi:10.1016/j.foodchem.2011.08.086" class="uri">doi:10.1016/j.foodchem.2011.08.086</a></li>
+<li>M. Popova, B. Trusheva, D. Antonova, S. Cutajar, D. Mifsud, C. Farrugia, I. Tsvetkova, H. Najdenski, V. Bankova (2011). The specific chemical profile of Mediterranean propolis from Malta, Food Chemistry, 126, 1431–1435 (y referencias citadas). <a href="doi:10.1016/j.foodchem.2010.11.130" class="uri">doi:10.1016/j.foodchem.2010.11.130</a></li>
+<li><a href="http://www.mieldegranada.com/Miel_de_Granada/MM_abeja_3.html" class="uri">http://www.mieldegranada.com/Miel_de_Granada/MM_abeja_3.html</a> (consultada el 19 de febrero de 2020).</li>
+<li>S. Bogdanov (2017). Propolis: Composition, Health, Medicine: A Review. BeeProductScience, 1-44 (<a href="http://www.bee-hexagon.net/files/file/fileE/Health/PropolisBookReview" class="uri">http://www.bee-hexagon.net/files/file/fileE/Health/PropolisBookReview</a>. pdf, consultado el 19 de febrero de 2020).</li>
+<li>E. Gimeno (2004). Compuestos fenólicos. Un análisis de sus beneficios para la salud. OFFARM, 23(6), 80-84.</li>
+<li><a href="https://dle.rae.es/diccionario" class="uri">https://dle.rae.es/diccionario</a> (consultado el 19 de febrero de 2020).</li>
+<li>S. Castaldo, F. Capasso (2002). Propolis, an old remedy used in modern medicine, Fitoterapia 73(1), S1–S6.</li>
+<li><a href="https://hi-in.facebook.com/notes/lux-vitae-luz-de-vida-terapias-naturales-alternativas-y-salud-integral/prop%C3%B3leo-antibi%C3%B3tico-natural-antiinflamatorio-cicatrizante-inmunoestimulante-y-m/174465298734/?comment_id=10150889223073735&amp;comment_tracking=%7B%22tn%22%3A%22R%22%7D">https://hi-in.facebook.com/notes/lux-vitae-luz-de-vida-terapias-naturales-alternativas-y-salud-integral/prop%C3%B3leo-antibi%C3%B3tico-natural-antiinflamatorio-cicatrizante-inmunoestimulante-y-m/174465298734/?comment_id=10150889223073735&amp;comment_tracking=%7B%22tn%22%3A%22R%22%7D</a> (consultado el 20 de febrero de 2020).</li>
+<li>J. C. Silva, S.Rodrigues, X.Feás, L. M. Estevinho (2012). Antimicrobial activity, phenolic profile and role in the inflammation of propolis, Food and Chemical Toxicology, 50, 1790–1795. <a href="doi:10.1016/j.fct.2012.02.097" class="uri">doi:10.1016/j.fct.2012.02.097</a></li>
+<li>B. Tosi, A. Donini, C. Romagnoli, A. Bruni (1996). Antimicrobial Activity of Some CommercialExtracts of Propolis Prepared with Different Solvents, Phytotherapy Research, 10, 335-336. 14.<a href="https://tv.upc.edu/contenidos/cromatografia-de-gases-espectrometria-de-masas" class="uri">https://tv.upc.edu/contenidos/cromatografia-de-gases-espectrometria-de-masas</a> (consultado el 21 de febrero de 2020)</li>
+<li>B. Rodríguez Pérez (2015). Perfil Químico de Propóleos Mexicanos para su aplicación en Medicina Veterinaria. Tesis de Maestría del Posgrado en Ciencias de la Producción y Salud Animal-UNAM. TESIUNAM. 132.248.9.195/ptd2015/abril/0727687/Index.html (consultado el 21 de febrero de 2020). 16.<a href="https://www.tesisenred.net/bitstream/handle/10803/1648/02.SCF_2de2.pdf?sequence=2&amp;isAllowed=y(consultado" class="uri">https://www.tesisenred.net/bitstream/handle/10803/1648/02.SCF_2de2.pdf?sequence=2&amp;isAllowed=y(consultado</a> el 26 de febrero de 2020)</li>
+<li>S. Martínez, J. González, J. M. Culebras, M. J. Tuñón (2002). Los flavonoides: propiedades y acciones antioxidantes, Nutrición Hospitalaria, XVII (6), 271-278.</li>
+<li><a href="https://www.fundacion-canna.es/flavonoides" class="uri">https://www.fundacion-canna.es/flavonoides</a> (consultado el 21 de febrero de 2020).</li>
+<li><p>G. Pérez Trueba (2003). Los flavonoides: Antioxidantes o Prooxidantes, Revista Cubana de Investigación Biomédica, 22(1), 48-57.</p></li>
+</ol>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="flora-propolizadora" class="section level2">
+<h2>4.2 Flora propolizadora</h2>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="producción-y-recolección-de-propóleo" class="section level2">
+<h2>4.3 Producción y Recolección de propóleo</h2>
+<p>Por <a href="#a001">M. en C. Liborio Carrillo Miranda FES-Cuautitlán</a></p>
+<p><strong>Introducción</strong></p>
+<p>El conocimiento y uso de los productos de la colmena, se remonta a tiempos antes de cristo, el primer registró del aprovechamiento fue encontrado en las pinturas rupestres en la cueva de la Araña, en Valencia, España. Así mismo, el primer testimonio apícola se encontró en jeroglíficos egipcios del año 5510 a. C.</p>
+Falta imagen
+<div class="figure" style="text-align: center">
+<img src="imag/4_3_Fig1.png" alt="**Figura 4.3.1. Pintura rupestre **" width="70%" />
+<p class="caption">
+<strong>Figura 4.3.1. Pintura rupestre </strong>
+</p>
+</div>
+<p>En Mesoamérica el cuidado de la abeja data desde la época prehispánica donde los antiguos mayas, cuidaban a las abejas nativas (Meliponas y Trigonas), obteniendo sus colonias de los árboles de la selva, mismos que cortaban y trasladaban a sus comunidades ya como jobones (troncos huecos donde se criaban a las abejas), los cuales eran colocados en grupos bajo una palapa de techo de palma, dicha actividad era concebida como algo divino por considerar que los dioses eran los dueños de las abejas. La miel y el cerumen (cera de Campeche), eran utilizados con fines religiosos en la preparación de bebidas, como pago de tributo o trueque con otros grupos étnicos.</p>
+<p>En México la tecnificación de la apicultura se da a partir de 1920 y con las primeras exportaciones de miel, en 1950 se inicia la modernización de esta actividad con dos regiones principales una en el altiplano y la otra en la Península de Yucatán. En la actualidad la apicultura se encuentra distribuida en todo el territorio nacional constituyendo cinco regiones (Norte, Centro, Altiplano Golfo y Península de Yucatán), y más de 230 agrupaciones con aproximadamente 45,000 apicultores con alrededor de 1, 900,000 colmenas y una producción promedio de 57,000 toneladas de miel al año.</p>
+<p>A pesar del gran desarrollo que ha alcanzado la apicultura en nuestro país, está se basa solo en el aprovechamiento de la miel y cera quedando sin explotar plenamente el polen, la jalea real, el veneno de las abejas y el propóleo se desconoce en general las aplicaciones o uso, lo ven más como una molestia ya que en el caso del propóleo se les pega a la cuña y guantes durante las visitas de revisión de las colmenas o durante la extracción de miel como ejemplo.</p>
+<p>La práctica de una apicultura diversificada, en la que se aprovechen al menos los cinco productos de las abejas que en alguna época del año se producirán, se verá reflejado en una mayor rentabilidad de la actividad, por los ingresos económicos que esto representa hoy día la miel ya no paga las cuentas.</p>
+<p>El término propóleo es derivado de dos palabras griegas, Pro, que significa antes y Polis, ciudad, y es empleada en el sentido de defensa de la colmena “ciudad de las abejas” (Rosa-Agostinho 1996). El propóleo es una mezcla de sustancias resinosas, gomosas y balsámicas, cuyo color varía del pardo-rojizo al amarillo-verdoso, de sabor amargo y consiste básicamente de exudados de diferentes plantas que las abejas combinan con secreciones mandibulares y cera (Franco &amp; Kurebayashi 1986; Aga et al. 1994; Meda &amp; de Mattos-Meda 1994; Bracho et al. 1996; Malaspina &amp; Palma 1999). Esto último es soportado por recientes descubrimientos, en cuanto al contenido de ácidos grasos de origen animal, en muestras de propóleo fresco (Palma &amp; Malaspina 1999).</p>
+<p><br/></p>
+<p><strong>Recolecta del propóleo por las abejas</strong></p>
+<p>La recolecta del propóleo se efectúa por un número reducido de abejas, durante las horas más calientes del día, por lo regular de las 10:00 a las 15:30 horas (Dos Santos 1996). Cada abeja después de haber localizado con sus antenas la partícula más adecuada de resina en alguna planta, procede a desprenderla valiéndose de sus mandíbulas y del primer par de patas, auxiliándose con la secreción de sus glándulas mandibulares (ácido10-hidroxi-2-decenoico), le permite el ablandamiento de la goma. Posteriormente, la abeja tritura y moldea con sus mandíbulas el pedazo arrancado y utiliza una de las patas del segundo par, para transferirlo a la corbícula del tercer par de patas, esta acción la puede efectuar en el lugar de colecta o en pleno vuelo. Para completar una carga de propóleo llenar las dos cestillas de su tercer par de patas, una abeja puede ocupar de 15 minutos a una hora en realizar dicha labor, dependiendo principalmente de la temperatura ambiente (Donadieu 1980); Machado de Morales et al. 1995). Cabe mencionar que Dos Santos (1996), señala que temperaturas por abajo de los 21ºC y por arriba de los 28ºC, parecen inhibir este comportamiento.</p>
+<p><br/></p>
+<p><strong>Técnicas de recolección</strong></p>
+<p>Las abejas por comportamiento tienden a tapar o disminuir orifico o espacios, y aprovechando este comportamiento si dejamos rendijas de aproximadamente desde 2 centímetros a cinco milímetros forzamos a que las abejas depositen el propóleo.</p>
+<p>Métodos promotores de cortinas de propóleos: Son todos aquellos que crean espacios entre las cámaras de cría, alzas, tapas internas de la colmena y/o en las paredes de las mismas, dichos espacios pueden ser de dos centímetros o menos y sirven para promover la acumulación de propóleos en forma de cortina para bloquear la entrada de aire o intrusos a la colmena. Entre estos métodos se encuentran los brasileños (CPI, pirassununga, bastidores, cuadros móviles, entre otros) y el Campechano de origen mexicano.</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_3_Fig2.png" alt="**Figura 4.3.2. Pirassununga . Fotografía de Luis Roberto M. **" width="70%" />
+<p class="caption">
+<strong>Figura 4.3.2. Pirassununga . Fotografía de Luis Roberto M. </strong>
+</p>
+</div>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_3_Fig3.png" alt="**Figura 4.3.3. Campechano de origen mexicano Fotografía de Luis Roberto M. **" width="70%" />
+<p class="caption">
+<strong>Figura 4.3.3. Campechano de origen mexicano Fotografía de Luis Roberto M. </strong>
+</p>
+</div>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_3_Fig4.png" alt="**Figura 4.3.4. Cuadros móviles Fotografía de  Luis Roberto M. **" width="70%" />
+<p class="caption">
+<strong>Figura 4.3.4. Cuadros móviles Fotografía de Luis Roberto M. </strong>
+</p>
+</div>
+<p><br/></p>
+<p>Mallas y Rejillas plásticas: Son dispositivos plásticos que presentan orificios de diferentes tamaños. Las mallas y rejillas plásticas son dispositivos plásticos que presentan orificios de diferentes tamaños que pueden ir desde los tejidos, como las mallas mosquiteros que presentan hilos de un grosor de 0.5 mm y orificios de aproximadamente 1.0 por 1.0 mm de luz, y las matrizadas (que se forma por medio del prensado en un molde caliente), que son de una sola pieza y pueden presentar orificios desde 1.0 por 1.0 mm de luz y un grosor de 1.0 mm; hasta las de 2.0 por 2.0 mm de luz y un grosor de 2.0 mm, y las tipo rejilla con orificios de 2.0 mm por 5.0 cm de largo y un grosor de 2.0 mm, estas mallas y rejillas presentan una forma trapezoidal isósceles.(NOM SAG 003/GAN 2017).</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_3_Fig5.png" alt="**Figura 4.3.5. Malla plástica Fotografía de Liborio Carrillo **" width="70%" />
+<p class="caption">
+<strong>Figura 4.3.5. Malla plástica Fotografía de Liborio Carrillo </strong>
+</p>
+</div>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_3_Fig6.png" alt="**Figura 4.3.6. Rejillas plásticas Fotografía de Liborio C.M. **" width="70%" />
+<p class="caption">
+<strong>Figura 4.3.6. Rejillas plásticas Fotografía de Liborio C.M. </strong>
+</p>
+</div>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_3_Fig7.png" alt="**Figura 4.3.7. Relación costo beneficio en la producción de propóleo **" width="70%" />
+<p class="caption">
+<strong>Figura 4.3.7. Relación costo beneficio en la producción de propóleo </strong>
+</p>
+</div>
+<p><br/></p>
+<p><strong>Utilización del propóleo dentro de la colmena</strong></p>
+<p>Las abejas utilizan el propóleo dentro de la colonia con diversos fines, como son: embalsamado de los intrusos muertos dentro de la colmena, tapar grietas o hendiduras de la colonia, disminuir el acceso de la piquera, alisar asperezas dentro de la colmena, esterilización de la colmena y las celdas donde la reina pondrá los huevos, aislante térmico, fijar los panales a los cuadros o ramas de los árboles, evitar la vibración de los panales y darle impermeabilidad a la colmena (Asís 1989; De la Cuétara et al. 1988; Negri et al. 1998).</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_3_Fig8.png" alt="**Figura 4.3.8. Fotografía: Liborio C.M. **" width="70%" />
+<p class="caption">
+<strong>Figura 4.3.8. Fotografía: Liborio C.M. </strong>
+</p>
+</div>
+<p><br/></p>
+<p>Composición del propóleo Estudios efectuados en las últimas décadas enfocados a determinar la composición del propóleo, mencionan que su composición genérica se encuentra de la siguiente manera:</p>
+<ul>
+<li>55% de resinas y bálsamos</li>
+<li>10% de aceites volátiles,</li>
+<li>30% de cera</li>
+<li>5% de polen (Borcic et al. 1996).</li>
+</ul>
+<p>En lo referente a su composición química, aún no se logra conocer la totalidad de sus componentes. Algunos autores señalan que el propóleo contiene más de 150 elementos (Bankova et al. 1993; Basnet et al. 1996; Matsushige et al. 1996), otros mencionan que su contenido está formado por más de 160 constituyentes (Bankova et al. 1995; Cunha et al. 1998). Por último, Sforcin et al. (1995) señalan la presencia de más de 180 componentes para esta resina. Cabe señalar que el propóleo se encuentra constituido principalmente por flavonoides, flavonoles, flavononas flavonas y ácidos orgánicos como el ferúlico, cinámico, cafeico y benzoico (Rojas et al. 1990).</p>
+<p><strong>Propiedades físico - químicas del propóleo </strong></p>
+<p>El propóleo presenta una densidad mayor que la cera de abeja, se disuelve fácilmente en éter y cloroformo, parcialmente soluble en alcohol, a temperaturas de 15ºC es duro y quebradizo. A temperaturas más elevadas se ablanda y se vuelve pegajoso. Esta resina se funde entre 60º y 69ºC (Bojñanski &amp; Kosljarova 1975).</p>
+<p><strong>BIBLIOGRAFÌA</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Aga H, Shibuya T, Sugimoto T, Kurimoto M, Nakajima S. 1994. <em>Isolation and identification of antimicrobial compounds in Brasilian Propolis. Bioscience, Biotechnology, and Biochemistry</em> 58: 945–946.</p></li>
+<li><p>Asís M. 1989. <em>Propóleos: el oro púrpura de las abejas</em>. Centro de Información y Documentación Agropecuaria. Editorial CIDA. La Habana. Cuba.</p></li>
+<li><p>Bankova V, Christov R, Kujumgiev A, Marcucci MC, Popov S. 1995. <em>Chemical composition and antibacterial activity of Brasilian propolis</em>; Zeitschrift für Naturforschung C 50: 167–172.</p></li>
+<li><p>Bankova V, Popov S, Bocari G, Haxhialushi E. 1993. <em>Phenolic composition of Albanian propolis; Chim.</em> Comptes Rendus de l’Academie Bulgare des Sciences 46: 33–35</p></li>
+<li><p>Basnet P, Matsushige K, Hase K, Kadota S, Namba T. 1996. <em>Four di-O-caffeoyl quinic acid derivatives from propolis. Potent hepatoprotective activity in experimental liver injury models</em>. Biological and Pharmaceutical Bulletin 19: 1479–1484.</p></li>
+<li><p>Bojñansky V, Kosljarova V. 1975. <em>Efectos inhibitorios del propóleo en algunos virus de las plantas</em>. In: Harnaj V, Serban M. Graceanu R, Fernandes Arroyo MP, Aguar Monterde O (eds.), Propóleos: Investigaciones científicas y opiniones acerca de su composición, caracterización y utilización con fines terapéuticos. Apimondia, Bucarest. pp. 54-59.</p></li>
+<li><p>Borcic I, Radonic A, Grzunov K. 1996. <em>Comparison of the volatile constituents of propolis gathered in diferent regions of Croatia</em>. Flavour and Fragrance Journal 11: 311–313.</p></li>
+<li><p>Bracho JC, Tabio C, Valdés G, Gil JB, Domínguez A, Mendoza L. 1996. <em>Control de calidad de propóleos (características cualitativas y cuantitativas)</em>. Apitec 4: 15–16.</p></li>
+<li><p>Cunha IBS, Oliveira ACC, Bretz WA, Valente P, Marcucci MCR, Caetano F M. 1998. <em>Avaliacao de diferentes extracoes etanolicas de propolis provenientes de Abelhas Jatai X Apis melifera</em>. Anais do XII Congreso Brasileiro de Apicultura, Bahia. 200p.</p></li>
+<li><p>De la Cuétara K, Rojas N, Cuéllar A. 1988. <em>Estudio de la efectividad antimicrobiana de un extracto de propóleo y de un producto puro aislado</em>; Universidad de la Habana, Habana, Cuba. 92 p.</p></li>
+<li><p>Donadieu Y. 1980. <em>La Propolis: Terapeutica Natural</em>. Maloine, S. A. Editeur, París. 46 p.</p></li>
+<li><p>Dos Santos MA. 1996. <em>Coleta de propólis en abelhas africanizadas</em>. Anais do II encontro sobre abelhas, Riberao Preto, S.P., Brasil. 298 p</p></li>
+<li><p>FAO-OMS. 1985. <em>Anteproyecto de Norma Internacional para la Miel. Comisión del Codex Alimentarius</em>. pp. 56–60.</p></li>
+<li><p>Franco TT, Kurebayashi AK. 1986. <em>Isolamento de principios ativos da própolis por cromatografía em papel bidimensional e dosamento espectrofotometrico</em>. Revista del Instituto Adolfo Lutz 46: 81–86.</p></li>
+<li><p>Machado de Morales R, Marques F, Alves MLT, Pessotti O. 1995. <em>Propolis: Composicao: propiedades e usos</em>. Asociacao Modelo de Apicultura, Brasil. 22 p.</p></li>
+<li><p>Malaspina O, Palma MS. 1998. <em>Propolis: Qualidade da producao ao consumidor</em>. Anais do XII Congresso Brasileiro de Apicultura. Bahia. pp. 137–139</p></li>
+<li><p>Matsushige K, Basnet P, Hase K, Kadota S, Tanaka K, Namba T. 1996. <em>Propolis protects pancreatic-cells against toxicity of streptozotocin</em> (STZ). Phytomedicine 3: 203–209.</p></li>
+<li><p>Meda C, De Mattos-Meda P. 1994. <em>Coleta, preparo e comercilizaçâo de própolis passado, presente e futuro</em>. In: Egea-Soares AE, De Jong D. (eds.), Anais do X Congresso Brasileiro de Apicultura, Pousada do Rio Quente-Goiás. pp. 103–107.</p></li>
+<li><p>Negri G, Marcucci MC, Salatino A, Faria-Salatino ML. 1998. <em>Hydrocarbons and monoesters of propolis waxes from Brazil</em>. Apidologie 29: 305–314.</p></li>
+<li><p>NORMA Oficial Mexicana NOM-003-SAG/GAN-2017, Propóleos, producción y especificaciones para su procesamiento.</p></li>
+<li><p>Palma MS, Malaspina O. 1999. <em>El propóleo</em>. Apitec 17: 6–10.</p></li>
+<li><p>Rojas NM, De la Cuétara A, Vázquez NM. 1990. <em>Actividad antimicrobiana de una nueva estructura química aislada de una muestra de propóleo cubano</em>. Revista biología (La Habana) 4: 47–56.</p></li>
+<li><p>Rosa-Agostinho H. 1996. <em>O própolis, o própolis no Brasil</em>. Apic. 4 :29–32.</p></li>
+<li><p>Sforcin JM, Funari SRC, Novelli ELB. 1995. <em>Serum biochemical determinations of propolis-treated rats</em>. Journal of Venomous Animals and Toxins 1: 31–37.</p></li>
+</ol>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="actividad-antibacteriana" class="section level2">
+<h2>4.4 Actividad antibacteriana</h2>
+<p>Por <a href="#a001">Elisa Gutiérrez Hernández</a></p>
+<p>La actividad antibacteriana del propóleo ha sido reportada por múltiples autores <sup>1,2,3,9</sup>, los cuales apuntan que dicha actividad está relacionada directamente con los componentes que constituyen al propóleo por lo que su origen determinará la actividad en contra de los microorganismos.</p>
+<p>Los efectos del propóleo sobre agentes bacterianos están mayormente estudiados sobre bacterias del grupo constituido por los gran positivas, siendo <em>Staphylococcus aureus</em> de los agentes más estudiados de este grupo de microorganismos. Así mismo se ha reportado una menor actividad en contra de bacterias gran negativas donde Escherichia coli es la más estudiada.</p>
+<p>Dentro de sus propiedades bactericidas y bacteriostáticas se ha comprobado que es activo contra <em>Staphylococcus spp. and Streptococcus, spp. Pasteurella multocida, Salmonella, Bacíllus subtilis, Proteus vulgaris<sup>2</sup>, Pseudomona aeruginosa, Klebsiella pneumoniae, Escherichia coli, Helicobacter pilori<sup>1</sup></em>.</p>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_4_Fig1.png" alt="**Figura 4.4.1. Halos de inhibición producida por el propóleo contra Pasteurella miltocida, agente productor de neumonías en conejos, a concentraciones de 2,4,8 y 16 mg/ml de extracto etanólico de propóleo (Gutierrez, 2011)**" width="40%" />
+<p class="caption">
+<strong>Figura 4.4.1. Halos de inhibición producida por el propóleo contra Pasteurella miltocida, agente productor de neumonías en conejos, a concentraciones de 2,4,8 y 16 mg/ml de extracto etanólico de propóleo (Gutierrez, 2011)</strong>
+</p>
+</div>
+<p><br/></p>
+<p>En cuanto a los mecanismos de acción mediante los cuales el propóleo es capaz de inhibir el crecimiento bacteriano, estos apuntan a que es la presencia de fenoles y flavonoides en el propóleo son los responsables de cumplir esta función, así estudios acerca de los mecanismos de acción de los flavonoides.</p>
+<p>El mecanismo de acción antibacteriana del flavonoide pinocembrina se ha estudiado en bacterias como <em>Neisseria gonorrhoeae, Escherichia coli, Pseudomonas aeruginosa, Bacillus subtilis, Staphylocccus aureus, Staphylococcus lentus y Klebbiella pneumoniae</em>, donde que ha determinado cambios en la composición de la membrana y lisis celular<sup>9</sup>.</p>
+<p>En cuanto al mecanismo de acción propio de los propóleos se ha reportado daño de la pared celular lo que afecta el flujo energético de la membrana causando un daño irreversible en las estructuras esto en <em>Bacillus cereus</em> por propóleos coreanos.</p>
+<p>En cuanto al efecto que propóleos mexicanos tienen en conta de <em>Pasteurella multocida</em> se ha observado por microscopia electrónica daño de la pared celular, donde se observa discontinuidad de la estructura, lo que provoca la salida de contenido intracelular<sup>8</sup>.</p>
+<p><strong>Propóleos Mexicanos con probada actividad antibacteriana</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Microorganismo</th>
+<th>Origen del Propóleo</th>
+<th>Efecto reportado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bacillus subtilis</td>
+<td>Campeche</td>
+<td>Martínez et al., 2010</td>
+</tr>
+<tr class="even">
+<td>Enterobacter aerogene</td>
+<td>Estado de México</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="odd">
+<td>Enterobacter agglomerans</td>
+<td>Estado de México</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="even">
+<td>Escherichia coli</td>
+<td>Estado de México, Campeche</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="odd">
+<td>Kleibsiella pneunomiae</td>
+<td>Campeche</td>
+<td>Martínez et al., 2010</td>
+</tr>
+<tr class="even">
+<td>Pasteurella multocida</td>
+<td>Guanajuato</td>
+<td>Gutiérrez, 2011</td>
+</tr>
+<tr class="odd">
+<td>Pasteurella multocida</td>
+<td>Querétaro</td>
+<td>Gutiérrez, 2011</td>
+</tr>
+<tr class="even">
+<td>Pasteurella multocida</td>
+<td>Estado de México</td>
+<td>Gutiérrez, 2011</td>
+</tr>
+<tr class="odd">
+<td>Pseudomonas aeruginosa</td>
+<td>Campeche</td>
+<td>Martínez et al., 2010</td>
+</tr>
+<tr class="even">
+<td>Salmonella tiphy</td>
+<td>Estado de México</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="odd">
+<td>Shigella flexneri</td>
+<td>Campeche</td>
+<td>Martínez et al.,2010</td>
+</tr>
+<tr class="even">
+<td>Shiguella dysenteriae</td>
+<td>Estado de México</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="odd">
+<td>Staphylococcus aureus</td>
+<td>Estado de México</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="even">
+<td>Staphylococcus epidermidis</td>
+<td>Estado de México</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="odd">
+<td>Streptpcoccus agalactie</td>
+<td>Campeche</td>
+<td>Martínez et al.,2010</td>
+</tr>
+<tr class="even">
+<td>Vibrio cholerae</td>
+<td>Estado de México</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="odd">
+<td>Yersenia, enterocolitica</td>
+<td>Estado de México</td>
+<td>Londoño et al., 2010</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Referencias:</p>
+<ol style="list-style-type: decimal">
+<li><p>Bedascarrasbure E. <a href="http://www.apinetla.com.ar/congreso/c13.pdf" class="uri">http://www.apinetla.com.ar/congreso/c13.pdf</a> Consultado 15 Mayo 2010.</p></li>
+<li><p>Fernández JA., Balestrin E., Betoni J., OLIVERA O., De Souza DA-C, MONTELLI AC. <em>Propolis: anti-Staphylococcus aureus activity and synergism with antimicrobial drugs</em>. Mem Inst Oswaldo Cruz.; 2005, 100: 563-566.</p></li>
+<li><p>Gutiérrez H.E, Actividad antibacteriana y perfil químico de propóleos mexicanos sobre <em>Pasteurella multocida</em> aislada de conejos. Tesis de Maestría. Facultad de Estudios Superiores Cuautitlán. UNAM 2011.</p></li>
+<li><p>Londoño AO., Avila AJ., Canales MM,, Hernández DC., Serrano P., Flores OC., et al., <em>Antibacterial comparative study extracts of Mexican propolis and of three plants which use Apis mellifera for its production</em>. Journal of Animal and Veterinary Advances, 2010, 9(8):1250-1254.</p></li>
+<li><p>Londoño O., Qunitero M., Navarro M., Hernández, T González M., Muñoz G. Manual de microbiologia general I, Edit. UNAM.2004, 50-53.</p></li>
+<li><p>Londoño OA., Penieres JG., García TC, Carrillo L., Quintero MM., García VS et al., Estudio de la actividad antifúngica de un extracto de propóleo de la abeja <em>Apis mellifera</em> proveniente del Estado de México. Tecnología en marcha. 2008, 21(1): 49-55.</p></li>
+<li><p>Martínez L., Rojas N., Zetina TR., Casillas PR. Propóleo oscuro del Estado de Campeche, México. Memorias del XXIV seminario americano de apicultura Julio 28-30 Cuernavaca, Morelos, 2010, 10-23.</p></li>
+<li><p>Pérez T.X.B, Estudio de la actividad antimicrobiana in vitro de propóleos mexicanos contra cepas de Pasteurella multocida de origen porcino. Tesis de Maestría. Facultad de Estudios Superiores Cuautitlán. UNAM 2016</p></li>
+<li><p>Rasul T., Milimouno W., Etayb M., Ali Jli, X Li. Pinocembrin: a ovel natural compound with versatile pharmacological and biological activities, Hindawi Pbublishing Corporation, BioMed Research International, Volume 2013.</p></li>
+</ol>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="actividad-antimicótica" class="section level2">
+<h2>4.5 Actividad antimicótica</h2>
+<p>Por <a href="#a001">MC Nelly Tovar Betancourt</a></p>
+<p><strong>Efecto antimicótico del propóleo mexicano</strong></p>
+<p>El propóleo es una sustancia resinosa que recolectan las abejas de los exudados de yemas y cortezas de algunas plantas y árboles; para hacerlo manipulable lo humedecen con su saliva la cual contiene la enzima 13-glicosidasa que provoca la hidrólisis de los flavonoides glicosados provenientes del metabolismo secundario de las plantas en flavonoides agliconas[16]. Los flavonoides en las plantas son los responsables de proveer los pigmentos amarillos para la atracción de insectos polinizadores, reconocen el fotoperiodo, filtran rayos UV, regulan el ciclo celular, algunos son cruciales para que en las raíces de algunas plantas se establezcan las microrrizas además de combatir infecciones causadas por hongos patógenos. Las abejasparticipan en la elaboración del propóleo y lo utilizan para el control biológico sanitario y sellado de paredes y celdillas en las colmenas. Se le han adjudicado varias propiedades farmacológicas, tales como: bactericida, antiviral, hepatoprotectora, antiinflamatoria, inmunomoduladora, antioxidativa y analgésica.</p>
+<p>Se han identificado más de 300 compuestos, de los cuales un alto porcentaje son flavonoides, ácidos fenólicos y sus ésteres (a estos tres en conjunto se les conoce como compuestos fenólicos), aldehídos aromáticos y cumarinas. Los “compuestos fenólicos” contienen un grupo fenol y químicamente están formados por una estructura básica de dos anillos bencénicos en los extremos de la molécula, unidos por un anillo de tres átomos de carbono a la que se le pueden adicionar grupos oxidrilo, metilo y azúcares, generándose de esta manera diferentes tipos de flavonoides como: flavonoles, flavanonas, flavonas, catequinas, antocianinas, chalconas e isoflavonoides[3]. En términos de actividad antioxidante y antimicrobian los compuestos fenólicos son los de mayor importancia [13,17].</p>
+<p>Por otro lado, la composición química del propóleo determina la calidad del mismo ylos compuestos fenólicos representan más de 50% de su peso total, resaltan la pinocembrina, quercetina, galangina, pinostrobina, sakuranetina y crisina, también contribuye la presencia de ácidos aromáticos y sus ésteres como el ácido benzoico, ácido cafeico, ácido ferúlico [1].</p>
+<p>Debido a su actividad antimicrobiana, el propóleo ha sido ampliamente estudiado y en años recientes se ha puesto especial atención en el efecto antimicótico que posee; así pues, Londoño, 2010, demostró a través de microscopía óptica que el Extracto Etanólico de Propóleo (EEP) causa un importante daño celular en Candida albicans, al inhibir la formación del tubo germinativo y causar deformación de algunas levaduras en presencia de 0.25 mg/ml de EEP. Ver la siguiente figura.</p>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_5_Fig1.png" alt="**Figura 4.5.1. Formación de tubo germinativo (flecha) de C. albicans, B. Inhibición de la formación del tubo germinativo al ser tratada la levadura con 0.25 mg/mL de EEP (Londoño 2010)**" width="40%" />
+<p class="caption">
+<strong>Figura 4.5.1. Formación de tubo germinativo (flecha) de C. albicans, B. Inhibición de la formación del tubo germinativo al ser tratada la levadura con 0.25 mg/mL de EEP (Londoño 2010)</strong>
+</p>
+</div>
+<p><br/></p>
+<p>En el mismo estudio al observar micrografías electrónicas de transmisión de secciones ultrafinas de C. albicans ATCC 10231, se identificó la formación de gránulos de almacenamiento además de alteración y ruptura de las estructuras de la cubierta externa de la levadura.(ver figura 4.5.2) Por otro lado la misma autora administro tratamiento con propóleo a Criptococcusneoformansy observo con Microscopio Electrónico de Transmisión levaduras degeneradas acompañadas de una pérdida de la integridad de las envolturas externas (ver figura 4.5.2)[4,5]</p>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_5_Fig2.png" alt="**Figura 4.5.2.Micrografía electrónica de transmisión (700x) de C. neoformans24 horas postratamiento con EEP, se observa pérdida de la integridad de las envolturas externas (Flechas) (Londoño 2010)**" width="40%" />
+<p class="caption">
+<strong>Figura 4.5.2.Micrografía electrónica de transmisión (700x) de C. neoformans24 horas postratamiento con EEP, se observa pérdida de la integridad de las envolturas externas (Flechas) (Londoño 2010)</strong>
+</p>
+</div>
+<p><br/></p>
+<p>Por su parte Quintero y col., 2011 realizarondespliegues diferenciales en RT-PCR para determinar si el propóleo altera la expresión genética de C. albicans, y comprobaron después del tratamiento con EEP la subexpresión de dos genes ADH1 y PIK1, los cuales se cree tienen que ver con la formación del tubo germinativo y pared celular de la levadura (ver imagen 4.5.3)[11]</p>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_5_Fig3.png" alt="**Figura 4.5.3.Patrón de bandas representativas del despliegue diferencial.  Los carriles 2 y 5 representan el control negativo (levadura tratada con alcohol al 70%), al compararlos con los carriles  3 y 6 con 1 hora postratamiento y 4 y 7 a dos horas del tratamiento con EEP, este último a una dosis de 0.6 mg/mL se evidencia la pobre expresión de los genes ADH1 y PIH1 (Quintero y col. 2011)**" width="40%" />
+<p class="caption">
+<strong>Figura 4.5.3.Patrón de bandas representativas del despliegue diferencial. Los carriles 2 y 5 representan el control negativo (levadura tratada con alcohol al 70%), al compararlos con los carriles 3 y 6 con 1 hora postratamiento y 4 y 7 a dos horas del tratamiento con EEP, este último a una dosis de 0.6 mg/mL se evidencia la pobre expresión de los genes ADH1 y PIH1 (Quintero y col. 2011)</strong>
+</p>
+</div>
+<p><br/></p>
+<p>Cabe señalar la importancia de evaluar el efecto antimicótico del propóleo contraC. albicansya que es considerada uno de los agentes de mayor importancia que provoca micosis oportunistas en humanos y animales dañando piel, tracto respiratorio, digestivo, reproductor y urinario. [2] Finalmente, Tovar, 2016, comprobó a través de la prueba antifúngica Inhibición de Crecimiento Radial que el propóleo mexicano proveniente de Cuautitlán, Estado de México a concentraciones de 2, 4, 8 y 16 mg/mL causa inhibición (halos) en el crecimiento de Malassezia pachydermatis, principal agente causal de las otitis externas en caninos (ver figura 4.5.4) [3,10]. De igual modo Cruz y colaboradores observaron el mismo efecto al evaluar Microsporum canis (ver figura 4.5.5)</p>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_5_Fig4.png" alt="**Figura 4.5.4.Prueba de inhibición de crecimiento radial de Malassezia pachydermatis , donde se observan halos de inhibición al utilizar discos con EEP (derecha) a concentraciones de 2, 4, 8,  y 16 mg/mL (a ,b, c yd) . Los resultados se compararon con el efecto de antimicóticos conocidos Ketoconazol (K), Voriconazol (V), Nistatina (N) y Clotrimazol (C) sobre la levadura.**" width="40%" />
+<p class="caption">
+<strong>Figura 4.5.4.Prueba de inhibición de crecimiento radial de Malassezia pachydermatis , donde se observan halos de inhibición al utilizar discos con EEP (derecha) a concentraciones de 2, 4, 8, y 16 mg/mL (a ,b, c yd) . Los resultados se compararon con el efecto de antimicóticos conocidos Ketoconazol (K), Voriconazol (V), Nistatina (N) y Clotrimazol (C) sobre la levadura.</strong>
+</p>
+</div>
+<p><br/></p>
+<p><br></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_5_Fig5.png" alt="**Figura 4.5.5. Prueba de inhibición de crecimiento radial de Microsporum canis, donde se observan halos de inhibición con discos impregnados con EEP a 4, 8, 12, 16 mg/mL. Los resultados fueron comparados con los halos producidos por Ketoconazol y Clotrimazol **" width="40%" />
+<p class="caption">
+<strong>Figura 4.5.5. Prueba de inhibición de crecimiento radial de Microsporum canis, donde se observan halos de inhibición con discos impregnados con EEP a 4, 8, 12, 16 mg/mL. Los resultados fueron comparados con los halos producidos por Ketoconazol y Clotrimazol </strong>
+</p>
+</div>
+<p><br/> Otros hongos sobre los cuales se ha evaluado el efecto antimicótico del propóleo mexicano se enlistan en la siguiente tabla:</p>
+<p><strong>Tabla 4.5.1. Hongos en los cuales se ha observado el efecto antimicótico del propóleo mexicano en el Laboratorio de Análisis de Propóleos, FES Cuautitlán, UNAM.</strong></p>
+<table style="width:60%;">
+<colgroup>
+<col width="30%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hongos filamentosos</th>
+<th>Hongos levaduriformes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>• Microsporum canis<br/> • Microsporum gypseum <br/> • Trichophytonmentagrophytes <br/> • Saprolegnia spp <br/> • Aspergillus flavus <br/> • Asperguillusfumigatus <br/> • Asperguillusniger <br/>• Fusarium multiforme</td>
+<td>Candida albicans <br/> • Criyptococcus neoformans <br/> • Malassezia pachydermatis</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.youtube.com/watch?v=FgJtpMZFGTo" target="_blank">Propóleo - El Botiquín Mágico – Complementos Alimenticios</a></p>
+<p><strong>Bibliografía</strong></p>
+<ol style="list-style-type: decimal">
+<li>Bogdanov S., Bankova V. (2016). <em>The propolis book</em>, Bee Product Science, www.bee-hexagon.net, 7-10.</li>
+<li>Bonifaz Trujillo J. A. (2015). <em>Micología médica básica</em>, CDMX México, Mc Graw Hill.</li>
+<li>Cardoso R.L., Maboni F., Machado G., Hartz Alves S., Agueda C. de V. (2010). <em>Antimicrobial activity of propolis extract against Staphylococcus coagulase positive and Malassezia pachydermatis of canine otitis, Veterinary microbiology</em> 142, 342-434.</li>
+<li>Lodoño Orozco A., Penieres Carrillo J.G., García Tovar C. G., Carrillo Miranda L., Quintero Mora Ma. L., García Vázquez S.E., Mendoza Saavedra M.A., Cruz Sánchez T.A. (2008). Estudio de la actividad antifúngica de un extracto de propóleo de la abeja <em>Apis mellifera</em> proveniente del Estado de México, Tecnología en marcha, 21 (1): 49-55.</li>
+<li>Londoño Orozco A. (2010). Estudio comparativo de la actividad antifúngica de un extracto mexicano de propóleo y de tres plantas que la <em>Apis mellifera</em> usa para su producción (Tesis de doctorado).</li>
+<li>Lozina L., Boehringer S. I., D’Aquino M., Acosta O. (2006). Eficacia del propóleo sobre <em>Malassezia pachydermatis</em>. Correlación de distinta técnica sin vitro, Acta Farm. Bonaerense 25 (4):560-3.</li>
+<li>Noriega S. V. (2014). El propóleo otro recurso terapéutico en la práctica clínica, Curso de adaptación al grado, Departamento de enfermería, Universidad de Cantabria, Programa educativo de Química industrial.</li>
+<li>Ramírez Escobedo M. E., Barajas Bermúdez L., Pérez Berumen C., Sáenz Galindo A., Silva Belmares S. Y. (2012) Síntesis y actividad biológica de chalconas, Revista Mexicana de Ciencias Farmacéuticas, 43, 7-14.</li>
+<li>Tovar Betancourt N. (2017). Evaluación antimicótica in vitro del propóleo mexicano sobre <em>Malassezia pachydermatis</em> (Tesis de maestría).</li>
+<li>Tovar Betancourt N., García Contreras L., Cruz Sánchez T. A. (2015). Propolis in dog: Clinical Experiences and perspectives (a brief review), Open Journal of Veterinary Medicine, 5: 11-17.</li>
+<li>Quintero Mora M.L.(2011) Structural and genetic alterations of fungal cells caused by Mexican propoli, Formatex,1068-1073.</li>
+</ol>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="actividad-antiviral" class="section level2">
+<h2>4.6 Actividad antiviral</h2>
+<p>Por <a href="#a001">María de Jesús González Búrquez, Ignacio Soto Zarate, Gerardo García Tovar</a></p>
+<p>El propóleo es un material resinoso producido por las abejas (Apis mellifera) usando cera y exudados de plantas. La palabra propóleos se cree que fue creada por Aristóteles para indicar que el propóleo es utilizado para proteger y defender la colmena. Propóleos significa “antes de la ciudad” o “Defensor de la ciudad” (griego pro: en defensa, y polis: ciudad). En los inicios de la civilización griega, Aristóteles observó que el propóleo tenía la capacidad de defender a la colmena de agentes patógenos.</p>
+<p>El propóleo fue útil tanto para reparar estructuras como para el mantenimiento de la especie a través de la preparación de lugares asépticos para el depósito de huevos de la abeja reina. El propóleo es importante para las abejas, ya que es un material adhesivo utilizado para sellar aberturas y grietas en la colmena, éste también se usa para alisar las paredes internas protegiendo a la colonia de enfermedades y cubrir los cadáveres de intrusos que han muerto en la colmena evitando su descomposición. Se ha observado que las abejas recogen la resina protectora de flores, hojas y brotes con sus mandíbulas y posteriormente este material es llevado a la colmena, el color del propóleo varía de verde a marrón rojizo dependiendo de su fuente botánica. El propóleo ha sido ampliamente utilizado desde la antigüedad. Los egipcios aprovecharon las propiedades para embalsamar a los muertos y así evitar la descomposición de estos, los médicos griegos y romanos lo emplearon como antiséptico y remedio curativo. En las últimas décadas numerosos artículos han sido publicados describiendo diferentes aspectos de las propiedades biológicas del propóleo. Sin embargo, en la mayoría de ellos, la información es limitada. Actualmente, el propóleo se usa como remedio popular encontrándose disponible en diferentes productos farmacéuticos (cápsulas, gel, polvo, enjuague bucal, crema y polvo) y combinaciones. El propóleo se ha convertido en un producto de uso popular que complementa el cuidado de la salud como ingrediente natural en la industria farmacéutica y en la alimentación. El efecto biológico antimicrobiano, antioxidante, antiviral, antifúngico, antiinflamatorio, inmunomodulador y antitumoral está entre las propiedades terapéuticas que poco a poco se han venido estudiando.</p>
+<p>Los métodos más comunes para realizar la extracción del propóleo son empleando etanol como solvente. La composición precisa del propóleo es determinada a través de análisis químicos especializados como la cromatografía líquida de alta eficacia (HPLC). Al igual que con la miel, la composición del propóleo varía dependiendo de factores como; fuente de los exudados, clima y condiciones ambientales. Se han identificado al menos 300 compuestos, entre los cuales encontramos; resinas (50%), cera (30%), aceites esenciales (10%), polen (5%) y otros compuestos orgánicos (5%). Entre estos compuestos orgánicos es posible encontrar compuestos fenólicos, ésteres y flavonoides (flavonoles, flavonas, flavononas, dihidroflavonoles y chalcones), terpenos, esteroides, beta-aldehídos aromáticos, alcoholes, sesquiterpenos y estilbenos.</p>
+<p>El propóleo ha sido utilizado en medicina veterinaria en diferentes especies animales y en diversas formas farmacéuticas, entre las cuales encontramos: soluciones para la prevención y control de enfermedades en ovejas, infusión mamaria para tratar la mastitis, polvos, bolos y soluciones inyectables, en enfermedades genitourinarias como endometritis, como gotas para los ojos y ungüentos para queratitis y queratoconjuntivitis infecciosa; tinturas y pomadas para heridas, soluciones desinfectantes y repelentes como terapia en la onfalitis, y también ha sido utilizado contra infecciones de <em>Pasteurella multocida</em> en conejos.</p>
+<p>El propóleo es capaz de inhibir la propagación viral, la mayoría de los estudios publicados describen esta actividad en contra de virus que afectan a humanos. Asimismo, estudios in vitro demuestran los efectos del propóleo tanto en virus ADN como ARN. Los efectos observados incluyen reducción en la multiplicación viral e incluso una acción virucida, pero el mecanismo de esta acción antiviral aún no es clara. Las primeras pistas sobre el mecanismo de acción antiviral del propóleo fueron aportadas por Selway en 1986 al mencionar que los flavonoides pueden estar relacionados con la inhibición de la polimerasa viral y la unión al ácido nucleico viral o a proteínas de la cápside viral. En la actualidad, los hallazgos reportados sobre el mecanismo de acción del propóleo sugieren el bloqueo de receptores de la membrana celular y/o el desarrollo de interacciones con la célula huésped que inducen cambios internos que terminan afectando el ciclo de replicación del virus.</p>
+<p>Otros autores afirman que el efecto se debe a los flavonoides y a otros compuestos fenólicos que están presentes en el propóleo que interactúan con proteínas virales, formando complejos inestables y por lo tanto alterando las etapas de adsorción y penetración del virus. <a href="pdfs/González%20et%20al.%202017.PDF" target="_blank">González et al. 2017. In Vitro Activity of Propolis on Domestic Animal Viruses: a review</a></p>
+<p>Los diferentes componentes del propóleo parecen actuar sinérgicamente, lo cual explica el hecho de que la miel y el propóleo poseen una mayor actividad antiviral que sus componentes individuales. La actividad antiviral del propóleo ha sido probada, con resultados prometedores, contra algunos virus patógenos de humanos y animales, tales como el virus del herpes simple tipo 1 (HSV-1) y tipo 2 (HSV-2), virus de inmunodeficiencia humana (VIH) e Influenza aviar. Sin embargo, pocos estudios han sido publicados sobre el uso de propóleo en enfermedades virales de interés veterinario.</p>
+<p>En un estudio publicado en el año 2015 y desarrollado en la Universidad Nacional Autónoma de México, Facultad de Estudios Superiores Cuautitlán, se determinó el efecto antiviral del propóleo del Estado de México evaluando su capacidad de ejercer algún efecto antiviral en cultivos celulares infectados con el virus de Aujeszky (virus de pseudorrabia, PRV por sus siglas en inglés). Para esto, se realizó el tratamiento con propóleo en tres momentos diferentes; dos horas antes de la infección con virus de Aujeszky, al mismo tiempo que la infección y dos horas post-infección. El efecto citopático inducido por el virus de Aujeszky en las células fue evaluado mediante el conteo de las placas líticas formadas, encontrándose un promedio de 16.4 unidades formadoras de placas (ufp) en el cultivo infectado y 8.7 ufp en el cultivo tratado dos horas antes de ser infectado. Estos datos permitieron señalar que la aplicación del propóleo dos horas antes de la infección produjo una reducción en el número de placas en contraste con los cultivos que fueron tratados simultáneamente a la infección (16.6 ufp) y aquellos tratados dos horas después de la infección (15.4 ufp).</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_6_Fig1.png" alt="**Figura 4.6.1. Cultivo de células MDBK teñidas con cristal violeta.**" width="80%" />
+<p class="caption">
+<strong>Figura 4.6.1. Cultivo de células MDBK teñidas con cristal violeta.</strong>
+</p>
+</div>
+<p>A. Cultivo cellular sin infección. B. Cultivo cellular infectado con virus de Aujeszky. C. Cultivo cellular tratado con 0.5 mg/ml de propóleo dos horas antes de la infección con virus. D. Cultivo treatado con 0.5 mg/ml de propóleo simultáneamente a la infección. E. Cultivo tratado con propóleo dos horas después de realizar la infección con virus. 250×.</p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_6_Fig2.png" alt="**Figura 4.6.2. Microscopía electronica de células MDBK.**" width="80%" />
+<p class="caption">
+<strong>Figura 4.6.2. Microscopía electronica de células MDBK.</strong>
+</p>
+</div>
+<p>A. Presencia de partículas virales (▲) en el citoplasma ( C ) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (▲) son observadas fuera de la membrane cellular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.</p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_6_Fig3.png" alt="**Figura 4.6.3. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky**" width="80%" />
+<p class="caption">
+<strong>Figura 4.6.3. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky</strong>
+</p>
+</div>
+<p>A. partículas virales (▲) en el citoplasma de la célula (C ), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura 4A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.</p>
+<p>En ambos casos el número de placas fue semejante a las encontradas en el cultivo infectado sin tratamiento (16.4 ufp), con lo cual se comprueba la capacidad del uso profiláctico del propóleo en contra de la enfermedad de Aujeszky. <a href="pdfs/Burquez%20et%20al.%202015.PDF" target="_blank">Burquez et al. 2015. Protective Effect of a Mexican Propolis on MDBK Cells Exposed to Aujeszky S Disease Virus, Pseudorabies Virus</a></p>
+<p>En una segunda investigación, realizada por el mismo grupo de investigadores y publicada en el año 2017, se evaluó la actividad antiviral in vitro de un propóleo originario de México (FESC) y de tres flavonoides comerciales (quercetina, naringenina y pinocembrina). Los tratamientos se realizaron en tres momentos diferentes. 1) Tratamiento dos horas antes de la infección, 2) Tratamiento simultáneo a la infección y 3) Tratamiento dos horas después de la infección viral. La actividad antiviral se evaluó como la capacidad de inhibir la expresión relativa del gen de la nucleoproteína del virus de distemper canino (RT-PCR tiempo real) y determinando la viabilidad del cultivo celular (ensayo colorimétrico MTT). El propóleo aplicado al cultivo 2 horas antes de la infección disminuyó la expresión viral y este hallazgo correlacionó con un aumento en la viabilidad celular. Adicionando de forma conjunta los tres flavonoides comerciales dos horas antes de la infección, se observó una disminución de la expresión viral pero no hubo diferencia en la viabilidad celular entre el grupo experimental y el grupo control positivo. La quercetina aplicada simultáneamente a la infección también produjo una disminución de la expresión génica viral. Ninguno de los otros compuestos (pinocembrina y naringenina) tuvieron efecto antiviral a los tiempos evaluados. En conclusión, se demostró la actividad antiviral del propóleo y su relación con la expresión génica viral como un mecanismo de acción. Asimismo, se comprobó la sinergia presente entre los flavonoides estudiados sobre la disminución del efecto citopático y la expresión génica del virus de distemper canino. <a href="pdfs/González%20et%20al.%202018.PDF" target="_blank">González et al. 2017. Comparison between In Vitro Antiviral Effect of Mexican Propolis and Three Commercial Flavonoids against Canine Distemper Virus</a>.</p>
+<p>*Referencias**</p>
+<p>Amoros M., Sauvager F., Girre L., Cormier M. (1992). In vitro antiviral activity of propolis. Apidologie. 23: 231–240.</p>
+<p>Bedascarrasbure E., Naldonado L., Fierro M., Álvarez A. (2006). Propóleos. Ediciones Omega. Argentina.</p>
+<p>Bernal M. (1991). Circulación de agentes patógenos y usos de propóleo en el tratamiento del síndrome diarreico infeccioso del ternero. Estudio comparativo. Trabajo presentado en el primer taller Internacional sobre Apiterapéuticos, II Simposio de Apiterapia, II Simposio sobre Propóleos, La Habana, Cuba.</p>
+<p>Burquez G. M, Juárez M. M., Ramírez M. H., Soto Z. C., Carrillo M. L., Cruz S. T. (2015). Protective effect of a Mexican propolis on MDBK cells exposed to Aujeszky’s disease virus (Pseudorabies virus). Far J Trait Complement Alter Med. 12: 106-111.</p>
+<p>Carvalho O. V., Botelho C. V., Ferreira C. G. T., Ferreira H. C. C., Santos M. R., et al. (2013). In vitro inhibition of canine distemper virus by flavonoids and phenolic acids: Implications of structural differences for antiviral design. Res. Vet. Sci. 95: 717-724.</p>
+<p>Castaldo S., Capassob F. (2002). Propolis, an old remedy used in modern medicine. Fitoterapia 73: S1–S6. Cueto A. P., Alves H.S., Pilau M., Weiblen R., Felli K.T., Lovato L.T. (2011). Atividade antiviral do extrato de própolis contra o calicivírus felino, adenovírus canino 2 e vírus da diarréia viral bovina. Ciência Rural, Santa Maria. 41: 1800-1806.</p>
+<p>Gómez-C., Gómez R., Arráez R., Segura C., Fernández G. (2006). Advances in the analysis of phenolic compounds in products derived from bees. J. Pharm. Biomed. Anal. 41: 1220–1234.</p>
+<p>González B. M. J., Cruz S. T., Soto Z. C. I., Carrillo M. L., Fonseca C. S. (2017) In Vitro ACTIVITY OF PROPOLIS ON DOMESTIC ANIMAL VIRUSES: A REVIEW. Revista Interciencia. 42: 272-276.</p>
+<p>González B. M., González D. R., García T. C., Carrillo M. L., Soto Z. C., Canales M. M., Penieres C. J., Cruz S. T., Fonseca C. S. (2018). Comparison between In Vitro Antiviral Effect of Mexican Propolis and Three Commercial Flavonoids against Canine Distemper Virus. Evid-Based Compl and Alt Med. <a href="https://doi.org/10.1155/2018/7092416" class="uri">https://doi.org/10.1155/2018/7092416</a>.</p>
+<p>Gutiérrez H. E. (2011). Actividad antibacteriana y perfil químico de propóleos mexicanos sobre cepas de Pasteurella multocida aisladas de conejos. Tesis de Maestría. Universidad Nacional Autónoma de México. Facultad de Estudios Superiores Cuautitlán. <a href="http://132.248.9.195/ptb2011/septiembre/0672994/Index.html" class="uri">http://132.248.9.195/ptb2011/septiembre/0672994/Index.html</a>.</p>
+<p>Hegazi G.A., Abd El Hady K.F. (2002). Egyptian Propolis: 2. Chemical Composition, Antiviral and Antimicrobial Activities of East Nile Delta Propolis. Z. Naturforsch. 57: 386-394.</p>
+<p>Hegazi G.A., Farghaly A.A., Abd El Hady K.F. (2001). Antiviral activity and chemical composition of european and egyptian propolis. Proc. 37th Int. Apic. Congr., 28 Oct – 1 Nov 2001, Durban, South Africa.</p>
+<p>Keivan Z., Boon T., Sing-Sin S., Pooi-Fong W., Mohd Rais M., Sazaly A. (2011). Antiviral activity of four types of bioflavonoid against dengue virus type-2. Virol. J. 8: 560.</p>
+<p>Kim Y., Narayanan S., Chang K. (2010). Inhibition of influenza virus replication by plant-derived isoquercetin. Antiviral Res. 88: 227–235.</p>
+<p>Kong X. F., Hu L., Yin L., Wu G., Rui R., Wang Y., Yang B. (2006). Chinese Herbal Ingredients Are Effective Immune Stimulators for Chickens Infected with the Newcastle Disease Virus. Poultry Sci. 85: 2169–2175.</p>
+<p>Kumar S., Pandey A. (2013). Chemistry and Biological Activities of Flavonoids: An Overview. Hindawi Publishing Corporation. <a href="http://dx.doi.org/10.1155/2013/162750" class="uri">http://dx.doi.org/10.1155/2013/162750</a></p>
+<p>Kujumgiev A., Tsvetkova I., Serkedjieva Y., Bankova V., Christov R., Popov S. (1999). Antibacterial, antifungical and antiviral activity of propolis of different geographic origin. J Ethnopharmacol. 64: 235-240.</p>
+<p>Kuropatnicki K., Andrzej S., Krol W. (2013). Historical Aspects of Propolis Research in Modern Times. Review Article. Hindawi Publishing Corporation. J Evid Based Complementary Altern Med. <a href="http://dx.doi.org/10.1155/2013/964149" class="uri">http://dx.doi.org/10.1155/2013/964149</a>.</p>
+<p>Livak K., Schmittgen T. (2001). Analysis of Relative Gene Expression Data Using Real-Time Quantitative PCR and the 2-CT Method. Methods 25: 402–408. <a href="doi:10.1006/meth.2001.1262" class="uri">doi:10.1006/meth.2001.1262</a>, available online at <a href="http://www.idealibrary.com" class="uri">http://www.idealibrary.com</a> on Lyu S. Y., Rhim J. Y., Park W. B. (2005). Antiherpetic activities of flavonoids against herpes simplex virus type 1 (HSV-1) and type 2 (HSV-2) in vitro. Arch. Pharm. Research. 28: 1293-301.</p>
+<p>Mahmoud H., Isanu V. (2002). Anti-herpes Simplex Virus Effect of an Aqueous Extract of Propolis. Mahmoud Israel medical Association Journal 4: 923-927.</p>
+<p>Murphy F. (2000). Veterinary virology. 2nd. edition, Academic Press, Argentina. 411-416.</p>
+<p>Monzote L., Cuesta-Rubio O., Campo F.M., Márquez H.I., Fraga J., Pérez K., Kerstens M., Maes L., Cos P. (2012). In vitro antimicrobial assessment of Cuban propolis extracts. Mem. Inst. Oswaldo Cruz 107: 978-984.</p>
+<p>Muhamad M., Kee L.Y., Rahman N.A., Yusof R. (2010). Antiviral actions of flavanoid-derived compounds on dengue virus type-2. Int. J. Biol. Sci. 6: 294-302.</p>
+<p>Orhan D., O¨zc-elik B., O¨zgen S., Ergun F. (2010). Antibacterial, antifungal and antiviral activities of some flavonoids. Microbiol. Res. 165: 496—504.</p>
+<p>Rasul A., Millimouno F., Ali Eltayb W., Ali M., Li j., Li X. (2013). Pinocembrin: A Novel Natural Compound with versatile pharmacological and biological activities. Biomed Res Int. 2013:379850. doi: 10.1155/2013/379850.</p>
+<p>Rodríguez P. B. (2015). Perfil químico de propóleos mexicanos para su aplicación en medicina veterinaria. Tesis de Maestría. Universidad Nacional Autónoma de México. Facultad de Estudios Superiores Cuautitlán. <a href="http://132.248.9.195/ptd2015/abril/098537426/Index.html" class="uri">http://132.248.9.195/ptd2015/abril/098537426/Index.html</a></p>
+<p>Roman A., Madras B., Popiela E. (2011). Comparative study of selected toxic elements in propolis and honey. J. Apic. Sci. 55: 97-105.</p>
+<p>Rotelli A., Guardia T., Juárez A., De la Rocha N., Pelzer L. (2003). Comparative study of flavonoids in experimental models of inflammation. Pharmacol. Res. 48: 601–606.</p>
+<p>Schnitzler P., Neuner A., Nolkemper S., Zundel C., Nowack H., Heinz S., Reichling J. (2010). Antiviral Activity and Mode of Action of Propolis Extracts and Selected Compounds. Phytother. Res. 24: 20–28. DOI: 10.1002/ptr.2868.</p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="norma-oficial-mexicana-de-propóleos" class="section level2">
+<h2>4.7 Norma Oficial mexicana de propóleos</h2>
+<p>Tomada de <a href="https://www.dgcs.unam.mx/boletin/bdboletin/2017_810.html" class="uri">https://www.dgcs.unam.mx/boletin/bdboletin/2017_810.html</a></p>
+<p>En México, la apicultura es una de las actividades pecuarias de mayor relevancia. Se estima que anualmente la producción de miel supera las 58 mil toneladas y que el aprovechamiento integral de los productos de la colmena deriva en un notable impacto económico para el país.</p>
+<p>Uno de los productos con mayor posicionamiento es el propóleos, que entre sus componentes cuenta con más de 300 fenoles y flavonoides, a los cuales se atribuyen propiedades antimicrobianas, cicatrizantes, antioxidantes y antiinflamatorias, entre otras, que lo convierten en un importante elemento terapéutico.</p>
+<p>Con el objetivo de establecer estándares de calidad para esa resina apícola, un grupo de académicos de las facultades de Estudios Superiores (FES) Cuautitlán e Iztacala de la UNAM, así como de la Universidad Autónoma de Campeche, liderados por Tonatiuh Cruz Sánchez, impulsó la Norma Oficial Mexicana para la Producción y Especificaciones de Propóleos, recientemente aprobada por la Comisión Federal de Mejora Regulatoria (COFEMER) y publicada en el Diario Oficial de la Federación (9 de octubre de 2017) bajo el registro NOM-003-SAG/GAN-2016.</p>
+<p>Esta propuesta surgió a raíz de la falta de regulación de este producto que es comercializado principalmente en tiendas naturistas. En su tesis de maestría, la docente de la FES Cuautitlán, Betsabé Rodríguez Pérez, expuso el establecimiento de pruebas de control de calidad que deben cumplir los propóleos mexicanos para su uso en la salud humana y animal, lineamientos que sirvieron como fundamento para el proyecto de la norma oficial.</p>
+<p>A partir de este trabajo y como un requisito estipulado por la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación (SAGARPA), meses atrás los investigadores inauguraron el Primer Laboratorio de Análisis de Propóleos, espacio donde ponen al servicio de apicultores estudios en los que se evalúa la calidad física y química del producto, con el fin de determinar su calidad.</p>
+<p>La regulación comprende aspectos fundamentales como la instrucción sobre el proceso e instrumentos de recolección, especificaciones físicas, químicas y microbiológicas que debiera cumplir cada cosecha, y los métodos de prueba relacionados con el acondicionamiento de las muestras, la preparación de reactivos y otros estudios de laboratorio. Debido a las propiedades biológicas y microbiológicas que otorgan numerosos beneficios a la salud animal y humana, así como en la inocuidad agroalimentaria, se espera que dicha estandarización impacte directamente en la producción de propóleos, brindando alternativas económicas relevantes al apicultor. Además, se pretende que se creen oportunidades en el mercado nacional e internacional.</p>
+<p>Según datos de la SADER, es posible que con la norma se permita al productor vender su producto a un precio similar al del mercado internacional, aproximado a los dos mil pesos por kilogramo, La creación de la NOM también fue impulsada por Guillermo Penieres Carrillo, Raúl García, Betsabé Rodríguez y Liborio Carrillo Miranda, de Cuautitlán, en colaboración con Margarita Canales Martínez, de la FES Iztacala, y Roberto Martínez, de la Universidad Autónoma de Campeche.</p>
+<div class="figure" style="text-align: center">
+<img src="imag/Img_3_NM.png" alt="**Imagen 4.7.1 Grupo de trabajo de la Norma Oficial Mexicana Própoleos: Especificaciones y métodos de prueba NOM-003-SAG/GAN-2016.**" width="80%" />
+<p class="caption">
+<strong>Imagen 4.7.1 Grupo de trabajo de la Norma Oficial Mexicana Própoleos: Especificaciones y métodos de prueba NOM-003-SAG/GAN-2016.</strong>
+</p>
+</div>
+<p><br/> La Norma Oficial Mexicana para la Producción y Especificaciones de Propóleos, fue aprobada por la Comisión Federal de Mejora Regulatoria y publicada en el Diario Oficial de la Federación (7 de octubre de 2017) bajo el registro NOM-003-SAG/GAN-2017</p>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="beneficios-económicos-de-la-producción-de-propóleo" class="section level2">
+<h2>4.8 Beneficios económicos de la producción de propóleo</h2>
+<p>Por <a href="#a001">Tonatiuh Cruz Sánchez<sup>1</sup>, MC Betsabe Rodríguez Pérez<sup>1</sup>, Dra. Margarita. Canales-Martínez<sup>2</sup>, Dr. Guillermo Penieres Carrillo<sup>1</sup>, Dr Luis Roberto Martínez Pérez de Ayala<sup>3</sup>, MV Z Dipl. Raúl García Tinajero<sup>1</sup>, MVZ MA Liborio Carrillo Miranda<sup>1</sup>, MVZ Ericka Esquivel<sup>4</sup>, MVZ Rodrigo Medellín Pico<sup>4</sup>, Ricardo D. Vázquez Castillo<sup>4</sup></a></p>
+<p><a href="#a001">1. Facultad de Estudios Superiores Cuautitlán, Universidad Nacional Autónoma de México, México. 2.Facultad de Estudios Superiores Iztacala, Universidad Nacional Autónoma de México, México. 3.Unidad de Posgrado. Universidad Nacional Autónoma de Campeche. Campeche. 4.Secretaría de Agricultura y Desarrollo Social (SADER), México.</a></p>
+<p><strong>Consideraciones generales</strong></p>
+<p>La Organización de las Naciones Unidas para la agricultura y la alimentación (FAO por sus siglas en inglés), define la apicultura como la ciencia, arte y cría de las abejas en México, la explotación de las abejas se da principalmente en el Sureste del país en entidades como Yucatán, Campeche, Quintana Roo y Chiapas, caracterizándose como una actividad de suma importancia en el subsector pecuario, toda vez, que para el año 2016 su volumen de producción y nivel de productividad la ubicaron en el sexto lugar mundial.</p>
+<p>En este, sentido a nivel nacional apicultura, también tiene una gran importancia socioeconómica y ecológica, ya que es considerada como una de las principales actividades pecuarias generadora de divisas (alrededor de $9,298,037.11 de dólares para el año 2015).Respecto a lo anterior, dentro del sector apícola, la miel es el principal producto por peso y valor que se obtiene de las colmenas, su destino es tanto la venta como el autoconsumo de la familia y se obtiene de procesos que se diferencian por los insumos utilizados y por las formas de manejo de la Colonia. El segundo producto pico la de importancia es la cera y los otros productos con menor importancia relativa por cantidad son el polen, propóleos y la jalea real.</p>
+<p>Asimismo, cabe señalar que la producción apícola en México es una actividad que genera una producción anual que supera los 58 mil toneladas de miel y la obtención de los diferentes productos de la colonia de abejas permite incrementar los ingresos económicos del productor y adicionalmente beneficie en forma directa e indirecta a los demás integrantes de la cadena apícola. Particularmente, uno de los productos importantes de las colonias son los propóleos, estos han presentado un alto crecimiento tanto en producción como en comercialización a nivel mundial.</p>
+<p>Al respecto, el 44° Congreso Mundial de Apicultura celebrado en Corea del Sur en el año 2015, se expuso que en 2013 a nivel mundial se produjeron más de 2 mil toneladas de propóleos, con un valor de $459.3 millones de dólares y la tendencia de crecimiento permite estimar que para 2018 la producción será de 3.5 mil toneladas con un valor superior de los $800 millones de dólares; ello, debido a las propiedades biológicas y microbiológicas reportadas a nivel mundial, que proporciona grandes beneficios en salud animal, como lo muestran diversas investigaciones y creciente demanda en diversos países.</p>
+<p>Al respecto, a la producción agrícola se ha transformado en los últimos años, con el crecimiento de aprovechamiento integral de los productos de Colmena, tales como jalea, real, polen, propóleos, lo cual en años anteriores permitió revertir el efecto negativo de las bajas en los precios internacionales de la miel, generando un aumento de los productores que se dedican a dicha actividad alcanzando alrededor de 43 mil productores para el año 2016, de los cuales, 35,500 estaban inscritos en el Programa de Producción Pecuaria Sustentable y Ordenamiento Ganadero y Apícola (PROGAN) de la SAGARPA recibiendo incentivos por más de 191 millones de pesos.</p>
+<p><strong>Comercialización del Propóleo</strong></p>
+<p>Los productos desarrollados a base de propóleo se encuentran en el mercado, ya que existen industrias dedicadas a su elaboración de productos naturales y con beneficios para los consumidores. Es así, que las industrias como la farmacéutica, alimenticia y cosmética suelen ocupar este y otros productos provenientes de la abeja. En países como: Dinamarca, Francia, Alemania, Hungría, Ucrania y Estados Unidos de América son los principales consumidores de propóleo, aunque cabe señalar que este número va en aumento.</p>
+<p>El 6.2% de las patentes corresponden a productos para tratamientos odontológicos. Japón tuvo un crecimiento de 66% en la década de los años 80 a 90 en la productividad del propóleo. De igual modo el precio ascendió de 5 a 200 dólares por kilogramo, para productos de Brasil, los que además de una mejor calidad tendrían menor contenido de metales pesados que el propóleos de otros proveedores.</p>
+<p>Los países que destacan en la producción mundial de propóleo son China, Argentina, Brasil, Cuba, Chile, Uruguay y Canadá. En México la situación es distinta, ocupa el sexto lugar de producción de miel, pero no se tiene un mercado de propóleo de peso.</p>
+<p><strong>Producción nacional de propóleo</strong></p>
+<p>El manejo del propóleo es artesanal, por tanto, requiere de una amplia difusión de las diferentes propiedades de este producto, para interesar a los productores y empresarios a incursionar en un rubro no tradicional dentro de la actividad apícola. Se considera necesario poner especial énfasis en el manejo y explotación de la colmena, optimizando la producción, para lograr insertar el propóleos mexicano en el mercado nacional e internacional En la Figura 1 se muestran los últimos datos estadísticos confiables que se tiene de la producción del propóleo son de hace 10 años. En el 2008 se observó que la producción aumentó, esto nos indica que los apicultores le dieron la importancia de este producto.</p>
+<p>Actualmente, existen en el mercado gran variedad de productos con base de propóleo que se comercializan en tiendas y farmacias. Su accesible disponibilidad hace que usar el propóleo sea más fácil. Con el objetivo de establecer los estándares de calidad pertinentes para dicha resina apícola, se estableció la Norma Oficial Mexicana para la Producción y Especificaciones de Propóleos, la cual fue publicada en el Diario Oficial de la Federación el 6 de octubre de 2017 bajo el registro NOM-003-SAG/GAN-2017.</p>
+<p>La NOM-003-SAG/GAN-2017 en donde se establecen las especificaciones de producción, las características físicas, químicas y antimicrobianas, que deben cumplir los propóleos y sus extractos para su procesamiento y comercialización en el país.</p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_8_Fig1.png" alt="**Figura 4.8.1. Volumen de la Producción de polen y Propóleos en México durante el periodo 2000-2008.FUENTE: Coordinación General de Ganadería/SAGARPA (2008 cifras preliminares)**" width="70%" />
+<p class="caption">
+<strong>Figura 4.8.1. Volumen de la Producción de polen y Propóleos en México durante el periodo 2000-2008.FUENTE: Coordinación General de Ganadería/SAGARPA (2008 cifras preliminares)</strong>
+</p>
+</div>
+<p><strong>Potencial de producción de propóleo mexicano</strong></p>
+<p>Es de suma la importancia de la diversificación del sector apícola, toda vez que la obtención de diferentes productos de las colmenas puede realizarse a la par que la obtención de miel, ya que es posible producir dichos productos y podría permitir el incremento sustancial de los recursos económicos en los 43 mil productores, generando beneficios a los integrantes de cadena apícola nuestro país. Particularmente, existe un amplio potencial de producción de propóleos considerando que el stock de colmenas que se estima que existe en nuestro país es de 2.7 millones de unidades y una producción nacional, la cual se estima en 7 toneladas al año, con un valor comercial de 3.5 millones de pesos.</p>
+<p>Asimismo, la producción de propóleos podría brindar a la apicultura alternativa económica importantes, debido a las propiedades biológicas y microbiológicas que proporcionan grandes beneficios a la salud animal, la inocuidad agroalimentaria y a su vez, podría fomentar la creación de nuevos nichos en el mercado nacional e internacional al implementar los propóleos como materia prima y, tomando en cuenta el stock de colmenas en nuestro país, así como el número de productores apícolas, es posible determinar que existe un alto potencial de producción de propóleo, en base a las siguientes premisas:</p>
+<ol style="list-style-type: decimal">
+<li><p>En México existe un alto potencial de producción de propóleo dada la diversidad en clima, flora apícola y tipos de abejas utilizadas, lo que además sugiere una composición variable de este producto, con amplias posibilidades de Mercado; no obstante, existe capacidad ociosa de la producción de propóleos en nuestro país, toda vez que, pese a contar con más de 43,000 productores y alrededor de 2.7 millones de colmenas la producción es limitada y en la gran mayoría de los casos, se obtiene con metodología como el raspado del material apícola, con el cual se contamina fácilmente poniendo en riesgo su contenido, además de alterar la actividad normal de las abejas; En consecuencia estos propóleos alcanzan muy bajos precios y solo aspiran a comercializarse en el mercado nacional, creándose un círculo vicioso (sistemas deficientes de producción, propóleos con características no favorables, bajo precio y dependencia de importaciones de este productos).</p></li>
+<li><p>Los métodos de prueba reconocidos oficialmente y homologados de los sistemas de otros países, facilita la comercialización adecuada de los propóleos; con la norma existente, posibilita el análisis de los propóleos de importación, desconociéndose si estos cuentan con los contenidos químicos con los que se sustentan, dicha situación pone en desventaja los propóleos nacionales, aún si estos fueran producidos con los métodos señalados en la Norma.</p></li>
+<li><p>La creciente demanda de propóleos en México y el mundo, se posibilita la adulteración o distribución de propóleos de dudosa composición, representando un riesgo para quien los emplea y desprestigio para los productores apícolas, conforme a lo contenido en la norma, permitirá a los apicultores obtener un producto altamente competitivo en el mercado nacional e internacional y por consiguiente generar mayores ingresos económicos en beneficio de sus familias.</p></li>
+</ol>
+<p><strong>Beneficios de la Norma Oficial Mexicana de propóleos</strong></p>
+<p>Tomando en cuenta lo anterior, la SADER ha señalado que la Norma propone <em>“establecer las especificaciones de producción, características físicas, químicas y antimicrobianas, que deben evaluarse los propóleos para su procesamiento y comercialización en el país; aplicable a las unidades económicas pecuarias dedicadas a la producción importancia, condicionamiento y almacenamiento con fines de distribución y comercialización de propóleos y sus extractos en el territorio nacional”</em> al tiempo que tienen diversos objetivos específicos los cuales pesan sobre lo siguiente:</p>
+<ul>
+<li>Establecer el proceso que debe llevar a cabo en la unidad económica pecuaria para la recolección de propóleo.</li>
+<li>Establecer las especificaciones físicas, químicas y microbiológicas que deberá cumplir cada cosecha.</li>
+<li>Establecer los métodos de prueba para los propóleos, tales como; acondicionamiento de las muestras preparación de reactivos y realización de diversas pruebas de laboratorio.</li>
+</ul>
+<p>Así mismo la SADER ha determinado que la Norma, representa la mejor opción para atender la problemática existente; lo anterior toda vez que con su misión permite estandarizar los sistemas de producción para garantizar las características físicas, químicas y antimicrobianas de los propóleos así, como la metodología para evaluar estas, lo que fomenta la productividad de los propóleos ya que representa una excelente alternativa de ingresos por su comercialización a nivel nacional e internacional.</p>
+<p>Los métodos de recolección adecuados permitirá incrementar el rendimiento del producto de 8 a 17 veces más, mientras que con el análisis de laboratorio se garantiza que las características y propiedades más representativas de los propóleos cumplen con lo establecido en la NOM, permitiendo con ello que se promueva la competitividad del producto dentro del esquema de un mercado eficiente, ya que el productor contará con datos de propóleo, avalando su producto ante el mercado internacional, como en el resto de los países que lo exportan.</p>
+<p><strong>Beneficios de la recolección de propóleos</strong></p>
+<p>En este sentido, al adoptar cualquiera de las metodologías de recolecta de propóleos propuestas en la NOM que mejor se adapte a las condiciones de la región donde se ubica el apiario, el productor podrá obtener los siguientes beneficios específicos</p>
+<ol style="list-style-type: decimal">
+<li><p>Mediante mallas plásticas o rejillas matrizadas plásticas los apicultores recolectarán un promedio de 80 gramos por mes por trampa, 960 gramos por Colmena al año; es decir <strong>749% más que con el método actual de raspado, el cual tiene un rendimiento de 113 gramos por colmena al año</strong>.</p></li>
+<li><p>Mediante la recolecta de propóleo mediante métodos promotores de cortinas, el apicultor tendrá una producción promedio por Colonia, <strong>con una sola trampa de 1,920 gramos por Colmena al año, es decir arriba de 1,500 por ciento con respecto al método actual de raspado</strong>.</p></li>
+</ol>
+<p>En este sentido, esa SADER, señaló que <strong>con la obtención de propóleo conforme a la Norma se permitirá al productor comercializar su producto a un precio similar al del mercado internacional, aproximadamente a los $2,000 por kilogramo; es decir 300% arriba del precio actual ($500.00 por kilo)</strong>, por lo cual es posible advertir que, con la emisión de la propuesta regulatoria, los apicultores obtendrán mayores beneficios económicos, tal y como se muestra en el siguiente cuadro.</p>
+<p>Cuadro 1. Volumen de producción anual de propóleos, utilidades y relación costo-beneficio contemplando los análisis de laboratorio</p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="14%" />
+<col width="15%" />
+<col width="12%" />
+<col width="14%" />
+<col width="14%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Método de produción</th>
+<th>Kilos de propóleos producidos por apiario</th>
+<th>Precio por kilo</th>
+<th>Ingreso bruto (Pesos)</th>
+<th>Costos (Pesos)</th>
+<th>Unidad (Pesos)</th>
+<th>Relación costo-beneficio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raspado</td>
+<td>2.8</td>
+<td>$500</td>
+<td>$1,412</td>
+<td>$186</td>
+<td>$1,226</td>
+<td>6.6</td>
+</tr>
+<tr class="even">
+<td>Malla plástica</td>
+<td>24</td>
+<td>$2,000</td>
+<td>$48,000</td>
+<td>$2,755</td>
+<td>$45,245</td>
+<td>16.4</td>
+</tr>
+<tr class="odd">
+<td>Rejilla matrizada</td>
+<td>24</td>
+<td>$2,000</td>
+<td>$48,000</td>
+<td>$3,480</td>
+<td>$44,520</td>
+<td>12.8</td>
+</tr>
+<tr class="even">
+<td>Promotor de cortinas</td>
+<td>48</td>
+<td>$2,000</td>
+<td>$96,000</td>
+<td>$2,730</td>
+<td>$93,270</td>
+<td>34.2</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Al respecto, de acuerdo con la información proporcionada por la SADER, es posible advertir que, considerando los costos máximos a los que se podrían invertir serian del orden de $3,480 pesos y que <strong>los beneficios derivados de la mejora de los métodos de producción son de $44,520 pesos</strong>.</p>
+<p>En este tenor, considerando los 43 mil apicultores que existen en nuestro país, es posible advertir que los costos totales se encontrarían en el orden de los $149, G640,000 pesos, mientras que <strong>los beneficios totales ascenderían a $1,914,360,00; es decir los beneficios serían de 12.8 veces mayores a los costos de inversión</strong>. A nivel nacional la apicultura tiene una gran importancia socioeconómica y ecológica, ya que es considerada como una de las principales actividades pecuarias ganadoras de divisas (alrededor de $9,298,037.11 de dólares para el año 2015).</p>
+<p><strong>Conclusiones</strong></p>
+<p>En el 2015, se expuso en el 44° Congreso Mundial de Apicultura, que a nivel mundial se produjeron más de 2 mil toneladas de propóleos, con un valor de $459.3 millones de dólares y la tendencia para el 2018 sería de 3.5 mil toneladas con un valor superior a los $800 millones de dólares, debido a sus propiedades biológicas y microbiológicas reportadas a nivel mundial.</p>
+<p>Existe un potencial de producción de propóleos en México considerando que el stock de colmenas que se estima es de 2.7 millones de unidades y una producción nacional estimada en 7 toneladas al año, con un valor comercial de 3.5 millones de pesos.</p>
+<p>La producción de propóleos podría brindar al apicultor alternativas económicas por sus propiedades biológicas que proporcionan grandes beneficios en la salud animal, la inocuidad alimentaria y fomentar la creación de nuevos nichos en el mercado nacional e internacional al implementar los propóleos como materia prima.</p>
+<p>Que la SADER promoviera la emisión de una NOM, fue para que se garantizara la producción nacional de propóleos con la máxima calidad e inocuidad, incentivando la competitividad y diversificación del sector apícola en México.</p>
+<p>Con la emisión de la NOM, se resolvió la inexistencia de un instrumento que tuviera las especificaciones físicas, químicas y antimicrobianas que garantizaran la máxima calidad e inocuidad de los procesos de producción y comercialización de propóleos en nuestro país.</p>
+<p>Con los métodos de recolección, <strong>se permitirá incrementar el rendimiento del producto de 8 a 17 veces más</strong>, mientras que con el análisis de laboratorio, se garantizará que las características y propiedades más representativas de los propóleos cumplen con lo establecido en la NOM, permitiendo con ello que se promueva la competitividad del producto dentro del esquema de un mercado eficiente, ya que el productor contará con datos de los propóleos, avalando su producto frente al mercado nacional e internacional, como el resto de los países que lo exportan.</p>
+<p>Con la evaluación de propóleos conforme a la NOM, <strong>se permitirá al productor comercializar su propóleo a un precio similar al mercado internacional, aproximado a los $2,000 pesos por kilogramo; es decir, 300% arriba del precio actual ($500 por kilogramo)</strong>, obteniendo mayores beneficios económicos .de</p>
+<p><strong>Considerando los 43 mil apicultores que existen en el país, es posible advertir que los costos totales de inversión se encontrarían en el orden de los $149,640,000 pesos, mientras que las ganancias para el país ascenderían a $1,914,360,000, es decir, los beneficios económicos serían 12.8 veces mayores a los costos de inversión.</strong></p>
+<p><strong>Referencias</strong></p>
+<ol style="list-style-type: decimal">
+<li>L. R. Martínez-Pérez de Ayala, Llanes-Chiquini C. M.1, T. A. Cruz Sánchez,M. M. Canales-Martínez, J. G. Penieres-Castillo,B. Rodríguez-Pérez y R. A. Casillas Peñuelas.(2019) RECOLECCIÓN, MANEJO Y PROCESAMIENTO DEL PROPÓLEO, UNA ALTERNATIVA PARA REACTIVAR LA ECONOMÍA DE LAS FAMILIAS DE LOS APICULTORES MEXICANOS APEGÁNDONOS A LA NOM-003-SAG/GAN-2017.5to. Encuentro Apícola del Altiplano Mexicano, Aguascalientes 2019.p 31-43.</li>
+<li><p>SAGARPA. (2010). El propóleo y las técnicas para su colecta. Recuperado el 15 de agosto de 2015, de Notiabeja: <a href="http://www.sagarpa.gob.mx/ganaderia/Documents/noti1006.pdf" class="uri">http://www.sagarpa.gob.mx/ganaderia/Documents/noti1006.pdf</a></p></li>
+<li><p>SAGARPA. (2010). Situación actual y perspectiva de la Apicultura en México. claridades Agropecuarias (199), 3-34.</p></li>
+<li><p>SAGARPA, (2017), NOM-003-SAG/GAN-2017, Propóleos, producción y especificaciones para su procesamiento, Diario Oficial de la Federación. Tomo DCCLXIX No. 6 :27-35.</p></li>
+<li><p><a href="http://www.cofemersimir.gob.mx/mirs/42874" class="uri">http://www.cofemersimir.gob.mx/mirs/42874</a></p></li>
+</ol>
+<p><br/> <br/> <br/></p>
+</div>
+<div id="etiquetado-de-productos" class="section level2">
+<h2>4.9 Etiquetado de productos</h2>
+<p>Por <a href="#a001">Elizabeth Bacilio López</a></p>
+<div id="especificaciones-del-etiquetado-en-extractos-de-propóleos" class="section level3">
+<h3>Especificaciones del etiquetado en extractos de propóleos</h3>
+<p>La apicultura es una actividad que ha representado y representa un papel fundamental dentro de la ganadería del país, tanto por la generación de un importante número de empleos, como por constituirse como la tercera fuente captadora de divisas del subsector ganadero (Lastra, 2000).</p>
+<p>Además de la polinización y la producción miel, existen otros productos que se pueden obtener de la apicultura, como son los propóleos, la cera, la jalea real, el polen y la apitoxina. A su vez, derivado de estos se pueden obtenerse una gran variedad de subproductos, los cuales le permiten diversificar la fuente de ingresos y al mismo tiempo cubre las necesidades y exigencias de los consumidores.</p>
+<p>Ante la situación actual del mercado nacional de la miel, y los precios bajos a los que se les paga a los productores, los apicultores deben unirse para innovar y lograr entrar directamente en el mercado, sin intermediarios, por lo que es importante ofrecer productos atractivos para el consumidor que satisfagan sus expectativas en cuanto a calidad comercial y sanitaria.</p>
+<p>Uno de los elementos básicos para darle al consumidor la seguridad de la calidad es la etiqueta, misma que funge como tarjeta de presentación de la cuál puede estar basada directamente la decisión del consumidor de adquirir o no algún producto.</p>
+<p><strong>Ideas generales</strong></p>
+<p>De forma pragmática el consumidor puede dedicar unos minutos de manera habitual a leer el etiquetado, el cual ayudará a seleccionar mejor los productos que se consuman (Confederación de Consumidores y Usuarios, 2007). Así mismo, el etiquetado constituye el principal medio de comunicación entre los productores y vendedores de alimentos, por una parte, y por otra, entre sus compradores y/o consumidores favoreciendo el comercio y evitando fraudes (OMS, 2007).</p>
+<p>El diseño de una etiqueta para cualquier producto se divide en dos etapas, la primera de ellas consiste en la parte estética o mercadotécnica, la cual se deja a criterio de los diseñadores, así como de los estudios de mercado o de imagen que se quieran ofrecer, resaltar o con los que se quiera atraer al consumidor. La segunda parte va de la mano de la primera, que es el contenido mínimo de información en la etiqueta, dando cumplimiento a las disposiciones legales en cuanto al contenido de la misma.</p>
+<p>El contenido mínimo de información y el cómo debe ser presentado al consumidor está regulado en México por algunas Normas Oficiales Mexicanas, las cuales tienen por objetivo, establecer las reglas, especificaciones, atributos, directrices, características o prescripciones aplicables a un producto, proceso, instalación, sistema, actividad, servicio o método de producción u operación, así como aquellas relativas a terminología, simbología, embalaje, marcado o etiquetado y las que se refieran a su cumplimiento o aplicación (Ley Federal Sobre Metrología y Normalización).</p>
+<p>Así entonces, la etiqueta es definida por la normatividad mexicana como cualquier rótulo, marbete, inscripción, imagen u otra materia descriptiva o gráfica, escrita, impresa, estarcida, marcada, grabada en alto o bajo relieve, adherida, precintado o anexado al envase primario o secundario del producto, sobrepuesta o fijada al envase del producto preenvasado o, cuando no sea posible por las características del producto, al embalaje (NOM-051-SCFI/SSA1-2010, NOM-141-SSA1/SCFI-2012).</p>
+<p>La normatividad mexicana especifica el contenido mínimo de información que debe estar presente en el etiquetado, la forma en la que debe presentarse al consumidor, el tamaño de la letra o de símbolos específicos, así como de algunas prohibiciones o restricciones.</p>
+<p><strong>Etiquetado de propóleos</strong></p>
+<p>Existe un gran vacío legal para poder etiquetar los propóleos, sus extractos etanólicos o productos que contengan sus principios activos. Si bien existe la NOM-003-SAG/GAN-2017 en la que se regula su producción y especificaciones para su procesamiento y el avance en el conocimiento y usos medicinales de propóleos a nivel nacional e internacional, ha generado un incremento en su consumo y como consiguiente una mayor demanda por la sociedad el usuario debe ser cuidadoso al determinar el uso de los propóleos obtenidos.</p>
+<p>Los propóleos se pueden vender como extractos etanólicos, como parte de la formulación de cosméticos, productos de la confitería o suplementos alimenticios. Claro, para cada uno de estos subproductos se deberá usar la información de los apartados anteriores para dar cumplimiento a la normatividad vigente.</p>
+<p>Cuando se le quiera atribuir su presencia a un efecto antimicrobiano se debe de cumplir con las pruebas de calidad mencionadas en la NOM-003-SAG/GAN-2017, evaluando y cumpliendo las concentraciones mínimas de flavonoides, fenoles, índice de oxidación y las pruebas de desafío antimicrobiano contra Staphylococcus aureus, Escherichia coli y Candida albicans. Mismas pruebas que se realizan en el laboratorio autorizado por SADER en la Facultad de Estudios Superiores Cuautitlán.</p>
+<p>Sin embargo NO existe una ventana de oportunidad para poder registrarlo como medicamento y venderlo como tal, ya que la Ley General de Salud define a los medicamentos como “toda substancia o mezcla de substancias de origen natural o sintético que tenga efecto terapéutico, preventivo o rehabilitatorio, que se presente en forma farmacéutica y se identifique como tal por su actividad farmacológica, características físicas, químicas y biológicas” y aunque eso lo ampara la misma NOM-003-SAG/GAN-2017, los principios activos de los propóleos son tantos que no se encuentran en una forma de fármaco y que bajo ninguna de las clasificaciones de la misma ley y de la NOM-072-SSA1-2012 se puede clasificar a los propóleos como medicamentos ni alópatas, ni homeópatas, ni herbolarios, ni como remedios herbolarios.</p>
+<p>Como consecuencia solo se podrá vender y recomendar su uso antimicrobiano en forma de extracto etanólico o blando de propóleos si se cuenta con el análisis de la NOM-003-SAG/GAN-2017.</p>
+<p>Las siguientes definiciones permitirán al usuario identificar los términos antes referidos en el texto.</p>
+<ul>
+<li><p>Compuestos fenólicos: Son compuestos aromáticos, que, junto a los flavonoides, le confieren a los propóleos sus usos y aplicaciones biológicas; los principales compuestos fenólicos de los propóleos son: ácido caféico, ácido ferúlico, ácido benzoico, ésteres de ácido caféico, como el CAPE (feniletil éster del ácido caféico, por sus siglas en inglés), entre otros.</p></li>
+<li><p>Flavonoides: Compuestos orgánicos hidroxilados derivados de la 2-fenilbenzopiran- 4-ona (también llamada 2-fenil-4H-cromen-4-ona), y sistemas reducidos en C2-C3 y/o C4 provenientes de exudados vegetales con múltiples aplicaciones.</p></li>
+<li><p>Propóleo o propóleos: Nombre genérico que se da a las sustancias resinosas recolectadas y procesadas por las abejas de la vegetación circundante al apiario. De aspecto resinoso, su color puede variar dependiendo de su origen desde el rojo, amarillo-rojizo, amarillo-obscuro, verde castaño, pardo o negro, con sabor amargo y ligeramente picante.</p></li>
+</ul>
+<p><strong>Especificaciones del etiquetado en productos veterinarios</strong></p>
+<p>Sin embargo, si los productos que contengan propóleos serán destinados para uso Veterinario, es necesario que se cumpla con la NOM 012-ZOO-1993 en materia de su etiquetado.</p>
+</div>
+<div id="especificaciones-del-etiquetado-de-alimentos" class="section level3">
+<h3>Especificaciones del etiquetado de Alimentos</h3>
+<p>La Ley general de Salud define los siguientes conceptos: Alimento: cualquier substancia o producto, sólido o semisólido, natural o transformado, que proporcione al organismo elementos para su nutrición y Suplementos alimenticios: Productos a base de hierbas, extractos vegetales, alimentos tradicionales, deshidratados o concentrados de frutas, adicionados o no, de vitaminas o minerales, que se puedan presentar en forma farmacéutica y cuya finalidad de uso sea incrementar la ingesta dietética total, complementarla o suplir alguno de sus componentes (Ley General de Salud).</p>
+<p>En el caso del consumidor, el análisis habitual del etiquetado de alimentos permitiría:</p>
+<ul>
+<li>Mejorar la seguridad alimentaria de la dieta</li>
+<li>Conocer la fecha de caducidad del producto a consumir.</li>
+<li>Saber las condiciones de conservación y utilización del alimento.</li>
+<li>Identificar los conservadores y aditivos que se han utilizado.</li>
+<li><p>En personas alérgicas o intolerantes a algún nutriente, detectar ingredientes que puedan afectar a su salud.</p></li>
+<li>Contribuir a la economía familiar</li>
+<li><p>Tener una idea aproximada de la relación entre el precio, cantidad y calidad del alimento.</p></li>
+<li>Mejorar nuestros hábitos alimentarios</li>
+<li>Conocer con seguridad los ingredientes que contienen los alimentos.</li>
+<li><p>Conocer las características nutricionales de los alimentos. (Confederación de Consumidores y Usuarios, 2007).</p></li>
+</ul>
+<p>Por lo tanto, la verificación del etiquetado de los alimentos debe ser una actividad complementaria en los aspectos de calidad sanitaria y comercial, las cuáles deben estar basadas en las especificaciones de la NOM-051-SCFI/SSA1-2010. “Especificaciones generales de etiquetado para alimentos y bebidas no alcohólicas preenvasados - Información comercial y sanitaria” Sin embargo, la misma norma aclara que se excluyen de esta normatividad los siguientes productos:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Los productos a granel.</li>
+<li>Los alimentos y bebidas no alcohólicas envasados en punto de venta y</li>
+<li>Las que otras disposiciones legales lo especifiquen. Para poder proceder a verificar que el etiquetado cumpla con la normatividad es importante tener presentes algunas definiciones con la finalidad de no confundir ciertas cuestiones que se promueven en la etiqueta.</li>
+</ol>
+<p><em>Aditivo</em>: Cualquier substancia permitida que, sin tener propiedades nutritivas, se incluya en la formulación de los productos y que actúe como estabilizante, conservador o modificador de sus características organolépticas, para favorecer ya sea su estabilidad, conservación, apariencia o aceptabilidad. Alimento: Cualquier sustancia o producto, sólido, semisólido, natural o transformado, que proporciona al organismo elementos para su nutrición.</p>
+<p><em>Contenido</em>: Cantidad de producto preenvasado que por su naturaleza puede cuantificarse para su comercialización, por cuenta numérica de unidades de producto.</p>
+<p><em>Contenido Neto</em>: Cantidad de producto preenvasado que permanece después de que se han hecho todas las deducciones de tara cuando sea el caso.</p>
+<p><em>Declaración de Propiedades</em>: Cualquier texto o representación que afirme, sugiera o implique que un alimento o bebida no alcohólica preenvasado tiene cualidades especiales por su origen, propiedades nutrimentales, naturaleza, elaboración, composición u otra cualidad cualquiera, excepto la marca del producto y el nombre de los ingredientes.</p>
+<p><em>Fecha de Caducidad</em>: Fecha límite en que se considera que las características sanitarias y de calidad que debe reunir para su consumo un producto preenvasado, almacenado en las condiciones sugeridas por el responsable del producto, se reducen o eliminan de tal manera que después de esta fecha no debe comercializarse ni consumirse.</p>
+<p><em>Fecha de Consumo Preferente</em>: Fecha en que, bajo determinadas condiciones de almacenamiento, expira el periodo durante el cual el producto preenvasado es comercializable y mantiene las cualidades específicas que se le atribuyen tácita o explícitamente, pero después de la cual el producto preenvasado puede ser consumido.</p>
+<p><em>Lote</em>: La cantidad de un producto elaborado en un mismo ciclo, integrado por unidades homogéneas e identificado con un código específico.</p>
+<p><em>Masa Drenada</em>: Cantidad de producto sólido o semisólido que representa el contenido de un envase, después de que el líquido ha sido removido por un método previamente establecido.</p>
+<p>Como se ha mencionado, de forma general el etiquetado de todos los productos debe ser tal que no induzca al error o confunda al consumidor con respecto a la naturaleza y características del producto así como contener los requisitos contenidos en la tabla 6.</p>
+<p>Se sugiere que el usuario se apoye en la tabla 6 para evaluar de forma ágil el cumplimiento de la normatividad correspondiente, es importante recordar que en la misma NOM-051- SCFI/SSA1-2010 existen aclaraciones y especificaciones más detalladas para cada uno de los puntos antes mencionados, y por lo tanto durante una verificación exhaustiva se debe consultar esta norma para determinar el cumplimiento preciso de la misma para cada uno de los productos evaluados, tales como el tamaño mínimo de letra, y de los símbolos empleados.</p>
+<p>En particular el caso de los productos que se obtienen de la colmena y pueden llamarse alimentos se contempla a la miel, los productos de la confitería como: gomas, caramelos, paletas, pajillas, perlas, popotillos de miel, y cualquier suplemento alimenticio que contenga alguno de los productos de la colmena como polen, jalea real y miel.</p>
+</div>
+<div id="miel" class="section level3">
+<h3>Miel</h3>
+<p>En el caso de la miel de abeja la Norma Oficial Mexicana NOM-145-SCFI-2001, “Información comercial-Etiquetado de miel en sus diferentes presentaciones” sirve de referente legal para complementar lo solicitado en la NOM-051-SCFI/SSA1-2010. La miel es definida por la NOM-145-SCFI-2001 y el PROY-NOM-004-SAG/GAN-2018 como la sustancia dulce natural producida por abejas obreras a partir del néctar de las flores o de secreciones de partes vivas de plantas o de excreciones de insectos succionadores de plantas que quedan sobre partes vivas de plantas, que las abejas recogen, transforman y combinan con sustancias específicas propias, y almacenan y dejan en el panal para que madure y añeje. Presentaciones en las que la miel se puede vender La Norma Mexicana NMX-F-036-1997 ALIMENTOS-MIEL-ESPECIFICACIONES Y MÉTODOS DE PRUEBA, clasifica la miel en las siguientes modalidades.</p>
+<p><em>Miel en panal</em> Es la miel que no ha sido extraída de su almacén natural de cera que cumple con lo señalado en la definición de Miel de la NOM-145-SCFI-2001 y puede consumirse como tal.</p>
+<p><em>Miel líquida</em> La miel que ha sido extraída de los panales que cumplen con lo señalado en la definición de Miel de la NOM-145-SCFI-2001 y que se encuentra en un estado líquido, sin presentar cristales visibles.</p>
+<p><em>Miel cristalizada</em> Producto que cumple en general con lo señalado en la definición de Miel de la NOM-145- SCFI-2001 y que se encuentra en estado sólido o semisólido granulado, y que es resultado del fenómeno natural de cristalización de los azúcares que la constituyen. Este tipo de miel también puede presentarse con el nombre de miel cremosa.</p>
+<p>También establece que la miel puede designarse con el nombre de la región geográfica o topográfica, si ha sido producida exclusivamente en el área a que se refiere la denominación.</p>
+<p>Asimismo, señala que debe designarse de acuerdo con el origen, como floral si la miel procede directamente de los néctares de las flores; de plantas o de mielada si procede principalmente de secreciones de partes vivas de las plantas y no del néctar de las flores; si procede total o parcialmente de esas fuentes en particular y si posee las propiedades organolépticas, fisicoquímicas y microscópicas que corresponden a dicho origen.</p>
+<p>Nota. La consistencia de la miel en sí puede ser líquida, cremosa o sólida. Puede estar parcial o totalmente cristalizada. La miel generalmente cristaliza con el tiempo, este proceso es una característica natural altamente ligada a la composición de azúcares. Así, las mieles con mayor contenido de glucosa generalmente cristalizan en forma más rápida.</p>
+<p>En el caso particular de los productos de confitería y suplementos alimenticios se debe de considerar la combinación de otros ingredientes y/o aditivos permitidos en el Acuerdo por el que se determinan los aditivos y coadyuvantes en alimentos, bebidas y suplementos alimenticios, su uso y disposiciones sanitarias del 2012 (DOF), el Acuerdo por el que se determinan las plantas prohibidas o permitidas para tés, infusiones, aceites vegetales comestibles y suplementos alimenticios (DOF) y las disposiciones de la Ley General de Salud, del Reglamento de la Secretaria de Salud en Materia de Publicidad y el Reglamento del Control Sanitario de Productos y Servicios. Se debe tener mucha precaución de no incurrir en los delitos señalados en las disposiciones antes mencionadas, que incluyen el no:</p>
+<ul>
+<li>Inducir o promover hábitos de alimentación nocivos para la salud;</li>
+<li>Afirmar que el producto llena por sí solo los requerimientos nutricionales del ser humano;</li>
+<li>Atribuir a los alimentos industrializados un valor nutritivo superior o distinto al que tengan;</li>
+<li>Realizar comparaciones en menoscabo de las propiedades de los alimentos naturales;</li>
+<li>Expresar o sugerir, a través de personajes reales o ficticios, que la ingestión de estos productos proporciona a las personas características o habilidades extraordinarias;</li>
+<li>Asociarse directa o indirectamente con el consumo de bebidas alcohólicas o tabaco, y</li>
+<li>Declarar propiedades que no puedan comprobarse;</li>
+<li>Declarar que los productos son útiles para prevenir, aliviar, tratar o curar una enfermedad, trastorno o estado fisiológico (Reglamento de la Secretaría de Salud en Materia de Publicidad).</li>
+</ul>
+<p>Y serán sancionados conforme a la Ley General de Salud, “será procedente la acción de aseguramiento prevista en el artículo 414 como medida de seguridad, para el caso de que se comercialicen remedios herbolarios, suplementos alimenticios o productos de perfumería y belleza que indebidamente hubieren sido publicitados o promovidos como medicamentos o a los cuales se les hubiera atribuido cualidades o efectos terapéuticos, presentándolos como una solución definitiva en el tratamiento preventivo o rehabilitatorio de un determinado padecimiento, no siendo medicamentos y sin que los mismos cuenten con registro sanitario para ser considerados como tales”.</p>
+<p>Sin embargo también el Reglamento de Control Sanitario de Productos y Servicios establece que en el etiquetado de los Suplementos Alimenticios la etiqueta y la información con la que se comercialicen los suplementos alimenticios no se deberá presentar información que confunda, exagere o engañe en cuanto a su composición, origen, efectos y otras propiedades del producto, ni ostentar indicaciones preventivas, rehabilitadoras o terapéuticas y el etiquetado y en la publicidad de los mismos no deberán emplearse denominaciones, figuras y declaraciones relacionadas con enfermedades, síntomas, síndromes, datos anatómicos, fenómenos fisiológicos o leyendas que afirmen que el producto cubre por sí solo los requerimientos nutrimentales del individuo o que puede sustituir alguna comida.</p>
+<p>Por lo tanto, en el caso de algunos suplementos alimenticios el uso de la leyenda “Este no es un medicamento, su consumo es responsabilidad de quien lo usa y/o lo recomienda” es sugerida para dejar en claro que no cura ningún padecimiento ni tiene propiedades farmacológicas o terapéuticas.</p>
+<p><strong>Referencias</strong></p>
+<p>FIA. Fundación para la Innovación Agraria. Implementación de una planta procesadora de miel para pequeños apicultores. Serie Experiencias de Innovación para el emprendimiento agrario. Editorial Amblos Ltda. enero 2010.</p>
+<p>Secretaria de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación. Manual de Buenas Practicas de Producción de Miel. Versión electrónica PDF. México: SAGARPA, 2008. Disponible en: <a href="http://www.sagarpa" class="uri">http://www.sagarpa</a> .gob.mx/ganaderia/Publicaciones/ Lists/Manuales%20de% 20 Buenas%20Prcticas/ Attachments/1/mbpp.pdf.</p>
+<p>Secretaria de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación. Hidromiel la bebida de los dioses. México: SAGARPA, 2017. Disponible en: <a href="https://www.gob.mx/sader/es/articulos/hidromiel-la-bebida-de-los-dioses?idiom=es&amp;fbclid=IwAR0pJ1Czjcbp2o3pwFxOvyrGBKnGo" class="uri">https://www.gob.mx/sader/es/articulos/hidromiel-la-bebida-de-los-dioses?idiom=es&amp;fbclid=IwAR0pJ1Czjcbp2o3pwFxOvyrGBKnGo</a> Vmoi9HRRue0NSY6I NlhJGlxMbo8fKg</p>
+<p>Acuerdo por el que se determinan los aditivos y coadyuvantes en alimentos, bebidas y suplementos alimenticios, su uso y disposiciones sanitarias.</p>
+<p>Acuerdo por el que se determinan las plantas prohibidas o permitidas para tés, infusiones, aceites vegetales comestibles y suplementos alimenticios</p>
+<p>Acuerdo por el que se determinan las sustancias prohibidas y restringidas en la elaboración de productos de perfumería y belleza,</p>
+<p>Lastra MIJ, Peralta AMA. “Situación actual y perspectiva de la Apicultura en México 2000”. SAGARPA. 2000 Formato PDF disponible en pág.: <a href="http://www.sagarpa.gob.mx/ganaderia/Publicaciones/Lists/Estudios%20de%20situacin%20actual%20y%20perspectiva/Attachments/26/sppa00.pdf">http://www.sagarpa.gob.mx/ganaderia/Publicaciones/Lists/Estudios%20de%20situacin%20actual%20y%20perspectiva/Attachments/26/sppa00.pdf</a>.</p>
+<p>NOM-003-SAG/GAN-2017, Propóleos, producción y especificaciones para su procesamiento.</p>
+<p>NOM-002-SCFI-2011 Productos preenvasados-Contenido neto-Tolerancias y métodos de verificación.</p>
+<p>NOM-008-SCFI-2002, Sistema General de Unidades de Medida.</p>
+<p>NOM-030-SCFI-2006, Información comercial. Declaración de cantidad en la etiqueta- Especificaciones.</p>
+<p>NOM-051-SCFI/SSA1-2010, Especificaciones generales de etiquetado para alimentos y bebidas no alcohólicas preenvasados-Información comercial y sanitaria.</p>
+<p>NOM-141-SSA1/SCFI-2012, Etiquetado para productos cosméticos preenvasados. Etiquetado sanitario y comercial.</p>
+<p>NOM-142-SSA1/SCFI-2014, Bebidas alcohólicas. Especificaciones sanitarias. Etiquetado sanitario y comercial.</p>
+<p>NOM-145 NORMA Oficial Mexicana NOM-145-SCFI-2001, Información comercial-Etiquetado de miel en sus diferentes presentaciones.</p>
+<p>NOM-199-SCFI-2017, Bebidas alcohólicas. Denominación, especificaciones fisicoquímicas, información comercial y métodos de prueba.</p>
+<p>Ley General de Salud (DOF).</p>
+<p>Confederación de Consumidores y Usuarios. (2007). ¿QUÉ NOS DICE EL ETIQUETADO DE ALIMENTOS? Guía para su mejor comprensión.</p>
+<p><br/> <br/> <br/></p>
+</div>
+</div>
+<div id="normalización" class="section level2">
+<h2>4.10 Normalización</h2>
+<p>Por <a href="#a001">M. en C. Patxi Machín Munguía Villavicencio Profesor de la Facultad de Estudios Superiores Cuautitlán</a></p>
+<p>En general se entiende por Derecho al conjunto de normas jurídicas, creadas por el estado para regular la conducta externa de los hombres y en caso de incumplimiento esta prevista de una sanción judicial (Flores Gómez Gonzales, F., 1986).</p>
+<p>Así entonces participara en cualquiera de las aristas de la apicultura conlleva acatar las normas jurídicas que se hayan creado para su regulación, sin embargo, antes de analizar estos preceptos legales es necesario que el ciudadano interesado conozca lo esencial en cuanto a normalización en el país.</p>
+<p>Lo primero que se debe conocer es que “<strong>LA IGNORANCIA DE LAS LEYES NO EXCUSA SU CUMPLIMIENTO</strong>; PERO LOS JUECES TENIENDO EN CUENTA EL <strong>NOTORIO ATRASO INTELECTUAL</strong> DE ALGUNOS INDIVIDUOS, SU <strong>APARTAMIENTO DE LAS VÍAS DE COMUNICACIÓN</strong> O SU <strong>MISERABLE SITUACIÓN ECONÓMICA</strong>, PODRÁN, SI ESTÁ DE ACUERDO EL MINISTERIO PÚBLICO, EXIMIRLOS DE LAS SANCIONES EN QUE HUBIEREN INCURRIDO POR LA FALTA DE CUMPLIMIENTO DE LA LEY QUE IGNORABAN, O DE SER POSIBLE, CONCEDERLES UN PLAZO PARA QUE LA CUMPLAN; SIEMPRE QUE NO SE TRATE DE LEYES QUE AFECTEN DIRECTAMENTE AL INTERÉS PÚBLICO” (Artículo 21 del Código Civil Federal), así que el desconocimiento de las leyes no nos exime de su cumplimiento.</p>
+<p>En México los preceptos legales tienen jerarquías y existe un orden de supra y subordinación que a continuación se describen en orden jerárquico de importancia (Arvizu Tovar, 2016):</p>
+<ol style="list-style-type: decimal">
+<li>Constitución Política de los Estados Unidos Mexicanos y Tratados Internacionales en materia de Derechos Humanos.</li>
+<li>Leyes Federales, Leyes Orgánicas y Tratados Internacionales</li>
+<li>Leyes Estatales u Ordinarias</li>
+<li>Decretos</li>
+<li>Acuerdos</li>
+<li>Reglamentos</li>
+<li>Normas Individualizadas (NOM)</li>
+<li>Códigos</li>
+<li>Normas Individualizadas Voluntarias (NMX)</li>
+<li>Otros Lineamientos</li>
+</ol>
+<p>A pesar de este orden jerárquico, no en todos los niveles encontramos preceptos legales aplicables a la apicultura, sin embargo, existen en las áreas de producción, sanidad y protección apícola, protección al medio ambiente, comercialización nacional y protección al consumidor, comercio internacional.</p>
+<p>En función de la apicultura y protección apícola a nivel Federal, actualmente no existe una ley que regule la actividad apícola, sin embargo el 2 de septiembre de 2017 se propuso la Iniciativa que expide la Ley General de Protección, Conservación y Fomento Apícola, por a Senadora Rosa Adriana Díaz Lizama, durante la LXII Legislatura del Honorable Congreso de la Unión, mismo que fue turnado a comisiones unidad de Agricultura y Ganadería y de Estudios Legislativos, que hasta la fecha no ha progresado (Senado, 2017).</p>
+<p>A nivel estatal, y debido a que los estados son Autónomos, libres y soberanos, existen 19 disposiciones legales entre las que abordan temas como:</p>
+<ul>
+<li>Derechos y obligaciones de los apicultores
+<ul>
+<li>Derecho de antigüedad</li>
+</ul></li>
+<li>De las Organizaciones apícolas</li>
+<li>Movilización de colmenas</li>
+<li>Protección y Sanidad Apícola</li>
+<li>Inspección Apícola</li>
+<li>Criaderos de reinas y abejorros</li>
+<li>Control de la abeja Africanizada</li>
+<li>Calidad de Productos y subproductos</li>
+<li>Comités estatales o consejos estatales o Sistema Producto apícola</li>
+<li>Sanciones</li>
+</ul>
+<p>Tras una búsqueda exhaustiva en las legislaturas estatales se pudo concentrar en la siguiente tabla una comparación entre los estados y algunas de las especificaciones en función de la ubicación con relación de otros apiarios, zonas habitadas, caminos vecinales, otras especificaciones, así como la fecha en la que se promulgó.</p>
+<p><br/></p>
+<p align="center">
+<strong>Tabla 1. Comparación entre los estados y algunas de las especificaciones en función de la ubicación con relación de otros apiarios</strong> <a href="tabs/4_10_tab1.csv"><i class="fas  fa-download "></i></a>
+</p>
+<p><br/></p>
+<div id="htmlwidget-b7a122d57d9848eb640d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b7a122d57d9848eb640d">{"x":{"filter":"top","filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Baja California Sur&quot;,&quot;Campeche&quot;,&quot;Coahuila&quot;,&quot;Colima&quot;,&quot;Estado de México&quot;,&quot;Guanajuato&quot;,&quot;Guerrero&quot;,&quot;Hidalgo&quot;,&quot;Jalisco&quot;,&quot;Michoacán&quot;,&quot;Nuevo León&quot;,&quot;Querétaro&quot;,&quot;Quintana Roo&quot;,&quot;San Luis Potosí&quot;,&quot;Tamaulipas&quot;,&quot;Tlaxcala&quot;,&quot;Veracruz&quot;,&quot;Yucatán&quot;,&quot;Zacatecas &quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;*200 metros&quot;,&quot;*300 metros&quot;,&quot;1500 metros&quot;,&quot;2 kilómetros&quot;,&quot;200 metros&quot;,&quot;200 metros fábricas\\n300 de zonas habitadas&quot;,&quot;300 metros&quot;,&quot;300 metros *200 metros escuelas\\n* 300 metros&quot;,&quot;500 metros&quot;,&quot;800 metros los familiares y escolares.&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;-------&quot;,&quot;*200 metros&quot;,&quot;*300 metros&quot;,&quot;*Letreros a 100 metros por los caminos de acceso&quot;,&quot;10 metros federales\\n20 metros vecinales&quot;,&quot;100 metros y 800 en terreno abierto&quot;,&quot;200 metros&quot;,&quot;200 metros\\n*Letreros a 100 metros &quot;,&quot;30 metros&quot;,&quot;300 metros&quot;,&quot;50 metros&quot;,&quot;50 metros\\n*300 metros&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;&quot;,&quot;--------&quot;,&quot;-------- &quot;,&quot;1 kilómetro de basureros o aguas negras&quot;,&quot;1 kilómetro de los límites municipales&quot;,&quot;4 kilómetros mínimos de cultivos transgénico.\\n1.5 km apiarios escolares.&quot;,&quot;Excepción dependiente de la floración&quot;,&quot;Excepciones por floración\\nNo más de 40 colmenas&quot;,&quot;Letrero a 50 metros  &quot;,&quot;Los apiarios familiares y los escolares tendrán preferencia Máximo 19 cajas&quot;,&quot;No en zona urbana\\nLetreros a 100 metros&quot;,&quot;No en zonas urbanas&quot;,&quot;No en zonas urbanas \\nExtractoras a 500 metros de zona urbana&quot;,&quot;No más de 50 colmenas por apiario\\nNo en zonas urbanas&quot;,&quot;No tener colmenas dentro de casas-habitación y de zonas urbanas;&quot;,&quot;Prohibida en casas habitación y urbanas\\n8 km para criaderos de reinas&quot;,&quot;Prohibido en zona habitacional&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;06-oct-00&quot;,&quot;12-feb-04&quot;,&quot;13-ago-13&quot;,&quot;14 mayo 2004. Ref. 29 diciembre 2016&quot;,&quot;16-nov-07&quot;,&quot;17 mayo 2008, Ref. 24 marzo 2018&quot;,&quot;17 noviembre 2004. Ref. 21 diciembre 2016&quot;,&quot;21-oct-14&quot;,&quot;21-oct-15&quot;,&quot;21 mayo 2005. Ref. 23 marzo 2013&quot;,&quot;21 mayo 2008, Ref. 15 nov 2013&quot;,&quot;25-nov-19&quot;,&quot;25 julio 2015, Ref. 31 diciembre 2017&quot;,&quot;27-may-17&quot;,&quot;28-ago-18&quot;,&quot;28 de enero 2017&quot;,&quot;31 agosto 1993, Ref. 12 mayo 2009&quot;,&quot;6 de julio 2004. Ref. 28 diciembre 2016&quot;,&quot;7 diciembre 2007. Ref. 14 noviembre 2014&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"],["Baja California Sur","Campeche","Coahuila","Colima","Guanajuato","Guerrero","Hidalgo","Jalisco","Estado de México","Michoacán","Nuevo León","Querétaro","Quintana Roo","San Luis Potosí","Tamaulipas","Tlaxcala","Veracruz","Yucatán","Zacatecas "],["300 metros","2 kilómetros","200 metros","1500 metros","500 metros","300 metros","200 metros","300 metros","*200 metros","200 metros fábricas\n300 de zonas habitadas","200 metros","200 metros","300 metros *200 metros escuelas\n* 300 metros","500 metros","200 metros","800 metros los familiares y escolares.","200 metros","*300 metros","300 metros"],["30 metros","-------","200 metros","*Letreros a 100 metros por los caminos de acceso","300 metros","10 metros federales\n20 metros vecinales","*Letreros a 100 metros por los caminos de acceso","200 metros\n*Letreros a 100 metros ","*200 metros","50 metros","50 metros","200 metros","50 metros\n*300 metros","50 metros","200 metros","100 metros y 800 en terreno abierto","50 metros","*300 metros","300 metros"],["4 kilómetros mínimos de cultivos transgénico.\n1.5 km apiarios escolares.","--------","Prohibida en casas habitación y urbanas\n8 km para criaderos de reinas","--------","-------- ","1 kilómetro de basureros o aguas negras","No en zonas urbanas","No más de 50 colmenas por apiario\nNo en zonas urbanas","Excepciones por floración\nNo más de 40 colmenas","1 kilómetro de los límites municipales","No en zonas urbanas \nExtractoras a 500 metros de zona urbana","Letrero a 50 metros  ","","","No tener colmenas dentro de casas-habitación y de zonas urbanas;","No en zona urbana\nLetreros a 100 metros","Los apiarios familiares y los escolares tendrán preferencia Máximo 19 cajas","Excepción dependiente de la floración","Prohibido en zona habitacional"],["28 de enero 2017","21 mayo 2008, Ref. 15 nov 2013","31 agosto 1993, Ref. 12 mayo 2009","17 mayo 2008, Ref. 24 marzo 2018","25-nov-19","16-nov-07","25 julio 2015, Ref. 31 diciembre 2017","21-oct-15","21-oct-14","14 mayo 2004. Ref. 29 diciembre 2016","7 diciembre 2007. Ref. 14 noviembre 2014","28-ago-18","13-ago-13","27-may-17","17 noviembre 2004. Ref. 21 diciembre 2016","06-oct-00","12-feb-04","6 de julio 2004. Ref. 28 diciembre 2016","21 mayo 2005. Ref. 23 marzo 2013"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>X.U.FEFF.Estado<\/th>\n      <th>Zonas.habitadas<\/th>\n      <th>Caminos.Vecinales<\/th>\n      <th>Otros<\/th>\n      <th>Promulgación<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"scrollX":true,"fixedColumns":true,"language":{"info":"Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros","paginate":{"previous":"Anterior","next":"Siguiente"},"search":"Buscar:","lengthMenu":"Mostrar _MENU_ registros"},"order":[],"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<p><br/></p>
+<p>En función de los aspectos de protección al medio ambiente, se considera en algunas de las leyes estatales antes descritas cosas como:</p>
+<ul>
+<li>Pesticidas o insecticidas, avisar al apicultor con 72 h de anticipación</li>
+<li>Mantener las zonas de chamusca a 400 o 500 metros de los apiarios</li>
+<li>No introducirlas a cultivos transgénicos</li>
+</ul>
+<p>A pesar de lo anterior es necesario aclara que la Ley General de Equilibrio Ecológico y Protección al Medio Ambiente considera áreas naturales protegidas a, Reservas de la biosfera; Parques nacionales; Monumentos naturales; Áreas de protección de recursos naturales; Áreas de protección de flora y fauna; Santuarios; Parques y Reservas Estatales, Zonas de conservación ecológica municipales y Áreas destinadas voluntariamente a la conservación en las que según el reglamento de la ley (RLGEEyPMA) “SÓLO SE PODRÁN REALIZAR APROVECHAMIENTOS DE RECURSOS NATURALES QUE GENEREN BENEFICIOS A LOS POBLADORES QUE AHÍ HABITEN […] SIEMPRE Y CUANDO: A) NO SE INTRODUZCAN ESPECIES SILVESTRES EXÓTICAS DIFERENTES A LAS YA EXISTENTES O TRANSGÉNICAS […].” Por lo que la introducción de la abeja (<em>Apis mellifera</em>) está prohibida.</p>
+<p>Otras disposiciones aplicables a la apicultura, en particular a la sanidad de la especie son la NOM-002-SAG/GAN-2016, Actividades técnicas y operativas aplicables al Programa Nacional para el Control de la Abeja Africana, Donde entre otras cosas se prohíbe la instalación de apiarios en zonas urbanas, descartando a la apicultura urbana como una actividad legal en México.</p>
+<p>Existe la NOM -001-ZOO-1994, Campaña Nacional contra la Varroasis de las Abejas. Que aborda temas como Zonas de campaña, Diagnóstico, Cuarentenas, Eliminación, Tratamiento, Constatación, Movilización, Vigilancia epizootiológica e Importación.</p>
+<p>La NOM-001-SAG/GAN-2015, Sistema Nacional de Identificación Animal para Bovinos y Colmenas. Especifica que es obligación del apicultor iniciar con la cadena de identificación y trazabilidad.</p>
+<p>Uno de los subproductos de la colmena son los propóleos, para lo cual existe la NOM-003-SAG/GAN-2017, Propóleos, producción y especificaciones para su procesamiento. Misma que permite establecer a este subproducto con uso terapéutico para combatir a varias bacterias y levaduras, dándole así valor agregado al producto.</p>
+<p>En el caso de los productos como la miel, la NOM-145-SCFI-2001, Información comercial-Etiquetado de miel en sus diferentes presentaciones, junto con la NOM-051-SCFI/SSA1-2010, Especificaciones generales de etiquetado para alimentos y bebidas no alcohólicas preenvasados-Información comercial y sanitaria (misma que está próxima a modificarse) establecen lo necesario para el etiquetado de miel o productos que puedan considerarse alimentos.</p>
+<p>No se debe olvidar que las prácticas de higiene en la preparación de alimentos se ven reguladas por la NOM-251-SSA1-2009, Prácticas de higiene para el proceso de alimentos, bebidas o suplementos alimenticios, misma que se debe cumplir para reducir los riegos para el consumidor.</p>
+<p>En la mesa de trabajo se encuentra el proyecto PROY-NOM-004-SAG/GAN-2018, Producción de miel y especificaciones (Publicada en el DOF el 20/12/2018), que especificará las características que debe cumplir la miel.</p>
+<p>Así mismo en el Programa Nacional de Normalización de 2020 (DOF 17/02/2020) se incluyó el tema a ser iniciado: Proyecto de Norma Oficial Mexicana, Miel de abejas meliponas, especificaciones para su producción, por el Subcomité especializado en competitividad del Comité Consultivo Nacional de Normalización Agroalimentaria de la Secretaria de Agricultura y Desarrollo Rural.</p>
+<p>Es importante recordar que existe el Acuerdo mediante el cual se dan a conocer en los Estados Unidos Mexicanos las enfermedades y plagas exóticas y endémicas de notificación obligatoria de los animales terrestres y acuáticos (DOF 29 de noviembre 2018). En el que se enlistan para las abejas las enfermedades exóticas y endémicas de las abejas.</p>
+<p>Falta aclarar todo el esquema legal que regula a las plantas Tipo Inspección Federal Extractoras, homogeneizadoras y envasadoras de miel, mismo que parte de la Ley Federal de Sanidad Animal (DOF 16/02/2018) y su Reglamento que permiten obtener la certificación TIF.</p>
+<p>Otros lineamientos que jurídicamente no son instrumentos válidos, pero que son publicados por la autoridad como documentos técnicos y guías para el cumplimiento de las disposiciones jurídicas son:</p>
+<ul>
+<li>Manual Básico de Apícola</li>
+<li>Manual de Patología Apícola</li>
+<li>Manual de Polinización Apícola</li>
+<li>Manual de Cría de Abejas Reina</li>
+<li>Manual de Producción de miel Orgánica</li>
+<li>Manual de Buenas Prácticas Pecuarias en la Producción Primaria de Miel</li>
+<li>Manual de Buenas Prácticas de Producción de Miel</li>
+</ul>
+<p>Y sin embargo el tema de la apicultura orgánica es un tema que concierne a muchos sectores, entre los que se encuentran las disposiciones aplicables a otros países, tal y como se muestra a continuación en la siguiente tabla:</p>
+<p><br/></p>
+<div class="figure" style="text-align: center">
+<img src="imag/4_10_tab2.png" alt="**Tabla 2. Disposiciones aplicables en otros países**" width="60%" />
+<p class="caption">
+<strong>Tabla 2. Disposiciones aplicables en otros países</strong>
+</p>
+</div>
+<p><br/></p>
+<p>Se sugiere conocer las disposiciones que los demás países sugieren para que la miel sea considerada orgánica.</p>
+<p>Una de las regulaciones pendientes es la que omite a la Hidromiel dentro de la NOM-199-SCFI-2017, Bebidas Alcohólicas- Denominación, Especificaciones Fisicoquímicas, Información Comercial y Métodos de Prueba. Ya que este subproducto genera un ingreso extraordinario que es ilegal su venta en México.</p>
+<p><em>Referencias</em></p>
+<p>Flores Gomes González, Fernando y Carvajal Moreno, Gustavo, Nociones de Derecho Positivo Mexicano, Editorial Porrua, Vigésima quinta Edición, México 1986, p. 50</p>
+<p>Código Civil Federal</p>
+<p>Laura Olivia Arvizu Tovar, 2016. Bienestar animal en México: un panorama normativo, Colección Libros Euroganadería actualidad. Universidad Nacional Autónoma de México, Facultad de Medicina Veterinaria y Zootecnia.</p>
+<p>Senado, 2017. Iniciativa que expide la Ley General de Protección, Conservación y Fomento Apícola, disponible en: <a href="http://sil.gobernacion.gob.mx/Archivos/Documentos/2017/09/asun_3579460_20170928_1506610307.pdf" class="uri">http://sil.gobernacion.gob.mx/Archivos/Documentos/2017/09/asun_3579460_20170928_1506610307.pdf</a>. Consultada 09/03/2020, 23:20 h.</p>
+<p>Poder legislativo del estado de Baja California Sur. Trabajos legislativos del Estado de Baja California Sur. Disponible en <a href="https://www.cbcs.gob.mx/index.php/trabajos-legislativos/leyes" class="uri">https://www.cbcs.gob.mx/index.php/trabajos-legislativos/leyes</a>, Consultado el 09/03/2020 a las 23:10 h.</p>
+<p>Poder legislativo del estado de Campeche. Portal de Legislación del Estado de Campeche. Disponible en <a href="https://legislacion.congresocam.gob.mx/" class="uri">https://legislacion.congresocam.gob.mx/</a>, Consultado el 09/03/2020 a las 21:25 h.</p>
+<p>Congreso /del Estado de Coahuila. Leyes Estatales. Disponible en <a href="http://congresocoahuila.gob.mx/portal/leyes-estatales" class="uri">http://congresocoahuila.gob.mx/portal/leyes-estatales</a>, Consultado el 09/03/2020 a las 21:45 h.</p>
+<p>Congreso del Estado de Colima. Leyes estatales. Disponible en <a href="https://www.congresocol.gob.mx/web/Pagina/index.php/c_biblioteca/constitucion" class="uri">https://www.congresocol.gob.mx/web/Pagina/index.php/c_biblioteca/constitucion</a>, Consultado el 09/03/2020 a las 22:32 h.</p>
+<p>Congreso del Estado Libre y Soberano de Guerrero. Leyes Ordinarias. Disponible en <a href="http://congresogro.gob.mx/61/index.php/2017-05-01-16-02-43/ordinarias" class="uri">http://congresogro.gob.mx/61/index.php/2017-05-01-16-02-43/ordinarias</a>, Consultado el 09/03/2020, a las 23:26 h.</p>
+<p>Congreso del Estado Libre y Soberano de Hidalgo. Biblioteca legislativa. Disponible en <a href="http://www.congreso-hidalgo.gob.mx/LXIV%20LEGISLATURA/integrantes-lxiv-legislatura.html">http://www.congreso-hidalgo.gob.mx/LXIV%20LEGISLATURA/integrantes-lxiv-legislatura.html</a>, Consultado el 09/03/2020, a las 23:32 h.</p>
+<p>Congreso del Estado de Guanajuato. Legislación. Disponible en <a href="https://www.congresogto.gob.mx/legislacion#reformas" class="uri">https://www.congresogto.gob.mx/legislacion#reformas</a>. Consultado el 09/03/2020, a las 22:42 h.</p>
+<p>Poder Legislativo del Estado de Jalisco. Biblioteca Virtual. Disponible en <a href="https://congresoweb.congresojal.gob.mx/BibliotecaVirtual/busquedasleyes/Listado.cfm#Leyes" class="uri">https://congresoweb.congresojal.gob.mx/BibliotecaVirtual/busquedasleyes/Listado.cfm#Leyes</a>, Consultado el 09/03/2020, a las 23:49 h.</p>
+<p>Poder Legislativo del Estado de México. Biblioteca. Disponible en <a href="http://bibliolex.gob.mx/leyes/" class="uri">http://bibliolex.gob.mx/leyes/</a>, Consultado el 09/03/2020, a las 23:53 h.</p>
+<p>Departamento de Informática de la Biblioteca del Congreso del Estado / Dirección General de Servicios de Apoyo Parlamentario / Secretaría de Servicios Parlamentarios. Marco Normativo del estado de Michoacán. Disponible en <a href="http://congresomich.gob.mx/trabajo-legislativo/marco-normativo/" class="uri">http://congresomich.gob.mx/trabajo-legislativo/marco-normativo/</a>, Consultado el 09/03/2020, a las 23:56 h.</p>
+<p>H. Congreso del Estado de Nuevo León. Leyes. Disponible en <a href="http://www.hcnl.gob.mx/trabajo_legislativo/leyes/" class="uri">http://www.hcnl.gob.mx/trabajo_legislativo/leyes/</a>, Consultado el 10/03/2020 a las 00:02 h.</p>
+<p>Poder Legislativo del Estado de Querétaro. Leyes. Disponible en <a href="http://legislaturaqueretaro.gob.mx/leyes/" class="uri">http://legislaturaqueretaro.gob.mx/leyes/</a>, Consultado el 10/03/2020 a las 00:08 h.</p>
+<p>Legislatura del Estado de Quintana Roo. Leyes. Disponible en <a href="https://www.congresoqroo.gob.mx/leyes/" class="uri">https://www.congresoqroo.gob.mx/leyes/</a>, Consultado el 10/03/2020 a las 00:11 h.</p>
+<p>Legislatura del Estado de San Luis Postosí. Leyes. Disponible en <a href="https://congresosanluis.gob.mx/legislacion/leyes?page=5" class="uri">https://congresosanluis.gob.mx/legislacion/leyes?page=5</a>, Consultado el 10/03/2020 a las 00:19 h.</p>
+<p>Congreso del Estado de Tamaulipas. Legislación Vigente. Disponible en <a href="https://www.congresotamaulipas.gob.mx/LegislacionEstatal/LegislacionVigente/Vigente.asp?idtipoArchivo=1" class="uri">https://www.congresotamaulipas.gob.mx/LegislacionEstatal/LegislacionVigente/Vigente.asp?idtipoArchivo=1</a>, Consultado el 10/03/2020 a las 00:21 h.</p>
+<p>Congreso del Estado de Tlaxcala. Legislación. Disponible en <a href="https://congresodetlaxcala.gob.mx/legislacion/" class="uri">https://congresodetlaxcala.gob.mx/legislacion/</a>, Consultado el 10/03/2020 a las 00:22 h.</p>
+<p>Congreso del Estado de Veracruz. Leyes y Códigos. Disponible en <a href="https://www.legisver.gob.mx/Inicio.php?p=le" class="uri">https://www.legisver.gob.mx/Inicio.php?p=le</a>, Consultado el 10/03/2020 a las 00:27 h.</p>
+<p>Poder Legislativo del Estado de Yucatán. Leyes. Disponible en <a href="http://www.congresoyucatan.gob.mx/gacetaParlamentaria/index.php?page=bGV5ZXM" class="uri">http://www.congresoyucatan.gob.mx/gacetaParlamentaria/index.php?page=bGV5ZXM</a>=, Consultado el 10/03/2020, a las 00:29 h.</p>
+<p>Poder legislativo del Estado de Zacatecas. Sistema Estatal Normativo. Disponible en <a href="https://www.congresozac.gob.mx/f/todojuridico&amp;cat=LEY" class="uri">https://www.congresozac.gob.mx/f/todojuridico&amp;cat=LEY</a>, Consultado el 10/03/2020 a las 00:35 h.</p>
+<p><br/></p>
+<p><br/></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

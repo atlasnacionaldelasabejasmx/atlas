@@ -1,0 +1,36 @@
+head: <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+  crossorigin="anonymous">
+name: atlas
+output_dir: '.'
+navbar:
+  title: Atlas Nacional de las Abejas <br>y Derivados Apícolas <br>(Versión Preliminar)
+  type: inverse
+  left:
+  - text: Introducción
+    href: index.html
+    icon: fa-home
+  - text: Abejas y Apicultura
+    href: cap2.html
+    icon: fa-forumbee
+  - text: La Miel en México
+    href: cap3.html
+    icon: fa-globe
+  - text: Propóleos
+    href: cap4.html
+    icon: fa-vial   
+  - text: Estadísticas
+    href: cap5.html
+    icon: fa-chart-bar
+  - text: Mapas 
+    href: cap6.html 
+    icon: fa-map 
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    theme: yeti
+    highlight: tango
+    font-size: 10px
+    lib_dir: site_libs
+    self_contained: no
