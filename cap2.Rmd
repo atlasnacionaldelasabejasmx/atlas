@@ -5,7 +5,7 @@ title: "Abejas y apicultura"
 
 ```{r i_4x, fig.align='center', echo=FALSE, cache=TRUE}
 
-knitr::include_graphics("imag/4_Estadis.gif")
+knitr::include_graphics("imag/2_Las_Abe.gif")
 
 ```
 
