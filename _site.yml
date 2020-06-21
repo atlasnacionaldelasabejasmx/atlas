@@ -29,8 +29,7 @@ output:
   html_document:
     toc: yes
     toc_float: yes
-    theme: yeti
+    theme: flatly
     highlight: tango
-    font-size: 10px
     lib_dir: site_libs
     self_contained: no

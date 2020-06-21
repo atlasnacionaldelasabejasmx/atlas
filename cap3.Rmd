@@ -1,5 +1,5 @@
 ---
-title: "La Miel en México"
+title: "**La Miel en México**"
 ---   
 
 
@@ -18,10 +18,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-##  3.1. Historia de la Apicultura en México  
+##  **3.1 Historia de la Apicultura en México** 
 ****
 
 Por [Laura G. Espinosa Montaño](#a001) 
+
+<br>
 
 Describir los eventos históricos que caracterizaron el desarrollo de la apicultura en México merece iniciar considerando que desde épocas prehispánicas se desarrolló una actividad muy importante en la región mesoamericana por parte de pobladores mayas, quienes cultivaron diversas variedades de abejas nativas de los géneros *Trigona* y *Melipona*, conocidas genéricamente como meliponinos, y dentro de los cuales destacó la especie Melipona beecheii Bennett (en maya llamada  *Xuna'an Kab*, *Kolel'Kab* o *Po'ol Kab*, la cual, al igual que otros meliponinos, presenta como característica física primordial el carecer de aguijón, situación que les diferencia de las abejas *Apis mellifera* oriundas del viejo mundo. 
 
@@ -62,17 +64,17 @@ Si bien todo lo anteriormente escrito se ha basado en la apicultura, es importan
 
 ***Referencias:***
 
-Cajero-Avelar, S. *Avances en las acciones para el control de la abeja africana en México, antecedentes.* Memorias del 3er Seminario Americano de Apicultura. Acapulco Gro. Septiembre-octubre, 1990. p.1-3
+Cajero-Avelar, S. (1990). *Avances en las acciones para el control de la abeja africana en México, antecedentes.* Memorias del 3er Seminario Americano de Apicultura. Acapulco, Gro., septiembre-octubre. p.1-3.
 
-González-Ruíz, J.J. *Descripción del área de trabajo y acciones del Programa Cooperativo SARH-USDA para el control de la abeja africanizada, en la costa de Oaxaca.* Memorias del 3er Seminario Americano de Apicultura. Acapulco Gro. Septiembre-octubre, 1990. p.33-38
+González-Ruíz, J.J. (1990). *Descripción del área de trabajo y acciones del Programa Cooperativo SARH-USDA para el control de la abeja africanizada, en la costa de Oaxaca.* Memorias del 3er Seminario Americano de Apicultura. Acapulco, Gro., septiembre-octubre, p.33-38.
 
-Labougle-Rentería, J.M. y Zozaya-Rubio, J.A. *La Apicultura en México.* Rev. Ciencia y Desarrollo. CONACyT. Julio-agosto, 1986. Num. 69, año XII. p.17-36
+Labougle-Rentería, J.M. y Zozaya-Rubio, J.A. (1986). *La Apicultura en México.*  Ciencia y Desarrollo. CONACyT., Num. 69, año XII. julio-agosto, p.17-36.
 
-Martínez-López, J.F. *Apicultura. 3ª. Ed.* Consejo Apícola de Yucatán. Mérida, Yucatán. 1963.
+Martínez-López, J.F. (1963). *Apicultura. 3ª. Ed.* Consejo Apícola de Yucatán. Mérida, Yucatán.
 
-Medina-Camacho M. *Cómo nació el Congreso Mesoamericano de Abejas Nativas.* Memorias del VIII Congreso Mesoamericano de Abejas Nativas. 26-31 Agosto, 2013, Costa Rica. p.13-14.
+Medina-Camacho M. (2013). *Cómo nació el Congreso Mesoamericano de Abejas Nativas.* Memorias del VIII Congreso Mesoamericano de Abejas Nativas. 26-31 agosto, Costa Rica. p.13-14.
 
-Cubierta trasera del *Compendio Científico-Técnico Apícola 2018.* 25o Congreso Internacional de Actualización Apícola. ANMVEA A.C. 16-18 Mayo 2018, Querétaro.
+ANMVEA A.C. (2018). *Compendio Científico-Técnico Apícola 2018.* 25o. Congreso Internacional de Actualización Apícola. 16-18 mayo, Querétaro.
 
 <br/>
 <br/>
@@ -80,12 +82,13 @@ Cubierta trasera del *Compendio Científico-Técnico Apícola 2018.* 25o Congres
 
  
 
-##  3.2. ¿Qué es la Miel?  
+##  **3.2 ¿Qué es la Miel?**  
 ****
 
 Por [Laura G. Espinosa Montaño](#a001)
 
-**¿Qué es la Miel?**  
+<br>
+
 
 Con base en el _Codex Alimentarius_ de la FAO, se entiende por miel a la sustancia dulce natural producida por las abejas melíferas a partir de néctar de plantas o a partir de secreciones de partes vivas de éstas o de excreciones de insectos succionadores de partes vivas de plantas, y que las abejas recolectan, transforman a través de combinar sustancias específicas propias, depositan, deshidratan, almacenan y dejan en el panal para que madure y añeje.
 
@@ -99,10 +102,10 @@ Por todo lo anterior, no debe considerarse como miel a los jarabes neutros o con
 <br/>
 
 
-##  3.3. Cosecha y Procesos de la Miel  
+##  **3.3 Cosecha y Procesos de la Miel** 
 ****
 
-**¿Cuáles son los procesos para la obtención de la miel?** 
+<br/>
 
 Para obtener la miel de las abejas se deben reunir condiciones que las estimulen a recolectar el néctar y lo almacenen en las celdas de sus panales; esto ocurre cuando comienzan las temporadas en las que las flores aparecen en los campos o en los cultivos. En estos períodos, las abejas recolectan el néctar y lo llevan a la colmena para almacenarlo y madurarlo con el fin de tener reservas energéticas, en caso de que se presenten condiciones de escasez. 
 
@@ -133,9 +136,6 @@ Por lo que respecta al calentado, este es un proceso en el cual la miel se somet
 En cuanto al filtrado, es un proceso más fino que el colado, y tiene como propósito retirar de la miel partículas más pequeñas para asegurar la ausencia de materias extrañas. No obstante, todos estos procesos pueden demeritar la calidad del producto.
 
 
-
-<a name=a001></a> 
-
 Elaboró:
 
 **Laura G. Espinosa Montaño:** *Profesora Asociada C, TC. Departamento de Medicina y Zootecnia de Abejas, Conejos y Organismos Acuáticos. Facultad de Medicina Veterinaria y Zootecnia. Universidad Nacional Autónoma de México. Correo electrónico: laugespi@unam.mx Tel.(55) 56-22-59-29 ext 6.*
@@ -145,8 +145,10 @@ Elaboró:
 <br/>
 
 
-##  3.4. Usos de la Miel
+##  **3.4 Usos de la Miel**
 ****
+
+<br/>
 
 La miel es apreciada en todas partes como un alimento dulce y apetitoso. En períodos de escasez es una fuente útil de carbohidratos que contiene oligoelementos y agrega una diversidad nutritiva en un régimen alimenticio demasiado pobre. La miel ocupa un lugar importante en la preparación de alimentos tradicionales.
 
@@ -160,7 +162,7 @@ La miel es usada ampliamente como una fuente de azúcares para producir vino y c
 
 ***Fuente:***
 
-[Nicola Bradbear(2005). *FAO. La apicultura y los medios de vida sostenibles.* 2005.](http://www.fao.org/3/y5110s/y5110s06.htm#bm06){target="_blank"}
+[Nicola Bradbear(2005). *FAO. La apicultura y los medios de vida sostenibles.*](http://www.fao.org/3/y5110s/y5110s06.htm#bm06){target="_blank"}
 
 
 <br/>
@@ -168,8 +170,10 @@ La miel es usada ampliamente como una fuente de azúcares para producir vino y c
 <br/>
 
 
-##  3.5. Manejo y Comercialización de la Miel   
+##  **3.5 Manejo y Comercialización de la Miel**  
 ****
+
+<br/>
 
 Aunque México exporta miel a Estados Unidos,  Japón, Alemania se mantiene como el primer destino de las exportaciones mexicanas de este producto, con 15.3% de las mismas, en 2017. Esto es una evidencia de que la calidad y sabor de la miel mexicana es bien vista en los mercados internacionales, lo que acarrea beneficios a los pequeños productores y mujeres emprendedoras de zonas rurales del país, principalmente.
 
@@ -183,14 +187,16 @@ Los verificadores sanitarios recolectan muestras de manera aleatoria en las unid
 
 ***Fuente:***
 
-SADER. *Comunicado de prensa.* Enero, 2018.
+SADER. (2018). *Comunicado de prensa.* Enero.
 <br/>
 <br/>
 <br/>
 
 
-##  3.6. Los Costos en la Producción de Miel  
+##  **3.6 Los Costos en la Producción de Miel**  
 ****
+
+<br/>
 
 En un estudio realizado en la zona comunitaria maya del litoral en el centro del estado de Yucatán, se encontró que la estructura porcentual de los costos de producción de la miel se compone mayoritariamente por el costo variable (alrededor de ¾ partes), cuyos principales rubros fueron el valor del azúcar y el desembolso por mano de obra. Por su parte, el costo fijo lo constituyó principalmente la depreciación en infraestructura. La ganancia fue positiva en los estratos considerados; el rendimiento y el precio de la miel, determinantes del ingreso, fueron los principales elementos de la variación en la rentabilidad que se obtiene en el proceso de producción apícola.
 
@@ -206,7 +212,7 @@ Se observó que el precio de los insumos aumentan constantemente, que los rendim
 
 ***Fuente:*** 
 
-[Contreras Uc L., y Magaña Magaña M. *Costos y rentabilidad de la apicultura a pequeña escala en comunidades mayas del Litoral Centro de Yucatán, México.* Investigación y Ciencia, 25 (71), p. 52-58. 2017.](pdfs/67452917007.pdf){target="_blank"}
+[Contreras U.C.L., y Magaña Magaña M. (2017). *Costos y rentabilidad de la apicultura a pequeña escala en comunidades mayas del Litoral Centro de Yucatán, México.* Investigación y Ciencia, 25 (71), p. 52-58.](pdfs/67452917007.pdf){target="_blank"}
 
 
 <br/>
@@ -214,8 +220,10 @@ Se observó que el precio de los insumos aumentan constantemente, que los rendim
 <br/>
 
 
-##  3.7. Consumo Per Cápita de Miel en México   
+##  **3.7 Consumo Per Cápita de Miel en México**   
 ****
+
+<br/>
 
 México produce 57,995 toneladas de miel en promedio por año (periodo 2014-2018) y es el octavo productor a nivel mundial. Mientras que la mitad de la producción se consume a nivel nacional, el **consumo anual per cápita es de alrededor de 300 gramos** y el país continúa siendo el tercer mayor exportador del mundo. Actualmente hay alrededor de 43,000 apicultores en todo el país, con más de 30% de la producción concentrada en Yucatán, Campeche y Quintana Roo: 17,000 apicultores que manejan más de 0.5 millones de colmenas. México es también uno de los mayores exportador mundial de miel orgánica en el mundo.
 
@@ -229,7 +237,7 @@ La venta al por mayor se realiza principalmente en tambores de miel a granel, de
 
 [FAOSTAT, 2017.](http://www.fao.org/faostat/es/#data/QL){target="_blank"}
 
-[Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO). *Sistemas productivos sostenibles y biodiversidad.* 2018.](https://www.biodiversidad.gob.mx/SPSB/apicultura.html){target="_blank"}
+[Comisión Nacional para el Conocimiento y Uso de la Biodiversidad, CONABIO. (2018). *Sistemas productivos sostenibles y biodiversidad.*](https://www.biodiversidad.gob.mx/SPSB/apicultura.html){target="_blank"}
 
 <br/>
 <br/>
@@ -237,8 +245,10 @@ La venta al por mayor se realiza principalmente en tambores de miel a granel, de
 
 
 
-##  3.8. El Problema de la Adulteración de la Miel   
+##  **3.8 El Problema de la Adulteración de la Miel**  
 ****
+
+<br/>
 
 La miel es una sustancia dulce natural que las abejas (*Apis mellifera*) elaboran al transformar o combinar el néctar o secreciones que producen las flores, con sustancias específicas propias.
 
@@ -251,7 +261,7 @@ En particular, el *Servicio Nacional de Sanidad, Inocuidad y Calidad Agroaliment
 
 <br/>
 
-<p align="center"> **Cuadro 7. Composición nutricional característica de la miel** [`r icon::fa("download")`](tabs/nutrientes_miel.csv) </p>
+<p align="center"> **Cuadro 3.1 Composición nutricional característica de la miel** [`r icon::fa("download")`](tabs/nutrientes_miel.csv) </p>
 
 <br/>
 
@@ -284,15 +294,15 @@ También existe otro fraude en la industria apícola, que se relaciona con su or
 
 ***Fuentes:*** 
 
-[Estudio de calidad: miel de abeja.* PROFECO. Revista del Consumidor, Junio, 2018.](pdfs/Estudio_de_Calidad_Miel_de_Abeja.pdf){target="_blank"}
+[PROFECO. (2018). *Estudio de calidad: miel de abeja.* Revista del Consumidor, junio.](pdfs/Estudio_de_Calidad_Miel_de_Abeja.pdf){target="_blank"}
 
-[CONACyT. *¿Miel de México o de China?*  Abril, 2018.](http://www.conacytprensa.mx/index.php/centros-conacyt/20873-ciencia-tecnologia-apicultura){target="_blank"}
+[CONACyT. (2018). *¿Miel de México o de China?* Abril.](http://www.conacytprensa.mx/index.php/centros-conacyt/20873-ciencia-tecnologia-apicultura){target="_blank"}
 
-[*Estudio de calidad: miel de abeja.* PROFECO. Revista del Consumidor, Febrero, 2015.](pdfs/RC456_Estudio_Calidad_de_Miel_de_Abejas.pdf){target="_blank"}
+[PROFECO. (2015). *Estudio de calidad: miel de abeja.* Revista del Consumidor, febrero.](pdfs/RC456_Estudio_Calidad_de_Miel_de_Abejas.pdf){target="_blank"}
 
-[Ríos Corripio M. A. y Rojas López M. *Analisis de adulteracion en miel de abeja de la region Puebla-Tlaxcala empleando espectroscopia infrarroja.* Presentado en el XIV Congreso Nacional de Biotecnología y Bioingeniería. Nov., 2012.](pdfs/CIII-80.pdf){target="_blank"}
+[Ríos Corripio M.A. y Rojas López M. (2012). *Análisis de adulteración en miel de abeja de la región Puebla-Tlaxcala empleando espectroscopía infrarroja.* XIV Congreso Nacional de Biotecnología y Bioingeniería. Nov.](pdfs/CIII-80.pdf){target="_blank"}
 
-[*Estudio de calidad: miel de abeja.* PROFECO. Revista del Consumidor, Junio, 2011.](pdfs/Estudio_Miel_de_abejas_30-42_Junio_2011.pdf){target="_blank"}
+[PROFECO. (2011). *Estudio de calidad: miel de abeja.*  Revista del Consumidor, junio.](pdfs/Estudio_Miel_de_abejas_30-42_Junio_2011.pdf){target="_blank"}
 
 
 
@@ -302,10 +312,12 @@ También existe otro fraude en la industria apícola, que se relaciona con su or
 
 
 
-##  3.9. Certificación y Normas Oficiales de Manejo y Producción
+##  **3.9. Certificación y Normas Oficiales de Manejo y Producción**
 ****
 
-```{r i0_3_12_01, fig.align='center', echo=FALSE, fig.cap="**Fig. 8 Manual de Buenas Prácticas para la Producción de Miel en México.**", out.width = "80%", cache=TRUE}
+<br/>
+
+```{r i0_3_12_01, fig.align='center', echo=FALSE, fig.cap="**Figura 3.1 Manual de Buenas Prácticas para la Producción de Miel en México.**", out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/manbpra.jpg")
 
@@ -331,17 +343,19 @@ Cabe mencionar, que la aplicación de estas técnicas implica algunos costos adi
 
 ***Fuente:*** 
 
-[SADER. _Buenas Prácticas Pecuarias en la producción de Producción de Miel._ 2018.](pdfs/Manual_BPP_en_la_Producci_n_primaria_de_Miel_octubre_2018.pdf){target="_blank"}
+[SADER. (2018). _Buenas Prácticas Pecuarias en la producción de Producción de Miel.](pdfs/Manual_BPP_en_la_Producci_n_primaria_de_Miel_octubre_2018.pdf){target="_blank"}
 
 <br/>
 <br/>
 <br/>
 
 
-##  3.10. Requisitos, Aranceles y Normas para la Exportación de la Miel Mexicana 
+##  **3.10 Requisitos, Aranceles y Normas para la Exportación de la Miel Mexicana**
 ****
 
-### 3.10.1. Normas Técnicas
+<br/>
+
+### 3.10.1 Normas Técnicas
 
 Las normas son la herramienta fundamental para el desarrollo industrial y comercial de un país. Sirven como base para mejorar la calidad en la gestión de las empresas, en el diseño y fabricación de los productos y en la prestación de servicios, aumentando la competitividad en los mercados nacionales e internacionales. Protegen a los consumidores, usuarios y a la sociedad en general, permitiéndoles obtener una referencia para conocer el nivel de calidad y seguridad que deben exigir a los productos o servicios que utilizan.
 
@@ -355,11 +369,12 @@ En el caso de la miel para exportación, además de la normatividad exigida por 
 
 ***Fuente:***
 
-[Secretaría de Economía. *Normas Técnicas.* 2010.](http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Normas_Tecnicas){target="_blank"}
+[Secretaría de Economía. (2010). *Normas Técnicas*.](http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Normas_Tecnicas){target="_blank"}
 
 <br/>
+<br/>
 
-### 3.10.2. Aduanas
+### 3.10.2 Aduanas
 
 Las administraciones de aduanas son los organismos gubernamentales encargados de controlar y gestionar la entrada y salida de mercancías a los respectivos territorios aduaneros. El comercio internacional es el motor fundamental de la prosperidad económica y las administraciones de aduanas están llamadas a garantizar la fluidez del comercio global de modo que no impida, sino que, por el contrario, facilite la circulación de las mercancías.  
 
@@ -370,11 +385,12 @@ En este contexto, el PROTLCUEM pretende alcanzar la mejora del intercambio de in
 <br/>
 ***Fuente:***
 
-[Secretaría de Economía. *Aduanas.* 2010.](http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Aduanas){target="_blank"}
+[Secretaría de Economía. (2010). *Aduanas.*](http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Aduanas){target="_blank"}
 
 <br/>
+<br/>
 
-### 3.10.3. Medidas Sanitarias y Fitosanitarias (MSF)  
+### 3.10.3 Medidas Sanitarias y Fitosanitarias (MSF)  
  
 El problema que sustenta la aplicación de medidas sanitarias y fitosanitarias se basa en la pregunta: ¿cómo garantizar que se suministren a los consumidores de un país alimentos inocuos, esto es, “inocuos” con arreglo a los criterios que se consideren apropiados? Y al mismo tiempo, ¿cómo se puede garantizar que la aplicación de normas estrictas de salud y seguridad no sea una excusa para proteger a los productores nacionales?  
 
@@ -385,11 +401,12 @@ En este marco general, el PROTLCUEM promueve una mayor cooperación técnica ent
 <br/>
 ***Fuente:***
 
-[Secretaría de Economía. *Medidas Sanitarias y Fitosanitarias.* 2010.*](http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Med_Sanit){target="_blank"}
+[Secretaría de Economía. (2010). *Medidas Sanitarias y Fitosanitarias.*](http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_Med_Sanit){target="_blank"}
 
 <br/>
+<br/>
 
-### 3.10.4. Requisitos y Trámites  
+### 3.10.4 Requisitos y Trámites  
 
 **Requisitos de la Unión Europea para exportar miel natural.**  
 
@@ -439,7 +456,7 @@ Es conveniente observar las Normas Oficiales Mexicanas para cumplir con estánda
 
 ***Fuente:***
 
-[Secretaría de Economía. *Requisitos y Trámites para Exportación a la Unión Europea.* 2010.](http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_requisitosm){target="_blank"}
+[Secretaría de Economía. (2010). *Requisitos y Trámites para Exportación a la Unión Europea.*](http://www.protlcuem.gob.mx/swb/es/Protlcuem/p_requisitosm){target="_blank"}
 
 
 <br/>
@@ -449,8 +466,10 @@ Es conveniente observar las Normas Oficiales Mexicanas para cumplir con estánda
 
 
 
-##  3.11. Importancia Sociocultural de la Apicultura en México   
+##  **3.11 Importancia Sociocultural de la Apicultura en México**   
 ****
+
+<br/>
 
 La apicultura en México tiene una gran importancia socioeconómica y ecológica, ya que es considerada como una de las principales actividades pecuarias, dedicada a la crianza de las abejas, además de que la miel es un factor de beneficio en cuestiones de salud y belleza para los humanos; también se procesan productos no menos importantes como el polen, jalea real, ceras, propóleos y veneno de abejas.
 
@@ -470,6 +489,8 @@ El valor de la polinización es difícil de medir, pero si pudiera ser calculado
 
 Los recursos sociales, tales como las redes y asociaciones de productores y comerciantes, son de fundamental importancia para el desarrollo de la apicultura. Las asociaciones locales ponen a disposición de los apicultores los medios para que den a conocer su trabajo, ejerzan presión a favor de la protección de las abejas, organicen en colectividad la transformación de la miel y la cera de abeja, y tengan acceso al mercado. El acceso a las redes a un nivel superior, por medio de las organizaciones no gubernamentales y asociaciones de carácter regional o nacional, ayuda a obtener contactos en el ámbito nacional e internacional, a encontrar fuentes de capacitación y mercados, a tener acceso a los resultados de investigaciones recientes y a mejorar sus conocimientos sobre la apicultura.
 
+<br/>
+
 **Abejas Nativas**
 
 Una mención aparte, merece el desarrollo de estudios recientes en el país respecto a las especies de abejas nativas. En América (y por lo tanto en México) las únicas abejas sociales nativas que nos pueden proporcionar miel son las abejas sin aguijón. La abeja melífera y su variedad africana, de las cuales generalmente tomamos su miel, son originarias de Europa, África y Asia, y fueron introducidas al continente americano. En México se reportan 46 especies de abejas sin aguijón agrupadas en 16 géneros. Los estados que tienen mayor número de especies son: Oaxaca, Chiapas, Veracruz, y Quintana Roo. 
@@ -481,19 +502,19 @@ A los apicultores de abejas nativas se les denomina meliponicultores. En México
 
 ***Fuentes:***
 
-[Fideicomiso de Riesgo Compartido. *Apicultura, Actividad De Gran Importancia Para La Economía Y El Medio Ambiente En México.*  SADER, Diciembre, 2016.](https://www.gob.mx/firco/articulos/apicultura-actividad-de-gran-importancia-para-la-economia-y-el-medio-ambiente-en-mexico?idiom=es){target="_blank"}
+[SADER. Fideicomiso de Riesgo Compartido. (2016). *Apicultura, Actividad De Gran Importancia Para La Economía Y El Medio Ambiente En México.*](https://www.gob.mx/firco/articulos/apicultura-actividad-de-gran-importancia-para-la-economia-y-el-medio-ambiente-en-mexico?idiom=es){target="_blank"}
 
-[FAO. *La apicultura ayuda a crear sistemas de vida sostenibles.* 2005.](http://www.fao.org/docrep/008/y5110s/y5110s02.htm){target="_blank"}
+[FAO. (2005). *La apicultura ayuda a crear sistemas de vida sostenibles.*](http://www.fao.org/docrep/008/y5110s/y5110s02.htm){target="_blank"}
 
-[Noemi Arnold, Raquel Zepeda, Marco Vásquez Dávila y Miriam Aldasoro Maya. *Las abejas sin aguijón y su cultivo en Oaxaca, México: con catálogo de especies.* ECOSUR-CONABIO, México, 2018.](pdfs/ABEJAS_SIN_AGUIJON_OAXACA.pdf){target="_blank"}
+Arnold, N., Zepeda, R., Vásquez, M. y Aldasoro, M.  (2018). *Las abejas sin aguijón y su cultivo en Oaxaca, México. El Colegio de la Frontera Sur y Comisión Nacional para el Conocimiento y Uso de la Biodiversidad. 1a. ed. [http://bioteca.biodiversidad.gob.mx/janium/Documentos/14197.pdf](http://bioteca.biodiversidad.gob.mx/janium/Documentos/14197.pdf){target="_blank"}
 
-Ayala, R. *Revisión de las abejas sin aguijón de México (Hymenoptera: Apidae: Meliponini)*. Folia Entomológica México 106, 1–123 (1999).
+Ayala, R. (1999). *Revisión de las abejas sin aguijón de México (Hymenoptera: Apidae: Meliponini)*. Folia Entomológica, México 106, p. 1–123.
 
-Ayala, R., González, V. H. & Engel, M. S. *Mexican Stingless Bees (Hymenoptera:Apidae): Diversity, Distribution, and Indigenous Knowledg.* En Pot-Honey: A legacy of stingless bees (eds. Vit, P., Pedro, S. R. M. & Roubik, D. W.) 135–152 (Springer New York, 2013). 
+Ayala, R., González, V.H. y Engel, M.S. (2013). *Mexican Stingless Bees (Hymenoptera:Apidae): Diversity, Distribution, and Indigenous Knowledg.* Pot-Honey: A legacy of stingless bees (eds. Vit, P., Pedro, S. R. M. & Roubik, D. W.) 135–152 (Springer New York). 
 
-Ayala, R., Griswold, T. L. & Yanega, D. *Apoidea (Hymenoptera). En Biodiversidad, taxonomía y biogeografía de artrópodos de México: Hacia una síntesis de su conocimiento*. (eds. Llorente Bousquets, J. E., García Aldrete, A. N. & González Soriano, E.) 423–464 (UNAM y CONABIO, 1996). 
+Ayala, R., Griswold, T.L. y Yanega, D. *Apoidea (Hymenoptera). Biodiversidad, taxonomía y biogeografía de artrópodos de México: Hacia una síntesis de su conocimiento*. (eds. Llorente Bousquets, J. E., García Aldrete, A. N. & González Soriano, E.) 423–464 (UNAM y CONABIO). 
 
-Arnold, N., Ayala, R., Mérida, J., Sagot, P. & Aldasoro, M. *Nuevos registros de abejas sin aguijón (Apidae: Meliponini) para los estados de Chiapas y Oaxaca, México.* Revista Mexicana de Biodiversidad (en imprenta). 
+Arnold, N., Ayala, R., Mérida, J., Sagot, P. y Aldasoro, M. *Nuevos registros de abejas sin aguijón (Apidae: Meliponini) para los estados de Chiapas y Oaxaca, México.* Revista Mexicana de Biodiversidad. 
 
 
 <br/>
@@ -501,8 +522,10 @@ Arnold, N., Ayala, R., Mérida, J., Sagot, P. & Aldasoro, M. *Nuevos registros d
 <br/>
 
 
-##  3.12. Organización de Productores Apícolas
+##  **3.12 Organización de Productores Apícolas**
 ****
+
+<br/>
 
 Es de suma importancia que los apicultores se organicen en asociaciones locales o regionales para intercambiar conocimientos, crear redes de cooperación técnica y de financiamiento, representarse como gremio frente a las autoridades, presionar por apoyos gubernamentales y hacer frente común a amenazas a sus actividades. 
 
@@ -522,7 +545,7 @@ En el [**Capítulo 2.7**](cap2.html#a002) se muestra un directorio con las princ
 
 ***Fuente:***
 
-[SADER. Revista Claridades Agropecuarias. *Situación actual y perspectiva de la apicultura en México.*, Núm. 199, , p. 3-34, marzo, 2010.](pdfs/ca199-3.pdf){target="_blank"}
+[SADER. (2010). *Situación actual y perspectiva de la apicultura en México.* Revista Claridades Agropecuarias. Núm. 199, marzo, p. 3-34. ](pdfs/ca199-3.pdf){target="_blank"}
 
 
 <br/>
@@ -530,8 +553,10 @@ En el [**Capítulo 2.7**](cap2.html#a002) se muestra un directorio con las princ
 <br/>
 
 
-##  3.13. Factores Climáticos que Influyen en la Producción Apícola   
+##  **3.13 Factores Climáticos que Influyen en la Producción Apícola**   
 ****
+
+<br/>
 
 El clima se define como aquellas condiciones del aire, agua y tierra que se esperan en un determinado tiempo, dichas condiciones meteorológicas
 promedio, determinan un clima normal. Cuando ocurre alguna variación de las propiedades meteorológicas, se presenta “El Cambio Climático”, si esto
@@ -578,19 +603,21 @@ La escasez de alimento, el desajuste en la dinámica poblacional y las limitacio
 
 ***Fuentes:***
 
-[Medellín-Pi, Rodrigo A. *Impacto del Cambio Climático en la Agricultura.* SADER - UNAM.FMVZ. 2011.](pdfs/1 Cambio.pdf){target="_blank"}
+[Medellín-Pico, R.A. (2011). *Impacto del Cambio Climático en la Agricultura.* SADER - UNAM.FMVZ.](pdfs/1 Cambio.pdf){target="_blank"}
  
-[Castellanos Potenciano B. P., Gallardo López F., Sol Sánchez A., Landeros Sánchez C., Díaz Padilla G., Sierra Figueredo P., Santibañez Galarza J. L.  *Impacto Potencial del Cambio Climático en la Apicultura.* Revista Iberoamericana de Bioeconomia y Cambio Climático, Vol. 2, Núm. 1,  p. 1-19, 2016.](pdfs/2016_ 2.pdf){target="_blank"}
+[Castellanos Potenciano B.P., Gallardo López F., Sol Sánchez A., Landeros Sánchez C., Díaz Padilla G., Sierra Figueredo P., Santibañez Galarza J.L. (2016).  *Impacto Potencial del Cambio Climático en la Apicultura.* Revista Iberoamericana de Bioeconomia y Cambio Climático, V.2, Núm. 1,  p. 1-19.](pdfs/2016_ 2.pdf){target="_blank"}
 
 <br/>
 <br/>
 <br/>
 
 
-##  3.14. Plantas Productoras de Néctar y Polen   
+##  **3.14 Plantas Productoras de Néctar y Polen**   
 ****
 
-```{r i0_3_20_01, fig.align='center', fig.cap="**Fig. 9 Abeja extrayendo néctar**", echo=FALSE, out.width = "80%", cache=TRUE}
+<br/>
+
+```{r i0_3_20_01, fig.align='center', fig.cap="**Figura 3.2 Abeja extrayendo néctar**", echo=FALSE, out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/IMAG0469.png")
 
@@ -604,33 +631,35 @@ Debido a la ausencia de estudios sobre el mantenimiento de las colmenas es neces
 
 La siguiente es una lista de los documentos disponibles sobre las especies vegetales que se pueden encontrar en cada entidad federativa.
 
-[Universidad Autónoma de Aguascalientes. **Flora Apícola del Estado de Aguascalientes.** 2012.](https://www.uaa.mx/direcciones/dgdv/editorial/catalogo/cca_floraapicola_9786078227938.html){target="_blank"}
+[Universidad Autónoma de Aguascalientes. (2012). **Flora Apícola del Estado de Aguascalientes.**](https://www.uaa.mx/direcciones/dgdv/editorial/catalogo/cca_floraapicola_9786078227938.html){target="_blank"}
 
-[SADER. **Flora Nectarífera y Polinífera en el Estado de Chiapas.** 2000.](pdfs/FloraNectarifera y polinifera Chiapas.pdf){target="_blank"}
+[SADER. (2000). **Flora Nectarífera y Polinífera en el Estado de Chiapas.**](pdfs/FloraNectarifera y polinifera Chiapas.pdf){target="_blank"}
 
-[INIFAP. **Flora Nectarífera y Polinífera de Guanajuato.** 2016.](pdfs/Flora Nectarífera y polinifera en Guanajuato.pdf){target="_blank"}
+[INIFAP. (2016). **Flora Nectarífera y Polinífera de Guanajuato.**](pdfs/Flora Nectarífera y polinifera en Guanajuato.pdf){target="_blank"}
 
-[SADER. **Flora Nectarífera y Polinífera en el Estado de Guerrero.** 2002.](pdfs/Flora Nectarífera y polinifera en Guerrero.pdf){target="_blank"}
+[SADER. (2002). **Flora Nectarífera y Polinífera en el Estado de Guerrero.**](pdfs/Flora Nectarífera y polinifera en Guerrero.pdf){target="_blank"}
 
-[SADER. **Flora Nectarífera y Polinífera en el Estado de Hidalgo.** 2012.](https://drive.google.com/open?id=1two-4KxlzEBlmii9fuz_8kTmiy4cgckD){target="_blank"} 
+[SADER. (2012). **Flora Nectarífera y Polinífera en el Estado de Hidalgo.**](https://drive.google.com/open?id=1two-4KxlzEBlmii9fuz_8kTmiy4cgckD){target="_blank"} 
 
-[SADER. **Flora Nectarífera y Polinífera en el Estado de Michoacán.** 1999.](pdfs/FloraNectarifera y polinifera Michoacan.pdf){target="_blank"}
+[SADER. (1999). **Flora Nectarífera y Polinífera en el Estado de Michoacán.**](pdfs/FloraNectarifera y polinifera Michoacan.pdf){target="_blank"}
 
-[SADER. **Flora Nectarífera y Polinífera en el Estado de Tabasco.** 2004.](https://drive.google.com/open?id=1ztuiUm1BGpq4xg451btfl4Kq-E1grdxy){target="_blank"}
+[SADER. (2004). **Flora Nectarífera y Polinífera en el Estado de Tabasco.**](https://drive.google.com/open?id=1ztuiUm1BGpq4xg451btfl4Kq-E1grdxy){target="_blank"}
 
 [SADER. **Flora Nectarífera y Polinífera en el Estado de Tamaulipas.** 2003.](pdfs/Flora Nectarífera y polinifera Tamaulipas.pdf){target="_blank"}
 
-[SADER. **Flora Nectarífera y Polinífera en el Estado de Veracruz.** 2000.](https://drive.google.com/open?id=1wbZCgujzgn0rF9v-J-HtkRb9N4c1hMIW){target="_blank"}
+[SADER. (2000). **Flora Nectarífera y Polinífera en el Estado de Veracruz.**](https://drive.google.com/open?id=1wbZCgujzgn0rF9v-J-HtkRb9N4c1hMIW){target="_blank"}
 
-[SADER. **Flora Nectarífera y Polinífera en la Península de Yucatán.** 1998.](https://drive.google.com/open?id=1Lgo-deiR-qunIR0t5S9VtWKTOolEjVx2){target="_blank"}
+[SADER. (1998). **Flora Nectarífera y Polinífera en la Península de Yucatán.**](https://drive.google.com/open?id=1Lgo-deiR-qunIR0t5S9VtWKTOolEjVx2){target="_blank"}
 
 <br/>
 <br/>
 <br/>
 
 
-##  3.15. Regiones Apícolas en México   
+##  **3.15 Regiones Apícolas en México**   
 ****
+
+<br>
 
 Debido a los diferentes climas y floraciones que existen en México, se registran diversos grados de desarrollo de los apicultores con gran variedad en su producción de mieles en cuanto a sus características de humedad, color, aroma y sabor. Por lo que, para clasificar algunas características semejantes, se divide en cinco regiones apícolas. Estas regiones son:
 
@@ -650,7 +679,7 @@ Debido a los diferentes climas y floraciones que existen en México, se registra
 
 ***Fuente***
 
-[SADER. Revista Claridades Agropecuarias. *Situación actual y perspectiva de la apicultura en México.*, Núm. 199, p. 3-34, marzo, 2010.](pdfs/ca199-3.pdf){target="_blank"}
+[SADER. (2010). *Situación actual y perspectiva de la apicultura en México.* Revista Claridades Agropecuarias. Núm. 199, marzo, p. 3-34. ](pdfs/ca199-3.pdf){target="_blank"}
 
 <br/>
 <br/>
@@ -658,8 +687,10 @@ Debido a los diferentes climas y floraciones que existen en México, se registra
 
 
 
-##  3.16. Zonas Productoras de Miel Orgánica
+##  **3.16 Zonas Productoras de Miel Orgánica**
 ****
+
+<br>
 
 Ante una creciente demanda por productos orgánicos, parte de la producción apícola se ha ido enfocando a la obtención de miel orgánica, principalmente, en áreas geográficas libres de aplicación de químicos.  
 
@@ -672,7 +703,7 @@ En 2008, la producción de miel orgánica alcanzó las 701 toneladas, destacando
 
 ***Fuente***
 
-[SADER. Revista Claridades Agropecuarias. *Situación actual y perspectiva de la apicultura en México.*, Núm. 199, p. 3-34, marzo, 2010.](pdfs/ca199-3.pdf){target="_blank"}
+[SADER. (2010). *Situación actual y perspectiva de la apicultura en México.* Revista Claridades Agropecuarias. Núm. 199, marzo, p. 3-34. ](pdfs/ca199-3.pdf){target="_blank"}
 
 <br/>
 <br/>
@@ -680,8 +711,9 @@ En 2008, la producción de miel orgánica alcanzó las 701 toneladas, destacando
 
 
 
-##  3.17. Comportamiento Estacional de la Producción de las Abejas   
+##  **3.17 Comportamiento Estacional de la Producción de las Abejas**   
 ****
+<br>
 
 La producción de miel está supeditada a las condiciones del medio ambiente y a la disponibilidad del néctar de las flores, por lo que en la mayor parte del país ésta se presenta fundamentalmente en dos épocas del año. La primera, en las regiones Sureste y Costas del país, donde la producción se obtiene entre los meses de marzo y mayo (primavera-verano), generando el 40 por ciento de la producción. La segunda, se obtiene en el Altiplano y Norte del país, entre los meses de septiembre y de noviembre (otoño-invierno), obteniendo el 60 por ciento restante de la producción. Es importante señalar que, en el caso de la Península de Yucatán, ésta se da durante los meses de diciembre a junio.
 
@@ -689,17 +721,19 @@ La producción de miel está supeditada a las condiciones del medio ambiente y a
 
 ***Fuente***
 
-[SADER. Revista Claridades Agropecuarias. *Situación actual y perspectiva de la apicultura en México.*, Núm. 199, p. 3-34, marzo, 2010.](pdfs/ca199-3.pdf){target="_blank"}
+[SADER. (2010). *Situación actual y perspectiva de la apicultura en México.* Revista Claridades Agropecuarias. Núm. 199, marzo, p. 3-34. ](pdfs/ca199-3.pdf){target="_blank"}
 
 <br/>
 <br/>
 <br/>
 
 
-##  3.18. Ranking Nacional de la Producción Apícola   
+##  **3.18 Ranking Nacional de la Producción Apícola**  
 ****
 
-La siguiente es una tabla donde se muestra la posición de cada entidad federativa, como productoras de miel, durante el periodo 2003 - 2019. Se aprecia el predominio de las entidades de la península de Yucatán como los mayores productores, seguidos por Veracuz y Jalisco, principalmente. 
+<br/>
+
+La siguiente es una tabla donde se muestra la posición de cada entidad federativa, como productoras de miel, durante el periodo 2003-2019. Se aprecia el predominio de las entidades de la península de Yucatán como los mayores productores, seguidos por Veracuz y Jalisco, principalmente. 
 <br/>
 <br/>
 
@@ -719,21 +753,23 @@ DT::datatable(tab0010[,-2],filter = 'top', options = list(
 
 <br/>
 
-<p align="center"> **Cuadro 8. Posición que ocuparon las entidades por nivel de producción de miel de abeja, 2003-2019** [`r icon::fa("download")`](tabs/Ranking_tab_1_s.csv) </p>
+<p align="center"> **Cuadro 3.2 Posición que ocuparon las entidades por nivel de producción de miel de abeja, 2003-2019** [`r icon::fa("download")`](tabs/Ranking_tab_1_s.csv) </p>
 
 <br/>
 
 ***Fuente:***
 
-[Servicio de Información Agroalimentaria y Pesquera (SIAP). *Avance mensual de la producción pecuaria.* 2018.](http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp){target="_blank"}
+[Servicio de Información Agroalimentaria y Pesquera, SIAP. (2018). *Avance mensual de la producción pecuaria.*](http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp){target="_blank"}
 
 <br/>
 <br/>
 <br/>
 
 
-##  3.19. Principales Centros de Investigación y Experimentación  
+##  **3.19 Principales Centros de Investigación y Experimentación**  
 ****
+
+<br/>
 
 #### **Centro de Investigaciones en Abejas (CIABE).**
 
@@ -749,6 +785,7 @@ Con el fin de fortalecer sus líneas y proyectos de investigación, establece v�
 
 [Página Web del CIABE](http://www.cusur.udg.mx/es/ciabe){target="_blank"}
 
+<br/>
 <br/>
 
 #### **Colegio de la Frontera Sur, Departamento de Agricultura, Sociedad y Ambiente. Equipo Abejas.**
@@ -772,6 +809,7 @@ Entre sus objetivos, se encuentra incluir la conservación del medio ambiente en
 
 [Página Web del Equipo Abejas](https://www.ecosur.mx/abejas/quienes-somos/){target="_blank"}
 
+<br/>
 <br/>
 
 #### **UNAM. Escuela Nacional de Estudios Superiores (ENES) Unidad Morelia, Laboratorio Nacional de Análisis y Síntesis Ecológica (LANASE).** 
@@ -807,6 +845,7 @@ El objetivo del proyecto es evaluar los impactos del cambio climático y cambio 
 [Laboratorio Nacional de Análisis y Síntesis Ecológica.](http://www.lanase.unam.mx/es/proyectos_investigacion.php?ra=1){target="_blank"}
 
 <br/>
+<br/>
 
 #### **Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP), perteneciente a la Secretaría de Agricultura y Desarrollo Rural (SADER).**
 
@@ -829,6 +868,7 @@ El INIFAP cuenta con diferentes publicaciones sobre apicultura disponibles en su
 [*Fortalece SAGARPA producción apícola con transferencia de tecnología.* Agosto, 2017.](https://infoagro.com/mexico/fortalece-sagarpa-produccion-apicola-con-transferencia-de-tecnologia/){target="_blank"}
 
 <br/>
+<br/>
 
 #### **Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco, A.C. (CIATEJ).**
 
@@ -842,6 +882,7 @@ En el ámbito apícola, realiza investigaciones sobre el impacto de los plaguici
 
 [Página Web del CIATEJ](https://ciatej.mx/){target="_blank"}
 
+<br/>
 <br/>
 
 #### **Laboratorio de Análisis de Propóleos en la FES Cuautitlán.**
@@ -883,7 +924,7 @@ Los siguientes videos muestran algunas de las actividades de este laboratorio.
 
 ***Fuente:***
 
-[Gaceta Digital, UNAM. *Primer laboratorio de análisis de propóleos en la FES Cuautitlán.* Marzo, 2017.](http://www.gaceta.unam.mx/20170316/primer-laboratorio-de-analisis-de-propoleos-en-la-fes-cuautitlan/){target="_blank"}
+[Gaceta Digital, UNAM. (2017). *Primer laboratorio de análisis de propóleos en la FES Cuautitlán.* Marzo.](http://www.gaceta.unam.mx/20170316/primer-laboratorio-de-analisis-de-propoleos-en-la-fes-cuautitlan/){target="_blank"}
 
 <br/>
 <br/>
@@ -891,10 +932,12 @@ Los siguientes videos muestran algunas de las actividades de este laboratorio.
 
 
 
-##  3.20. Ubicación de Criaderos de Reinas y Material Biológico Apícola Certificado  
+##  **3.20 Ubicación de Criaderos de Reinas y Material Biológico Apícola Certificado**  
 ****
 
-```{r i0_3_28_01, fig.align='center', fig.cap= "**Fig. 10 Inseminación Instrumental en Abejas, elemento importante para la certificación.**", echo=FALSE, out.width = "80%", cache=TRUE}
+<br/>
+
+```{r i0_3_28_01, fig.align='center', fig.cap= "**Figura 3.3 Inseminación Instrumental en Abejas, elemento importante para la certificación.**", echo=FALSE, out.width = "80%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/IMG_6800.png")
 
@@ -921,7 +964,7 @@ Con el propósito de inducir la producción de estas abejas la SADER, a través 
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 9. Criaderos de Abejas Reina F1 certificados durante 2017-2018 (Certificación genética y sanitaria).** [`r icon::fa("download")`](tabs/t001.csv) </p>
+<p align="center"> **Cuadro 3.3 Criaderos de Abejas Reina F1 certificados durante 2017-2018 (Certificación genética y sanitaria).** [`r icon::fa("download")`](tabs/t001.csv) </p>
 
 <br/>
  
@@ -943,7 +986,7 @@ DT::datatable(tab0001,filter = 'top', options = list(
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 10. Criaderos de Abejas Reina Progenitora certificados durante 2017-2018 (Certificación Genética y Sanitaria).** [`r icon::fa("download")`](tabs/t0002.csv) </p>
+<p align="center"> **Cuadro 3.4 Criaderos de Abejas Reina Progenitora certificados durante 2017-2018 (Certificación Genética y Sanitaria).** [`r icon::fa("download")`](tabs/t0002.csv) </p>
 
 <br/>
 
@@ -963,7 +1006,7 @@ kableExtra::kable(tab0002) %>%
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 11. Productores de Núcleos certificados durante 2017-2018. (Certificación sanitaria).** [`r icon::fa("download")`](tabs/t0003.csv) </p>
+<p align="center"> **Cuadro 3.5 Productores de Núcleos certificados durante 2017-2018. (Certificación sanitaria).** [`r icon::fa("download")`](tabs/t0003.csv) </p>
 
 <br/>
 
@@ -993,8 +1036,10 @@ DT::datatable(tab0003,filter = 'top', options = list(
 
 
 
-##  3.21. Localización de Centros de Acopio y Comercializadoras de Miel  
+##  **3.21. Localización de Centros de Acopio y Comercializadoras de Miel** 
 ****
+
+<br/>
 
 Los centros de acopio son los lugares en donde se almacena la miel de los productores. 
 
@@ -1028,7 +1073,7 @@ Los canales de comercialización de la miel son dos: el primero se da por la ven
 
 ***Fuente:***
 
-[SADER. Revista Claridades Agropecuarias. *Situación actual y perspectiva de la apicultura en México.*, Núm. 199, p. 3-34, marzo, 2010.](pdfs/ca199-3.pdf){target="_blank"}
+[SADER. (2010). *Situación actual y perspectiva de la apicultura en México.* Revista Claridades Agropecuarias. Núm. 199, marzo, p. 3-34. ](pdfs/ca199-3.pdf){target="_blank"}
 
 <br/>
 
@@ -1046,15 +1091,17 @@ Este  Plan  Rector,  contiene  apartados  que  incluyen  temas  relevantes  para
 
 ***Fuente:***
 
-[CONABIO. AECID. *Plan Rector para Promover una Denominación de Origen de mieles de la Península de Yucatán. Propuesta.* 2011.](pdfs/PlanRector_DenominaOrigenMielesPeninsulaYucatan.pdf){target="_blank"}
+[CONABIO. AECID. (2011). *Plan Rector para Promover una Denominación de Origen de mieles de la Península de Yucatán. Propuesta.*](pdfs/PlanRector_DenominaOrigenMielesPeninsulaYucatan.pdf){target="_blank"}
 
 <br/>
 <br/>
 <br/>
 
 
-##  3.22  Eventos de exposiciones, programas técnico-científicos y ferias apícolas   
+##  **3.22  Eventos de exposiciones, programas técnico-científicos y ferias apícolas**   
 ****
+
+<br/>
 
 Del 2 al 5 de febrero de 2018, en las instalaciones del Casino de la Feria Nacional de San Marcos en Aguascalientes, se realizaron simultánemente: el ***5º Congreso Mexicano de Apicultura***, el ***4º Encuentro Apícola del Altiplano*** y la ***4ª Feria de la Miel***.
 

@@ -1,5 +1,5 @@
 ---
-title: "Estadísticas"
+title: "**Estadísticas**"
 ---   
 
 
@@ -19,8 +19,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br/>
 
-## 5.1. Número de colmenas en México
+## **5.1 Número de colmenas en México**
 ****
+
+<br/>
 
 La División Estadística de la FAO (FAOSTAT) tiene publicada información sobre el número de colmenas por país desde el año 1961 y hasta el 2017, la cual se resume para nuestro país, en la tabla y gráfica siguientes: 
 
@@ -40,7 +42,7 @@ DT::datatable(bhvs,filter = 'top', options = list(
 
 <br/>
 
-<p align="center"> **Cuadro 5.1. Colmenas en México 1961-2017.** [`r icon::fa("download")`](tabs/BeehivesMX.csv) </p>
+<p align="center"> **Cuadro 5.1 Colmenas en México, 1961-2017.** [`r icon::fa("download")`](tabs/BeehivesMX.csv) </p>
 
 <br/>
 <br/>
@@ -62,20 +64,22 @@ dygraph(p_anual_colmenas, xlab ="Año") %>%
 
 <br/>
 
-<p align="center"> **Gráfica 1. Colmenas en México 1961-2017** [`r icon::fa("download")`](tabs/BeehivesMX.csv) </p>
+<p align="center"> **Gráfica 5.1 Colmenas en México, 1961-2017** [`r icon::fa("download")`](tabs/BeehivesMX.csv) </p>
 
 
 ***Fuente:***
 
-[FAOSTAT. *Datos sobre animales vivos.* 2017.](http://www.fao.org/faostat/en/#data/QA){target="_blank"}
+[FAOSTAT. (2017). *Datos sobre animales vivos.*](http://www.fao.org/faostat/en/#data/QA){target="_blank"}
 
 <br/>
 <br/>
 <br/>
 
 
-## 5.2. Producción de Miel por Entidad de 2003 a 2019 
+## **5.2 Producción de Miel por Entidad de 2003 a 2019** 
 ****
+
+<br/>
 
 En este punto se construyó un gráfico que concentra la producción de miel de las 32 entidades federativas durante el periodo de los años 2003 a 2019, para ello se consideraron los datos de producción en toneladas de miel anual, publicados por el SIAP, denominados [*Avance mensual de la producción pecuaria*.](http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp){target="_blank"}
 
@@ -131,7 +135,7 @@ p1 <- plot_ly(bx3, x = ~years, y = ~AGS, name = 'Aguascalientes', type = 'scatte
   add_trace(y = ~VER, name = 'Veracruz', line = list(color = 'springgreen', width = 4, dash = 'dashdot')) %>%
   add_trace(y = ~YUC, name = 'Yucatán', line = list(color = 'violetred', width = 4, dash = NULL)) %>%
   add_trace(y = ~ZAC, name = 'Zacatecas', line = list(color = 'sienna', width = 4, dash = NULL)) %>%
-  layout(title = "Gráfica 2. Producción de Miel por Entidad Federativa, 2003-2019",
+  layout(title = "Gráfica 5.2. Producción de Miel por Entidad Federativa, 2003-2019",
          xaxis = list(title = "Año"),
          yaxis = list (title = "Toneladas producidas"))
 p1
@@ -149,8 +153,10 @@ Nota: Información del año 2019, son cifras preliminares a diciembre 2019.
 <br/>
 
 
-## 5.3. Producción de Miel por municipio 2018.
+## **5.3 Producción de Miel por municipio 2018**
 ****
+<br/>
+
 A continuación, se presentan datos sobre la producción de miel a nivel municipio, del 2018
 
 <br/>
@@ -171,15 +177,15 @@ DT::datatable(tabmun_18,filter = 'top', options = list(
 
 <br/>
 
-<p align="center"> **Cuadro 5.2. Producción de Miel por municipio, 2018** [`r icon::fa("download")`](tabs/Prodmiel2018muni.csv) </p>
+<p align="center"> **Cuadro 5.2 Producción de Miel por municipio, 2018** [`r icon::fa("download")`](tabs/Prodmiel2018muni.csv) </p>
 
 <br/>
-
+<br/>
 <br/>
 
-## 5.4. Otras Estadísticas por Entidad Federativa.
+## **5.4 Otras Estadísticas por Entidad Federativa**
 ****
-
+<br/>
 
 Los poco más de 43,000 apicultores que hay en México se encuentran registrados en 508 asociaciones ganaderas especializadas en apicultura, conforme a la [Ley de Organizaciones Ganaderas](http://www.diputados.gob.mx/LeyesBiblio/pdf/57.pdf){target="_blank"}, y 110 de otros tipos. 
 
@@ -203,7 +209,7 @@ library(plotly)
 
 p2 <- plot_ly(datos2a, x = ~datos2a$Entidad, y = ~datos2a$asoc_ent_2a.orga_asoc_apic, type = 'bar',
              marker = list(color = 'rgb(49,130,189)')) %>%
-  layout(title = ("Gráfica 3. Asociaciones Apícolas por Entidad Federativa, 2017"),
+  layout(title = ("Gráfica 5.3 Asociaciones Apícolas por Entidad Federativa, 2017"),
          xaxis = list(title = "Año", tickangle =-45),
          yaxis = list(title = "Número de Asociaciones"),
          margin = list(b = 100),
@@ -236,7 +242,7 @@ datos1$xestados_t1 <- factor(datos1$xestados_t1, levels = datos1[["xestados_t1"]
 
 grafica1 <- plot_ly(datos1, x = ~xestados_t1, y = ~yacopiador_t1, type = 'bar', marker = list(color = 'deepskyblue2'),
                                                                                           line= list(color = 'rgb(8,48,107)', width = 1)) %>%
-  layout(title = ("Grafica 4. Unidades Económicas Acopiadoras de Miel por Entidad Federativa, 2017"),
+  layout(title = ("Grafica 5.4 Unidades Económicas Acopiadoras de Miel por Entidad Federativa, 2017"),
          xaxis = list(title = "", tickangle = -50),  
          size = 16,
          yaxis = list(title = ""),
@@ -270,7 +276,7 @@ datos2 <- data.frame(xestados_t2, yexportador_t2)   #data <- data.frame(x, y1, y
 datos2$xestados_t2 <- factor(datos2$xestados_t2, levels = datos2[["xestados_t2"]]) 
 
 grafica2 <- plot_ly(datos2, x = ~xestados_t2, y = ~yexportador_t2, type = 'bar', marker = list(color = 'deepskyblue2')) %>%
-  layout(title = ("Gráfica 5. Unidades Económicas Exportadoras de Miel por Entidad Federativa, 2017"),
+  layout(title = ("Gráfica 5.5 Unidades Económicas Exportadoras de Miel por Entidad Federativa, 2017"),
          xaxis = list(title = "", tickangle = 45),  
          size = 16,
          yaxis = list(title = ""),
@@ -306,7 +312,7 @@ p3 <- plot_ly(criad_reinas1, x = ~criad_reinas2[,5], y = ~criad_reinas2[,2], typ
             marker = list(color = 'green')) %>% 
   add_trace(y = ~criad_reinas2[,4], name = 'Productores <br> de Núcleos <br> o Paquetes <br> de Abejas', 
             marker = list(color = 'red')) %>% 
-  layout(title = ("Gráfica 6. Criadores de Abeja Reina y Núcleos, por Entidad Federativa (2017)"),
+  layout(title = ("Gráfica 5.6 Criadores de Abeja Reina y Núcleos, por Entidad Federativa (2017)"),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "Criadores/Productores"),
          margin = list(b = 100),
@@ -343,7 +349,7 @@ p4 <- plot_ly(abejas_reina2, x = ~abejas_reina2[,6], y = ~abejas_reina2[,2], typ
             marker = list(color = 'red')) %>% 
   add_trace(y = ~abejas_reina2[,5], name = 'Colmenas para <br> Polinización', 
             marker = list(color = 'orange')) %>% 
-  layout(title = ("Gráfica 7. Abejas Reina, Núcleos y Colmenas para Polinización por Entidad Federativa (2017)"),
+  layout(title = ("Gráfica 5.7 Abejas Reina, Núcleos y Colmenas para Polinización por Entidad Federativa (2017)"),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "Cantidad producida"),
          margin = list(b = 100),
@@ -376,7 +382,7 @@ datos3$xestados_t <- factor(datos3$xestados_t, levels = datos3[["xestados_t"]])
 
 grafica3 <- plot_ly(datos3, x = ~xestados_t, y = ~ypeso_cera_t, type = 'bar',
                    marker = list(color = 'deepskyblue2')) %>%
-  layout(title = ("Gráfica 8. Producción de Cera por Entidad Federativa, 2017 (ton)"),
+  layout(title = ("Gráfica 5.8 Producción de Cera por Entidad Federativa, 2017 (ton)"),
          xaxis = list(title = "", tickangle = -45),  
          size = 16,
          yaxis = list(title = "ton"),
@@ -408,7 +414,7 @@ library(plotly)
 
 p5 <- plot_ly(miel_org2, x = ~miel_org2$x, y = ~miel_org2[,13], type = 'bar',
               name = '', marker = list(color = 'rgb(49,130,189)')) %>%
-  layout(title = ("Gráfica 9. Producción de Miel Orgánica por Entidad Federativa, 2017 (Ton)"),
+  layout(title = ("Gráfica 5.9 Producción de Miel Orgánica por Entidad Federativa, 2017 (Ton)"),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "toneladas"),
          margin = list(b = 100),
@@ -441,7 +447,7 @@ p6 <- plot_ly(derivados2, x = ~derivados2[,5], y = ~derivados2[,2], type = 'bar'
             marker = list(color = 'green')) %>% 
   add_trace(y = ~derivados2[,4], name = 'Propóleos', 
             marker = list(color = 'red')) %>% 
-  layout(title = ("Gráfica 10. Producción de Derivados Apícolas por Entidad Federativa, 2017"),
+  layout(title = ("Gráfica 5.10 Producción de Derivados Apícolas por Entidad Federativa, 2017"),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "kg"),
          margin = list(b = 100),
@@ -473,7 +479,7 @@ p7 <- plot_ly(terr2, x = ~terr2[,5], y = ~terr2[,2], type = 'bar',
             marker = list(color = 'green')) %>% 
   add_trace(y = ~terr2[,4], name = 'Terrenos Privados', 
             marker = list(color = 'red')) %>% 
-  layout(title = ("Gráfica 11. Terrenos Dedicados a Actividades Apícolas, por Entidad Federativa (2017)"),
+  layout(title = ("Gráfica 5.11 Terrenos Dedicados a Actividades Apícolas, por Entidad Federativa (2017)"),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "Número de terrenos"),
          margin = list(b = 100),
@@ -505,7 +511,7 @@ p8 <- plot_ly(hect2, x = ~hect2[,5], y = ~hect2[,2], type = 'bar',
             marker = list(color = 'green')) %>% 
   add_trace(y = ~hect2[,4], name = 'Terrenos Privados', 
             marker = list(color = 'red')) %>% 
-  layout(title = ('Gráfica 12. Superficie Dedicada a Actividades Apícolas, por Entidad Federativa, 2017'),
+  layout(title = ('Gráfica 5.12 Superficie Dedicada a Actividades Apícolas, por Entidad Federativa, 2017'),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "Hectáreas"),
          margin = list(b = 100),
@@ -520,8 +526,10 @@ p8
 <br/>
 <br/>
 
-##  5.5. Balanza Comercial de México. Importación y Exportación   
+##  **5.5. Balanza Comercial de México. Importación y Exportación**   
 ****
+
+<br/>
 
 La exportación de miel mexicana se incrementó en 11.73% en el primer semestre de 2018 en comparación con el periodo homólogo anterior al alcanzar, en valor, 71 millones de dólares (MDD), mientras que en enero-junio del año pasado se contabilizaron 63 MDD.  
 Lo anterior, gracias a las políticas públicas, destinadas a incentivar esta actividad, que puso en práctica la SADER, así como al esfuerzo de los productores apícolas nacionales.  
@@ -548,7 +556,7 @@ Es por ello, que el SENASICA, la Secretaría de Medio Ambiente y Recursos Natura
 
 ***Fuente:***
 
-[SADER. *Nota de Prensa.* Agosto, 2018.](https://www.gob.mx/sader/prensa/se-incrementa-en-el-primer-semestre-del-ano-la-exportacion-de-miel-mexicana-en-mas-de-11-por-ciento?idiom=es){target="_blank"}
+[SADER. (2018). *Nota de Prensa.* Agosto.](https://www.gob.mx/sader/prensa/se-incrementa-en-el-primer-semestre-del-ano-la-exportacion-de-miel-mexicana-en-mas-de-11-por-ciento?idiom=es){target="_blank"}
 
 <br/>
 <br/>
@@ -574,7 +582,7 @@ DT::datatable(tab3_16,filter = 'top', options = list(
 
 <br/>
 
-<p align="center"> **Cuadro 5.3. Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
+<p align="center"> **Cuadro 5.3 Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
 
 <br/>
 <br/>
@@ -599,14 +607,14 @@ dygraphs::dyRangeSelector()
 
 <br/>
 
-<p align="center"> **Gráfica 13. Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
+<p align="center"> **Gráfica 5.13 Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
 
 <br/>
 
 
 ***Fuente:***
 
-[BANXICO. Sistema de Información Económica. *Exportación de Productos Agropecuarios (Miel).* 2018.](http://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CE122&locale=es){target="_blank"}
+[BANXICO. Sistema de Información Económica. (2018). *Exportación de Productos Agropecuarios (Miel).*](http://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CE122&locale=es){target="_blank"}
 
 <br/>
 <br/>
@@ -634,7 +642,7 @@ pexp <- plot_ly(dest3, x = ~years, y = ~ALEM, name = 'Alemania', type = 'scatter
   add_trace(y = ~ARAB_SAUD, name = 'Arabia Saudita', line = list(color = 'cyan', width = 4, dash = NULL)) %>%
   add_trace(y = ~SUIZA, name = 'Suiza', line = list(color = 'darkorchid', width = 4, dash = NULL)) %>%
   add_trace(y = ~BELG, name = 'Bélgica', line = list(color = 'dodgerblue', width = 4, dash = NULL))  %>%
-  layout(title = "Gráfica 14. Valor de las exportaciones a los principales países de destino, 2002-2018",
+  layout(title = "Gráfica 5.14 Valor de las exportaciones a los principales países de destino, 2002-2018",
          xaxis = list(title = "Año"),
          yaxis = list (title = "Miles de dólares"))
 pexp 
@@ -646,9 +654,10 @@ pexp
 <p align="center"> **Descargar datos** [`r icon::fa("download")`](tabs/import_export.csv) </p>
 
 <br/>
+
 ***Fuente:***
 
-[INEGI. *Estadísticas de Comercio Exterior*. 2018.](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
+[INEGI. (2018) *Estadísticas de Comercio Exterior*.](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
 
 <br/>
 <br/>
@@ -666,7 +675,7 @@ immiel <- read.csv("tabs/import_2004_2018.csv", encoding = "UTF")
 importac <- plot_ly(immiel, x = ~anio, y = ~dolares, type = 'scatter', 
               mode = 'lines', line = list(color = 'darkblue', 
                                           width = 4))  %>%
-  layout(title = "Gráfica 15. Importaciones Anuales de Miel, 2004-2018",
+  layout(title = "Gráfica 5.15 Importaciones Anuales de Miel, 2004-2018",
          xaxis = list(title = "Año"),
          yaxis = list (title = "Dólares"))
 importac
@@ -683,7 +692,7 @@ importac
 
 ***Fuente:***
 
-[INEGI. *Estadísticas de Comercio Exterior*. 2018.](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
+[INEGI. (2018). *Estadísticas de Comercio Exterior*.](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
 
 <br/>
 

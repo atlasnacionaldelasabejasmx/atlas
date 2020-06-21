@@ -1,5 +1,5 @@
 ---
-title: "Mapas"
+title: "**Mapas**"
 --- 
 
 
@@ -17,9 +17,10 @@ knitr::opts_chunk$set(echo = TRUE)
 <div class=text-justify>
 <br/>
 
-## 6.1. Producción de Miel y Apicultores en México (Sector Primario)
+## **6.1 Producción de Miel y Apicultores en México (Sector Primario)**
 ****
 
+<br>
 
 ### 6.1.1 Producción de miel por Entidad Federativa
 
@@ -73,11 +74,13 @@ map_prod_miel %>%
 
 ```
 
+<p align="center"> **Mapa 6.1 Producción de miel por Entidad Federativa, 2018.** [`r icon::fa("download")`](tabs/prodmiel2018.csv) </p>
+
 <br/>
 
 ***Fuente:***
 
-[SADER. Servicio de Información Agroalimentaria y Pesquera (SIAP). *Avance mensual de la producción pecuaria.* 2018.](http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp){target="_blank"} [`r icon::fa("download")`](tabs/prodmiel2018_2.csv)
+[SADER. Servicio de Información Agroalimentaria y Pesquera (SIAP). (2018). *Avance mensual de la producción pecuaria.*](http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp){target="_blank"} [`r icon::fa("download")`](tabs/prodmiel2018_2.csv)
 
 <br/>
 <br/>
@@ -136,7 +139,7 @@ map_colm %>%
 
 ***Fuente:***
 
-[SADER. *Datos abiertos*. 2018.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}
+[SADER. (2018). *Datos abiertos*.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}
 
 <br/>
 <br/>
@@ -191,19 +194,21 @@ map_apicult %>%
 
 ```
 
-<p align="center"> **Mapa 6.3. Número de Apicultores por Entidad Federativa, 2017.** [`r icon::fa("download")`](tabs/estadisticas.csv) </p>
+<p align="center"> **Mapa 6.3 Número de Apicultores por Entidad Federativa, 2017.** [`r icon::fa("download")`](tabs/estadisticas.csv) </p>
 
 ***Fuente:***
 
-[SIAP. *Registros Administrativos*. 2014.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}
+[SIAP. (2014). *Registros Administrativos*.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}
 <br/>
 <br/>
 <br/>
 <br/>
 
 
-## 6.2. Unidades Económicas de Venta de Miel, Fabricación de Insumos y Otros Servicios Relacionados con la Apicultura en México (Sectores Secundario y Terciario)
+## **6.2 Unidades Económicas de Venta de Miel, Fabricación de Insumos y Otros Servicios Relacionados con la Apicultura en México (Sectores Secundario y Terciario)**
 ****
+
+<br/>
 
 **El siguiente mapa es un primer acercamiento hacia la construcción de un Directorio Nacional de Apicultores y Comercializadores de Miel y sus Derivados.** Contiene información georreferenciada de las unidades económicas que comercializan miel, prestan algun servicio relacionado con la apicultura o producen insumos para dicha actividad, y que se encuentran registradas en el *Directorio Estadístico Nacional de Unidades Económicas (DENUE)* del INEGI.
 
@@ -297,7 +302,7 @@ l %>%
 
 ```
 
-<p align="center"> **Mapa 6.4. Unidades Económicas de Venta de Miel, Fabricación de Insumos y Otros Servicios Relacionados con la Apicultura en México, DENUE 2018.** [`r icon::fa("download")`](geodata/puntos_miel.zip) </p>
+<p align="center"> **Mapa 6.4 Unidades Económicas de Venta de Miel, Fabricación de Insumos y Otros Servicios Relacionados con la Apicultura en México, DENUE 2018.** [`r icon::fa("download")`](geodata/puntos_miel.zip) </p>
 
 <br/>
 <br/>
