@@ -14,6 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <div class=text-justify>
 
+<br/>
+
 ## **Introducción** 
 ****
 
@@ -28,7 +30,7 @@ La abeja melífera o conocida también como abeja europea (Nombre científico: _
 
 Sólo este último grupo (las que son altamente sociales) forma colonias permanentes en donde almacenan miel y polen en grandes cantidades.
 
-```{r img4_I_1, fig.align='center', fig.cap= "**Figura 1. Agrupación jerárquica de las abejas (Arnold et al., 2018)**", echo=FALSE, out.width = "60%", cache=TRUE}
+```{r img4_I_1, fig.align='center', fig.cap= "**Figura 4.1. Agrupación jerárquica de las abejas (Arnold et al., 2018)**", echo=FALSE, out.width = "60%", cache=TRUE}
 
 knitr::include_graphics("imag/4_I_Fig1.png")
 
@@ -42,9 +44,9 @@ En México se reportan 46 especies de abejas sin aguijón, seis agrupadas en 16 
 
 **Propóleo**
 
-El término propóleo etimológicamente proviene del griego _pro_ “para o en defensa de” y _polis_ “ciudad” haciendo referencia a la defensa de la colmena[^2^]. Es una sustancia de composición compleja elaborada por las abejas a partir de resinas de la vegetación de alrededor de las colmenas y que es utilizada en la colmena como material de sellado, agente microbicida y desinfectante, por lo tanto, es el responsable directo de garantizar la asepsia de la colmena, siendo ésta un ambiente prolífero para el desarrollo de microorganismos, debido a sus condiciones de temperatura y humedad[^3^], como se muestra en la figura 2.
+El término propóleo etimológicamente proviene del griego _pro_ “para o en defensa de” y _polis_ “ciudad” haciendo referencia a la defensa de la colmena[^2^]. Es una sustancia de composición compleja elaborada por las abejas a partir de resinas de la vegetación de alrededor de las colmenas y que es utilizada en la colmena como material de sellado, agente microbicida y desinfectante, por lo tanto, es el responsable directo de garantizar la asepsia de la colmena, siendo ésta un ambiente prolífero para el desarrollo de microorganismos, debido a sus condiciones de temperatura y humedad[^3^], como se muestra en la figura 4.2.
 
-```{r img4_I_2, fig.align='center', fig.cap= "**Figura 2. A: abejas recolectando resinas. B: usos en la colmena (Rodríguez, 2019) **", echo=FALSE, out.width = "60%", cache=TRUE}
+```{r img4_I_2, fig.align='center', fig.cap= "**Figura 4.2. A: abejas recolectando resinas. B: usos en la colmena (Rodríguez, 2019) **", echo=FALSE, out.width = "60%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_I_Fig2.png")
 
@@ -52,9 +54,9 @@ knitr::include_graphics("imag/4_I_Fig2.png")
 
 <br>
 
-Las características físicas del propóleo como color, aroma, sabor y consistencia, están relacionadas con la fuente vegetal y clima de la región donde es recolectado. El color puede variar desde rojo, amarillo-rojizo, amarillo oscuro, verde castaño, pardo o negro (figura 3)[^4^]; presenta un olor resinoso (madera) o balsámico (cera), sabor suave a picante y consistencia a temperatura ambiente maleable o rígida.[^5^]^,^[^6^]^,^[^7^]
+Las características físicas del propóleo como color, aroma, sabor y consistencia, están relacionadas con la fuente vegetal y clima de la región donde es recolectado. El color puede variar desde rojo, amarillo-rojizo, amarillo oscuro, verde castaño, pardo o negro (figura 4.3)[^4^]; presenta un olor resinoso (madera) o balsámico (cera), sabor suave a picante y consistencia a temperatura ambiente maleable o rígida.[^5^]^,^[^6^]^,^[^7^]
 
-```{r img4_I_3, fig.align='center', fig.cap= "**Figura 3. Propóleos en greña (Rodríguez, 2019) **", echo=FALSE, out.width = "60%", cache=TRUE}
+```{r img4_I_3, fig.align='center', fig.cap= "**Figura 4.3. Propóleos en greña (Rodríguez, 2019) **", echo=FALSE, out.width = "60%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_I_Fig3.png")
 
@@ -119,7 +121,7 @@ De manera general, los propóleos están formados por diferentes componentes, lo
 
 <center>
 
-**Cuadro 4.1 Componentes químicos identificados en los propóleos.**
+**Cuadro 4.1. Componentes químicos identificados en los propóleos.**
 
 | Clase de componentes | Compuesto       |
 |--------------------- | --------------- |
@@ -149,7 +151,7 @@ Algunos de los componentes más significativos en las resinas/bálsamos en este 
 
 <center>
 
-**Cuadro 4.2 Componentes químicos del propóleo y algunos ejemplos**.[^20^]^,^[^21^]
+**Cuadro 4.2. Componentes químicos del propóleo y algunos ejemplos**.[^20^]^,^[^21^]
 
 
 <br>
@@ -183,12 +185,12 @@ Para conocer el contenido químico de un propóleo, generalmente esto se realiza
 
 Una vez obtenido el extracto disuelto, éste es llevado a un proceso de evaporación de los disolventes, preferentemente a presión reducida o bien mediante el empleo de CO~2~ supercrítico, que en todo caso debería de ser la técnica preferida, ya que requiere de temperaturas de aproximadamente de 30-35 °C, lo que garantiza la no descomposición térmica de las sustancias contenidas en los propóleos, sin embargo, esta técnica representa un gasto económico mucho mayor, sobre todo para poder emplearla a nivel de campo.
 
-Para conocer el contenido químico de los extractos de propóleo, actualmente se emplea la técnica conocida como *Cromatografía de Gases acoplada a Espectrometría de Masas (CG-EM)*[^24^]. La Cromatografía de Gases (CG), es una técnica cromatográfica (de separación) de compuestos químicos mezclados, empleando una cantidad pequeña de muestra líquida (de 1 a 10 μL), en donde, bajo condiciones específicas del equipo, cada compuesto de la mezcla es separado y detectado en un cromatograma, que muestra que cada compuesto presenta un “tiempo de retención” diferente, debido a su estructura y solubilidad en el disolvente empleado en la técnica. En la Figura 4.1 se muestra un ejemplo de un cromatograma de propóleo.[^25^]
+Para conocer el contenido químico de los extractos de propóleo, actualmente se emplea la técnica conocida como *Cromatografía de Gases acoplada a Espectrometría de Masas (CG-EM)*[^24^]. La Cromatografía de Gases (CG), es una técnica cromatográfica (de separación) de compuestos químicos mezclados, empleando una cantidad pequeña de muestra líquida (de 1 a 10 μL), en donde, bajo condiciones específicas del equipo, cada compuesto de la mezcla es separado y detectado en un cromatograma, que muestra que cada compuesto presenta un “tiempo de retención” diferente, debido a su estructura y solubilidad en el disolvente empleado en la técnica. En la Figura 4.4 se muestra un ejemplo de un cromatograma de propóleo.[^25^]
 
 
 <br/>
 
-```{r img4_1_1, fig.align='center', fig.cap= "**Figura 4.1 Cromatograma de gases de un propóleo del Estado de Puebla **", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r img4_1_1, fig.align='center', fig.cap= "**Figura 4.4. Cromatograma de gases de un propóleo del Estado de Puebla **", echo=FALSE, out.width = "80%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_1_Fig1.png")
 
@@ -199,12 +201,12 @@ knitr::include_graphics("imag/4_1_Fig1.png")
 
 Esta técnica se acopla electrónicamente a la de *Espectrometría de Masas (EM)*, es decir, cada señal del cromatograma indica cada compuesto contenido en la muestra original; así, se puede elegir cada tiempo de retención, de manera independiente, y ésta se envía al equipo de EM acoplado.
 
-La Espectrometría de Masas (EM) es una técnica espectrométrica empleada en Química, en donde un compuesto es “bombardeado” por una corriente de electrones, lo que origina su fragmentación. Este rompimiento de las moléculas no es al azar, sino que sigue patrones establecidos conocidos como “patrón de fragmentación”, lo que permite establecer de manera muy precisa la identificación de cada compuesto analizado, mediante la obtención de un “espectro de masas”, que generalmente es único y específico para cada compuesto químico, bajo las condiciones empleadas en el equipo. En la figura 4.2 se muestra un ejemplo de un espectro de masas.[^26^]
+La Espectrometría de Masas (EM) es una técnica espectrométrica empleada en Química, en donde un compuesto es “bombardeado” por una corriente de electrones, lo que origina su fragmentación. Este rompimiento de las moléculas no es al azar, sino que sigue patrones establecidos conocidos como “patrón de fragmentación”, lo que permite establecer de manera muy precisa la identificación de cada compuesto analizado, mediante la obtención de un “espectro de masas”, que generalmente es único y específico para cada compuesto químico, bajo las condiciones empleadas en el equipo. En la figura 4.5 se muestra un ejemplo de un espectro de masas.[^26^]
 
 
 <br/>
 
-```{r img4_1_2, fig.align='center', fig.cap= "**Figura 4.2 Espectro de masas de Eupatorina**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_1_2, fig.align='center', fig.cap= "**Figura 4.5. Espectro de masas de Eupatorina**", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_1_Fig2.png")
 
@@ -238,12 +240,12 @@ El término genérico flavonoide (del latín *flavus*, "amarillo, dorado") es co
 
 Esta familia de compuestos tiene diversas funciones en las plantas que los contienen, como responsables de la resistencia de las plantas a la foto-oxidación por la luz ultravioleta del sol, para la regulación del transporte de auxinas (hormonas), como defensa ante el consumo por los seres herbívoros, como atracción de los animales polinizadores, a través del color o el olor que dan a la planta o a sus flores. Hasta ahora se conoce que, en los frutos, las mayores concentraciones se encuentran en su piel.
 
-En general, la familia de los flavonoides se clasifica como flavonoides, isoflavonoides, neoflavonoides y antocianinas (también llamadas antocianos) y su estructura general se muestra en la Figura 4.3[^28^], en donde los más abundantes e importantes son los primeros.
+En general, la familia de los flavonoides se clasifica como flavonoides, isoflavonoides, neoflavonoides y antocianinas (también llamadas antocianos) y su estructura general se muestra en la Figura 4.6[^28^], en donde los más abundantes e importantes son los primeros.
 
 
 <br/>
 
-```{r img4_1_3, fig.align='center', fig.cap= "**Figura 4.3 Clasificación general de los flavonoides.**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_1_3, fig.align='center', fig.cap= "**Figura 4.6. Clasificación general de los flavonoides.**", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_1_Fig3.png")
 
@@ -254,12 +256,12 @@ knitr::include_graphics("imag/4_1_Fig3.png")
 
 
 
-Sin embargo, Pérez Trueba[^29^] divide a los flavonoides en 13 diferentes formas estructurales, como se muestra en la figura 4.4.
+Sin embargo, Pérez Trueba[^29^] divide a los flavonoides en 13 diferentes formas estructurales, como se muestra en la figura 4.7.
 
 
 
 <br/>
-```{r img4_1_4, fig.align='center', fig.cap= "**Figura 4.4 Clasificación de los flavonoides según Pérez Trueba.**", echo=FALSE, out.width = "60%", cache=TRUE}
+```{r img4_1_4, fig.align='center', fig.cap= "**Figura 4.7. Clasificación de los flavonoides según Pérez Trueba.**", echo=FALSE, out.width = "60%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_1_Fig4.png")
 
@@ -272,7 +274,148 @@ knitr::include_graphics("imag/4_1_Fig4.png")
 <br/>
 
 
-## **4.2 Producción y recolección de propóleo** 
+## **4.2 Flora propolizadora** 
+****
+
+Por [Dra. María Margarita Canales Martínez y Dr. Marco Aurelio Rodríguez Monroy ](#a002)
+
+<br/>
+
+México es considerado un país megadiverso porque forma parte del grupo de las naciones poseedoras de la mayor cantidad y diversidad de animales y plantas, casi el 70% de la diversidad mundial de especies. 
+
+Por lo antes mencionado y teniendo en cuenta que México posee diferentes climas y floras, se consideró dividirlo en cinco regiones apícolas bien definidas: Altiplano, Golfo, Costa del Pacífico, Norte y Península de Yucatán. 
+
+En muchas regiones de México, los apicultores no cuentan con información veraz sobre la flora melífera (que son aquellas especies de plantas que producen néctar, polen) y mucho menos sobre aquellas especies de plantas que componen a la flora propolizadora (plantas que secretan resinas), por lo queno se tiene conocimiento amplio de los recursos apibotánicos que permitan identificar la potencialidad floral de la región. En este documento, nos enfocaremos amencionar algunas de las especies que son productoras de resinas que las abejas recolectan y con éstas producen el propóleo. 
+
+De esas especies propolizadoras, muchas también son productoras de néctar y polen. En el cuadro 4.3, se concentra la información de las familias y géneros con especies productoras de resinas que se localizan en México. 
+
+<br>
+
+<center>
+
+**Cuadro 4.3. Familias y géneros con especies productoras de resinas presentes en México y áreas circunvecinas (Modificado de Quiroz y Magaña, 2015[^30^]). Con asterisco se marcan las especies que también son productoras de néctar o de propóleo.**
+
+
+```{r tab4_2, echo=FALSE, warning=FALSE }
+library(kableExtra)
+
+c4_2 <- read.csv("tabs/flora.csv", encoding = "UTF8")
+names(c4_2) <- c( "Familia", "Género")
+
+kableExtra::kable(c4_2) %>%
+  kableExtra::kable_styling(c("striped", "bordered")) %>%
+  column_spec(1, bold = T) %>%
+   column_spec(2, italic = T) %>%
+  collapse_rows(columns = 1) %>%
+  scroll_box(height = "400px")
+
+```
+
+</center>
+
+<br>
+
+A continuación, se describirán algunas especies pertenecientes a los géneros mencionados en el cuadro 4.3, estudios científicos que se han realizados sobre las propiedades medicinales y que son base para validar indirectamente el uso medicinal del propóleo.
+
+De la especie *Amphipterygium adstringens* Schide ex Schlecht (figura 4.8), que recibe el nombre común de cuachalala o cuachalalate y que es un árbol endémico de México, se ha comprobado que extractos obtenidos a partir de su corteza inhiben el crecimiento de bacterias que son de importancia biomédica (*Staphylococcus aureus*, *S. epidermidis*, *Vibrio cholerae* No-01, *Salmonella typhi*). También se ha demostrado que en un modelo murino experimental de colitis (inducida por dextrán sulfato de sodio) disminuyó la inflamación del colon y conservó la longitud del mismo. Los datos también fueron corroborados con un análisis histológico, en donde se observó que hay disminución del daño en la mucosa intestinal y las células secretoras de moco se conservaron. Lo antes mencionado sugiere que el extracto de la corteza de *A. adstringens* podría tener un efecto protector en el modelo murino utilizado. Por otro lado, también se comprobó su actividad antioxidante in vitro (utilizando el radical 2,2-difenil-1-picrilhidrazilo DPPH) e in vivo en el modelo murino, evaluando la concentración de las enzimas superóxido dismutasa (SOD), catalasa (CAT) y glutation peroxidasa (GPx).[^31^] 
+
+<br>
+
+<center>
+
+```{r img_cuach, fig.align='center', fig.cap= "**Figura 4.8. _Amphipterygium adstringens_, a la izquierda se muestran las ramas del cuachalalate con los frutos. A la derecha, un habtante de San Rafael, Coxcatlán, Puebla, obteniendo la corteza del cuachalalate (Fotografía original, Marco Aurelio Rodríguez Monroy).**", echo=FALSE, out.width = "70%", cache=TRUE}
+
+knitr::include_graphics("imag/cuachalalate.png")
+
+```
+
+</center>
+
+<br>
+
+Con respecto al género *Mangifera*, en particular de la especie *M. indica L.*, Orozco (2013)[^32^], realizó una investigación de las propiedades antifúngicas del extracto metanólico del exocarpo del fruto (“cáscara del mango”) y de la semilla (“hueso del mango”) de cinco variedades de mango: Ataúlfo, Criollo, Manila, Niño y Petacón procedentes de Cuetzala del Progreso (Edo. de Guerrero). Se probaron estos extractos sobre 6 cepas de hongos filamentosos (*Aspergillus niger*, *Aspergillus sp.*, *Fusarium moniliforme*, *F. sporotrichioides*, *Rhizoctonia lilacina* y *Trichophyton mmentagrophytes*, que son especies de hongos de importancia agrícola y médica.
+
+Todos los extractos presentaron comportamientos diferentes sobre el crecimiento de las seis cepas fúngicas, siendo el extracto de semilla de Ataúlfo el de la actividad más evidente, puesto que tuvo un efecto positivo en la totalidad de cepas.
+
+Se determinó que el extracto de la cáscara del mango Ataúlfo, con una concentración de 4 mg/mL inhibió el 100% del crecimiento de la especie fúngica *T. mentagrophytes* y con una concentración de 0.16 mg/mL inhibió al 50% del crecimiento del micelio de este hongo. Estos resultados son relevantes, ya que *T. mentagrophytes* infecta al hombre y es el responsable de ocasionar por ejemplo la caspa y el pie de atleta. Por otro lado, el extracto de la semilla del mango Ataúlfo, con una concentración de 4 mg/mL también inhibió el 100% del desarrollo del micelio de *T. mentagrophytes*.
+
+El extracto de la cáscara del mango Criollo, sólo tuvo actividad inhibitoria sobre dos cepas de hongos: *T. mentagrophytes* y *F. sporotrichioides*. La actividad que mostró este extracto fue escasa, ya que con 8 mg/mL de extracto sólo inhibió el 73.33% del crecimiento de *T. mentagrophytes* y con esta misma concentración sólo inhibió el 22.26% del crecimiento de *F. sporotrichioides*. El extracto de la semillla con una concentración de 4 mg/mL inhibió el 100% de crecimiento de *T. mentagrophytes*.
+
+El análisis químico de los extractos de la cáscara y semilla del mango, mostró que existen derivados de ácido benzoico, derivados de resorcinol, mangiferina, flavonoles, ácido palmítico etiléster. El extracto de semilla de mango Ataúlfo es el que presentó la mayor concentración de fenoles. De estos compuestos, en la bibliografía, se ha encontrado que tienen actividad antifúngica.
+
+El hecho de que los extractos hayan mostrado su mayor actividad contra un hongo dermatofito, apoya el uso farmacológico del fruto y lo convierte en una fuente interesante de investigación sobre otros dermatofitos como *Trichophyton rubrum*, responsable del 80-93% de las dermatofitosis (Orozco, 2013).
+
+De la especie *Gymnosperma glutinosum* (Spreng.) Less (figura 4.9). Nombre común tatalencho, pegajosa, pegahuesos, popote, escobilla, que es una planta herbácea conla base leñosa, se han comprobado diferentes actividades. Canales et al. (2007)[^33^], realizó un estudio comparativo de los extractos hexánico y metanólico de *G. glutinosum* colectada en dos diferentes localidades: San Rafael (municipio de Coxcatlán, estado de Puebla) y Tepeji del Río (estado de Hidalgo). El extracto metanólico de Tepeji del Río mostró la mayor actividad antibacteriana sobre cepas de interés clínico. Los extractos hexánicos de ambas localidades mostraron actividad sobre cepas de hongos filamentosos que infectan plantas y al hombre, el extracto hexánico de San Rafael mostró mayor actividad abtifúngica. Se aislaron dos compuestos de esta especie, un ácido diterpénico y una flavona hexametoxilada (Canales et al., 2007).
+
+<br>
+
+<center>
+
+```{r img_gymnos, fig.align='center', fig.cap= "**Figura 4.9. _Gymnosperma glutinosum_, se puede apreciar la resina en las hojas y flores de esta especie. (Fotografía tomada de CONABIO, Heike Vibrans, 2005).**", echo=FALSE, out.width = "40%", cache=TRUE}
+
+knitr::include_graphics("imag/gymnos.png")
+
+```
+
+</center>
+
+<br>
+
+El género *Bursera*, representa una fuente importante de resinas, medicinas, aceites esenciales y perfumes; 85 de las 100 especies existentes tienen alta incidencia en el país, principalmente en temperaturas cálidas en la costa del Pacífico[^34^]. Diferentes especies de *Bursera* son utilizadas en la medicina tradicional mexicana[^35^] y en algunos estudios se han comprobado las propiedades biológicas de sus aceites esenciales, extractos y/o fracciones como su capacidad antioxidante, antimicrobiana, antiprotozoaria, bioinsecticida, citotóxica y antitumoral.[^36^]
+
+En particular de la especie *B. morelensis* (figura 4.10), conocida como “aceitillo” y que es un organismo endémico de México, sintetiza una mayor cantidad de aceite esencial comparándola con otras especies del género. Infusiones de la corteza de esta especie son usadas para el tratamiento de infecciones en la piel y para cicatrizar heridas[^37^]. Del aceite esencial de esta especie se obtuvo su composición química, registrando la presencia de 28 compuestos de los cuales el de mayor concentración fue  el alfa felandreno. Se demostró que tiene una actividad antiinflamatoria comparable a la dexametasona que es un fármaco esteroideo que desacelera el proceso de inflamación[^38^]. 
+
+Este aceite esencial también tiene actividad antimicrobiana, se demostró que inhibe el crecimiento de bacterias Gram positivas (*Staphylococcus aureus*, *S. epidermidis*, *Streptococcus pneumoniae*, *Enterococcus faecalis*) y Gram negativas (*Vibrio cholerae*, *Escherichia coli*, *Pseudomonas aeruginosa*), además presentó una actividad bactericida, con una concentracción de 125 microgramos por mililitro, sobre una cepa de *V. cholerae* aislada de un caso clínico. Por otro lado, también inhibió el crecimiento de hongos filamentosos de importancia agrícola y médica (*Fusarium moniliforme*, *Aspergillus niger*, *Trichophyton mentagrophytes*)[^39^]. Este aceite esencial de B. morelensis, también inhibió el crecimiento de diferentes cepas de *Candida albicans*, que son hongos que cuando infectan al humano ocasionan la enfermedad denominada candidiasis que es un problema de salud pública. Se comprobó que el aceite esencial ocasiona daño a nivel de la membrana, inhibe el desarrollo del tubo germinativo y disminuye la transcripción del gen INT1 que codifica para la síntesis de una adhesina.[^40^]
+
+<br>
+
+<center>
+
+```{r img_bursera, fig.align='center', fig.cap= "**Figura 4.10. Fotografía de _Bursera morelensis_. (Fotografía original, Marco Aurelio Rodríguez Monroy).**", echo=FALSE, out.width = "40%", cache=TRUE}
+
+knitr::include_graphics("imag/bursera.png")
+
+```
+
+</center>
+
+<br>
+
+En otras investigaciones, se obtuvo el aceite esencial de tres especies de burseras: *B. schlechtendalii*, *B. arida* y *B. aptera*. Del aceite esencial de *B. schlechtendalii* se encontró que su composición química está constituida en una mayor proporción por terpenos como  el alfa felandreno, camfeno y alfa pineno; este aceite inhibió el crecimiento de bacterias como por ejemplo *Streptococcus pneumoniae* y *Escherichia coli*. También inhibió el crecimiento de hongos levaduriformes como *C. albicans* y *C. glabrata*.[^41^]
+
+De la especies *B. arida*, se llevó a cabo un estudio de las propiedades medicinales del aceite esencial. En esta investigación se determinó que el aceite esencial estaba compuesto principalmente por los terpenos: canfeno, cariofileno, alfa pineno, alfa felandreno, gama terpineno. También se demostró que inhibe el crecimiento de bacterias como *S. pneumoniae* y *E. coli* y que el aceite inhibe indistintamente el crecimiento de bacterias Gram positivas y negativas. En cuanto a su actividad antifúngica, este aceite inhibió el crecimiento de *C. albicans*.[^42^] 
+
+Continuando con el estudio de las propiedades medicinales de *B. arida*, se realizó la evaluación de la actividad antimicrobiana del extracto metanólico y se determinó que también inhibe el crecimiento de bacterias Gram positivas y Gram negativas. Se determinó que este extracto tiene una actividad bactericida sobre las cepas de *S. aureus* y *V. cholerae*. También inhibe totalmente el crecimiento del hongo filamentoso *T. mentagrophytes*. Por otro lado, este extracto también mostró una actividad antiinflamatoria y antioxidante.[^43^] 
+
+De *Bursera aptera*, se obtuvo el extracto metanólico y de éste se comprobó que con una concentración de 0.408 mg/mL se alcanza la concentración letal media sobre el protozoario *Leishmania mexicana*, que es es el causante de la leishmaniasis cutánea. Este extracto indujo apoptosis en los promastigotes de *L. mexicana*.[^44^]
+
+En otra investigación, se evaluó la actividad antibacteriana del extracto metanólico de 7 especies del género *Bursera*, se determinó que *B. arida* y *B. aptera* son las especies que poseen una mayor actividad (valores de concentración mínima inhibitoria hasta 0.0675 mg/mL y concentración bactericida mínima hasta 0.25 mg/mL), mientras que las especies bacterianas más sensibles fueron *E. coli*, *V. cholerae*, *B. subtilis*, *S. aureus* y *E. faecalis*. Se estableció que *B. arida* posee efecto bacteriostático y finalmente se encontró la presencia de compuestos fenólicos, terpenos y sesquiterpenos, que son probablemente los responsables del efecto antibacteriano.[^45^]
+
+Con respecto a las especies de la familia *Fabaceae*, en particular la *Prosopis laevigata* (figura 4.11) es empleada en la medicina tradicional para aliviar enfermedades del sistema respiratorio e infecciones de la piel. Por lo antes mencionado, se está llevando a cabo un proyecto para determinar las propiedades medicinales del extracto metanólico de las hojas y flores de esta especie de mezquite. Al momento se ha demostrado que estos extractos inhiben el crecimiento de bacterias y hongos que son de importancia médica y agrónoma.[^46^]^,^[^47^]^,^[^48^]
+
+<br>
+
+<center>
+
+```{r img_mezquite, fig.align='center', fig.cap= "**Figura 4.11. _Prosopis laevigata_, se puede apreciar que es el tiempo de floración del mezquite. (Fotografía original, Marco Aurelio Rodríguez Monroy).**", echo=FALSE, out.width = "60%", cache=TRUE}
+
+knitr::include_graphics("imag/mezquite.png")
+
+```
+
+</center>
+
+<br>
+
+En la bibliografía especializada, se pueden encontrar diversos estudios sobre las propiedades medicinales de especies de estas familias que producen resinas, pero para determinar el origen botánico del propóleo, se deben hacer estudios sobre el contenido de polen y las especies de vegetales a las que corresponden. Estos estudios son muy laboriosos e interesantes. Pero una estrategia que marcaría los diferentes orígenes botánicos del propóleo sería que se conservara la vegetación natural de las diferentes regiones apícolas y que a la par se realizaran estudios científicos para corroborar las propiedades medicinales de los propóleos y la flora que está aportando las resinas.
+
+
+
+<br/>
+<br/>
+<br/>
+
+## **4.3 Producción y recolección de propóleo** 
 ****
 
 Por [M.A. Liborio Carrillo Miranda](#a002)
@@ -286,7 +429,7 @@ El conocimiento y uso de los productos de la colmena, se remonta a tiempos antes
 <br/>
 
 
-```{r img4_3_1, fig.align='center', fig.cap= "**Figura 4.5 Pintura rupestre de más de 8000 años, en la Cueva de la Araña, Valencia, España.**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r img4_3_1, fig.align='center', fig.cap= "**Figura 4.12. Pintura rupestre de más de 8000 años, en la Cueva de la Araña, Valencia, España.**", echo=FALSE, out.width = "80%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/cueva.jpg")
 
@@ -302,13 +445,13 @@ A pesar del gran desarrollo que ha alcanzado la apicultura en nuestro país, és
 
 La práctica de una apicultura diversificada, en la que se aprovechen al menos los cinco productos de las abejas que en alguna época del año se producirán, puede reflejarse en una mayor rentabilidad de la actividad apícola, pues los ingresos económicos que representa hoy en día explotar sólo la miel, ya no es suficiente para pagar las cuentas.
 
-El término propóleo es derivado de dos palabras griegas, Pro, que significa antes (o defensa) y Polis, ciudad, y es empleada en el sentido de defensa de la colmena o “ciudad de las abejas”[^30^]. El propóleo es una mezcla de sustancias resinosas, gomosas y balsámicas, de sabor amargo, y consiste básicamente de exudados de diferentes plantas que las abejas combinan con secreciones mandibulares y ceras[^31^]^,^[^32^]^,^[^33^]^,^[^34^]^,^[^35^]. Esto último es soportado por recientes descubrimientos, en cuanto al contenido de ácidos grasos de origen animal, en muestras de propóleo fresco[^36^]. 
+El término propóleo es derivado de dos palabras griegas, Pro, que significa antes (o defensa) y Polis, ciudad, y es empleada en el sentido de defensa de la colmena o “ciudad de las abejas”[^49^]. El propóleo es una mezcla de sustancias resinosas, gomosas y balsámicas, de sabor amargo, y consiste básicamente de exudados de diferentes plantas que las abejas combinan con secreciones mandibulares y ceras[^50^]^,^[^51^]^,^[^52^]^,^[^53^]^,^[^54^]. Esto último es soportado por recientes descubrimientos, en cuanto al contenido de ácidos grasos de origen animal, en muestras de propóleo fresco[^55^]. 
 
 <br/>
 
 **Recolecta del propóleo por las abejas**
 
-La recolecta del propóleo se efectúa por un número reducido de abejas, durante las horas más calientes del día, por lo regular de las 10:00 a las 15:30 horas[^37^]. Cada abeja después de haber localizado con sus antenas la partícula más adecuada de resina en alguna planta, procede a desprenderla valiéndose de sus mandíbulas y del primer par de patas, auxiliándose con la secreción de sus glándulas mandibulares (ácido10-hidroxi-2-decenoico), le permite el ablandamiento de la goma. Posteriormente, la abeja tritura y moldea con sus mandíbulas el pedazo arrancado y utiliza una de las patas del segundo par, para transferirlo a la corbícula del tercer par de patas, esta acción la puede efectuar en el lugar de colecta o en pleno vuelo. Para completar una carga de propóleo llenar las dos cestillas de su tercer par de patas, una abeja puede ocupar de 15 minutos a una hora en realizar dicha labor, dependiendo principalmente de la temperatura ambiente[^38^]^,^[^39^]. Cabe mencionar que Dos Santos (1996)^37^, señala que temperaturas por abajo de los 21ºC y por arriba de los 28ºC, parecen inhibir este comportamiento. 
+La recolecta del propóleo se efectúa por un número reducido de abejas, durante las horas más calientes del día, por lo regular de las 10:00 a las 15:30 horas[^56^]. Cada abeja después de haber localizado con sus antenas la partícula más adecuada de resina en alguna planta, procede a desprenderla valiéndose de sus mandíbulas y del primer par de patas, auxiliándose con la secreción de sus glándulas mandibulares (ácido10-hidroxi-2-decenoico), le permite el ablandamiento de la goma. Posteriormente, la abeja tritura y moldea con sus mandíbulas el pedazo arrancado y utiliza una de las patas del segundo par, para transferirlo a la corbícula del tercer par de patas, esta acción la puede efectuar en el lugar de colecta o en pleno vuelo. Para completar una carga de propóleo llenar las dos cestillas de su tercer par de patas, una abeja puede ocupar de 15 minutos a una hora en realizar dicha labor, dependiendo principalmente de la temperatura ambiente[^57^]^,^[^58^]. Cabe mencionar que Dos Santos (1996)^56^, señala que temperaturas por abajo de los 21ºC y por arriba de los 28ºC, parecen inhibir este comportamiento. 
 
 <br/>
 
@@ -321,7 +464,7 @@ Métodos promotores de cortinas de propóleos: Son todos aquellos que crean espa
 <br/>
 
 
-```{r img4_3_3, fig.align='center', fig.cap= "**Figura 4.6 Campechano de origen mexicano. Fotografía de Luis Roberto M. **", echo=FALSE, out.width = "60%", cache=TRUE}
+```{r img4_3_3, fig.align='center', fig.cap= "**Figura 4.13. Campechano de origen mexicano. Fotografía de Luis Roberto M. **", echo=FALSE, out.width = "60%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_3_Fig3.png")
 
@@ -329,7 +472,7 @@ knitr::include_graphics("imag/4_3_Fig3.png")
 
 <br/>
 
-```{r img4_3_4, fig.align='center', fig.cap= "**Figura 4.7 Cuadros móviles. Fotografía de Luis Roberto M. **", echo=FALSE, out.width = "60%", cache=TRUE}
+```{r img4_3_4, fig.align='center', fig.cap= "**Figura 4.14. Cuadros móviles. Fotografía de Luis Roberto M. **", echo=FALSE, out.width = "60%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_3_Fig4.png")
 
@@ -338,11 +481,11 @@ knitr::include_graphics("imag/4_3_Fig4.png")
 <br/>
 
 
-Mallas y Rejillas plásticas: Son dispositivos plásticos que presentan orificios de diferentes tamaños. Las mallas y rejillas plásticas son dispositivos plásticos que presentan orificios de diferentes tamaños que pueden ir desde los tejidos, como las mallas mosquiteros que presentan hilos de un grosor de 0.5 mm y orificios de aproximadamente 1.0 por 1.0 mm de luz, y las matrizadas (que se forma por medio del prensado en un molde caliente), que son de una sola pieza y pueden presentar orificios desde 1.0 por 1.0 mm de luz y un grosor de 1.0 mm; hasta las de 2.0 por 2.0 mm de luz y un grosor de 2.0 mm, y las tipo rejilla con orificios de 2.0 mm por 5.0 cm de largo y un grosor de 2.0 mm, estas mallas y rejillas presentan una forma trapezoidal isósceles.[^40^]
+Mallas y Rejillas plásticas: Son dispositivos plásticos que presentan orificios de diferentes tamaños. Las mallas y rejillas plásticas son dispositivos plásticos que presentan orificios de diferentes tamaños que pueden ir desde los tejidos, como las mallas mosquiteros que presentan hilos de un grosor de 0.5 mm y orificios de aproximadamente 1.0 por 1.0 mm de luz, y las matrizadas (que se forma por medio del prensado en un molde caliente), que son de una sola pieza y pueden presentar orificios desde 1.0 por 1.0 mm de luz y un grosor de 1.0 mm; hasta las de 2.0 por 2.0 mm de luz y un grosor de 2.0 mm, y las tipo rejilla con orificios de 2.0 mm por 5.0 cm de largo y un grosor de 2.0 mm, estas mallas y rejillas presentan una forma trapezoidal isósceles.[^59^]
 
 <br/>
 
-```{r img4_3_5, fig.align='center', fig.cap= "**Figura 4.8 Malla plástica. Fotografía de Liborio Carrillo **", echo=FALSE, out.width = "60%", cache=TRUE}
+```{r img4_3_5, fig.align='center', fig.cap= "**Figura 4.15. Malla plástica. Fotografía de Liborio Carrillo **", echo=FALSE, out.width = "60%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_3_Fig5.png")
 
@@ -350,7 +493,7 @@ knitr::include_graphics("imag/4_3_Fig5.png")
 
 <br/>
 
-```{r img4_3_6, fig.align='center', fig.cap= "**Figura 4.9 Rejillas plásticas. Fotografía de Liborio C.M. **", echo=FALSE, out.width = "70%", cache=TRUE}
+```{r img4_3_6, fig.align='center', fig.cap= "**Figura 4.16. Rejillas plásticas. Fotografía de Liborio C.M. **", echo=FALSE, out.width = "70%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_3_Fig6.png")
 
@@ -362,11 +505,11 @@ knitr::include_graphics("imag/4_3_Fig6.png")
 
 **Utilización del propóleo dentro de la colmena**
 
-Las abejas utilizan el propóleo dentro de la colonia con diversos fines, como son: embalsamado de los intrusos muertos dentro de la colmena, tapar grietas o hendiduras de la colonia, disminuir el acceso de la piquera, alisar asperezas dentro de la colmena, esterilización de la colmena y las celdas donde la reina pondrá los huevos, aislante térmico, fijar los panales a los cuadros o ramas de los árboles, evitar la vibración de los panales y darle impermeabilidad a la colmena[^41^]^,^[^42^]^,^[^43^]. 
+Las abejas utilizan el propóleo dentro de la colonia con diversos fines, como son: embalsamado de los intrusos muertos dentro de la colmena, tapar grietas o hendiduras de la colonia, disminuir el acceso de la piquera, alisar asperezas dentro de la colmena, esterilización de la colmena y las celdas donde la reina pondrá los huevos, aislante térmico, fijar los panales a los cuadros o ramas de los árboles, evitar la vibración de los panales y darle impermeabilidad a la colmena[^60^]^,^[^61^]^,^[^62^]. 
 
 <br/>
 
-```{r img4_3_8, fig.align='center', fig.cap= "**Figura 4.10 Abejas utilizando propóleo. Fotografía: Liborio C.M. **", echo=FALSE, out.width = "70%", cache=TRUE}
+```{r img4_3_8, fig.align='center', fig.cap= "**Figura 4.17. Abejas utilizando propóleo. Fotografía: Liborio C.M. **", echo=FALSE, out.width = "70%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_3_Fig8.png")
 
@@ -376,7 +519,7 @@ knitr::include_graphics("imag/4_3_Fig8.png")
 
 **Composición del propóleo.**
 
-Estudios efectuados en las últimas décadas enfocados a determinar la composición del propóleo, mencionan que su composición genérica se encuentra de la siguiente manera[^44^]: 
+Estudios efectuados en las últimas décadas enfocados a determinar la composición del propóleo, mencionan que su composición genérica se encuentra de la siguiente manera[^63^]: 
 
 *	55% de resinas y bálsamos
 *	10% de aceites volátiles, 
@@ -384,13 +527,13 @@ Estudios efectuados en las últimas décadas enfocados a determinar la composici
 *	5% de polen 
 
 
-En lo referente a su composición química, aún no se logra conocer la totalidad de sus componentes. Algunos autores señalan que el propóleo contiene más de 150 elementos[^45^]^,^[^46^]^,^[^47^], otros mencionan que su contenido está formado por más de 160 constituyentes[^48^]^,^[^49^]. Por último, Sforcin et al. (1995) señalan la presencia de más de 180 componentes para esta resina[^50^]. Cabe señalar que el propóleo se encuentra constituido principalmente por flavonoides, flavonoles, flavononas flavonas y ácidos orgánicos como el ferúlico, cinámico, cafeico y benzoico.[^51^]
+En lo referente a su composición química, aún no se logra conocer la totalidad de sus componentes. Algunos autores señalan que el propóleo contiene más de 150 elementos[^64^]^,^[^65^]^,^[^66^], otros mencionan que su contenido está formado por más de 160 constituyentes[^67^]^,^[^68^]. Por último, Sforcin et al. (1995) señalan la presencia de más de 180 componentes para esta resina[^69^]. Cabe señalar que el propóleo se encuentra constituido principalmente por flavonoides, flavonoles, flavononas flavonas y ácidos orgánicos como el ferúlico, cinámico, cafeico y benzoico.[^70^]
 
 <br/>
 
 **Propiedades físico - químicas del propóleo **
 
-El propóleo presenta una densidad mayor que la cera de abeja, se disuelve fácilmente en éter y cloroformo, parcialmente soluble en alcohol, a temperaturas de 15ºC es duro y quebradizo. A temperaturas más elevadas se ablanda y se vuelve pegajoso. Esta resina se funde entre 60º y 69ºC.[^52^]
+El propóleo presenta una densidad mayor que la cera de abeja, se disuelve fácilmente en éter y cloroformo, parcialmente soluble en alcohol, a temperaturas de 15ºC es duro y quebradizo. A temperaturas más elevadas se ablanda y se vuelve pegajoso. Esta resina se funde entre 60º y 69ºC.[^71^]
 
 <br/>
 
@@ -403,14 +546,14 @@ El propóleo presenta una densidad mayor que la cera de abeja, se disuelve fáci
 <br/>
 <br/>
 
-## **4.3 Actividad antibacteriana**
+## **4.4 Actividad antibacteriana**
 ****
 
 Por [Dra. Elisa Gutiérrez Hernández](#a002)
 
 <br/>
 
-La actividad antibacteriana del propóleo ha sido reportada por múltiples autores[^53^]^,^[^54^]^,^[^55^], los cuales apuntan que dicha actividad está relacionada directamente con los componentes que constituyen al propóleo por lo que su origen determinará la actividad en contra de los microorganismos.
+La actividad antibacteriana del propóleo ha sido reportada por múltiples autores[^72^]^,^[^73^]^,^[^74^], los cuales apuntan que dicha actividad está relacionada directamente con los componentes que constituyen al propóleo por lo que su origen determinará la actividad en contra de los microorganismos.
 
 Los efectos del propóleo sobre agentes bacterianos están mayormente estudiados sobre bacterias del grupo constituido por los gran positivas, siendo _Staphylococcus aureus_ de los agentes más estudiados de este grupo de microorganismos. Así mismo se ha reportado una menor actividad en contra de bacterias gran negativas donde *Escherichia coli* es la más estudiada.
 
@@ -418,7 +561,7 @@ Dentro de sus propiedades bactericidas y bacteriostáticas se ha comprobado que 
 
 <br>
 
-```{r img4_4_1, fig.align='center', fig.cap= "**Figura 4.11 Halos de inhibición producida por el propóleo contra Pasteurella miltocida, agente productor de neumonías en conejos, a concentraciones de 2, 4, 8 y 16 mg/ml de extracto etanólico de propóleo (Gutiérrez, 2011)**", echo=FALSE, out.width = "40%", cache=TRUE}
+```{r img4_4_1, fig.align='center', fig.cap= "**Figura 4.18. Halos de inhibición producida por el propóleo contra Pasteurella miltocida, agente productor de neumonías en conejos, a concentraciones de 2, 4, 8 y 16 mg/ml de extracto etanólico de propóleo (Gutiérrez, 2011)**", echo=FALSE, out.width = "40%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_4_fig1.png")
 
@@ -434,13 +577,13 @@ El mecanismo de acción antibacteriana del flavonoide pinocembrina se ha estudia
 
 En cuanto al mecanismo de acción propio de los propóleos se ha reportado daño de la pared celular lo que afecta el flujo energético de la membrana causando un daño irreversible en las estructuras esto en _Bacillus cereus_ por propóleos coreanos.
  
-En cuanto al efecto que propóleos mexicanos tienen en conta de _Pasteurella multocida_ se ha observado por microscopia electrónica daño de la pared celular, donde se observa discontinuidad de la estructura, lo que provoca la salida de contenido intracelular[^56^].
+En cuanto al efecto que propóleos mexicanos tienen en conta de _Pasteurella multocida_ se ha observado por microscopia electrónica daño de la pared celular, donde se observa discontinuidad de la estructura, lo que provoca la salida de contenido intracelular[^75^].
 
 <br>
 
 <center>
 
-**Cuadro 4.3 Propóleos Mexicanos con probada actividad antibacteriana[^57^]^,^[^58^]^,^[^59^]**
+**Cuadro 4.4. Propóleos Mexicanos con probada actividad antibacteriana[^76^]^,^[^77^]^,^[^78^]**
 
 <br/>
 
@@ -481,7 +624,7 @@ En cuanto al efecto que propóleos mexicanos tienen en conta de _Pasteurella mul
 <br/>
 <br/>
 
-## **4.4 Actividad antimicótica**
+## **4.5 Actividad antimicótica**
 ****
 
 Por [M. C. Nelly Tovar Betancourt](#a002)
@@ -490,18 +633,18 @@ Por [M. C. Nelly Tovar Betancourt](#a002)
 
 **Efecto antimicótico del propóleo mexicano**
 
-El propóleo es una sustancia resinosa que recolectan las abejas de los exudados de yemas y cortezas de algunas plantas y árboles; para hacerlo manipulable lo humedecen con su saliva la cual contiene la enzima 13-glicosidasa que provoca la hidrólisis de los flavonoides glicosados provenientes del metabolismo secundario de las plantas en flavonoides agliconas[^60^]. Los flavonoides en las plantas son los responsables de proveer los pigmentos amarillos para la atracción de insectos polinizadores, reconocen el fotoperiodo, filtran rayos UV, regulan el ciclo celular, algunos son cruciales para que en las raíces de algunas plantas se establezcan las microrrizas, además de combatir infecciones causadas por hongos patógenos. Las abejas participan en la elaboración del propóleo y lo utilizan para el control biológico sanitario y sellado de paredes y celdillas en las colmenas. Se le han adjudicado varias propiedades farmacológicas, tales como: bactericida, antiviral, hepatoprotectora, antiinflamatoria, inmunomoduladora, antioxidativa y analgésica.
+El propóleo es una sustancia resinosa que recolectan las abejas de los exudados de yemas y cortezas de algunas plantas y árboles; para hacerlo manipulable lo humedecen con su saliva la cual contiene la enzima 13-glicosidasa que provoca la hidrólisis de los flavonoides glicosados provenientes del metabolismo secundario de las plantas en flavonoides agliconas[^79^]. Los flavonoides en las plantas son los responsables de proveer los pigmentos amarillos para la atracción de insectos polinizadores, reconocen el fotoperiodo, filtran rayos UV, regulan el ciclo celular, algunos son cruciales para que en las raíces de algunas plantas se establezcan las microrrizas, además de combatir infecciones causadas por hongos patógenos. Las abejas participan en la elaboración del propóleo y lo utilizan para el control biológico sanitario y sellado de paredes y celdillas en las colmenas. Se le han adjudicado varias propiedades farmacológicas, tales como: bactericida, antiviral, hepatoprotectora, antiinflamatoria, inmunomoduladora, antioxidativa y analgésica.
 
-Se han identificado más de 300 compuestos, de los cuales un alto porcentaje son flavonoides, ácidos fenólicos y sus ésteres (a estos tres en conjunto se les conoce como compuestos fenólicos), aldehídos aromáticos y cumarinas. Los “compuestos fenólicos” contienen un grupo fenol y químicamente están formados por una estructura básica de dos anillos bencénicos en los extremos de la molécula, unidos por un anillo de tres átomos de carbono a la que se le pueden adicionar grupos oxidrilo, metilo y azúcares, generándose de esta manera diferentes tipos de flavonoides como: flavonoles, flavanonas, flavonas, catequinas, antocianinas, chalconas e isoflavonoides[^61^]. En términos de actividad antioxidante y antimicrobiana los compuestos fenólicos son los de mayor importancia.[^62^]^,^[^63^]
+Se han identificado más de 300 compuestos, de los cuales un alto porcentaje son flavonoides, ácidos fenólicos y sus ésteres (a estos tres en conjunto se les conoce como compuestos fenólicos), aldehídos aromáticos y cumarinas. Los “compuestos fenólicos” contienen un grupo fenol y químicamente están formados por una estructura básica de dos anillos bencénicos en los extremos de la molécula, unidos por un anillo de tres átomos de carbono a la que se le pueden adicionar grupos oxidrilo, metilo y azúcares, generándose de esta manera diferentes tipos de flavonoides como: flavonoles, flavanonas, flavonas, catequinas, antocianinas, chalconas e isoflavonoides[^80^]. En términos de actividad antioxidante y antimicrobiana los compuestos fenólicos son los de mayor importancia.[^81^]^,^[^82^]
 
-Por otro lado, la composición química del propóleo determina la calidad del mismo ylos compuestos fenólicos representan más de 50% de su peso total; resaltan la  pinocembrina, quercetina, galangina, pinostrobina, sakuranetina y crisina, también contribuye la presencia de ácidos aromáticos y sus ésteres como el ácido benzoico, ácido cafeico y ácido ferúlico[^64^].
+Por otro lado, la composición química del propóleo determina la calidad del mismo ylos compuestos fenólicos representan más de 50% de su peso total; resaltan la  pinocembrina, quercetina, galangina, pinostrobina, sakuranetina y crisina, también contribuye la presencia de ácidos aromáticos y sus ésteres como el ácido benzoico, ácido cafeico y ácido ferúlico[^83^].
 
-Debido a su actividad antimicrobiana, el propóleo ha sido ampliamente estudiado y en años recientes se ha puesto especial atención en el efecto antimicótico que posee; así pues, Londoño (2010)[^65^], demostró a través de microscopía óptica que el Extracto Etanólico de Propóleo (EEP) causa un importante daño celular en Candida albicans, al inhibir la formación del tubo germinativo y causar deformación de algunas levaduras en presencia de 0.25 mg/ml de EEP (ver figura 4.12).
+Debido a su actividad antimicrobiana, el propóleo ha sido ampliamente estudiado y en años recientes se ha puesto especial atención en el efecto antimicótico que posee; así pues, Londoño (2010)[^84^], demostró a través de microscopía óptica que el Extracto Etanólico de Propóleo (EEP) causa un importante daño celular en Candida albicans, al inhibir la formación del tubo germinativo y causar deformación de algunas levaduras en presencia de 0.25 mg/ml de EEP (ver figura 4.19).
 
 <br/>
 
 
-```{r img4_5_1, fig.align='center', fig.cap= "**Figura 4.12 Formación de tubo germinativo (flecha) de C. albicans, B. Inhibición de la formación del tubo germinativo al ser tratada la levadura con 0.25 mg/mL de EEP (Londoño, 2010)**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_5_1, fig.align='center', fig.cap= "**Figura 4.19. Formación de tubo germinativo (flecha) de C. albicans, B. Inhibición de la formación del tubo germinativo al ser tratada la levadura con 0.25 mg/mL de EEP (Londoño, 2010)**", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_5_fig1.png")
 
@@ -510,11 +653,11 @@ knitr::include_graphics("imag/4_5_fig1.png")
 <br/>
 
 
-En el mismo estudio, al observar micrografías electrónicas de transmisión de secciones ultrafinas de *C. albicans* ATCC 10231, se identificó la formación de gránulos de almacenamiento además de alteración y ruptura de las estructuras de la cubierta externa de la levadura. Por otro lado, la misma autora administró tratamiento con propóleo a *Criptococcus neoformansy*, y observó con Microscopio Electrónico de Transmisión, levaduras degeneradas acompañadas de una pérdida de la integridad de las envolturas externas (ver figura 4.13)[^66^]^,^[^67^]
+En el mismo estudio, al observar micrografías electrónicas de transmisión de secciones ultrafinas de *C. albicans* ATCC 10231, se identificó la formación de gránulos de almacenamiento además de alteración y ruptura de las estructuras de la cubierta externa de la levadura. Por otro lado, la misma autora administró tratamiento con propóleo a *Criptococcus neoformansy*, y observó con Microscopio Electrónico de Transmisión, levaduras degeneradas acompañadas de una pérdida de la integridad de las envolturas externas (ver figura 4.20)[^85^]^,^[^86^]
 
 <br>
 
-```{r img4_5_2, fig.align='center', fig.cap= "**Figura 4.13 Micrografía electrónica de transmisión (700x) de C. neoformans, 24 horas postratamiento con EEP. Se observa pérdida de la integridad de las envolturas externas (flechas) (Londoño, 2010)**", echo=FALSE, out.width = "40%", cache=TRUE}
+```{r img4_5_2, fig.align='center', fig.cap= "**Figura 4.20. Micrografía electrónica de transmisión (700x) de C. neoformans, 24 horas postratamiento con EEP. Se observa pérdida de la integridad de las envolturas externas (flechas) (Londoño, 2010)**", echo=FALSE, out.width = "40%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_5_fig2.png")
 
@@ -523,11 +666,11 @@ knitr::include_graphics("imag/4_5_fig2.png")
 <br/>
 
 
-Por su parte Quintero y col. (2011), realizaron despliegues diferenciales en RT-PCR para determinar si el propóleo altera la expresión genética de *C. albicans*, y comprobaron después del tratamiento con EEP la subexpresión de dos genes ADH1 y PIK1, los cuales se cree tienen que ver con la formación del tubo germinativo y pared celular de la levadura (figura 4.14)[^68^]
+Por su parte Quintero y col. (2011), realizaron despliegues diferenciales en RT-PCR para determinar si el propóleo altera la expresión genética de *C. albicans*, y comprobaron después del tratamiento con EEP la subexpresión de dos genes ADH1 y PIK1, los cuales se cree tienen que ver con la formación del tubo germinativo y pared celular de la levadura (figura 4.21)[^87^]
 
 <br>
 
-```{r img4_5_3, fig.align='center', fig.cap= "**Figura 4.14 Patrón de bandas representativas del despliegue diferencial.  Los carriles 2 y 5 representan el control negativo (levadura tratada con alcohol al 70%), al compararlos con los carriles  3 y 6 con 1 hora postratamiento, y 4 y 7 a dos horas del tratamiento con EEP, este último a una dosis de 0.6 mg/mL, se evidencia la pobre expresión de los genes ADH1 y PIK1 (Quintero y col. 2011)**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_5_3, fig.align='center', fig.cap= "**Figura 4.21. Patrón de bandas representativas del despliegue diferencial.  Los carriles 2 y 5 representan el control negativo (levadura tratada con alcohol al 70%), al compararlos con los carriles  3 y 6 con 1 hora postratamiento, y 4 y 7 a dos horas del tratamiento con EEP, este último a una dosis de 0.6 mg/mL, se evidencia la pobre expresión de los genes ADH1 y PIK1 (Quintero y col. 2011)**", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_5_fig3.png")
 
@@ -536,13 +679,13 @@ knitr::include_graphics("imag/4_5_fig3.png")
 <br/>
 
 
-Cabe señalar la importancia de evaluar el efecto antimicótico del propóleo contra *C. albicans* ya que es considerada uno de los agentes de mayor importancia que provoca micosis oportunistas en humanos y animales dañando piel, tracto respiratorio, digestivo, reproductor y urinario.[^69^]
+Cabe señalar la importancia de evaluar el efecto antimicótico del propóleo contra *C. albicans* ya que es considerada uno de los agentes de mayor importancia que provoca micosis oportunistas en humanos y animales dañando piel, tracto respiratorio, digestivo, reproductor y urinario.[^88^]
 
-Finalmente, Tovar (2016) comprobó a través de la prueba antifúngica *Inhibición de Crecimiento Radial* que el propóleo mexicano proveniente de Cuautitlán, Estado de México a concentraciones de 2, 4, 8 y 16 mg/mL causa inhibición (halos) en el crecimiento de *Malassezia pachydermatis*, principal agente causal de las otitis externas en caninos (figura 4.15)[^70^]. De igual modo, Cruz, Tovar y García (2015) observaron el mismo efecto al evaluar *Microsporum canis* (figura 4.16).[^71^]
+Finalmente, Tovar (2016) comprobó a través de la prueba antifúngica *Inhibición de Crecimiento Radial* que el propóleo mexicano proveniente de Cuautitlán, Estado de México a concentraciones de 2, 4, 8 y 16 mg/mL causa inhibición (halos) en el crecimiento de *Malassezia pachydermatis*, principal agente causal de las otitis externas en caninos (figura 4.22)[^89^]. De igual modo, Cruz, Tovar y García (2015) observaron el mismo efecto al evaluar *Microsporum canis* (figura 4.20).[^90^]
 
 <br>
 
-```{r img4_5_4, fig.align='center', fig.cap= "**Figura 4.15 Prueba de inhibición de crecimiento radial de Malassezia pachydermatis, donde se observan halos de inhibición al utilizar discos con EEP (derecha) a concentraciones de 2, 4, 8, y 16 mg/mL (a ,b, c y d). Los resultados se compararon con el efecto de antimicóticos conocidos Ketoconazol (K), Voriconazol (V), Nistatina (N) y Clotrimazol (C), sobre la levadura.**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_5_4, fig.align='center', fig.cap= "**Figura 4.22. Prueba de inhibición de crecimiento radial de Malassezia pachydermatis, donde se observan halos de inhibición al utilizar discos con EEP (derecha) a concentraciones de 2, 4, 8, y 16 mg/mL (a ,b, c y d). Los resultados se compararon con el efecto de antimicóticos conocidos Ketoconazol (K), Voriconazol (V), Nistatina (N) y Clotrimazol (C), sobre la levadura.**", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_5_fig4.png")
 
@@ -552,7 +695,7 @@ knitr::include_graphics("imag/4_5_fig4.png")
 
 <br>
 
-```{r img4_5_5, fig.align='center', fig.cap= "**Figura 4.16 Prueba de inhibición de crecimiento radial de Microsporum canis, donde se observan halos de inhibición con discos impregnados con EEP a 4, 8, 12, 16 mg/mL. Los resultados fueron comparados con los halos producidos por Ketoconazol y Clotrimazol **", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_5_5, fig.align='center', fig.cap= "**Figura 4.23. Prueba de inhibición de crecimiento radial de Microsporum canis, donde se observan halos de inhibición con discos impregnados con EEP a 4, 8, 12, 16 mg/mL. Los resultados fueron comparados con los halos producidos por Ketoconazol y Clotrimazol **", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_5_fig5.png")
 
@@ -566,7 +709,7 @@ Otros hongos sobre los cuales se ha evaluado el efecto antimicótico del propól
 
 <center>
 
-**Cuadro 4.4 Hongos en los que se ha observado el efecto antimicótico del propóleo mexicano en el Laboratorio de Análisis de Propóleos, FES Cuautitlán, UNAM.**
+**Cuadro 4.5. Hongos en los que se ha observado el efecto antimicótico del propóleo mexicano en el Laboratorio de Análisis de Propóleos, FES Cuautitlán, UNAM.**
 
 | Hongos filamentosos  | Hongos levaduriformes |
 |--------------------- | -------------------- |
@@ -592,7 +735,7 @@ El siguiente video del canal de Youtube, *El Botiquín Mágico*, muestra algunas
 <br/>
 <br/>
 
-## **4.5 Actividad antiviral** 
+## **4.6 Actividad antiviral** 
 ****
 
 Por [Dra. María de Jesús González Búrquez, Dr. Ignacio Soto Zarate, Dr. Gerardo García Tovar](#a002)
@@ -619,7 +762,7 @@ En un estudio publicado en el año 2015 y desarrollado en la Universidad Naciona
 
 <br/>
 
-```{r img4_6_1, fig.align='center', fig.cap= "**Figura 4.17 Cultivo de células MDBK teñidas con cristal violeta. A. Cultivo celular sin infección. B. Cultivo celular infectado con virus de Aujeszky. C. Cultivo celular tratado con 0.5 mg/ml de propóleo dos horas antes de la infección con virus. D. Cultivo tratado con 0.5 mg/ml de propóleo simultáneamente a la infección. E. Cultivo tratado con propóleo dos horas después de realizar la infección con virus. 250×.**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r img4_6_1, fig.align='center', fig.cap= "**Figura 4.24. Cultivo de células MDBK teñidas con cristal violeta. A. Cultivo celular sin infección. B. Cultivo celular infectado con virus de Aujeszky. C. Cultivo celular tratado con 0.5 mg/ml de propóleo dos horas antes de la infección con virus. D. Cultivo tratado con 0.5 mg/ml de propóleo simultáneamente a la infección. E. Cultivo tratado con propóleo dos horas después de realizar la infección con virus. 250×.**", echo=FALSE, out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/4_6_Fig1.png")
 
@@ -628,7 +771,7 @@ knitr::include_graphics("imag/4_6_Fig1.png")
 <br/>
 
 
-```{r img4_6_2, fig.align='center', fig.cap= "**Figura 4.18 Microscopía electronica de células MDBK. A. Presencia de partículas virales (marcas triangulares) en el citoplasma (C) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (▲) son observadas fuera de la membrana celular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r img4_6_2, fig.align='center', fig.cap= "**Figura 4.25. Microscopía electronica de células MDBK. A. Presencia de partículas virales (marcas triangulares) en el citoplasma (C) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (▲) son observadas fuera de la membrana celular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.**", echo=FALSE, out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/4_6_Fig2.png")
 
@@ -636,7 +779,7 @@ knitr::include_graphics("imag/4_6_Fig2.png")
 
 <br/>
 
-```{r img4_6_3, fig.align='center', fig.cap= "**Figura 4.19 Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky. A. partículas virales (marcas triangulares) en el citoplasma de la célula (C), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r img4_6_3, fig.align='center', fig.cap= "**Figura 4.26. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky. A. partículas virales (marcas triangulares) en el citoplasma de la célula (C), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.**", echo=FALSE, out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/4_6_Fig3.png")
 
@@ -719,7 +862,7 @@ En una segunda investigación, realizada por el mismo grupo de investigadores y 
 <br/>
 <br/>
 
-## **4.6 Norma Oficial Mexicana de Propóleos**
+## **4.7 Norma Oficial Mexicana de Propóleos**
 ****
 
 Tomada del [Boletín UNAM-DGCS-810. 3 de diciembre de 2017.](https://www.dgcs.unam.mx/boletin/bdboletin/2017_810.html){target='_blank'}
@@ -760,7 +903,7 @@ La Norma Oficial Mexicana para la Producción y Especificaciones de Propóleos, 
 <br/>
 <br/>
 
-## **4.7 Beneficios Económicos de la Producción de Propóleo**
+## **4.8 Beneficios Económicos de la Producción de Propóleo**
 ****
 
 Por [Dr. Tonatiuh Cruz Sánchez, M.C. Betsabe Rodríguez Pérez, Dra. Margarita Canales-Martínez, Dr. Guillermo Penieres Carrillo, Dr. Luis Roberto Martínez Pérez de Ayala, M.V.Z. Raúl García Tinajero, M.A. Liborio Carrillo Miranda, M.V.Z. Ericka Esquivel, M.V.Z. Rodrigo Medellín Pico, M.V.Z. Ricardo D. Vázquez Castillo](#a002)
@@ -793,7 +936,7 @@ Los países que destacan en la producción mundial de propóleo son China, Argen
 
 **Producción nacional de propóleo**
 
-El manejo del propóleo es artesanal, por tanto, requiere de una amplia difusión de las diferentes propiedades de este producto, para interesar a los productores y empresarios a incursionar en un rubro no tradicional dentro de la actividad apícola. Se considera necesario poner especial énfasis en el manejo y explotación de la colmena, optimizando la producción, para lograr insertar el propóleos mexicano en el mercado nacional e internacional En la Figura 1 se muestran los últimos datos estadísticos confiables que se tiene de la producción del propóleo son de hace 10 años. En el 2008 se observó que la producción aumentó, esto nos indica que los apicultores le dieron la importancia de este producto.
+El manejo del propóleo es artesanal, por tanto, requiere de una amplia difusión de las diferentes propiedades de este producto, para interesar a los productores y empresarios a incursionar en un rubro no tradicional dentro de la actividad apícola. Se considera necesario poner especial énfasis en el manejo y explotación de la colmena, optimizando la producción, para lograr insertar el propóleos mexicano en el mercado nacional e internacional 
 
 Actualmente, existen en el mercado gran variedad de productos con base de propóleo que se comercializan en tiendas y farmacias. Su accesible disponibilidad hace que usar el propóleo sea más fácil. Con el objetivo de establecer los estándares de calidad pertinentes para dicha resina apícola, se estableció la Norma Oficial Mexicana para la Producción y Especificaciones de Propóleos, la cual fue publicada en el Diario Oficial de la Federación el 6 de octubre de 2017 bajo el registro NOM-003-SAG/GAN-2017.
 
@@ -845,7 +988,7 @@ En este sentido, esa SADER, señaló que **con la obtención de propóleo confor
 
 <center>
 
-**Cuadro 4.5 Volumen de producción anual de propóleos, utilidades y relación costo-beneficio contemplando los análisis de laboratorio**
+**Cuadro 4.6. Volumen de producción anual de propóleos, utilidades y relación costo-beneficio contemplando los análisis de laboratorio**
 
 
 | Método de produción | Kilos de propóleos producidos por apiario | Precio por kilo | Ingreso bruto (Pesos) | Costos (Pesos) | Unidad (Pesos) | Relación costo-beneficio |
@@ -901,7 +1044,7 @@ Con la evaluación de propóleos conforme a la NOM-003-SAG/GAN-2017, **se permit
 <br/>
 <br/>
 
-## **4.8 Etiquetado de Productos**
+## **4.9 Etiquetado de Productos**
 ****
 
 Por [M.V.Z. Elizabeth Bacilio López](#a002)  
@@ -910,7 +1053,7 @@ Por [M.V.Z. Elizabeth Bacilio López](#a002)
 
 #### **Especificaciones del etiquetado en extractos de propóleos**
 
-La apicultura es una actividad que ha representado y representa un papel fundamental dentro de la ganadería del país, tanto por la generación de un importante número de empleos, como por constituirse como la tercera fuente captadora de divisas del subsector ganadero.[^72^]
+La apicultura es una actividad que ha representado y representa un papel fundamental dentro de la ganadería del país, tanto por la generación de un importante número de empleos, como por constituirse como la tercera fuente captadora de divisas del subsector ganadero.[^91^]
 
 Además de la polinización y la producción miel, existen otros productos que se pueden obtener de la apicultura, como son los propóleos, la cera, la jalea real, el polen y la apitoxina. A su vez, derivado de estos se pueden obtenerse una gran variedad de subproductos, los cuales le permiten diversificar la fuente de ingresos y al mismo tiempo cubre las necesidades y exigencias de los consumidores.
 
@@ -922,13 +1065,13 @@ Uno de los elementos básicos para darle al consumidor la seguridad de la calida
 
 **Ideas generales**
 
-De forma pragmática el consumidor puede dedicar unos minutos de manera habitual a leer el etiquetado, el cual ayudará a seleccionar mejor los productos que se consuman. Así mismo, el etiquetado constituye el principal medio de comunicación entre los productores y vendedores de alimentos, por una parte, y por otra, entre sus compradores y/o consumidores favoreciendo el comercio y evitando fraudes.[^73^]
+De forma pragmática el consumidor puede dedicar unos minutos de manera habitual a leer el etiquetado, el cual ayudará a seleccionar mejor los productos que se consuman. Así mismo, el etiquetado constituye el principal medio de comunicación entre los productores y vendedores de alimentos, por una parte, y por otra, entre sus compradores y/o consumidores favoreciendo el comercio y evitando fraudes.[^92^]
 
 El diseño de una etiqueta para cualquier producto se divide en dos etapas, la primera de ellas consiste en la parte estética o mercadotécnica, la cual se deja a criterio de los diseñadores, así como de los estudios de mercado o de imagen que se quieran ofrecer, resaltar o con los que se quiera atraer al consumidor. La segunda parte va de la mano de la primera, que es el contenido mínimo de información en la etiqueta, dando cumplimiento a las disposiciones legales en cuanto al contenido de la misma.
 
 El contenido mínimo de información y el cómo debe ser presentado al consumidor está regulado en México por algunas Normas Oficiales Mexicanas, las cuales tienen por objetivo, establecer las reglas, especificaciones, atributos, directrices, características o prescripciones aplicables a un producto, proceso, instalación, sistema, actividad, servicio o método de producción u operación, así como aquellas relativas a terminología, simbología, embalaje, marcado o etiquetado y las que se refieran a su cumplimiento o aplicación (véase la [Ley Federal Sobre Metrología y Normalización](http://www.diputados.gob.mx/LeyesBiblio/pdf/130_150618.pdf){target='_blank'}).
 
-Así entonces, la etiqueta es definida por la normatividad mexicana como cualquier rótulo, marbete, inscripción, imagen u otra materia descriptiva o gráfica, escrita, impresa, estarcida, marcada, grabada en alto o bajo relieve, adherida, precintado o anexado al envase primario o secundario del producto, sobrepuesta o fijada al envase del producto preenvasado o, cuando no sea posible por las características del producto, al embalaje.[^74^]^,^[^75^]
+Así entonces, la etiqueta es definida por la normatividad mexicana como cualquier rótulo, marbete, inscripción, imagen u otra materia descriptiva o gráfica, escrita, impresa, estarcida, marcada, grabada en alto o bajo relieve, adherida, precintado o anexado al envase primario o secundario del producto, sobrepuesta o fijada al envase del producto preenvasado o, cuando no sea posible por las características del producto, al embalaje.[^93^]^,^[^94^]
 
 La normatividad mexicana especifica el contenido mínimo de información que debe estar presente en el etiquetado, la forma en la que debe presentarse al consumidor, el tamaño de la letra o de símbolos específicos, así como de algunas prohibiciones o restricciones.
 
@@ -967,7 +1110,7 @@ Sin embargo, si los productos que contengan propóleos serán destinados para us
 
 La Ley General de Salud define a un alimento como: *cualquier substancia o producto, sólido o semisólido, natural o transformado, que proporcione al organismo elementos para su nutrición y Suplementos alimenticios: Productos a base de hierbas, extractos vegetales, alimentos tradicionales, deshidratados o concentrados de frutas, adicionados o no, de vitaminas o minerales, que se puedan presentar en forma farmacéutica y cuya finalidad de uso sea incrementar la ingesta dietética total, complementarla o suplir alguno de sus componentes*.
 
-En el caso del consumidor, el análisis habitual del etiquetado de alimentos permitiría[^76^]:
+En el caso del consumidor, el análisis habitual del etiquetado de alimentos permitiría[^95^]:
 
 * Mejorar la seguridad alimentaria de la dieta.  
 * Conocer la fecha de caducidad del producto a consumir.  
@@ -1016,7 +1159,7 @@ En particular, el caso de los productos que se obtienen de la colmena y pueden l
 
 <br>
 
-#### **Miel**
+#### **Etiquetado de Miel**
 
 En el caso de la miel de abeja la *Norma Oficial Mexicana NOM-145-SCFI-2001. Información comercial-Etiquetado de miel en sus diferentes presentaciones*, sirve de referente legal para complementar lo solicitado en la NOM-051-SCFI/SSA1-2010.
 
@@ -1093,20 +1236,20 @@ Por lo tanto, en el caso de algunos suplementos alimenticios, el uso de la leyen
 <br/>
 <br/>
 
-## **4.9 Normalización**
+## **4.10 Normalización**
 ****
 
 Por [M.C. Patxi Machín Munguía Villavicencio](#a002)
 
 <br/>
 
-En general se entiende por Derecho al conjunto de normas jurídicas, creadas por el estado para regular la conducta externa de los hombres y en caso de incumplimiento esta prevista de una sanción judicial.[^77^]
+En general se entiende por Derecho al conjunto de normas jurídicas, creadas por el estado para regular la conducta externa de los hombres y en caso de incumplimiento esta prevista de una sanción judicial.[^96^]
 
 Así entonces, participar en cualquiera de las aristas de la apicultura conlleva acatar las normas jurídicas que se hayan creado para su regulación, sin embargo, antes de analizar estos preceptos legales es necesario que el ciudadano interesado conozca lo esencial en cuanto a normalización en el país.
 
 Lo primero que se debe conocer es que “**La ignorancia de las leyes no excusa su cumplimiento**; pero los jueces teniendo en cuenta el **notorio atraso intelectual** de algunos individuos, su **apartamiento de las vías de comunicación** o su **miserable situación económica**, podrán, si está de acuerdo el ministerio público, eximirlos de las sanciones en que hubieren incurrido por la falta de cumplimiento de la ley que ignoraban, o de ser posible, concederles un plazo para que la cumplan; siempre que no se trate de leyes que afecten directamente al interés público” (Artículo 21 del Código Civil Federal), así que el desconocimiento de las leyes no nos exime de su cumplimiento.
 
-En México los preceptos legales tienen jerarquías y existe un orden de supra y subordinación que a continuación se describen en orden jerárquico de importancia[^78^]:
+En México los preceptos legales tienen jerarquías y existe un orden de supra y subordinación que a continuación se describen en orden jerárquico de importancia[^97^]:
 
 1.	Constitución Política de los Estados Unidos Mexicanos y Tratados Internacionales en materia de Derechos Humanos.
 2.	Leyes Federales, Leyes Orgánicas y Tratados Internacionales
@@ -1121,7 +1264,7 @@ En México los preceptos legales tienen jerarquías y existe un orden de supra y
 
 A pesar de este orden jerárquico, no en todos los niveles encontramos preceptos legales aplicables a la apicultura, sin embargo, existen en las áreas de producción, sanidad y protección apícola, protección al medio ambiente, comercialización nacional y protección al consumidor y comercio internacional.
 
-En función de la apicultura y protección apícola a nivel Federal, actualmente no existe una ley que regule la actividad apícola, sin embargo el 2 de septiembre de 2017 se propuso la Iniciativa que expide la Ley General de Protección, Conservación y Fomento Apícola, por a Senadora Rosa Adriana Díaz Lizama, durante la LXII Legislatura del Honorable Congreso de la Unión, mismo que fue turnado a las comisiones de Agricultura y Ganadería y de Estudios Legislativos, que hasta la fecha no ha progresado.[^79^]
+En función de la apicultura y protección apícola a nivel Federal, actualmente no existe una ley que regule la actividad apícola, sin embargo el 2 de septiembre de 2017 se propuso la Iniciativa que expide la Ley General de Protección, Conservación y Fomento Apícola, por a Senadora Rosa Adriana Díaz Lizama, durante la LXII Legislatura del Honorable Congreso de la Unión, mismo que fue turnado a las comisiones de Agricultura y Ganadería y de Estudios Legislativos, que hasta la fecha no ha progresado.[^98^]
 
 A nivel estatal, y debido a que los estados son autónomos, libres y soberanos, existen 19 disposiciones legales entre las que abordan temas como:
 
@@ -1142,7 +1285,7 @@ Tras una búsqueda exhaustiva en las legislaturas estatales se pudo concentrar e
 
 <br/>
 
-<p align="center"> **Cuadro 4.7 Comparación entre los estados y algunas de las especificaciones en función de la ubicación con relación de otros apiarios** [`r icon::fa("download")`](tabs/4_10_tab1.csv) </p>
+<p align="center"> **Cuadro 4.7. Comparación entre los estados y algunas de las especificaciones en función de la ubicación con relación de otros apiarios** [`r icon::fa("download")`](tabs/4_10_tab1.csv) </p>
 
 <br/>
 <center>
@@ -1217,7 +1360,7 @@ Y sin embargo el tema de la apicultura orgánica es un tema que concierne a much
 
 <center>
 
-**Cuadro 4.8 Disposiciones aplicables en otros países**
+**Cuadro 4.8. Disposiciones aplicables en otros países**
 
 <br>
 
@@ -1298,6 +1441,10 @@ Una de las regulaciones pendientes es la que omite a la Hidromiel dentro de la N
 
 **Dra. Betsabé Rodríguez Pérez.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
 
+**Dra. María Margarita Canales Martínez** *Facultad de Estudios Superiores Iztacala. UNAM.*
+
+**Dr. Marco Aurelio Rodríguez Monroy** *Facultad de Estudios Superiores Iztacala. UNAM.*
+
 **Dr. José Guillermo Penieres Carrillo.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
 
 **M.A. Liborio Carrillo Miranda.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
@@ -1366,132 +1513,170 @@ Una de las regulaciones pendientes es la que omite a la Hidromiel dentro de la N
 
 [^16^]: [Miel de Granada. Sitio Web. ](http://www.mieldegranada.com/Miel_de_Granada/MM_abeja_3.html){target="_blank"} (Consultado el 19 de febrero de 2020).
 
-[^17^]: S. Bogdanov (2017). *Propolis: Composition, Health, Medicine: A Review*. BeeProduct, Science, 1-44. 
+[^17^]: Bogdanov S. (2017). *Propolis: Composition, Health, Medicine: A Review*. BeeProduct, Science, 1-44. 
 
-[^18^]: E. Gimeno (2004). *Compuestos fenólicos. Un análisis de sus beneficios para la salud*. OFFARM, 23(6), 80-84.
+[^18^]: Gimeno E. (2004). *Compuestos fenólicos. Un análisis de sus beneficios para la salud*. OFFARM, 23(6), 80-84.
 
 [^19^]: [Diccionario RAE. ](https://dle.rae.es/diccionario){target="_blank"} (consultado el 19 de febrero de 2020).
 
-[^20^]: S. Castaldo, F. Capasso (2002). *Propolis, an old remedy used in modern medicine*. Fitoterapia 73(1), S1–S6.
+[^20^]: Castaldo S., Capasso F. (2002). *Propolis, an old remedy used in modern medicine*. Fitoterapia 73(1), S1–S6.
 
 [^21^]: [*Propóleo: Antibiótico Natural, Antiinflamatorio, Cicatrizante, Inmunestimulante y mucho más*.  ](https://hi-in.facebook.com/notes/lux-vitae-luz-de-vida-terapias-naturales-alternativas-y-salud-integral/prop%C3%B3leo-antibi%C3%B3tico-natural-antiinflamatorio-cicatrizante-inmunoestimulante-y-m/174465298734/?comment_id=10150889223073735&comment_tracking=%7B%22tn%22%3A%22R%22%7D){target="_blank"} (Consultado el 20 de febrero de 2020).
 
-[^22^]: J. C. Silva, S.Rodrigues, X.Feás, L. M. Estevinho (2012). *Antimicrobial activity, phenolic profile and role in the inflammation of propolis*. Food and Chemical Toxicology, 50, 1790–1795, doi:10.1016/j.fct.2012.02.097.
+[^22^]: Silva J.C. , Rodrigues S., Feás X., Estevinho L.M. (2012). *Antimicrobial activity, phenolic profile and role in the inflammation of propolis*. Food and Chemical Toxicology, 50, 1790–1795, doi:10.1016/j.fct.2012.02.097.
 
-[^23^]: B. Tosi, A. Donini, C. Romagnoli, A. Bruni (1996). *Antimicrobial Activity of Some CommercialExtracts of Propolis Prepared with Different Solvents*. Phytotherapy Research, 10, 335-336.
+[^23^]: Tosi B., Donini A., Romagnoli C., Bruni A. (1996). *Antimicrobial Activity of Some CommercialExtracts of Propolis Prepared with Different Solvents*. Phytotherapy Research, 10, 335-336.
 
 [^24^]: UPC. TV. [La cromatografía (II): cromatografía de gases / espectrometría de masas. ](https://tv.upc.edu/contenidos/cromatografia-de-gases-espectrometria-de-masas){target="_blank"} (Consultado el 21 de febrero de 2020)
 
-[^25^]: B. Rodríguez Pérez (2015). *Perfil Químico de Propóleos Mexicanos para su aplicación en Medicina Veterinaria*. Tesis de Maestría del Posgrado en Ciencias de la Producción y Salud Animal-UNAM. TESIUNAM. (Disponible en: [http://132.248.9.195/ptd2015/abril/0727687/Index.html](http://132.248.9.195/ptd2015/abril/0727687/Index.html){target="_blank"}).
+[^25^]: Rodríguez Pérez B. (2015). *Perfil Químico de Propóleos Mexicanos para su aplicación en Medicina Veterinaria*. Tesis de Maestría del Posgrado en Ciencias de la Producción y Salud Animal-UNAM. TESIUNAM. (Disponible en: [http://132.248.9.195/ptd2015/abril/0727687/Index.html](http://132.248.9.195/ptd2015/abril/0727687/Index.html){target="_blank"}).
 
 [^26^]: Cañigueral Folcará S. [*Contribución al Estudio de los Polifenoles de especies del género Salvia L*](https://www.tesisenred.net/bitstream/handle/10803/1648/02.SCF_2de2.pdf?sequence=2&isAllowed=y]){target="_blank"}. Universidad de Barcelona, Septiembre de 1986.   
 
-[^27^]: S. Martínez, J. González, J. M. Culebras, M. J. Tuñón (2002). *Los flavonoides: propiedades y acciones antioxidantes*. Nutrición Hospitalaria, XVII (6), 271-278.
+[^27^]: Martínez S., González J., Culebras J.M., Tuñón M.J. (2002). *Los flavonoides: propiedades y acciones antioxidantes*. Nutrición Hospitalaria, XVII (6), 271-278.
 
 [^28^]: Fundación CANNA. Sitio Web. [Flavonoides.](https://www.fundacion-canna.es/flavonoides){target="_blank"} (Consultado el 21 de febrero de 2020).
 
-[^29^]: G. Pérez Trueba (2003). *Los flavonoides: Antioxidantes o Prooxidantes*. Revista Cubana de Investigación Biomédica, 22(1), 48-57.
+[^29^]: Pérez Trueba G. (2003). *Los flavonoides: Antioxidantes o Prooxidantes*. Revista Cubana de Investigación Biomédica, 22(1), 48-57.
 
-[^30^]: Rosa-Agostinho H. (1996). *O própolis, o própolis no Brasil*. Apic. 4 :29–32.
+[^30^]: Quiroz C.J.A., Magaña, A.M.A. (2015). *Resinas naturales de especies vegetales mexicanas: usos actuales y potenciales*. Maderas y Bosques, 21 (3), 171-183.
 
-[^31^]: Franco T.T., Kurebayashi A.K. (1986). _Isolamento de principios ativos da própolis por cromatografía em papel bidimensional e dosamento espectrofotometrico_. Revista del Instituto Adolfo Lutz 46: 81–86.
+[^31^]: Rodríguez Canales, M., Jimenez-Rivas, R., Canales-Martinez, M.M., Garcia-Lopez, A.J., Rivera-Yañez, N., Nieto-Yañez, O., Ledesma-Soto, Y., Sanchez-Torres, L.E., Rodriguez-Sosa, M., Terrazas, L.I., Rodriguez-Monroy, M.A. (2016). *Protective effect of Amphipterygium adstringens extract on dextran sulphate sodium-induced ulcerative colitis in mice*. Mediators of Inflammation. doi: 10.1155/ 2016/85543561.
 
-[^32^]: Aga H, Shibuya T., Sugimoto T., Kurimoto M., Nakajima S. (1994). _Isolation and identification of antimicrobial compounds in Brasilian Propolis._ Bioscience, Biotechnology and Biochemistry. 58: 945–946.
+[^32^]: Orozco, A.A. (2013). *Estudio sobre la actividad antifúngica de Mangifera indica L.* Tesis de Licenciatura. UNAM. México. 160 pp.
 
-[^33^]: Meda C., De Mattos-Meda P. (1994). _Coleta, preparo e comercilizaçâo de própolis passado, presente e futuro_. In: Egea-Soares AE, De Jong D. (eds.), Anais do X Congresso Brasileiro de Apicultura, Pousada do Rio Quente-Goiás. pp. 103–107.
+[^33^]: Canales M., Hernández T., Serrano R., Hernández L.B., Duran A., Ríos V., Sigrist S., Hernández H.L.H., Garcia A.M., Angeles-López O., Fernández-Araiza M.A., Avila G. (2007). *Antimicrobial and general toxicity activities of Gymnosperma glutinosum: A comparative study*. Journal of Ethnopharmacology. 110, 343-347.
 
-[^34^]: Bracho J.C, Tabio C., Valdés G., Gil J.B., Domínguez A., Mendoza L. (1996). _Control de calidad de propóleos (características cualitativas y cuantitativas)_. Apitec 4: 15–16.
+[^34^]: Rzedowski J. y Kruse H. (1979). *Algunas  tendencias  evolutivas en Bursera (Burseraceae). Taxón 28 (1, 2/3), 103-116*. Tesis Licenciatura. UNAM. Facultad de Estudios Superiores Iztacala. México. 79 pp.
 
-[^35^]: Malaspina O., Palma M.S. (1998). _Propolis: Qualidade da producao ao consumidor_. Anais do XII Congresso Brasileiro de Apicultura. Bahia. pp. 137–139
+[^35^]: Canales M., Hernández T., Caballero J., Romo de Vivar A., Avila G., Duran A. y Lira R. (2005). *Informant consensus factor and antibacterial activity of the medicinal plants used by the people of San Rafael Coxcatlan Puebla, México*. Journal of Ethnopharmacology 97, 426-439.
 
-[^36^]: Palma M.S., Malaspina O. (1999). _El propóleo_. Apitec 17: 6–10.
+[^36^]: Mora, L.M.E. (2009). *Género Bursera usos y metabolitos secundarios*. Tesina Licenciatura. UNAM. Facultad de Estudios Superiores Iztacala. México. 13 pp.
 
-[^37^]: Dos Santos M.A. (1996). _Coleta de propólis en abelhas africanizadas_. Anais do II encontro sobre abelhas, Riberao Preto, S.P., Brasil. 298 p
+[^37^]: Canales M., Hernández T., Serrano R., Hernández L.B., Duran A., Ríos V., Sigrist S., Hernández H.L.H., Garcia A.M., Angeles-López O., Fernández-Araiza M.A., Avila G. (2007). *Antimicrobial and general toxicity activities of Gymnosperma glutinosum: A comparative study*. Journal of Ethnopharmacology. 110, 343-347.
 
-[^38^]: Donadieu Y. (1980). _La Propolis: Terapeutica Natural_. Maloine, S. A. Editeur, París. 46 p.
+[^38^]: Carrera Martínez C.A., Rosas López R., Rodriguez Monroy M.A., Canales Martínez M., Román Guerrero A., Jiménez Alvarado R. (2014). *Chemical composition and in vivo antiinflamatory activity of Bursera morelensis Ramirez essential oil*. J. Essent Oil Bear Plants. 17(5): 758-768.
 
-[^39^]: Machado de Morales R., Marques F., Alves M.L.T., Pessotti O. (1995). _Propolis: Composicao: propiedades e usos_. Asociacao Modelo de Apicultura, Brasil. 22 p.
+[^39^]: Canales Martínez M., Rivera Yáñez C.R., Salas Oropeza J., López H.R., Jiménez Estrada M., Rosas López R., Durán D.A., Flores C., Hernández L.B., Rodríguez Monroy M.A. (2017). *Antimicrobial activity of Bursera morelensis essential oil*. African Journal of Traditional, Complementary and Alternative Medicines. 14 (3), 74-82.
 
-[^40^]: Norma Oficial Mexicana NOM-003-SAG/GAN-2017. Propóleos, producción y especificaciones para su procesamiento. DOF: 06/10/2017
+[^40^]: Rivera Yáñez C.R., Terrazas L.I., Jiménez Estrada M., Campos J.E., Flores Ortíz C.M., Hernández L.B., Cruz Sánchez T., Garrido Fariña G.I., Rodríguez Monroy M.A., Canales Martínez M.M. (2017). *Anti-Candida activity of Bursera morelensis Ramirez essential oil and two compounds, -pinene and -terpinenean in vitro study*. 22, 2095; doi: 10.3390/molecules22122095.
 
-[^41^]: Asís M. (1989). _Propóleos: el oro púrpura de las abejas_. Centro de Información y Documentación Agropecuaria. Editorial CIDA. La Habana. Cuba.
+[^41^]: Espinosa E.L. (2012). *Estudio comparativo de la composición química y actividad antimicrobiana del aceite esencial de Bursera schlechtendalli Engler*. Tesis Licenciatura. UNAM. Facultad de Estudios Superiores Iztacala. México. 71 pp.
 
-[^42^]: De la Cuétara K., Rojas N., Cuéllar A. (1988). _Estudio de la efectividad antimicrobiana de un extracto de propóleo y de un producto puro aislado_. Universidad de la Habana, Habana, Cuba. 92 p.
+[^42^]: Rojas S.B. (2012). *Variación temporal en la composición química del aceite esencial de Bursera arida (Rose) Standl., y validación de su actividad antimicrobiana*.
 
-[^43^]: Negri G., Marcucci M.C., Salatino A., Faria-Salatino M.L. (1998). _Hydrocarbons and monoesters of propolis waxes from Brazil_. Apidologie 29: 305–314.
+[^43^]: Espinosa E.L. (2014). *Evaluación de algunas propiedades medicinales del extracto de las ramas de Bursera arida (Rose) Standl*. Tesis Maestría. IPN. Escuela Superior de Medicina. México. 162 pp.
 
-[^44^]: Borcic I., Radonic A., Grzunov K. (1996). _Comparison of the volatile constituents of propolis gathered in diferent regions of Croatia_. Flavour and Fragrance Journal, 11: 311–313.
+[^44^]: Nieto Yáñez O.J., Reséndiz Albor A.A., Ruiz Hurtado P.A., Rivera Yáñez N., Rodríguez Canales M., Rodríguez Sosa M., Juárez Avelar I., Rodríguez López M.G., Canales Martínez M.M., Rodríguez Monroy M.A. (2017). *In vivo and in vitro antileishmanial effects of methanolic extract from bark of Bursera aptera*. African Journal of Traditional, Complementary and Alternative Medicines. 14 (2), 188-197.
 
-[^45^]: Bankova V., Popov S., Bocari G., Haxhialushi E. (1993). _Phenolic composition of Albanian propolis; Chim._ Comptes Rendus de l'Academie Bulgare des Sciences, 46: 33–35.
+[^45^]:	Vásquez V.M. (2012). *Estudio preliminar de la actividad antibacteriana del extracto de la parte aérea de algunas especies del género Bursera*. Tesis Licenciatura. UNAM. 
 
-[^46^]: Basnet P., Matsushige K., Hase K., Kadota S., Namba T. (1996). _Four di-O-caffeoyl quinic acid derivatives from propolis. Potent hepatoprotective activity in experimental liver injury models_. Biological and Pharmaceutical Bulletin, 19: 1479–1484.
+[^46^]:	Castro T.A.T.J. (2016). *Estudio Preliminar de la actividad antibacteriana de Prosopis laevigata (Humb. Et Bonpl. ex Willd) M.C. Johnst*. Tesis Licenciatura. UNAM. Facultad de Estudios Superiores Iztacala. México. 117 pp.
 
-[^47^]: Matsushige K., Basnet P., Hase K., Kadota S., Tanaka K., Namba T.. (1996). _Propolis protects pancreatic-cells against toxicity of streptozotocin_ (STZ). Phytomedicine 3: 203–209.
+[^47^]:	Moreno G.B.P. (2019). *Evaluación de la actividad anti-Candida del extracto metanólico de las hojas de Prosopis laevigata*. Tesis Licenciatura. UNAM. Facultad de Estudios Superiores Iztacala. México. 67 pp.
 
-[^48^]: Bankova V., Christov R., Kujumgiev A., Marcucci M.C., Popov S. (1995). _Chemical composition and antibacterial activity of Brasilian propolis_. Zeitschrift für Naturforschung C. 50: 167–172.
+[^48^]:	Nava S.U. (2017). *Estudio comparativo de la actividad antimicrobiana de las flores de Prosopis laevigata (Humb. Et Bonpl. ex Willd) M.C. Johnst*. Tesis Licenciatura. UNAM. Facultad de Estudios Superiores Iztacala. México. 145 pp.
 
-[^49^]: Cunha I.B.S., Oliveira A.C.C., Bretz W.A., Valente P., Marcucci M.C.R., Caetano F.M. (1998). _Avaliacao de diferentes extracoes etanolicas de propolis provenientes de Abelhas Jatai X Apis melifera_. Anais do XII Congreso Brasileiro de Apicultura, Bahia. 200p.
+[^49^]: Rosa-Agostinho H. (1996). *O própolis, o própolis no Brasil*. Apic. 4 :29–32.
 
-[^50^]: Sforcin J.M., Funari S.R.C., Novelli E.L.B. (1995). _Serum biochemical determinations of propolis-treated rats_. Journal of Venomous Animals and Toxins, 1: 31–37.
+[^50^]: Franco T.T., Kurebayashi A.K. (1986). _Isolamento de principios ativos da própolis por cromatografía em papel bidimensional e dosamento espectrofotometrico_. Revista del Instituto Adolfo Lutz 46: 81–86.
 
-[^51^]: Rojas N.M., De la Cuétara A., Vázquez N.M. (1990). _Actividad antimicrobiana de una nueva estructura química aislada de una muestra de propóleo cubano_. Revista Biología (La Habana) 4: 47–56.
+[^51^]: Aga H, Shibuya T., Sugimoto T., Kurimoto M., Nakajima S. (1994). _Isolation and identification of antimicrobial compounds in Brasilian Propolis._ Bioscience, Biotechnology and Biochemistry. 58: 945–946.
 
-[^52^]: Bojñansky V, Kosljarova V. (1975). _Efectos inhibitorios del propóleo en algunos virus de las plantas_. Citado en: Harnaj V., Serban M. Graceanu R, Fernandes Arroyo M.P., Aguar Monterde O (eds.), *Propóleos: Investigaciones científicas y opiniones acerca de su composición, caracterización y utilización con fines terapéuticos*. Apimondia, Bucarest. pp. 54-59.
+[^52^]: Meda C., De Mattos-Meda P. (1994). _Coleta, preparo e comercilizaçâo de própolis passado, presente e futuro_. In: Egea-Soares AE, De Jong D. (eds.), Anais do X Congresso Brasileiro de Apicultura, Pousada do Rio Quente-Goiás. pp. 103–107.
 
-[^53^]: Fernández J.A., Balestrin E., Betoni J., Olivera O., De Souza D.A.-C., Montelli A.C. (2005). _Propolis: anti-Staphylococcus aureus activity and synergism with antimicrobial drugs_. Mem Inst Oswaldo Cruz., 100: 563-566.
+[^53^]: Bracho J.C, Tabio C., Valdés G., Gil J.B., Domínguez A., Mendoza L. (1996). _Control de calidad de propóleos (características cualitativas y cuantitativas)_. Apitec 4: 15–16.
 
-[^54^]: Gutiérrez H.E. (2011). *Actividad antibacteriana y perfil químico de propóleos mexicanos sobre Pasteurella multocida aislada de conejos*. Tesis de Maestría. Facultad de Estudios Superiores Cuautitlán. UNAM.
+[^54^]: Malaspina O., Palma M.S. (1998). _Propolis: Qualidade da producao ao consumidor_. Anais do XII Congresso Brasileiro de Apicultura. Bahia. pp. 137–139
 
-[^55^]: Rasul T., Milimouno W., Etayb M., Ali Jli, X.L. (2013). *Pinocembrin: a ovel natural compound with versatile pharmacological and biological activities*. Hindawi Publishing Corporation, BioMed Research International, V. 2013.
+[^55^]: Palma M.S., Malaspina O. (1999). _El propóleo_. Apitec 17: 6–10.
 
-[^56^]: Pérez T.X.B. (2016). *Estudio de la actividad antimicrobiana in vitro de propóleos mexicanos contra cepas de Pasteurella multocida de origen porcino*. Tesis de Maestría. Facultad de Estudios Superiores Cuautitlán. UNAM.
+[^56^]: Dos Santos M.A. (1996). _Coleta de propólis en abelhas africanizadas_. Anais do II encontro sobre abelhas, Riberao Preto, S.P., Brasil. 298 p
 
-[^57^]: Martínez L., Rojas N., Zetina T.R., Casillas P.R. (2010). *Propóleo oscuro del Estado de Campeche, México.* Memorias del XXIV seminario americano de apicultura Julio 28-30 Cuernavaca, Morelos, p.10-23.
+[^57^]: Donadieu Y. (1980). _La Propolis: Terapeutica Natural_. Maloine, S. A. Editeur, París. 46 p.
 
-[^58^]: Londoño A.O., Ávila A.J., Canales M.M,, Hernández D.C., Serrano P., Flores O.C. (2010).  _Antibacterial comparative study extracts of Mexican propolis and of three plants which use Apis mellifera for its production_. Journal of Animal and Veterinary Advances, 9(8): 1250-1254.
+[^58^]: Machado de Morales R., Marques F., Alves M.L.T., Pessotti O. (1995). _Propolis: Composicao: propiedades e usos_. Asociacao Modelo de Apicultura, Brasil. 22 p.
 
-[^59^]: Gutiérrez H.E. (2011). *Actividad antibacteriana y perfil químico de propóleos mexicanos sobre Pasteurella multocida aislada de conejos*. Tesis de Maestría. Facultad de Estudios Superiores Cuautitlán. UNAM.
+[^59^]: Norma Oficial Mexicana NOM-003-SAG/GAN-2017. Propóleos, producción y especificaciones para su procesamiento. DOF: 06/10/2017
 
-[^60^]: Lozina L., Boehringer S.I., D’Aquino M., Acosta O. (2006). *Eficacia del propóleo sobre _Malassezia pachydermatis_. Correlación de distintas técnicas in vitro*. Acta Farm. Bonaerense 25 (4): 560-3.
+[^60^]: Asís M. (1989). _Propóleos: el oro púrpura de las abejas_. Centro de Información y Documentación Agropecuaria. Editorial CIDA. La Habana. Cuba.
 
-[^61^]: Bogdanov S., Bankova V. (2016). _The propolis book_, Bee Product Science, 7-10.
+[^61^]: De la Cuétara K., Rojas N., Cuéllar A. (1988). _Estudio de la efectividad antimicrobiana de un extracto de propóleo y de un producto puro aislado_. Universidad de la Habana, Habana, Cuba. 92 p.
 
-[^62^]: Noriega S. V. (2014). *El propóleo otro recurso terapéutico en la práctica clínica*. Curso de adaptación al grado, Departamento de enfermería, Universidad de Cantabria, Programa educativo de Química industrial.
+[^62^]: Negri G., Marcucci M.C., Salatino A., Faria-Salatino M.L. (1998). _Hydrocarbons and monoesters of propolis waxes from Brazil_. Apidologie 29: 305–314.
 
-[^63^]: Cardoso R.L., Maboni F., Machado G., Hartz Alves S., Agueda C.V. (2010). _Antimicrobial activity of propolis extract against Staphylococcus coagulase positive and Malassezia pachydermatis of canine otitis, Veterinary microbiology_. 142, 342-434.
+[^63^]: Borcic I., Radonic A., Grzunov K. (1996). _Comparison of the volatile constituents of propolis gathered in diferent regions of Croatia_. Flavour and Fragrance Journal, 11: 311–313.
 
-[^64^]: Bogdanov S., Bankova V. (2016). _The propolis book_, Bee Product Science, 7-10.
+[^64^]: Bankova V., Popov S., Bocari G., Haxhialushi E. (1993). _Phenolic composition of Albanian propolis; Chim._ Comptes Rendus de l'Academie Bulgare des Sciences, 46: 33–35.
 
-[^65^]: Londoño Orozco A. (2010). *Estudio comparativo de la actividad antifúngica de un extracto mexicano de propóleo y de tres plantas que la _Apis mellifera_ usa para su producción* Tesis doctoral. UNAM.
+[^65^]: Basnet P., Matsushige K., Hase K., Kadota S., Namba T. (1996). _Four di-O-caffeoyl quinic acid derivatives from propolis. Potent hepatoprotective activity in experimental liver injury models_. Biological and Pharmaceutical Bulletin, 19: 1479–1484.
 
-[^66^]: Lodoño Orozco A., Penieres Carrillo J.G., García Tovar C.G., Carrillo Miranda L., Quintero Mora M.L., García Vázquez S.E., Mendoza Saavedra M.A., Cruz Sánchez T.A. (2008). *Estudio de la actividad antifúngica de un extracto de propóleo de la abeja _Apis mellifera_ proveniente del Estado de México*. Tecnología en marcha, 21 (1): 49-55.
+[^66^]: Matsushige K., Basnet P., Hase K., Kadota S., Tanaka K., Namba T.. (1996). _Propolis protects pancreatic-cells against toxicity of streptozotocin_ (STZ). Phytomedicine 3: 203–209.
 
-[^67^]: Londoño Orozco A. (2010). *Estudio comparativo de la actividad antifúngica de un extracto mexicano de propóleo y de tres plantas que la _Apis mellifera_ usa para su producción* Tesis doctoral. UNAM.
+[^67^]: Bankova V., Christov R., Kujumgiev A., Marcucci M.C., Popov S. (1995). _Chemical composition and antibacterial activity of Brasilian propolis_. Zeitschrift für Naturforschung C. 50: 167–172.
 
-[^68^]: Quintero Mora M.L.(2011). *Structural and genetic alterations of fungal cells caused by Mexican propoli*. Formatex, 1068-1073.
+[^68^]: Cunha I.B.S., Oliveira A.C.C., Bretz W.A., Valente P., Marcucci M.C.R., Caetano F.M. (1998). _Avaliacao de diferentes extracoes etanolicas de propolis provenientes de Abelhas Jatai X Apis melifera_. Anais do XII Congreso Brasileiro de Apicultura, Bahia. 200p.
 
-[^69^]: Bonifaz Trujillo J.A. (2015). _Micología médica básica_. México, Mc Graw Hill.
+[^69^]: Sforcin J.M., Funari S.R.C., Novelli E.L.B. (1995). _Serum biochemical determinations of propolis-treated rats_. Journal of Venomous Animals and Toxins, 1: 31–37.
 
-[^70^]: Tovar Betancourt N. (2017). *Evaluación antimicótica in vitro del propóleo mexicano sobre Malassezia pachydermatis*. Tesis de Maestría. UNAM.
+[^70^]: Rojas N.M., De la Cuétara A., Vázquez N.M. (1990). _Actividad antimicrobiana de una nueva estructura química aislada de una muestra de propóleo cubano_. Revista Biología (La Habana) 4: 47–56.
 
-[^71^]: Tovar Betancourt N., García Contreras L., Cruz Sánchez T. A. (2015). Propolis in dog: Clinical Experiences and perspectives (a brief review), Open Journal of Veterinary Medicine, 5: 11-17.
+[^71^]: Bojñansky V, Kosljarova V. (1975). _Efectos inhibitorios del propóleo en algunos virus de las plantas_. Citado en: Harnaj V., Serban M. Graceanu R, Fernandes Arroyo M.P., Aguar Monterde O (eds.), *Propóleos: Investigaciones científicas y opiniones acerca de su composición, caracterización y utilización con fines terapéuticos*. Apimondia, Bucarest. pp. 54-59.
+
+[^72^]: Fernández J.A., Balestrin E., Betoni J., Olivera O., De Souza D.A.-C., Montelli A.C. (2005). _Propolis: anti-Staphylococcus aureus activity and synergism with antimicrobial drugs_. Mem Inst Oswaldo Cruz., 100: 563-566.
+
+[^73^]: Gutiérrez H.E. (2011). *Actividad antibacteriana y perfil químico de propóleos mexicanos sobre Pasteurella multocida aislada de conejos*. Tesis de Maestría. Facultad de Estudios Superiores Cuautitlán. UNAM.
+
+[^74^]: Rasul T., Milimouno W., Etayb M., Ali Jli, X.L. (2013). *Pinocembrin: a ovel natural compound with versatile pharmacological and biological activities*. Hindawi Publishing Corporation, BioMed Research International, V. 2013.
+
+[^75^]: Pérez T.X.B. (2016). *Estudio de la actividad antimicrobiana in vitro de propóleos mexicanos contra cepas de Pasteurella multocida de origen porcino*. Tesis de Maestría. Facultad de Estudios Superiores Cuautitlán. UNAM.
+
+[^76^]: Martínez L., Rojas N., Zetina T.R., Casillas P.R. (2010). *Propóleo oscuro del Estado de Campeche, México.* Memorias del XXIV seminario americano de apicultura Julio 28-30 Cuernavaca, Morelos, p.10-23.
+
+[^77^]: Londoño A.O., Ávila A.J., Canales M.M,, Hernández D.C., Serrano P., Flores O.C. (2010).  _Antibacterial comparative study extracts of Mexican propolis and of three plants which use Apis mellifera for its production_. Journal of Animal and Veterinary Advances, 9(8): 1250-1254.
+
+[^78^]: Gutiérrez H.E. (2011). *Actividad antibacteriana y perfil químico de propóleos mexicanos sobre Pasteurella multocida aislada de conejos*. Tesis de Maestría. Facultad de Estudios Superiores Cuautitlán. UNAM.
+
+[^79^]: Lozina L., Boehringer S.I., D’Aquino M., Acosta O. (2006). *Eficacia del propóleo sobre _Malassezia pachydermatis_. Correlación de distintas técnicas in vitro*. Acta Farm. Bonaerense 25 (4): 560-3.
+
+[^80^]: Bogdanov S., Bankova V. (2016). _The propolis book_, Bee Product Science, 7-10.
+
+[^81^]: Noriega S. V. (2014). *El propóleo otro recurso terapéutico en la práctica clínica*. Curso de adaptación al grado, Departamento de enfermería, Universidad de Cantabria, Programa educativo de Química industrial.
+
+[^82^]: Cardoso R.L., Maboni F., Machado G., Hartz Alves S., Agueda C.V. (2010). _Antimicrobial activity of propolis extract against Staphylococcus coagulase positive and Malassezia pachydermatis of canine otitis, Veterinary microbiology_. 142, 342-434.
+
+[^83^]: Bogdanov S., Bankova V. (2016). _The propolis book_, Bee Product Science, 7-10.
+
+[^84^]: Londoño Orozco A. (2010). *Estudio comparativo de la actividad antifúngica de un extracto mexicano de propóleo y de tres plantas que la _Apis mellifera_ usa para su producción* Tesis doctoral. UNAM.
+
+[^85^]: Lodoño Orozco A., Penieres Carrillo J.G., García Tovar C.G., Carrillo Miranda L., Quintero Mora M.L., García Vázquez S.E., Mendoza Saavedra M.A., Cruz Sánchez T.A. (2008). *Estudio de la actividad antifúngica de un extracto de propóleo de la abeja _Apis mellifera_ proveniente del Estado de México*. Tecnología en marcha, 21 (1): 49-55.
+
+[^86^]: Londoño Orozco A. (2010). *Estudio comparativo de la actividad antifúngica de un extracto mexicano de propóleo y de tres plantas que la _Apis mellifera_ usa para su producción* Tesis doctoral. UNAM.
+
+[^87^]: Quintero Mora M.L.(2011). *Structural and genetic alterations of fungal cells caused by Mexican propoli*. Formatex, 1068-1073.
+
+[^88^]: Bonifaz Trujillo J.A. (2015). _Micología médica básica_. México, Mc Graw Hill.
+
+[^89^]: Tovar Betancourt N. (2017). *Evaluación antimicótica in vitro del propóleo mexicano sobre Malassezia pachydermatis*. Tesis de Maestría. UNAM.
+
+[^90^]: Tovar Betancourt N., García Contreras L., Cruz Sánchez T. A. (2015). Propolis in dog: Clinical Experiences and perspectives (a brief review), Open Journal of Veterinary Medicine, 5: 11-17.
 11.	
 
-[^72^]: Lastra M.I.J., Peralta A.M.A. (2000). *Situación actual y perspectiva de la Apicultura en México*. SAGARPA.
+[^91^]: Lastra M.I.J., Peralta A.M.A. (2000). *Situación actual y perspectiva de la Apicultura en México*. SAGARPA.
 
-[^73^]: OMS-FAO. (2007). *Codex Alimentarius*. 5a ed. Roma. Disponible en: [http://www.fao.org/3/a-a1390s.pdf](http://www.fao.org/3/a-a1390s.pdf){target="_blank"}
+[^92^]: OMS-FAO. (2007). *Codex Alimentarius*. 5a ed. Roma. Disponible en: [http://www.fao.org/3/a-a1390s.pdf](http://www.fao.org/3/a-a1390s.pdf){target="_blank"}
 
-[^74^]: [Norma Oficial Mexicana NOM-051-SCFI/SSA1-2010. Especificaciones generales de etiquetado para alimentos y bebidas no alcohólicas preenvasados-Información comercial y sanitaria.](http://www.dof.gob.mx/normasOficiales/4010/seeco11_C/seeco11_C.htm#:~:text=NORMA%20Oficial%20Mexicana%20NOM%2D051%2DSCFI%2FSSA1%2D2010,%2D%20Secretar%C3%ADa%20de%20Econom%C3%ADa.){target='_blank'}
+[^93^]: [Norma Oficial Mexicana NOM-051-SCFI/SSA1-2010. Especificaciones generales de etiquetado para alimentos y bebidas no alcohólicas preenvasados-Información comercial y sanitaria.](http://www.dof.gob.mx/normasOficiales/4010/seeco11_C/seeco11_C.htm#:~:text=NORMA%20Oficial%20Mexicana%20NOM%2D051%2DSCFI%2FSSA1%2D2010,%2D%20Secretar%C3%ADa%20de%20Econom%C3%ADa.){target='_blank'}
 
-[^75^]: [Norma Oficial Mexicana NOM-141-SSA1/SCFI-2012, Etiquetado para productos cosméticos preenvasados. Etiquetado sanitario y comercial.](http://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012){target='_blank'}
+[^94^]: [Norma Oficial Mexicana NOM-141-SSA1/SCFI-2012, Etiquetado para productos cosméticos preenvasados. Etiquetado sanitario y comercial.](http://dof.gob.mx/nota_detalle.php?codigo=5269348&fecha=19/09/2012){target='_blank'}
 
-[^76^]: [Confederación de Consumidores y Usuarios, España. (2007). *¿Qué nos dice el etiquetado de alimentos? Guía para su mejor comprensión.* Folleto Informativo.](https://cecu.es/campanas/alimentacion/Guia%20etquetado.pdf){target='_blank'}
+[^95^]: [Confederación de Consumidores y Usuarios, España. (2007). *¿Qué nos dice el etiquetado de alimentos? Guía para su mejor comprensión.* Folleto Informativo.](https://cecu.es/campanas/alimentacion/Guia%20etquetado.pdf){target='_blank'}
 
-[^77^]: Flores Gomes G., Fernando y Carvajal Moreno, G. (1986). *Nociones de Derecho Positivo Mexicano.* Ed. Porrúa, 25a. ed., México, p.50.
+[^96^]: Flores Gomes G., Fernando y Carvajal Moreno, G. (1986). *Nociones de Derecho Positivo Mexicano.* Ed. Porrúa, 25a. ed., México, p.50.
 
-[^78^]: Arvizu Tovar L.O., (2016). *Bienestar animal en México: un panorama normativo*, Colección Libros Euroganadería Actualidad. Facultad de Medicina Veterinaria y Zootecnia. UNAM.
+[^97^]: Arvizu Tovar L.O., (2016). *Bienestar animal en México: un panorama normativo*, Colección Libros Euroganadería Actualidad. Facultad de Medicina Veterinaria y Zootecnia. UNAM.
 
-[^79^]: [Senado de la República. (2017). Iniciativa que expide la Ley General de Protección, Conservación y Fomento Apícola](http://sil.gobernacion.gob.mx/Archivos/Documentos/2017/09/asun_3579460_20170928_1506610307.pdf){target='_blank'}. 
+[^98^]: [Senado de la República. (2017). Iniciativa que expide la Ley General de Protección, Conservación y Fomento Apícola](http://sil.gobernacion.gob.mx/Archivos/Documentos/2017/09/asun_3579460_20170928_1506610307.pdf){target='_blank'}. 
 
 
 </div>

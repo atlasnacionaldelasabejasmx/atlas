@@ -144,7 +144,7 @@ La Secretaría de Agricultura y Desarrollo Rural (SADER) señala que la apicultu
 
 <br/>
 
-```{r i2_5_01, fig.align='center',fig.height= 6, fig.width= 12, echo=FALSE, cache=TRUE, fig.cap="**Figura 2.1 Apiario con núcleos de fecundación**", out.width = "80%"}
+```{r i2_5_01, fig.align='center',fig.height= 6, fig.width= 12, echo=FALSE, cache=TRUE, fig.cap="**Figura 2.1. Apiario con núcleos de fecundación**", out.width = "80%"}
 
 knitr::include_graphics("imag/_MG_2917.JPG")
 
@@ -188,7 +188,7 @@ Existen muchas formas de enjambrar artificialmente a las colmenas, pero en este 
 
 *División en dos a partir de una colmena.* La colmena se divide en dos partes iguales, tomando igual número de cuadros, abejas para ambas nuevas familias, y la reina queda en la colmena madre. La colonia huérfana o nueva colonia, se coloca en el sitio de la cepa madre con el fin de reforzar con las pecoreadoras que estaban fuera al momento de realizar la división. La cepa madre es llevada a 20 metros del sitio original, para evitar que las abejas sin reina se cambien de caja, ya que no están acostumbradas a vivir sin reina. 
 
-```{r img2_5_1, fig.align='center', fig.cap= "**Figura 2.2 División en dos a partir de una colmena**", echo=FALSE, out.width = "70%", cache=TRUE}
+```{r img2_5_1, fig.align='center', fig.cap= "**Figura 2.2. División en dos a partir de una colmena**", echo=FALSE, out.width = "70%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/2_5_Dia1.png")
 
@@ -199,7 +199,7 @@ knitr::include_graphics("imag/2_5_Dia1.png")
 *Método de abanico.* Se toman 8 cuadros con abejas sin reina de la cepa madre y se trasladan a una caja nueva, esto es colocada en el sitio de la madre para reforzar con las pecoreadoras que llegan de recolectar néctar y polen, por lo que la colmena original con dos cuadros junto con la reina es llevada a 20 metros de su sitio original. La colmena con 8 cuadros sin reina se divide en 4 nuevas colonias. Después de 8 a 10 días se considera un periodo suficiente para que las abejas construyan celdas realeras.
 <br/><br/>
 
-```{r img2_5_2, fig.align='center', fig.cap= "**Figura 2.3 Método de abanico**", echo=FALSE, out.width = "70%", cache=TRUE}
+```{r img2_5_2, fig.align='center', fig.cap= "**Figura 2.3. Método de abanico**", echo=FALSE, out.width = "70%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/2_5_Dia2.png")
 
@@ -207,7 +207,7 @@ knitr::include_graphics("imag/2_5_Dia2.png")
 
 *Método provenzal.* Es un método similar al método de abanico solo que los dos cuadros con abejas y sin reina se lleva lejos del sitio original, mientras los otros 8 cuadros más la presencia de la reina permanece en el sitio original de la colmena madre.
 
-```{r img2_5_3, fig.align='center', fig.cap= "**Figura 2.4 Método provenzal**", echo=FALSE, out.width = "70%", cache=TRUE}
+```{r img2_5_3, fig.align='center', fig.cap= "**Figura 2.4. Método provenzal**", echo=FALSE, out.width = "70%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/2_5_Dia3.png")
 
@@ -341,7 +341,7 @@ Los distintos servicios **se proporcionan a demanda y de forma gratuita**, a tra
 
 <br/>
 
-```{r i0_2_10_01, fig.align='center', echo=FALSE, out.width = "80%", fig.cap="**Figura 2.5 Oficina en Aguascalientes para el apoyo a la apicultura.**", cache=TRUE}
+```{r i0_2_10_01, fig.align='center', echo=FALSE, out.width = "80%", fig.cap="**Figura 2.5. Oficina en Aguascalientes para el apoyo a la apicultura.**", cache=TRUE}
 
 knitr::include_graphics("imag/_MG_3483.JPG")
 
@@ -366,7 +366,7 @@ El siguiente, es un directorio de algunas de las más importantes instituciones 
 
 <br/>
 
-<p align="center"> **Cuadro 2.1 Asociaciones, cámaras, instituciones y publicaciones relacionadas con la apicultura.** [`r icon::fa("download")`](tabs/asociaciones_api2.csv) </p>
+<p align="center"> **Cuadro 2.1. Asociaciones, cámaras, instituciones y publicaciones relacionadas con la apicultura.** [`r icon::fa("download")`](tabs/asociaciones_api2.csv) </p>
 
 ```{r tab2_10_1, echo=FALSE, warning=FALSE }
 library(kableExtra)
@@ -425,7 +425,7 @@ En 2008, más de 135 mil 500 colmenas fueron destinadas a la polinización de cu
 Los cultivos beneficiados con la polinización por abejas son principalmente los orientados a obtener productos destinados a la exportación, destacando el pepino, berenjena, calabacita, sandia, melón, cártamo, manzana, fresa, aguacate, cítricos, entre otros.  
 
 
-<p align="center"> **Cuadro 2.2 Colmenas utilizadas en polinización durante el 2008.**  [`r icon::fa("download")`](tabs/poliniza_colm.csv) </p>
+<p align="center"> **Cuadro 2.2. Colmenas utilizadas en polinización durante el 2008.**  [`r icon::fa("download")`](tabs/poliniza_colm.csv) </p>
 
 ```{r tab0x11, echo=FALSE }
 library(kableExtra)
@@ -510,7 +510,7 @@ Las características productivas que observamos (_fenotipo_) en un organismo viv
 
 <br/>
 
-```{r i0_2_16_01, fig.align='center', fig.cap="**Figura 2.6 Abeja reina ovipositando**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r i0_2_16_01, fig.align='center', fig.cap="**Figura 2.6. Abeja reina ovipositando**", echo=FALSE, out.width = "50%", cache=TRUE}
 
 knitr::include_graphics("imag/MG_131143.png")
 
@@ -584,7 +584,7 @@ La sola práctica de cambiar la abeja reina una vez al año a la colonia comerci
 
 <br/>
 
-<p align="center"> **Cuadro 2.3 Principales enfermedades de las crías de abejas en México.**  [`r icon::fa("download")`](tabs/cua_enferm_1s.csv) </p>
+<p align="center"> **Cuadro 2.3. Principales enfermedades de las crías de abejas en México.**  [`r icon::fa("download")`](tabs/cua_enferm_1s.csv) </p>
 
 ```{r tab0004, echo=FALSE }
 
@@ -609,7 +609,7 @@ Si desea saber más sobre las enfermedades que afectan a las abejas y su tratami
 
 <br/>
 
-<p align="center"> **Cuadro 2.4 Principales enfermedades de las abejas adultas en México.**  [`r icon::fa("download")`](tabs/cua_enferm_2s.csv) </p>
+<p align="center"> **Cuadro 2.4. Principales enfermedades de las abejas adultas en México.**  [`r icon::fa("download")`](tabs/cua_enferm_2s.csv) </p>
 
 ```{r tab0005, echo=FALSE }
 
@@ -634,7 +634,7 @@ Si desea saber más sobre las enfermedades que afectan a las abejas y su tratami
 
 <br/>
 
-<p align="center"> **Cuadro 2.5 Principales plagas de las abejas en México.**  [`r icon::fa("download")`](tabs/cua_plaga_4s.csv) </p>
+<p align="center"> **Cuadro 2.5. Principales plagas de las abejas en México.**  [`r icon::fa("download")`](tabs/cua_plaga_4s.csv) </p>
 
 ```{r tab0006, echo=FALSE }
 
@@ -656,7 +656,7 @@ Además de las anteriores, las abejas pueden ser infestadas por otras plagas:
 
 <br/>
 
-<p align="center"> **Cuadro 2.6 Otros tipos de plagas de las abejas.**  [`r icon::fa("download")`](tabs/cua_otras_6s.csv) </p>
+<p align="center"> **Cuadro 2.6. Otros tipos de plagas de las abejas.**  [`r icon::fa("download")`](tabs/cua_otras_6s.csv) </p>
 
 ```{r tab0007, echo=FALSE }
 

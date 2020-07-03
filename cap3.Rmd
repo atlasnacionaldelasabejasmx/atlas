@@ -16,6 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <div class=text-justify>
 
+<br/>
 
 
 ##  **3.1 Historia de la Apicultura en México** 
@@ -261,7 +262,7 @@ En particular, el *Servicio Nacional de Sanidad, Inocuidad y Calidad Agroaliment
 
 <br/>
 
-<p align="center"> **Cuadro 3.1 Composición nutricional característica de la miel** [`r icon::fa("download")`](tabs/nutrientes_miel.csv) </p>
+<p align="center"> **Cuadro 3.1. Composición nutricional característica de la miel** [`r icon::fa("download")`](tabs/nutrientes_miel.csv) </p>
 
 <br/>
 
@@ -317,7 +318,7 @@ También existe otro fraude en la industria apícola, que se relaciona con su or
 
 <br/>
 
-```{r i0_3_12_01, fig.align='center', echo=FALSE, fig.cap="**Figura 3.1 Manual de Buenas Prácticas para la Producción de Miel en México.**", out.width = "80%", cache=TRUE}
+```{r i0_3_12_01, fig.align='center', echo=FALSE, fig.cap="**Figura 3.1. Manual de Buenas Prácticas para la Producción de Miel en México.**", out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/manbpra.jpg")
 
@@ -617,7 +618,7 @@ La escasez de alimento, el desajuste en la dinámica poblacional y las limitacio
 
 <br/>
 
-```{r i0_3_20_01, fig.align='center', fig.cap="**Figura 3.2 Abeja extrayendo néctar**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r i0_3_20_01, fig.align='center', fig.cap="**Figura 3.2. Abeja extrayendo néctar**", echo=FALSE, out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/IMAG0469.png")
 
@@ -753,7 +754,7 @@ DT::datatable(tab0010[,-2],filter = 'top', options = list(
 
 <br/>
 
-<p align="center"> **Cuadro 3.2 Posición que ocuparon las entidades por nivel de producción de miel de abeja, 2003-2019** [`r icon::fa("download")`](tabs/Ranking_tab_1_s.csv) </p>
+<p align="center"> **Cuadro 3.2. Posición que ocuparon las entidades por nivel de producción de miel de abeja, 2003-2019** [`r icon::fa("download")`](tabs/Ranking_tab_1_s.csv) </p>
 
 <br/>
 
@@ -937,7 +938,7 @@ Los siguientes videos muestran algunas de las actividades de este laboratorio.
 
 <br/>
 
-```{r i0_3_28_01, fig.align='center', fig.cap= "**Figura 3.3 Inseminación Instrumental en Abejas, elemento importante para la certificación.**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r i0_3_28_01, fig.align='center', fig.cap= "**Figura 3.3. Inseminación Instrumental en Abejas, elemento importante para la certificación.**", echo=FALSE, out.width = "80%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/IMG_6800.png")
 
@@ -964,7 +965,7 @@ Con el propósito de inducir la producción de estas abejas la SADER, a través 
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 3.3 Criaderos de Abejas Reina F1 certificados durante 2017-2018 (Certificación genética y sanitaria).** [`r icon::fa("download")`](tabs/t001.csv) </p>
+<p align="center"> **Cuadro 3.3. Criaderos de Abejas Reina F1 certificados durante 2017-2018 (Certificación genética y sanitaria).** [`r icon::fa("download")`](tabs/t001.csv) </p>
 
 <br/>
  
@@ -986,7 +987,7 @@ DT::datatable(tab0001,filter = 'top', options = list(
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 3.4 Criaderos de Abejas Reina Progenitora certificados durante 2017-2018 (Certificación Genética y Sanitaria).** [`r icon::fa("download")`](tabs/t0002.csv) </p>
+<p align="center"> **Cuadro 3.4. Criaderos de Abejas Reina Progenitora certificados durante 2017-2018 (Certificación Genética y Sanitaria).** [`r icon::fa("download")`](tabs/t0002.csv) </p>
 
 <br/>
 
@@ -1006,7 +1007,7 @@ kableExtra::kable(tab0002) %>%
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 3.5 Productores de Núcleos certificados durante 2017-2018. (Certificación sanitaria).** [`r icon::fa("download")`](tabs/t0003.csv) </p>
+<p align="center"> **Cuadro 3.5. Productores de Núcleos certificados durante 2017-2018. (Certificación sanitaria).** [`r icon::fa("download")`](tabs/t0003.csv) </p>
 
 <br/>
 
