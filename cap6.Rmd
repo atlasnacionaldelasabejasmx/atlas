@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### 6.1.1 Producción de miel por Entidad Federativa
 
-**En el siguiente mapa se muestra la producción en toneladas de miel de 2018, por entidad federativa.** 
+**En el siguiente mapa se muestra la producción en toneladas de miel de 2019, por entidad federativa.** 
 
 <br/>
 
@@ -41,18 +41,18 @@ library(mapview)
 
 
 prod_miel <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "UTF")
-prodmiel2018 <- read.csv("tabs/prodmiel2018.csv", head= T)
-prod_miel$total2018 <- prodmiel2018[,3]
+prodmiel2019 <- read.csv("tabs/prodmiel2019.csv", head= T)
+prod_miel$total2019 <- prodmiel2019[,3]
 map_prod_miel <- leaflet(data=prod_miel)
-clust <- kmeans(prod_miel$total2018,5)
+#clust <- kmeans(prod_miel$total2019,5)
 #breaks <- sort(c(0, max((prod_miel$total2018)[clust$cluster == 1]),
 #                 max((prod_miel$total2018)[clust$cluster == 2]),
 #                 max((prod_miel$total2018)[clust$cluster == 3]),
 #                 max((prod_miel$total2018)[clust$cluster == 4]),
 #                max((prod_miel$total2018)[clust$cluster == 5])))
 #breaks2 <- c((round(breaks[-6],1)),(ceiling(breaks[6])))
-breaks2 <- c(1,600,1400,3200,6000,9800)
-binpal <- colorBin("Oranges", prod_miel$total2018, breaks2)
+breaks2 <- c(77,600,1400,3200,6000,9810)
+binpal <- colorBin("Oranges", prod_miel$total2019, breaks2)
 
 map_prod_miel %>%
   setView(lng = -102.43, lat = 22.37, zoom = 5.4) %>%
@@ -61,26 +61,26 @@ map_prod_miel %>%
     stroke = FALSE,
     fillOpacity = 0.7,
     smoothFactor = 0.1,
-    color = ~binpal(total2018),
+    color = ~binpal(total2019),
     popup = paste0("<strong>CVE_ENT: </strong>", prod_miel$CVE_ENT, "</br>",
                    "<strong>ENTIDAD: </strong>", prod_miel$NOMGEO, "</br>",
-                   "<strong>PRODUCCIÓN: </strong>", prod_miel$total2018)
+                   "<strong>PRODUCCIÓN: </strong>", prod_miel$total2019)
   ) %>%
   addLegend(
-    "bottomleft", pal = binpal, values = ~total2018,
+    "bottomleft", pal = binpal, values = ~total2019,
     title = "Producción de Miel <br/> (Toneladas)",
     opacity = 0.7
   )
 
 ```
 
-<p align="center"> **Mapa 6.1. Producción de miel por Entidad Federativa, 2018.** [`r icon::fa("download")`](tabs/prodmiel2018.csv) </p>
+<p align="center"> **Mapa 6.1. Producción de miel por Entidad Federativa, 2019.** [`r icon::fa("download")`](tabs/prodmiel2019.csv) </p>
 
 <br/>
 
 ***Fuente:***
 
-[SADER. Servicio de Información Agroalimentaria y Pesquera (SIAP). (2018). *Avance mensual de la producción pecuaria.*](http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp){target="_blank"} [`r icon::fa("download")`](tabs/prodmiel2018_2.csv)
+SADER. (2019). 
 
 <br/>
 <br/>

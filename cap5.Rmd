@@ -81,7 +81,7 @@ dygraph(p_anual_colmenas, xlab ="Año") %>%
 
 <br/>
 
-En este punto se construyó un gráfico que concentra la producción de miel de las 32 entidades federativas durante el periodo de los años 2003 a 2019, para ello se consideraron los datos de producción en toneladas de miel anual, publicados por el SIAP, denominados [*Avance mensual de la producción pecuaria*.](http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp){target="_blank"}
+En este punto se construyó un gráfico que concentra la producción de miel de las  entidades federativas con mayor producción durante el periodo del 2003 al 2019, para ello se consideraron los datos de producción en toneladas de miel anual, publicados por el SIAP, denominados [*Avance mensual de la producción pecuaria*.](http://infosiap.siap.gob.mx/repoAvance_siap_gb/pecAvanceProd.jsp){target="_blank"}
 
 Cabe señalar que en el periodo de 2003 a 2019, las entidades con mayor producción de miel fueron Yucatán, Campeche, Jalisco, Veracruz y Chiapas.
 
@@ -91,8 +91,8 @@ Cabe señalar que en el periodo de 2003 a 2019, las entidades con mayor producci
 
 library(plotly)
 
-bx <- read.csv("tabs/ent_ton_miel_03_18.csv", encoding = "UTF")
-bx2 <- bx[1:32,-c(1,2)]
+bx <- read.csv("tabs/ent_ton_miel_03_19.csv", encoding = "UTF")
+bx2 <- bx[1:32,-1]
 bx3 <- as.data.frame(t(bx2))
 estados <- c("AGS","BCN","BCS","CAM","COA","COL","CHIS","CHI","CDMX","DGO","GTO","GRO",
              "HGO","JAL","MEX","MICH","MOR","NAY","NL","OAX","PUE","QUE","QROO","SLP",
@@ -102,40 +102,39 @@ bx3$years <- c("2003","2004","2005","2006","2007","2008","2009","2010","2011","2
 
 bx3$years <- factor(bx3$years, levels = bx3[["years"]])
 
-p1 <- plot_ly(bx3, x = ~years, y = ~AGS, name = 'Aguascalientes', type = 'scatter', mode = 'lines',
-             line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
-  add_trace(y = ~BCN, name = 'Baja California', line = list(color = 'black', width = 4, dash = 'dashdot')) %>%
-  add_trace(y = ~BCS, name = 'Baja California Sur', line = list(color = 'darkblue', width = 4, dash = NULL)) %>%
+p1 <- plot_ly(bx3, x = ~years, y = ~YUC, name = 'Yucatán', type = 'scatter', mode = 'lines',line = list(color = 'violetred', width = 4, dash = NULL)) %>%
+ # add_trace(y = ~BCN, name = 'Baja California', line = list(color = 'black', width = 4, dash = 'dashdot')) %>%
+ # add_trace(y = ~BCS, name = 'Baja California Sur', line = list(color = 'darkblue', width = 4, dash = NULL)) %>%
   add_trace(y = ~CAM, name = 'Campeche', line = list(color = 'green', width = 4, dash = NULL)) %>%
-  add_trace(y = ~COA, name = 'Coahuila', line = list(color = 'rgb(205, 132, 84)', width = 4, dash = 'dot')) %>%
-  add_trace(y = ~COL, name = 'Colima', line = list(color = 'dodgerblue', width = 4, dash = 'dot')) %>%
+ # add_trace(y = ~COA, name = 'Coahuila', line = list(color = 'rgb(205, 132, 84)', width = 4, dash = 'dot')) %>%
+ # add_trace(y = ~COL, name = 'Colima', line = list(color = 'dodgerblue', width = 4, dash = 'dot')) %>%
   add_trace(y = ~CHIS, name = 'Chiapas', line = list(color = 'cyan', width = 4, dash = NULL)) %>%
-  add_trace(y = ~CHI, name = 'Chihuahua', line = list(color = 'darkorchid', width = 4, dash = 'dot')) %>%
-  add_trace(y = ~CDMX, name = 'Ciudad de México', line = list(color = 'green', width = 4, dash = 'dot')) %>%
-  add_trace(y = ~DGO, name = 'Durango', line = list(color = 'tan2', width = 4, dash = NULL)) %>%
-  add_trace(y = ~GTO, name = 'Guanajuato', line = list(color = 'gold4', width = 4, dash = 'dashdot')) %>%
+ # add_trace(y = ~CHI, name = 'Chihuahua', line = list(color = 'darkorchid', width = 4, dash = 'dot')) %>%
+ # add_trace(y = ~CDMX, name = 'Ciudad de México', line = list(color = 'green', width = 4, dash = 'dot')) %>%
+ # add_trace(y = ~DGO, name = 'Durango', line = list(color = 'tan2', width = 4, dash = NULL)) %>%
+# add_trace(y = ~GTO, name = 'Guanajuato', line = list(color = 'gold4', width = 4, dash = 'dashdot')) %>%
   add_trace(y = ~GRO, name = 'Guerrero', line = list(color = 'magenta', width = 4, dash = 'dot')) %>%
-  add_trace(y = ~HGO, name = 'Hidalgo', line = list(color = 'blueviolet', width = 4, dash = 'dashdot')) %>%
+#  add_trace(y = ~HGO, name = 'Hidalgo', line = list(color = 'blueviolet', width = 4, dash = 'dashdot')) %>%
   add_trace(y = ~JAL, name = 'Jalisco', line = list(color = 'chartreuse', width = 4, dash = NULL)) %>%
-  add_trace(y = ~MEX, name = 'Estado de México', line = list(color = 'red', width = 4, dash = 'dashdot')) %>%
+ # add_trace(y = ~MEX, name = 'Estado de México', line = list(color = 'red', width = 4, dash = 'dashdot')) %>%
   add_trace(y = ~MICH, name = 'Michoacán', line = list(color = 'gold4', width = 4, dash = 'dashdot')) %>%
-  add_trace(y = ~MOR, name = 'Morelos', line = list(color = "cyan", width = 4, dash = 'dot')) %>%
-  add_trace(y = ~NAY, name = 'Nayarit', line = list(color = 'purple', width = 4, dash = NULL)) %>%
-  add_trace(y = ~NL, name = 'Nuevo León', line = list(color = 'chartreuse', width = 4, dash = 'dot')) %>%
+#  add_trace(y = ~MOR, name = 'Morelos', line = list(color = "cyan", width = 4, dash = 'dot')) %>%
+ # add_trace(y = ~NAY, name = 'Nayarit', line = list(color = 'purple', width = 4, dash = NULL)) %>%
+#  add_trace(y = ~NL, name = 'Nuevo León', line = list(color = 'chartreuse', width = 4, dash = 'dot')) %>%
   add_trace(y = ~OAX, name = 'Oaxaca', line = list(color = 'orange', width = 4, dash = NULL)) %>% 
   add_trace(y = ~PUE, name = 'Puebla', line = list(color = 'pink', width = 4, dash = NULL)) %>%
-  add_trace(y = ~QUE, name = 'Querétaro', line = list(color = 'grey', width = 4, dash = 'dot')) %>% 
+ # add_trace(y = ~QUE, name = 'Querétaro', line = list(color = 'grey', width = 4, dash = 'dot')) %>% 
   add_trace(y = ~QROO, name = 'Quintana Roo', line = list(color = 'magenta', width = 4, dash = NULL)) %>% 
-  add_trace(y = ~SLP, name = 'San Luis Potosí', line = list(color = 'orange', width = 4, dash = 'dashdot')) %>%
-  add_trace(y = ~SIN, name = 'Sinaloa', line = list(color = 'pink', width = 4, dash = 'dashdot')) %>%
-  add_trace(y = ~SON, name = 'Sonora', line = list(color = 'darkslategray', width = 4, dash = "dot")) %>% 
-  add_trace(y = ~TAB, name = 'Tabasco', line = list(color = 'gold', width = 4, dash = NULL)) %>% 
-  add_trace(y = ~TAM, name = 'Tamaulipas', line = list(color = 'slateblue', width = 4, dash = NULL)) %>%
-  add_trace(y = ~TLAX, name = 'Tlaxcala', line = list(color = 'turquoise', width = 4, dash = 'dashdot')) %>%
+ # add_trace(y = ~SLP, name = 'San Luis Potosí', line = list(color = 'orange', width = 4, dash = 'dashdot')) %>%
+ # add_trace(y = ~SIN, name = 'Sinaloa', line = list(color = 'pink', width = 4, dash = 'dashdot')) %>%
+#  add_trace(y = ~SON, name = 'Sonora', line = list(color = 'darkslategray', width = 4, dash = "dot")) %>% 
+ # add_trace(y = ~TAB, name = 'Tabasco', line = list(color = 'gold', width = 4, dash = NULL)) %>% 
+ # add_trace(y = ~TAM, name = 'Tamaulipas', line = list(color = 'slateblue', width = 4, dash = NULL)) %>%
+ # add_trace(y = ~TLAX, name = 'Tlaxcala', line = list(color = 'turquoise', width = 4, dash = 'dashdot')) %>%
   add_trace(y = ~VER, name = 'Veracruz', line = list(color = 'springgreen', width = 4, dash = 'dashdot')) %>%
-  add_trace(y = ~YUC, name = 'Yucatán', line = list(color = 'violetred', width = 4, dash = NULL)) %>%
+ # add_trace(y = ~YUC, name = 'Yucatán', line = list(color = 'violetred', width = 4, dash = NULL)) %>%
   add_trace(y = ~ZAC, name = 'Zacatecas', line = list(color = 'sienna', width = 4, dash = NULL)) %>%
-  layout(title = "Gráfica 5.2. Producción de Miel por Entidad Federativa, 2003-2019",
+  layout(title = "Gráfica 5.2. Producción de Miel de las Entidades Federativas más productoras, 2003-2019",
          xaxis = list(title = "Año"),
          yaxis = list (title = "Toneladas producidas"))
 p1
@@ -145,9 +144,40 @@ p1
  
 Nota: Información del año 2019, son cifras preliminares a diciembre 2019.
 <br/>
-*(Dar doble clic en la entidad federativa de interés para visualizarla de forma aislada).*  [`r icon::fa("download")`](tabs/ent_ton_miel_03_18.csv)
+*(Dar doble clic en la entidad federativa de interés para visualizarla de forma aislada).*  [`r icon::fa("download")`](tabs/ent_ton_miel_03_19.csv)
 
 <br/>
+<br/>
+
+Los datos completos de todas los estados pueden consultarse en la siguiente tabla:
+
+<br>
+
+<p align="center"> **Cuadro 5.2. Producción de Miel por Entidad Federativa, 2003-2019 (Toneladas)** [`r icon::fa("download")`](tabs/export_ton.csv) </p>
+<br/>
+
+```{r tab5_2, echo=FALSE, fig.align='left', warning=FALSE}
+library(DT)
+tab5_2 <- read.csv("tabs/ent_ton_miel_03_19_2.csv", encoding = "UTF")
+names(tab5_2) <- c("Estado","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019")
+
+DT::datatable(tab5_2, filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE, scrollX = TRUE,
+  fixedColumns = TRUE, language = list(
+    info = "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    paginate = list(previous = 'Anterior', `next` = 'Siguiente'),
+    search =  "Buscar:", lengthMenu = "Mostrar _MENU_ registros" )
+  ))
+
+```
+<br/>
+
+***Fuente:***
+
+SADER (2019).
+
+
+
 <br/>
 <br/>
 <br/>
@@ -177,7 +207,7 @@ DT::datatable(tabmun_18,filter = 'top', options = list(
 
 <br/>
 
-<p align="center"> **Cuadro 5.2. Producción de Miel por municipio, 2018** [`r icon::fa("download")`](tabs/Prodmiel2018muni.csv) </p>
+<p align="center"> **Cuadro 5.3. Producción de Miel por municipio, 2018** [`r icon::fa("download")`](tabs/Prodmiel2018muni.csv) </p>
 
 <br/>
 <br/>
@@ -558,8 +588,7 @@ Es por ello, que el SENASICA, la Secretaría de Medio Ambiente y Recursos Natura
 
 [SADER. (2018). *Nota de Prensa.* Agosto.](https://www.gob.mx/sader/prensa/se-incrementa-en-el-primer-semestre-del-ano-la-exportacion-de-miel-mexicana-en-mas-de-11-por-ciento?idiom=es){target="_blank"}
 
-<br/>
-<br/>
+
 <br/>
 
 A continuación, se presentan algunos datos sobre el valor de las exportaciones de miel mexicana en los últimos años:
@@ -582,7 +611,7 @@ DT::datatable(tab3_16,filter = 'top', options = list(
 
 <br/>
 
-<p align="center"> **Cuadro 5.3. Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
+<p align="center"> **Cuadro 5.4. Valor de Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
 
 <br/>
 <br/>
@@ -628,11 +657,11 @@ Los principales destinos de las exportaciones pueden apreciarse en la siguiente 
 library(plotly)
 
 dest <- read.csv("tabs/destinos.csv", encoding = "UTF")
-dest2 <- dest[1:6,-1]
+dest2 <- (dest[1:6,-1])/1000000
 dest3 <- as.data.frame(t(dest2))
 paises <- c("ALEM","USA","UK","ARAB_SAUD","SUIZA","BELG")
 names(dest3) <- paises
-dest3$years <- c("2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018")
+dest3$years <- c("2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019")
 dest3$years <- factor(dest3$years, levels = dest3[["years"]])
 
 pexp <- plot_ly(dest3, x = ~years, y = ~ALEM, name = 'Alemania', type = 'scatter', mode = 'lines',
@@ -642,22 +671,55 @@ pexp <- plot_ly(dest3, x = ~years, y = ~ALEM, name = 'Alemania', type = 'scatter
   add_trace(y = ~ARAB_SAUD, name = 'Arabia Saudita', line = list(color = 'cyan', width = 4, dash = NULL)) %>%
   add_trace(y = ~SUIZA, name = 'Suiza', line = list(color = 'darkorchid', width = 4, dash = NULL)) %>%
   add_trace(y = ~BELG, name = 'Bélgica', line = list(color = 'dodgerblue', width = 4, dash = NULL))  %>%
-  layout(title = "Gráfica 5.14. Valor de las exportaciones a los principales países de destino, 2002-2018",
+  layout(title = "Gráfica 5.14. Valor de las exportaciones a los principales países de destino, 2002-2019*",
          xaxis = list(title = "Año"),
-         yaxis = list (title = "Miles de dólares"))
+         yaxis = list (title = "Millones de dólares"))
 pexp 
 
 ```
 
 <br/>
 
-<p align="center"> **Descargar datos** [`r icon::fa("download")`](tabs/import_export.csv) </p>
+<p align="center"> **Descargar datos** [`r icon::fa("download")`](tabs/import_export.xlsx) </p>
 
 <br/>
 
 ***Fuente:***
 
-[INEGI. (2018) *Estadísticas de Comercio Exterior*.](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
+[INEGI. (2019) *Estadísticas de Comercio Exterior* (\*Las cifras de 2019 son preliminares). ](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
+
+
+<br/>
+<br/>
+
+En términos de volúmenes, la siguiente tabla concentra las exportaciones por país de destino del 2002 al 2019. 
+
+
+<br/>
+
+<p align="center"> **Cuadro 5.5. Volumen de Exportaciones Mensuales de Miel (Toneladas), 2002-2019** [`r icon::fa("download")`](tabs/export_ton.csv) </p>
+<br/>
+
+```{r tab00030, echo=FALSE, fig.align='left', warning=FALSE}
+library(DT)
+tab0030 <- read.csv("tabs/export_ton.csv", encoding = "UTF")
+names(tab0030) <- c("País","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019")
+
+DT::datatable(tab0030,filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE, scrollX = TRUE,
+  fixedColumns = TRUE, language = list(
+    info = "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    paginate = list(previous = 'Anterior', `next` = 'Siguiente'),
+    search =  "Buscar:", lengthMenu = "Mostrar _MENU_ registros" )
+  ))
+
+```
+<br/>
+
+***Fuente:***
+
+[INEGI. (2019) *Estadísticas de Comercio Exterior* (\*Las cifras de 2019 son preliminares). ](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
+
 
 <br/>
 <br/>
@@ -670,14 +732,14 @@ En contraste, la importación de miel es mucho menor en comparación con las exp
 
 library(plotly)
 
-immiel <- read.csv("tabs/import_2004_2018.csv", encoding = "UTF")
+immiel <- read.csv("tabs/import_2004_2019.csv", encoding = "UTF")
 
-importac <- plot_ly(immiel, x = ~anio, y = ~dolares, type = 'scatter', 
+importac <- plot_ly(immiel, x = ~anio, y = ~(dolares), type = 'scatter', 
               mode = 'lines', line = list(color = 'darkblue', 
                                           width = 4))  %>%
-  layout(title = "Gráfica 5.15. Importaciones Anuales de Miel, 2004-2018",
+  layout(title = "Gráfica 5.15. Importaciones Anuales de Miel, 2004-2019",
          xaxis = list(title = "Año"),
-         yaxis = list (title = "Dólares"))
+         yaxis = list (title = "Miles de Dólares"))
 importac
 
 
@@ -685,14 +747,14 @@ importac
 
 <br/>
 
-<p align="center"> **Descargar datos** [`r icon::fa("download")`](tabs/import_export.csv) </p>
+<p align="center"> **Descargar datos** [`r icon::fa("download")`](tabs/import_export.xlsx) </p>
 
 <br/>
 
 
 ***Fuente:***
 
-[INEGI. (2018). *Estadísticas de Comercio Exterior*.](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
+[INEGI. (2018). *Estadísticas de Comercio Exterior* (Los datos de 2019 son preliminares).](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
 
 <br/>
 
