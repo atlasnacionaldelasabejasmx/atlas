@@ -49,6 +49,10 @@ DT::datatable(bhvs,filter = 'top', options = list(
 <br/>
 <br/>
 
+<p align="center"> **Gráfica 5.1. Colmenas en México, 1961-2017 (millones)** [`r icon::fa("download")`](tabs/BeehivesMX.csv) </p>
+
+<br/>
+
 ```{r beehives , echo = FALSE, message = FALSE, warning = FALSE, fig.align='center',fig.height= 6, fig.width= 10,  out.width = "100%" }
 
 library(dygraphs)
@@ -62,9 +66,6 @@ dygraph(p_anual_colmenas, xlab ="Año") %>%
 
 
 ```
-
-
-<p align="center"> **Gráfica 5.1. Colmenas en México, 1961-2017 (millones)** [`r icon::fa("download")`](tabs/BeehivesMX.csv) </p>
 
 
 ***Fuente:***
@@ -190,6 +191,8 @@ SADER (2019).
 A continuación, se presentan datos sobre la producción de miel a nivel municipio, del 2018
 
 <br/>
+<p align="center"> **Cuadro 5.3. Producción de Miel por municipio, 2018** [`r icon::fa("download")`](tabs/Prodmiel2018muni.csv) </p>
+<br/>
 
 ```{r tabmun18, echo=FALSE }
 
@@ -205,9 +208,7 @@ DT::datatable(tabmun_18,filter = 'top', options = list(
 
 ```
 
-<br/>
 
-<p align="center"> **Cuadro 5.3. Producción de Miel por municipio, 2018** [`r icon::fa("download")`](tabs/Prodmiel2018muni.csv) </p>
 
 <br/>
 <br/>
@@ -322,75 +323,79 @@ grafica2
 <br/>
 <br/>
 
-Con respecto a la crianza de abejas reina y producción de núcleos, también existen pocas unidades económicas dedicadas a estas actividades.
+Con respecto a la crianza de abejas reina y producción de núcleos, también existen pocas unidades económicas dedicadas a estas actividades. Los siguientes cuadros muestran estos datos.
+
 <br/>
+
+<p align="center"> **Cuadro 5.4. Criaderos certificados de abejas reina por entidad federativa, 2017-2019** [`r icon::fa("download")`](tabs/Criadores_Tabla_a1.csv) </p>
+
 <br/>
 
-```{r graf_b4, fig.align='center', fig.height= 6, fig.width= 12, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE}
+```{r tab5_6_1, echo=FALSE }
 
-criad_reinas <- read.csv("tabs/estadisticas.csv", encoding="UTF")
-criad_reinas1<- subset(criad_reinas, criad_reinas[,7]>0 | criad_reinas[,8]>0 | criad_reinas[,9]>0 )
-criad_reinas2 <- data.frame(criad_reinas1$Entidad, criad_reinas1[,7], criad_reinas1[,8], criad_reinas1[,9])   
-criad_reinas2$x<- factor(criad_reinas2$criad_reinas1.Entidad, levels = criad_reinas2[["criad_reinas1.Entidad"]])
+tab5_6_1 <- read.csv("tabs/Criadores_tabla_a1.csv")
+names(tab5_6_1) <- c( "Entidad", "Criaderos de Abejas Reinas Certificados durante 2017", "Criaderos de Abejas Reinas Certificados durante 2018", "Criaderos de Abejas Reinas Certificados durante 2019", "Capacidad de Criaderos de Abejas Reinas Certificados durante 2017", "Capacidad de Criaderos de Abejas Reinas Certificados durante 2018",  "Capacidad de Criaderos de Abejas Reinas Certificados durante 2019")
 
-
-library(plotly)
-
-p3 <- plot_ly(criad_reinas1, x = ~criad_reinas2[,5], y = ~criad_reinas2[,2], type = 'bar',
-             name = 'Criadores de <br> Abeja Reina', marker = list(color = 'rgb(49,130,189)')) %>%
-  add_trace(y = ~criad_reinas2[,3], name = 'Criadores de <br> Abeja Reina <br>  Progenitoras', 
-            marker = list(color = 'green')) %>% 
-  add_trace(y = ~criad_reinas2[,4], name = 'Productores <br> de Núcleos <br> o Paquetes <br> de Abejas', 
-            marker = list(color = 'red')) %>% 
-  layout(title = ("Gráfica 5.6. Criadores de Abeja Reina y Núcleos, por Entidad Federativa (2017)"),
-         xaxis = list(title = "", tickangle =-45),
-         yaxis = list(title = "Criadores/Productores"),
-         margin = list(b = 100),
-         barmode = 'group')
-p3
-
+DT::datatable(tab5_6_1,filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE, language = list(
+    info = "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    paginate = list(previous = 'Anterior', `next` = 'Siguiente'),
+    search =  "Buscar:", lengthMenu = "Mostrar _MENU_ registros" )
+  ))
 
 ```
-<p align="center"> *Fuente: Sistema de Información Agroalimentaria de Consulta (SIACON), 2017.* [`r icon::fa("download")`](tabs/estadisticas.csv) </p>
-
-<br/>
 <br/>
 <br/>
 
-Por otra parte, la certificación de abejas reina garantiza a los productores la calidad genética y sanitaria de las abejas reina que comercializan, evitando con ello la movilización de abejas reina sin control, a efecto de disminuir la transmisión de enfermedades de las abejas. La gráfica siguiente muestra que aún queda mucho por hacer en este tema.
+<p align="center"> **Cuadro 5.5. Criaderos certificados de abejas reina progenitoras por entidad federativa, 2017-2019** [`r icon::fa("download")`](tabs/Criadores_Tabla_a2.csv) </p>
+
 <br/>
-<br/>
 
-```{r graf_b5, fig.align='center', fig.height= 6, fig.width= 12, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE}
+```{r tab5_6_2, echo=FALSE }
 
-abejas_reina <- read.csv("tabs/estadisticas.csv", encoding="UTF")
-abejas_reina1<- subset(criad_reinas, criad_reinas[,10]>0 | criad_reinas[,11]>0 | criad_reinas[,12]>0 | criad_reinas[,18]>0 )
-abejas_reina2 <- data.frame(criad_reinas1$Entidad, criad_reinas1[,10], 
-                              criad_reinas1[,11], criad_reinas1[,12], criad_reinas1[,18])   
-abejas_reina2$x<- factor(abejas_reina2$criad_reinas1.Entidad, levels = abejas_reina2[["criad_reinas1.Entidad"]])
+tab5_6_2 <- read.csv("tabs/Criadores_tabla_a2.csv")
+names(tab5_6_2) <- c( "Entidad", "Criaderos de Abejas Reina Progenitoras Certificados durante 2017", "Criaderos de Abejas Reina Progenitoras Certificados durante 2018", "Criaderos de Abejas Reina Progenitoras Certificados durante 2019", "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 2017",  "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 201",  "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 2019")
 
-library(plotly)
-
-p4 <- plot_ly(abejas_reina2, x = ~abejas_reina2[,6], y = ~abejas_reina2[,2], type = 'bar',
-              name = 'Abejas Reina <br> Certificadas', marker = list(color = 'rgb(49,130,189)')) %>%
-  add_trace(y = ~abejas_reina2[,3], name = 'Abejas Reina <br> No Certificadas', 
-            marker = list(color = 'green')) %>% 
-  add_trace(y = ~abejas_reina2[,4], name = 'Núcleos <br> Producidos', 
-            marker = list(color = 'red')) %>% 
-  add_trace(y = ~abejas_reina2[,5], name = 'Colmenas para <br> Polinización', 
-            marker = list(color = 'orange')) %>% 
-  layout(title = ("Gráfica 5.7. Abejas Reina, Núcleos y Colmenas para Polinización por Entidad Federativa (2017)"),
-         xaxis = list(title = "", tickangle =-45),
-         yaxis = list(title = "Cantidad producida"),
-         margin = list(b = 100),
-         barmode = 'group')
-p4
+DT::datatable(tab5_6_2,filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE, language = list(
+    info = "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    paginate = list(previous = 'Anterior', `next` = 'Siguiente'),
+    search =  "Buscar:", lengthMenu = "Mostrar _MENU_ registros" )
+  ))
 
 ```
-<p align="center"> *Fuente: Sistema de Información Agroalimentaria de Consulta (SIACON), 2017.* [`r icon::fa("download")`](tabs/estadisticas.csv) </p>
 
 <br/>
 <br/>
+
+<p align="center"> **Cuadro 5.6. Criaderos certificados de núcleos de abejas por entidad federativa, 2017-2019** [`r icon::fa("download")`](tabs/Criadores_Tabla_a3.csv) </p>
+
+<br/>
+
+```{r tab5_6_3, echo=FALSE }
+
+tab5_6_3 <- read.csv("tabs/Criadores_tabla_a3.csv")
+names(tab5_6_3) <- c( "Entidad", "Criaderos de núcleos de abejas Certificados durante 2017", "Criaderos de núcleos de abejas Certificados durante 2018", "Criaderos de núcleos de abejas Certificados durante 2019", "Capacidad de Criaderos de núcleos de abejas Certificados durante 2017",  "Capacidad de Criaderos de núcleos de abejas Certificados durante 2018", "Capacidad de Criaderos de núcleos de abejas Certificados durante 2019")
+
+DT::datatable(tab5_6_3,filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE, language = list(
+    info = "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    paginate = list(previous = 'Anterior', `next` = 'Siguiente'),
+    search =  "Buscar:", lengthMenu = "Mostrar _MENU_ registros" )
+  ))
+
+```
+
+
+
+<p align="center"> *Fuente: SADER.* [`r icon::fa("download")`](tabs/Criadores_TablaGral.csv) </p>
+
+<br/>
+<br/>
+<br/>
+
+Por otra parte, la certificación de abejas reina garantiza a los productores la calidad genética y sanitaria de las abejas reina que comercializan, evitando con ello la movilización de abejas reina sin control, a efecto de disminuir la transmisión de enfermedades de las abejas. 
+
 <br/>
 
 Además de la miel, se producen otros derivados apícolas. El principal subproducto en cuanto a volumen, es la cera. Sus principales usos son en las industrias farmacéutica y cosmética. Yucatán se destaca como el principal productor de cera de abeja a nivel nacional.
@@ -412,7 +417,7 @@ datos3$xestados_t <- factor(datos3$xestados_t, levels = datos3[["xestados_t"]])
 
 grafica3 <- plot_ly(datos3, x = ~xestados_t, y = ~ypeso_cera_t, type = 'bar',
                    marker = list(color = 'deepskyblue2')) %>%
-  layout(title = ("Gráfica 5.8. Producción de Cera por Entidad Federativa, 2017 (ton)"),
+  layout(title = ("Gráfica 5.6. Producción de Cera por Entidad Federativa, 2017 (ton)"),
          xaxis = list(title = "", tickangle = -45),  
          size = 16,
          yaxis = list(title = "ton"),
@@ -444,7 +449,7 @@ library(plotly)
 
 p5 <- plot_ly(miel_org2, x = ~miel_org2$x, y = ~miel_org2[,13], type = 'bar',
               name = '', marker = list(color = 'rgb(49,130,189)')) %>%
-  layout(title = ("Gráfica 5.9. Producción de Miel Orgánica por Entidad Federativa, 2017 (Ton)"),
+  layout(title = ("Gráfica 5.7. Producción de Miel Orgánica por Entidad Federativa, 2017 (Ton)"),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "toneladas"),
          margin = list(b = 100),
@@ -477,7 +482,7 @@ p6 <- plot_ly(derivados2, x = ~derivados2[,5], y = ~derivados2[,2], type = 'bar'
             marker = list(color = 'green')) %>% 
   add_trace(y = ~derivados2[,4], name = 'Propóleos', 
             marker = list(color = 'red')) %>% 
-  layout(title = ("Gráfica 5.10. Producción de Derivados Apícolas por Entidad Federativa, 2017"),
+  layout(title = ("Gráfica 5.8. Producción de Derivados Apícolas por Entidad Federativa, 2017"),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "kg"),
          margin = list(b = 100),
@@ -509,7 +514,7 @@ p7 <- plot_ly(terr2, x = ~terr2[,5], y = ~terr2[,2], type = 'bar',
             marker = list(color = 'green')) %>% 
   add_trace(y = ~terr2[,4], name = 'Terrenos Privados', 
             marker = list(color = 'red')) %>% 
-  layout(title = ("Gráfica 5.11. Terrenos Dedicados a Actividades Apícolas, por Entidad Federativa (2017)"),
+  layout(title = ("Gráfica 5.9. Terrenos Dedicados a Actividades Apícolas, por Entidad Federativa (2017)"),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "Número de terrenos"),
          margin = list(b = 100),
@@ -541,7 +546,7 @@ p8 <- plot_ly(hect2, x = ~hect2[,5], y = ~hect2[,2], type = 'bar',
             marker = list(color = 'green')) %>% 
   add_trace(y = ~hect2[,4], name = 'Terrenos Privados', 
             marker = list(color = 'red')) %>% 
-  layout(title = ('Gráfica 5.12. Superficie Dedicada a Actividades Apícolas, por Entidad Federativa, 2017'),
+  layout(title = ('Gráfica 5.10. Superficie Dedicada a Actividades Apícolas, por Entidad Federativa, 2017'),
          xaxis = list(title = "", tickangle =-45),
          yaxis = list(title = "Hectáreas"),
          margin = list(b = 100),
@@ -595,6 +600,10 @@ A continuación, se presentan algunos datos sobre el valor de las exportaciones 
 
 <br/>
 
+<p align="center"> **Cuadro 5.7. Valor de Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
+
+<br/>
+
 ```{r tab3_16_1, echo=FALSE }
 
 tab3_16 <- read.csv("tabs/3_16_1_exportamiel.csv", encoding = "UTF")
@@ -609,16 +618,17 @@ DT::datatable(tab3_16,filter = 'top', options = list(
 
 ```
 
-<br/>
 
-<p align="center"> **Cuadro 5.4. Valor de Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
-
-<br/>
 <br/>
 
 Por otra parte, si se analiza el comportamiento de las exportaciones mensuales de miel en México mediante un gráfico historico o serie de tiempo, puede observarse la tendencia cíclica del volumen de ventas en dólares, mostrando picos entre los meses de abril-julio de cada año, y marcados descensos en las exportaciones en los meses de agosto-noviembre, que refleja las épocas de mayor floración y el periodo inmediato a la mayor produción y extracción de miel (en el que las colmenas apenas comienzan a recuperarse), respectivamente:
 
 <br/>
+
+<p align="center"> **Gráfica 5.11. Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
+
+<br/>
+
 
 ```{r exportaMiel , echo = FALSE, message = FALSE, warning = FALSE, fig.align='center',fig.height= 6, fig.width= 10,  out.width = "100%" }
 
@@ -636,9 +646,6 @@ dygraphs::dyRangeSelector()
 
 <br/>
 
-<p align="center"> **Gráfica 5.13. Exportaciones Mensuales de Miel, 1993-2018** [`r icon::fa("download")`](tabs/3_16_1_exportamiel.csv) </p>
-
-<br/>
 
 
 ***Fuente:***
@@ -671,7 +678,7 @@ pexp <- plot_ly(dest3, x = ~years, y = ~ALEM, name = 'Alemania', type = 'scatter
   add_trace(y = ~ARAB_SAUD, name = 'Arabia Saudita', line = list(color = 'cyan', width = 4, dash = NULL)) %>%
   add_trace(y = ~SUIZA, name = 'Suiza', line = list(color = 'darkorchid', width = 4, dash = NULL)) %>%
   add_trace(y = ~BELG, name = 'Bélgica', line = list(color = 'dodgerblue', width = 4, dash = NULL))  %>%
-  layout(title = "Gráfica 5.14. Valor de las exportaciones a los principales países de destino, 2002-2019*",
+  layout(title = "Gráfica 5.12. Valor de las exportaciones a los principales países de destino, 2002-2019*",
          xaxis = list(title = "Año"),
          yaxis = list (title = "Millones de dólares"))
 pexp 
@@ -697,7 +704,7 @@ En términos de volúmenes, la siguiente tabla concentra las exportaciones por p
 
 <br/>
 
-<p align="center"> **Cuadro 5.5. Volumen de Exportaciones Mensuales de Miel (Toneladas), 2002-2019** [`r icon::fa("download")`](tabs/export_ton.csv) </p>
+<p align="center"> **Cuadro 5.8. Volumen de Exportaciones Mensuales de Miel (Toneladas), 2002-2019** [`r icon::fa("download")`](tabs/export_ton.csv) </p>
 <br/>
 
 ```{r tab00030, echo=FALSE, fig.align='left', warning=FALSE}
@@ -737,7 +744,7 @@ immiel <- read.csv("tabs/import_2004_2019.csv", encoding = "UTF")
 importac <- plot_ly(immiel, x = ~anio, y = ~(dolares), type = 'scatter', 
               mode = 'lines', line = list(color = 'darkblue', 
                                           width = 4))  %>%
-  layout(title = "Gráfica 5.15. Importaciones Anuales de Miel, 2004-2019",
+  layout(title = "Gráfica 5.13. Importaciones Anuales de Miel, 2004-2019",
          xaxis = list(title = "Año"),
          yaxis = list (title = "Miles de Dólares"))
 importac

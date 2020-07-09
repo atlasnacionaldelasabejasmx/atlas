@@ -105,7 +105,6 @@ Por todo lo anterior, no debe considerarse como miel a los jarabes neutros o con
 
 ##  **3.3 Cosecha y Procesos de la Miel** 
 ****
-
 <br/>
 
 Para obtener la miel de las abejas se deben reunir condiciones que las estimulen a recolectar el néctar y lo almacenen en las celdas de sus panales; esto ocurre cuando comienzan las temporadas en las que las flores aparecen en los campos o en los cultivos. En estos períodos, las abejas recolectan el néctar y lo llevan a la colmena para almacenarlo y madurarlo con el fin de tener reservas energéticas, en caso de que se presenten condiciones de escasez. 
@@ -273,7 +272,8 @@ names(tab0008) <- c( "NUTRIENTE", "CANTIDAD PROMEDIO EN 100 g")
 #knitr::kable(tab0008, format = "markdown")
 
 kableExtra::kable(tab0008, align = c('l','r')) %>%
- kableExtra::kable_styling(bootstrap_options = c("striped", "hover"))
+ kableExtra::kable_styling(bootstrap_options = c("striped", "hover")) %>%
+  scroll_box(height = "400px")
 
 ```  
 
@@ -906,14 +906,13 @@ Los siguientes videos muestran algunas de las actividades de este laboratorio.
 
 <div class=text-center>
 
-<video width="710" height="427" src="media/laboratorio_analisis_propoleos.mp4" controls type="video/mp4">
-</video>
+<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
 
-<video width="710" height="427" src="media/laboratorio_analisis_propoleos_unam_global.mp4" controls type="video/mp4">
-</video>
+
+<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos_unam_global.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
