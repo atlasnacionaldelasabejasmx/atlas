@@ -156,18 +156,19 @@ Algunos de los componentes más significativos en las resinas/bálsamos en este 
 <br>
 
 | Componentes | Ejemplos       |
-|:-------|:------------------------------------ |
-|Ácidos orgánicos | Ácido benzoico (C~6~H~5~-COOH), ácido gálico (C~7~H~6~O~5~) |
-|Ácidos fenólicos | Ácidocafeico (C~9~H~8~O~4~), Ácido cinámico (C~9~H~8~O~2~), Ácido(_Z_)-_p_-cumarínico (C~9~H~8~O~3~) y Ácido fenílico (fenol, C~6~H~6~O) |
-|Aldehídos aromáticos|Vainillina (C~8~H~8~O~3~), Isovainillina (C~8~H~8~O~3~) |
-|Cumarinas| Esculetol (C~9~H~6~O~4~), Escopoletol (C~10~H~8~O~4~) |
-|Flavonas| Crisina (C~15~H~10~O~4~), Acacetina (C~16~H~12~O~5~), Pectolinaringenina (C~17~H~14~O~6~), Tectocrisina (C~16~H~12~O~4~) |
-|Flavanonas|Pinocembrina (C~15~H~12~O~4~), Naringenina (C~15~H~12~O~5~), Pinostrobina (C~16~H~14~O~4~), Sakuranetina (C~16~H~14~O~5~) |
-|Flavonoles|Quercetina (C~15~H~10~O~7~), Izalpinina (C~16~H~12~O~5~), Kaempferol (C~15~H~10~O~6~), Galangina (C~15~H~10~O~5~), Fisetina (C~15~H~10~O~8~), Miricetina (C~15~H~10~O~8~) |
-|Flavanoles|Catequina (C~15~H~14~O~6~), Pinobanksina (C~15~H~12~O~5~), Epicatequina (C~15~H~14~O~6~) |
-|Minerales|Aluminio, Plata, Bario, Boro, Cromo, Cobalto, Cobre, Estaño, Hierro,  Magnesio, Manganeso, Molibdeno, Níquel, Plomo, Silicio, Estroncio, Titanio, Vanadio, Zinc, Calcio |
-|Vitaminas|Provitamina A (β-caroteno, C~40~H~56~) y Vitamina B3 (Niacina, Ácido nicotínico, Vitamina PP, C~6~H~5~NO~2~) |
+|:---------------|:----------------------------------------- |
+|Ácidos orgánicos | [Ácido benzoico (C~6~H~5~-COOH)](imag/acido_benzoico.svg){target="_blank"}, [ácido gálico (C~7~H~6~O~5~)](imag/acido_galico.svg){target="_blank"} |
+|Ácidos fenólicos | [Ácido cafeico (C~9~H~8~O~4~)](imag/acido_cafeico.svg){target="_blank"}, [Ácido cinámico (C~9~H~8~O~2~)](imag/acido_cinamico.svg){target="_blank"}, <br> [Ácido(_Z_)-_p_-cumarínico (C~9~H~8~O~3~)](imag/acido_cumarinico.svg){target="_blank"} y [Ácido fenílico (fenol, C~6~H~6~O)](imag/fenol.svg){target="_blank"} |
+|Aldehídos aromáticos| [Vainillina (C~8~H~8~O~3~)](imag/vainillina.svg){target="_blank"}, [Isovainillina (C~8~H~8~O~3~)](imag/isovainillina.svg){target="_blank"} |
+|Cumarinas| [Esculetol (C~9~H~6~O~4~)](imag/esculetol.svg){target="_blank"}, [Escopoletol (C~10~H~8~O~4~)](imag/escopoletol.svg){target="_blank"} |
+|Flavonas| [Crisina (C~15~H~10~O~4~)](imag/crisina.svg){target="_blank"}, [Acacetina (C~16~H~12~O~5~)](imag/acacetina.svg){target="_blank"}, <br> [Pectolinaringenina (C~17~H~14~O~6~)](imag/pectolinaringenina.svg){target="_blank"}, [Tectocrisina (C~16~H~12~O~4~)](imag/tectocrisina.svg){target="_blank"} |
+|Flavanonas|[Pinocembrina (C~15~H~12~O~4~)](imag/pinocembrina.svg){target="_blank"}, [Naringenina (C~15~H~12~O~5~)](imag/naringenina.svg){target="_blank"}, <br> [Pinostrobina (C~16~H~14~O~4~)](imag/pinostrobina.svg){target="_blank"}, [Sakuranetina (C~16~H~14~O~5~)](imag/sakuranetina.svg){target="_blank"} |
+|Flavonoles|[Quercetina (C~15~H~10~O~7~)](imag/quercetina.svg){target="_blank"}, [Izalpinina (C~16~H~12~O~5~)](imag/izalpinina.svg){target="_blank"}, <br> [Kaempferol (C~15~H~10~O~6~)](imag/kaempferol.svg){target="_blank"}, [Galangina (C~15~H~10~O~5~)](imag/galangina.svg){target="_blank"}, <br> [Fisetina (C~15~H~10~O~8~)](imag/fisetina.svg){target="_blank"}, [Miricetina (C~15~H~10~O~8~)](imag/miricetina.svg){target="_blank"} |
+|Flavanoles| [Catequina (C~15~H~14~O~6~)](imag/catequina.svg){target="_blank"}, [Pinobanksina (C~15~H~12~O~5~)](imag/pinobanksina.svg){target="_blank"}, <br> [Epicatequina (C~15~H~14~O~6~)](imag/epicatequina.svg){target="_blank"} |
+|Minerales| Aluminio, Plata, Bario, Boro, Cromo, Cobalto, Cobre, Estaño, Hierro,  Magnesio, Manganeso, Molibdeno, Níquel, Plomo, Silicio, Estroncio, Titanio, Vanadio, Zinc, Calcio |
+|Vitaminas| [[Provitamina A (β-caroteno, C~40~H~56~)](imag/provitamina_a_beta_caroteno.svg){target="_blank"} y <br> [Vitamina B3 (Niacina, Ácido nicotínico, Vitamina PP, C~6~H~5~NO~2~)](imag/vitamina_b3.svg){target="_blank"} |
 | | 
+
 
 <FONT SIZE=2>**Fuente: Rojas N. M. (2008) Viabilidad biológica de los propóleos de Cuba. Actas del XXII Seminario Americano de Apicultura. Julio 28-31, Mérida, Yucatán, pp. 59-66**</font>
 
