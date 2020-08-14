@@ -32,7 +32,7 @@ La División Estadística de la FAO (FAOSTAT) tiene publicada información sobre
 
 ```{r tab01 , echo=FALSE,warning=FALSE }
 library(DT)
-bhvs <- read.csv("tabs/BeehivesMX.csv", encoding = "UTF")
+bhvs <- read.csv("tabs/BeehivesMX.csv", encoding = "latin1")
 names(bhvs) <- c("Año", "Colmenas en México")
 
 DT::datatable(bhvs,filter = 'top', options = list(
@@ -56,7 +56,7 @@ DT::datatable(bhvs,filter = 'top', options = list(
 ```{r beehives , echo = FALSE, message = FALSE, warning = FALSE, fig.align='center',fig.height= 6, fig.width= 10,  out.width = "100%" }
 
 library(dygraphs)
-bhvs <- read.csv("tabs/BeehivesMX2.csv", encoding = "UTF")
+bhvs <- read.csv("tabs/BeehivesMX2.csv", encoding = "latin1")
 Colmenas <- bhvs$Colmenas
 p_anual_colmenas <- ts(Colmenas, start= 1961, end= 2017 , frequency=1)
 
@@ -92,7 +92,7 @@ Cabe señalar que en el periodo de 2003 a 2019, las entidades con mayor producci
 
 library(plotly)
 
-bx <- read.csv("tabs/ent_ton_miel_03_19.csv", encoding = "UTF")
+bx <- read.csv("tabs/ent_ton_miel_03_19.csv", encoding = "latin1")
 bx2 <- bx[1:32,-1]
 bx3 <- as.data.frame(t(bx2))
 estados <- c("AGS","BCN","BCS","CAM","COA","COL","CHIS","CHI","CDMX","DGO","GTO","GRO",
@@ -159,7 +159,7 @@ Los datos completos de todas los estados pueden consultarse en la siguiente tabl
 
 ```{r tab5_2, echo=FALSE, fig.align='left', warning=FALSE}
 library(DT)
-tab5_2 <- read.csv("tabs/ent_ton_miel_03_19_2.csv", encoding = "UTF")
+tab5_2 <- read.csv("tabs/ent_ton_miel_03_19_2.csv", encoding = "latin1")
 names(tab5_2) <- c("Estado","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019")
 
 DT::datatable(tab5_2, filter = 'top', options = list(
@@ -196,7 +196,7 @@ A continuación, se presentan datos sobre la producción de miel a nivel municip
 
 ```{r tabmun18, echo=FALSE }
 
-tabmun_18 <- read.csv("tabs/Prodmiel2018muni.csv", encoding = "UTF")
+tabmun_18 <- read.csv("tabs/Prodmiel2018muni.csv", encoding = "latin1")
 names(tabmun_18) <- c( "ESTADO","MUNICIPIO", "VOLUMEN  (litros)", "VALOR  (pesos)")
 
 DT::datatable(tabmun_18,filter = 'top', options = list(
@@ -224,7 +224,7 @@ Los poco más de 43,000 apicultores que hay en México se encuentran registrados
 
 ```{r graf_b1, fig.align='center', fig.height= 6, fig.width= 10, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE}
 
-asoc_ent_2 <- read.csv("tabs/estadisticas.csv", encoding="UTF")
+asoc_ent_2 <- read.csv("tabs/estadisticas.csv", encoding="latin1")
 
 asoc_ent_2a <- asoc_ent_2
 asoc_ent_2a$orga_asoc_apic <- asoc_ent_2a$ASOCIACIONES_APICOLAS + asoc_ent_2a$OTRAS_ORGANIZACIONES
@@ -261,7 +261,7 @@ En lo referente a actividades específicas de la cadena productiva apícola, se 
 
 ```{r graf_b2, fig.align='center', fig.height= 6, fig.width= 10, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE, message=FALSE}
 
-estadisticas_t1 <- read.csv("tabs/estadisticas.csv", encoding="UTF")
+estadisticas_t1 <- read.csv("tabs/estadisticas.csv", encoding="latin1")
 
 acopiador1<- estadisticas_t1[estadisticas_t1[,5]>0,c(1,5)]
 orden_acopiador1<-order(acopiador1 $ACOPIADORES_DE_MIEL, decreasing = T)
@@ -295,7 +295,7 @@ No obstante, al observar la cantidad de unidades económicas exportadoras de mie
 
 ```{r graf_b3, fig.align='center',fig.height= 6, fig.width= 10, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE, message=FALSE}
 
-estadisticas_t2 <- read.csv("tabs/estadisticas.csv", encoding="UTF")
+estadisticas_t2 <- read.csv("tabs/estadisticas.csv", encoding="latin1")
 
 exportador2<- estadisticas_t2[estadisticas_t2[,6]>0,c(1,6)]
 orden_exportador2<-order(exportador2$EXPORTADORES, decreasing = T)
@@ -333,7 +333,7 @@ Con respecto a la crianza de abejas reina y producción de núcleos, también ex
 
 ```{r tab5_6_1, echo=FALSE }
 
-tab5_6_1 <- read.csv("tabs/Criadores_tabla_a1.csv")
+tab5_6_1 <- read.csv("tabs/Criadores_Tabla_a1.csv")
 names(tab5_6_1) <- c( "Entidad", "Criaderos de Abejas Reinas Certificados durante 2017", "Criaderos de Abejas Reinas Certificados durante 2018", "Criaderos de Abejas Reinas Certificados durante 2019", "Capacidad de Criaderos de Abejas Reinas Certificados durante 2017", "Capacidad de Criaderos de Abejas Reinas Certificados durante 2018",  "Capacidad de Criaderos de Abejas Reinas Certificados durante 2019")
 
 DT::datatable(tab5_6_1,filter = 'top', options = list(
@@ -353,7 +353,7 @@ DT::datatable(tab5_6_1,filter = 'top', options = list(
 
 ```{r tab5_6_2, echo=FALSE }
 
-tab5_6_2 <- read.csv("tabs/Criadores_tabla_a2.csv")
+tab5_6_2 <- read.csv("tabs/Criadores_Tabla_a2.csv")
 names(tab5_6_2) <- c( "Entidad", "Criaderos de Abejas Reina Progenitoras Certificados durante 2017", "Criaderos de Abejas Reina Progenitoras Certificados durante 2018", "Criaderos de Abejas Reina Progenitoras Certificados durante 2019", "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 2017",  "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 201",  "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 2019")
 
 DT::datatable(tab5_6_2,filter = 'top', options = list(
@@ -374,7 +374,7 @@ DT::datatable(tab5_6_2,filter = 'top', options = list(
 
 ```{r tab5_6_3, echo=FALSE }
 
-tab5_6_3 <- read.csv("tabs/Criadores_tabla_a3.csv")
+tab5_6_3 <- read.csv("tabs/Criadores_Tabla_a3.csv")
 names(tab5_6_3) <- c( "Entidad", "Criaderos de núcleos de abejas Certificados durante 2017", "Criaderos de núcleos de abejas Certificados durante 2018", "Criaderos de núcleos de abejas Certificados durante 2019", "Capacidad de Criaderos de núcleos de abejas Certificados durante 2017",  "Capacidad de Criaderos de núcleos de abejas Certificados durante 2018", "Capacidad de Criaderos de núcleos de abejas Certificados durante 2019")
 
 DT::datatable(tab5_6_3,filter = 'top', options = list(
@@ -406,7 +406,7 @@ Además de la miel, se producen otros derivados apícolas. El principal subprodu
 
 library(plotly)
 
-estadisticas_t1 <- read.csv("tabs/estadisticas.csv", encoding="UTF")
+estadisticas_t1 <- read.csv("tabs/estadisticas.csv", encoding="latin1")
 peso <- estadisticas_t1[estadisticas_t1[,14]>0,c(1,14)]
 orden_peso<-order(peso$cera_ton_2018, decreasing = T)
 estadisticas_t1_2<-peso[orden_peso,]
@@ -438,7 +438,7 @@ En los últimos años, ha venido creciendo la producción de miel orgánica y de
 
 ```{r graf_b7, fig.align='center', fig.height= 6, fig.width= 10, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE}
 
-miel_org <- read.csv("tabs/estadisticas.csv", encoding="UTF")
+miel_org <- read.csv("tabs/estadisticas.csv", encoding="latin1")
 miel_org1<- subset(miel_org, miel_org[,13]>0)
 ord_mielorg <- order(miel_org1[,13], decreasing = T)
 miel_org2 <- miel_org1[ord_mielorg,]
@@ -469,7 +469,7 @@ Los subproductos mencionados son los propóleos, la jalea real, y el polen. El p
 
 ```{r graf_b7a, fig.align='center', fig.height= 6, fig.width= 10, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE}
 
-derivados <- read.csv("tabs/estadisticas.csv", encoding="UTF")
+derivados <- read.csv("tabs/estadisticas.csv", encoding="latin1")
 derivados1<- subset(derivados, derivados[,15]>0 | derivados[,16]>0 | derivados[,17]>0 )
 derivados2 <- data.frame(derivados1$Entidad, derivados1[,15], derivados1[,16], derivados1[,17])   
 derivados2$x<- factor(derivados2$derivados1.Entidad, levels = derivados2[["derivados1.Entidad"]])
@@ -501,7 +501,7 @@ En lo referente a la superficie y número de terrenos dedicados a las actividade
 <br/>
 ```{r graf_b8, fig.align='center', fig.height= 6, fig.width= 12, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE}
 
-terr <- read.csv("tabs/superficie_apicola.csv")
+terr <- read.csv("tabs/superficie_apicola.csv", encoding = "latin1")
 terr1 <- subset(terr, terr[,2]>0 | terr[,4]>0 | terr[,6]>0 )
 terr2 <- data.frame(terr1$entidad, terr1[,2], terr1[,4], terr1[,6])
 terr2$x<- factor(terr2$terr1.entidad, levels = terr2[["terr1.entidad"]])
@@ -533,7 +533,7 @@ Que expresados en hectáreas se distribuyen según la siguiente gráfica. Predom
 <br/>
 ```{r graf_b9, fig.align='center', fig.height= 6, fig.width= 12, echo=FALSE, out.width = "100%", cache=TRUE, warning=FALSE}
 
-hect <- read.csv("tabs/superficie_apicola.csv")
+hect <- read.csv("tabs/superficie_apicola.csv", encoding = "latin1")
 hect1 <- subset(hect, hect[,3]>0 | hect[,5]>0 | hect[,7]>0 )
 hect2 <- data.frame(hect1$entidad, hect1[,3], hect1[,5], hect1[,7])
 hect2$x<- factor(hect2$hect1.entidad, levels = hect2[["hect1.entidad"]])
@@ -606,7 +606,7 @@ A continuación, se presentan algunos datos sobre el valor de las exportaciones 
 
 ```{r tab3_16_1, echo=FALSE }
 
-tab3_16 <- read.csv("tabs/3_16_1_exportamiel.csv", encoding = "UTF")
+tab3_16 <- read.csv("tabs/3_16_1_exportamiel.csv", encoding = "latin1")
 names(tab3_16) <- c( "AÑO","MES", "Exportación Miel (miles de dolares)")
 
 DT::datatable(tab3_16,filter = 'top', options = list(
@@ -634,7 +634,7 @@ Por otra parte, si se analiza el comportamiento de las exportaciones mensuales d
 
 library(dygraphs)
 
-exmiel <- read.csv("tabs/3_16_1_exportamiel.csv", encoding = "UTF")
+exmiel <- read.csv("tabs/3_16_1_exportamiel.csv", encoding = "latin1")
 exmildls <- exmiel$SE32403
 exmildlsxmes <- ts(exmildls, start= c(1993,1) , end= c(2018,12) , frequency=12)
 
@@ -663,7 +663,7 @@ Los principales destinos de las exportaciones pueden apreciarse en la siguiente 
 
 library(plotly)
 
-dest <- read.csv("tabs/destinos.csv", encoding = "UTF")
+dest <- read.csv("tabs/destinos.csv", encoding = "latin1")
 dest2 <- (dest[1:6,-1])/1000000
 dest3 <- as.data.frame(t(dest2))
 paises <- c("ALEM","USA","UK","ARAB_SAUD","SUIZA","BELG")
@@ -709,7 +709,7 @@ En términos de volúmenes, la siguiente tabla concentra las exportaciones por p
 
 ```{r tab00030, echo=FALSE, fig.align='left', warning=FALSE}
 library(DT)
-tab0030 <- read.csv("tabs/export_ton.csv", encoding = "UTF")
+tab0030 <- read.csv("tabs/export_ton.csv", encoding = "latin1")
 names(tab0030) <- c("País","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019")
 
 DT::datatable(tab0030,filter = 'top', options = list(
@@ -739,7 +739,7 @@ En contraste, la importación de miel es mucho menor en comparación con las exp
 
 library(plotly)
 
-immiel <- read.csv("tabs/import_2004_2019.csv", encoding = "UTF")
+immiel <- read.csv("tabs/import_2004_2019.csv", encoding = "latin1")
 
 importac <- plot_ly(immiel, x = ~anio, y = ~(dolares), type = 'scatter', 
               mode = 'lines', line = list(color = 'darkblue', 

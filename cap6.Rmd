@@ -40,7 +40,7 @@ library(mapview)
 
 
 
-prod_miel <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "UTF")
+prod_miel <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "latin1")
 prodmiel2019 <- read.csv("tabs/prodmiel2019.csv", head= T)
 prod_miel$total2019 <- prodmiel2019[,3]
 map_prod_miel <- leaflet(data=prod_miel)
@@ -100,7 +100,7 @@ library(leaflet)
 library(leaflet.extras)
 library(mapview)  
 
-mapa_base <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "UTF")
+mapa_base <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "latin1")
 colm_ent <- read.csv("tabs/colmenas.csv")
 mapa_base$colmenas <- colm_ent[,2]
 map_colm <- leaflet(data=mapa_base)
@@ -159,7 +159,7 @@ library(leaflet)
 library(leaflet.extras)
 library(mapview)  
 
-mapa_base2 <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "UTF")
+mapa_base2 <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "latin1")
 apic_ent <- read.csv("tabs/estadisticas.csv")
 mapa_base2$apicult <- apic_ent[,2]
 map_apicult <- leaflet(data=mapa_base2)
@@ -228,11 +228,12 @@ library(rjson)
 library(xts)
 
 
-puntos <- read.csv("denue2020/INEGI_DENUE_27042020_2.csv", header = T, encoding = "UTF8")
-puntos_sp <- SpatialPointsDataFrame(puntos[,c(40,39)],puntos[,-c(40,39)])
-writeOGR(puntos_sp, "shape_files", "puntos", driver="ESRI Shapefile", encoding = 'UTF-8',
+puntos <- read.csv("denue2020/INEGI_DENUE_27042020_2.csv", header = T, encoding = "latin1")
+crs_4326 <- CRS('+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs')
+puntos_sp <- SpatialPointsDataFrame(puntos[,c(40,39)],puntos[,-c(40,39)], proj4string = crs_4326)
+writeOGR(puntos_sp, "shape_files", "puntos", driver="ESRI Shapefile", encoding = 'latin1',
          overwrite_layer=T)
-puntos_sp2 <- readOGR("shape_files/puntos.shp", encoding = 'UTF-8',
+puntos_sp2 <- readOGR("shape_files/puntos.shp", encoding = 'latin1',
                       "puntos", verbose=FALSE)
 puntos_sp2@data$lat <- puntos$lat
 puntos_sp2@data$lon <- puntos$lon

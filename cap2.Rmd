@@ -370,8 +370,8 @@ El siguiente, es un directorio de algunas de las más importantes instituciones 
 
 ```{r tab2_10_1, echo=FALSE, warning=FALSE }
 library(kableExtra)
-tab2_10_1 <- read.csv("tabs/asociaciones_api2.csv", encoding = "UTF")
-names(tab2_10_1) <- c( "NOMBRE", "DIRECCIÓN Y TELÉFONO")
+tab2_10_1 <- read.csv("tabs/asociaciones_api2.csv", header = F, encoding = "latin1")
+names(tab2_10_1) <- c("Nombre", "Dirección")
 
 kableExtra::kable(tab2_10_1) %>%
   kableExtra::kable_styling(bootstrap_options = c("striped", "hover"))%>%
@@ -429,7 +429,7 @@ Los cultivos beneficiados con la polinización por abejas son principalmente los
 
 ```{r tab0x11, echo=FALSE }
 library(kableExtra)
-tabtab0x11 <- read.csv("tabs/poliniza_colm.csv", encoding = "UTF")
+tabtab0x11 <- read.csv("tabs/poliniza_colm.csv", encoding = "latin1")
 names(tabtab0x11) <- c( "DELEGACIÓN SADER", "CULTIVOS", "COLMENAS")
 
 kableExtra::kable(tabtab0x11, align = c('l','l','r')) %>%
@@ -489,7 +489,7 @@ Es importante considerar que para realizar esta práctica en México, se debe co
 
 ***Fuente:***
 
-[Delegación SADER Michoacán. (2017). *Destacada la Actividad de la Apicultura, Señala SADER Michoacán.*  Boletín de prensa, mayo.](https://www.gob.mx/sader/michoacan/articulos/destacada-la-actividad-de-la-apicultura-senala-sagarpa-michoacan?idiom=es){target="_blank"}
+[Delegación SADER Michoacán. (2017). *Destacada la Actividad de la Apicultura, Señala SADER Michoacán.*  Boletín de prensa, mayo.](https://www.gob.mx/agricultura%7Cmichoacan/articulos/destacada-la-actividad-de-la-apicultura-senala-sagarpa-michoacan){target="_blank"}
 
 <br/>
 <br/>
@@ -589,7 +589,7 @@ La sola práctica de cambiar la abeja reina una vez al año a la colonia comerci
 ```{r tab0004, echo=FALSE }
 
 library(kableExtra)
-tab0004 <- read.csv("tabs/cua_enferm_1s.csv", encoding = "UTF")
+tab0004 <- read.csv("tabs/cua_enferm_1s.csv", encoding = "latin1")
 names(tab0004) <- c( "ENFERMEDAD", "TIPO", "CAUSADO POR","AFECTA A", "SIGNOS", "DIAGNÓSTICO EN LABORATORIO", "TRATAMIENTO")
 #knitr::kable(tab0004, format = "markdown")
 
@@ -613,7 +613,7 @@ Si desea saber más sobre las enfermedades que afectan a las abejas y su tratami
 
 ```{r tab0005, echo=FALSE }
 
-tab0005 <- read.csv("tabs/cua_enferm_2s.csv", encoding = "UTF")
+tab0005 <- read.csv("tabs/cua_enferm_2s.csv", encoding = "latin1")
 names(tab0005) <- c( "ENFERMEDAD", "TIPO", "CAUSADO POR","AFECTA A", "SIGNOS", "DIAGNÓSTICO EN LABORATORIO", "TRATAMIENTO")
 #knitr::kable(tab0005, format = "markdown")
 
@@ -638,7 +638,7 @@ Si desea saber más sobre las enfermedades que afectan a las abejas y su tratami
 
 ```{r tab0006, echo=FALSE }
 
-tab0006 <- read.csv("tabs/cua_plaga_4s.csv", encoding = "UTF")
+tab0006 <- read.csv("tabs/cua_plaga_4s.csv", encoding = "latin1")
 names(tab0006) <- c( "PLAGA", "TIPO", "CAUSADO POR","DAÑOS", "PRESENCIA EN MÉXICO", "PREVENCIÓN", "CONTROL")
 #knitr::kable(tab0006, format = "markdown")
 
@@ -660,7 +660,7 @@ Además de las anteriores, las abejas pueden ser infestadas por otras plagas:
 
 ```{r tab0007, echo=FALSE }
 
-tab0007 <- read.csv("tabs/cua_otras_6s.csv", encoding = "UTF")
+tab0007 <- read.csv("tabs/cua_otras_6s.csv", encoding = "latin1")
 names(tab0007) <- c( "Plaga por", "Tipo", "Daños", "Control/Prevención")
 #knitr::kable(tab0007, format = "markdown")
 
@@ -697,7 +697,7 @@ Adicionalmente el PNPCAA, proporciona diferentes servicios como la capacitación
 
 ***Fuente:***
 
-[Guzmán Novoa E.,Correa Benítez A., Espinosa Montaño L.G., Guzmán Novoa G. (2011). *Colonización, impacto y control de las abejas melíferas africanizadas en México.* Veterinaria México, Facultad de Medicina Veterinaria y Zootecnia, UNAM., V.42, No.2, México, abr-jun.](pdfs/v42n2a5.pdf){target="_blank"}
+[Guzmán Novoa E., Correa Benítez A., Espinosa Montaño L.G., Guzmán Novoa G. (2011). *Colonización, impacto y control de las abejas melíferas africanizadas en México.* Veterinaria México, Facultad de Medicina Veterinaria y Zootecnia, UNAM., V.42, No.2, México, abr-jun.](pdfs/v42n2a5.pdf){target="_blank"}
 
 <br/>
 <br/>

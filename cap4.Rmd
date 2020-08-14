@@ -299,7 +299,7 @@ De esas especies propolizadoras, muchas también son productoras de néctar y po
 ```{r tab4_2, echo=FALSE, warning=FALSE }
 library(kableExtra)
 
-c4_2 <- read.csv("tabs/flora.csv", encoding = "UTF8")
+c4_2 <- read.csv("tabs/flora.csv", encoding = "latin1")
 names(c4_2) <- c( "Familia", "Género")
 
 kableExtra::kable(c4_2) %>%
@@ -481,19 +481,12 @@ knitr::include_graphics("imag/4_3_Fig4.png")
 <br/>
 
 
-Mallas y Rejillas plásticas: Son dispositivos plásticos que presentan orificios de diferentes tamaños. Las mallas y rejillas plásticas son dispositivos plásticos que presentan orificios de diferentes tamaños que pueden ir desde los tejidos, como las mallas mosquiteros que presentan hilos de un grosor de 0.5 mm y orificios de aproximadamente 1.0 por 1.0 mm de luz, y las matrizadas (que se forma por medio del prensado en un molde caliente), que son de una sola pieza y pueden presentar orificios desde 1.0 por 1.0 mm de luz y un grosor de 1.0 mm; hasta las de 2.0 por 2.0 mm de luz y un grosor de 2.0 mm, y las tipo rejilla con orificios de 2.0 mm por 5.0 cm de largo y un grosor de 2.0 mm, estas mallas y rejillas presentan una forma trapezoidal isósceles.[^60^]
+Mallas y Rejillas plásticas: Son dispositivos plásticos que presentan orificios de diferentes tamaños. Las mallas y rejillas plásticas son dispositivos plásticos que presentan orificios de diferentes tamaños. Las hay matrizadas (que se forma por medio del prensado en un molde caliente), que son de una sola pieza y pueden presentar orificios desde 1.0 por 1.0 mm de luz y un grosor de 1.0 mm; hasta las de 2.0 por 2.0 mm de luz y un grosor de 2.0 mm, y las tipo rejilla con orificios de 2.0 mm por 5.0 cm de largo y un grosor de 2.0 mm, estas mallas y rejillas presentan una forma trapezoidal isósceles.[^60^]
+
 
 <br/>
 
-```{r img4_3_5, fig.align='center', fig.cap= "**Figura 4.15. Malla plástica. Fotografía de Liborio Carrillo **", echo=FALSE, out.width = "60%", cache=TRUE}
- #par(mfrow = c(2, 2),
-knitr::include_graphics("imag/4_3_Fig5.png")
-
-```
-
-<br/>
-
-```{r img4_3_6, fig.align='center', fig.cap= "**Figura 4.16. Rejillas plásticas. Fotografía de Liborio C.M. **", echo=FALSE, out.width = "70%", cache=TRUE}
+```{r img4_3_6, fig.align='center', fig.cap= "**Figura 4.15. Rejillas plásticas. Fotografía de Liborio C.M. **", echo=FALSE, out.width = "70%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_3_Fig6.png")
 
@@ -509,7 +502,7 @@ Las abejas utilizan el propóleo dentro de la colonia con diversos fines, como s
 
 <br/>
 
-```{r img4_3_8, fig.align='center', fig.cap= "**Figura 4.17. Abejas utilizando propóleo. Fotografía: Liborio C.M. **", echo=FALSE, out.width = "70%", cache=TRUE}
+```{r img4_3_8, fig.align='center', fig.cap= "**Figura 4.16. Abejas utilizando propóleo. Fotografía: Liborio C.M. **", echo=FALSE, out.width = "70%", cache=TRUE}
  #par(mfrow = c(2, 2),
 knitr::include_graphics("imag/4_3_Fig8.png")
 
@@ -549,7 +542,7 @@ El propóleo presenta una densidad mayor que la cera de abeja, se disuelve fáci
 ## **4.4 Actividad antibacteriana**
 ****
 
-Por [Dra. Elisa Gutiérrez Hernández](#a002)
+Por [M.C. Elisa Gutiérrez Hernández](#a002)
 
 <br/>
 
@@ -557,13 +550,13 @@ La actividad antibacteriana del propóleo ha sido reportada por múltiples autor
 
 Los efectos del propóleo sobre agentes bacterianos están mayormente estudiados sobre bacterias del grupo constituido por los gran positivas, siendo _Staphylococcus aureus_ de los agentes más estudiados de este grupo de microorganismos. Así mismo se ha reportado una menor actividad en contra de bacterias gran negativas donde *Escherichia coli* es la más estudiada.
 
-Dentro de sus propiedades bactericidas y bacteriostáticas se ha comprobado que es activo contra _Staphylococcus spp. and Streptococcus, spp. Pasteurella multocida, Salmonella, Bacíllus subtilis, Proteus vulgaris, Pseudomona aeruginosa, Klebsiella pneumoniae, Escherichia coli, Helicobacter pilori_.
+Dentro de sus propiedades bactericidas y bacteriostáticas se ha comprobado que es activo contra _Staphylococcus spp., Streptococcus spp., Pasteurella multocida, Salmonella spp., Bacíllus subtilis, Proteus vulgaris, Pseudomona aeruginosa, Klebsiella pneumoniae, Escherichia coli, Helicobacter pilori_.
 
 <br>
 
-```{r img4_4_1, fig.align='center', fig.cap= "**Figura 4.18. Halos de inhibición producida por el propóleo contra Pasteurella miltocida, agente productor de neumonías en conejos, a concentraciones de 2, 4, 8 y 16 mg/ml de extracto etanólico de propóleo (Gutiérrez, 2011)**", echo=FALSE, out.width = "40%", cache=TRUE}
+```{r img4_4_1, fig.align='center', fig.cap= "**Figura 4.17. Halos de inhibición producida por el propóleo contra ___Pasteurella miltocida___, agente productor de neumonías en conejos, a concentraciones de 2, 4, 8 y 16 mg/ml de extracto etanólico de propóleo (Gutiérrez, 2011)**", echo=FALSE, out.width = "40%", cache=TRUE}
  #par(mfrow = c(2, 2),
-knitr::include_graphics("imag/4_4_fig1.png")
+knitr::include_graphics("imag/4_4_Fig1.png")
 
 ```
 
@@ -571,13 +564,13 @@ knitr::include_graphics("imag/4_4_fig1.png")
 
 
 
-En cuanto a los mecanismos de acción mediante los cuales el propóleo es capaz de inhibir el crecimiento bacteriano, estos apuntan a que es la presencia de fenoles y flavonoides en el propóleo son los responsables de cumplir esta función, así estudios acerca de los mecanismos de acción de los flavonoides.
+En cuanto a los mecanismos de acción mediante los cuales el propóleo es capaz de inhibir el crecimiento bacteriano, estos apuntan a que es la presencia de fenoles y flavonoides en el propóleo los responsables de cumplir esta función.
 
 El mecanismo de acción antibacteriana del flavonoide pinocembrina se ha estudiado en bacterias como _Neisseria gonorrhoeae, Escherichia coli, Pseudomonas aeruginosa, Bacillus subtilis, Staphylocccus aureus, Staphylococcus lentus y Klebbiella pneumoniae_, donde que ha determinado cambios en la composición de la membrana y lisis celular^75^. 
 
-En cuanto al mecanismo de acción propio de los propóleos se ha reportado daño de la pared celular lo que afecta el flujo energético de la membrana causando un daño irreversible en las estructuras esto en _Bacillus cereus_ por propóleos coreanos.
+En cuanto al mecanismo de acción propio de los propóleos se ha reportado daño de la pared celular lo que afecta el flujo energético de la membrana causando un daño irreversible en las estructuras, esto reportado en propóleos coreanos sobre el microorganismo _Bacillus cereus_.
  
-En cuanto al efecto que propóleos mexicanos tienen en conta de _Pasteurella multocida_ se ha observado por microscopia electrónica daño de la pared celular, donde se observa discontinuidad de la estructura, lo que provoca la salida de contenido intracelular[^76^].
+En los propóleos mexicanos se ha estudiado el efecto en contra de _Pasteurella multocida_ y se ha observado mediante microscopia electrónica que se produce daño en la pared celular, observando discontinuidad de la estructura, lo que provoca la salida de contenido intracelular[^76^].
 
 <br>
 
@@ -639,40 +632,40 @@ Se han identificado más de 300 compuestos, de los cuales un alto porcentaje son
 
 Por otro lado, la composición química del propóleo determina la calidad del mismo ylos compuestos fenólicos representan más de 50% de su peso total; resaltan la  pinocembrina, quercetina, galangina, pinostrobina, sakuranetina y crisina, también contribuye la presencia de ácidos aromáticos y sus ésteres como el ácido benzoico, ácido cafeico y ácido ferúlico[^84^].
 
-Debido a su actividad antimicrobiana, el propóleo ha sido ampliamente estudiado y en años recientes se ha puesto especial atención en el efecto antimicótico que posee; así pues, Londoño (2010)[^85^], demostró a través de microscopía óptica que el Extracto Etanólico de Propóleo (EEP) causa un importante daño celular en Candida albicans, al inhibir la formación del tubo germinativo y causar deformación de algunas levaduras en presencia de 0.25 mg/ml de EEP (ver figura 4.19).
+Debido a su actividad antimicrobiana, el propóleo ha sido ampliamente estudiado y en años recientes se ha puesto especial atención en el efecto antimicótico que posee; así pues, Londoño (2010)[^85^], demostró a través de microscopía óptica que el Extracto Etanólico de Propóleo (EEP) causa un importante daño celular en Candida albicans, al inhibir la formación del tubo germinativo y causar deformación de algunas levaduras en presencia de 0.25 mg/ml de EEP (ver figura 4.18).
 
 <br/>
 
 
-```{r img4_5_1, fig.align='center', fig.cap= "**Figura 4.19. Formación de tubo germinativo (flecha) de C. albicans, B. Inhibición de la formación del tubo germinativo al ser tratada la levadura con 0.25 mg/mL de EEP (Londoño, 2010)**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_5_1, fig.align='center', fig.cap= "**Figura 4.18. Formación de tubo germinativo (flecha) de C. albicans, B. Inhibición de la formación del tubo germinativo al ser tratada la levadura con 0.25 mg/mL de EEP (Londoño, 2010)**", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
-knitr::include_graphics("imag/4_5_fig1.png")
+knitr::include_graphics("imag/4_5_Fig1.png")
 
 ```
 
 <br/>
 
 
-En el mismo estudio, al observar micrografías electrónicas de transmisión de secciones ultrafinas de *C. albicans* ATCC 10231, se identificó la formación de gránulos de almacenamiento además de alteración y ruptura de las estructuras de la cubierta externa de la levadura. Por otro lado, la misma autora administró tratamiento con propóleo a *Criptococcus neoformansy*, y observó con Microscopio Electrónico de Transmisión, levaduras degeneradas acompañadas de una pérdida de la integridad de las envolturas externas (ver figura 4.20)[^86^]^,^[^87^]
+En el mismo estudio, al observar micrografías electrónicas de transmisión de secciones ultrafinas de *C. albicans* ATCC 10231, se identificó la formación de gránulos de almacenamiento además de alteración y ruptura de las estructuras de la cubierta externa de la levadura. Por otro lado, la misma autora administró tratamiento con propóleo a *Criptococcus neoformansy*, y observó con Microscopio Electrónico de Transmisión, levaduras degeneradas acompañadas de una pérdida de la integridad de las envolturas externas (ver figura 4.19)[^86^]^,^[^87^]
 
 <br>
 
-```{r img4_5_2, fig.align='center', fig.cap= "**Figura 4.20. Micrografía electrónica de transmisión (700x) de C. neoformans, 24 horas postratamiento con EEP. Se observa pérdida de la integridad de las envolturas externas (flechas) (Londoño, 2010)**", echo=FALSE, out.width = "40%", cache=TRUE}
+```{r img4_5_2, fig.align='center', fig.cap= "**Figura 4.19. Micrografía electrónica de transmisión (700x) de C. neoformans, 24 horas postratamiento con EEP. Se observa pérdida de la integridad de las envolturas externas (flechas) (Londoño, 2010)**", echo=FALSE, out.width = "40%", cache=TRUE}
  #par(mfrow = c(2, 2),
-knitr::include_graphics("imag/4_5_fig2.png")
+knitr::include_graphics("imag/4_5_Fig2.png")
 
 ```
 
 <br/>
 
 
-Por su parte Quintero y col. (2011), realizaron despliegues diferenciales en RT-PCR para determinar si el propóleo altera la expresión genética de *C. albicans*, y comprobaron después del tratamiento con EEP la subexpresión de dos genes ADH1 y PIK1, los cuales se cree tienen que ver con la formación del tubo germinativo y pared celular de la levadura (figura 4.21)[^88^]
+Por su parte Quintero y col. (2011), realizaron despliegues diferenciales en RT-PCR para determinar si el propóleo altera la expresión genética de *C. albicans*, y comprobaron después del tratamiento con EEP la subexpresión de dos genes ADH1 y PIK1, los cuales se cree tienen que ver con la formación del tubo germinativo y pared celular de la levadura (figura 4.20)[^88^]
 
 <br>
 
-```{r img4_5_3, fig.align='center', fig.cap= "**Figura 4.21. Patrón de bandas representativas del despliegue diferencial.  Los carriles 2 y 5 representan el control negativo (levadura tratada con alcohol al 70%), al compararlos con los carriles  3 y 6 con 1 hora postratamiento, y 4 y 7 a dos horas del tratamiento con EEP, este último a una dosis de 0.6 mg/mL, se evidencia la pobre expresión de los genes ADH1 y PIK1 (Quintero y col. 2011)**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_5_3, fig.align='center', fig.cap= "**Figura 4.20. Patrón de bandas representativas del despliegue diferencial.  Los carriles 2 y 5 representan el control negativo (levadura tratada con alcohol al 70%), al compararlos con los carriles  3 y 6 con 1 hora postratamiento, y 4 y 7 a dos horas del tratamiento con EEP, este último a una dosis de 0.6 mg/mL, se evidencia la pobre expresión de los genes ADH1 y PIK1 (Quintero y col. 2011)**", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
-knitr::include_graphics("imag/4_5_fig3.png")
+knitr::include_graphics("imag/4_5_Fig3.png")
 
 ```
 
@@ -681,13 +674,13 @@ knitr::include_graphics("imag/4_5_fig3.png")
 
 Cabe señalar la importancia de evaluar el efecto antimicótico del propóleo contra *C. albicans* ya que es considerada uno de los agentes de mayor importancia que provoca micosis oportunistas en humanos y animales dañando piel, tracto respiratorio, digestivo, reproductor y urinario.[^89^]
 
-Finalmente, Tovar (2016) comprobó a través de la prueba antifúngica *Inhibición de Crecimiento Radial* que el propóleo mexicano proveniente de Cuautitlán, Estado de México a concentraciones de 2, 4, 8 y 16 mg/mL causa inhibición (halos) en el crecimiento de *Malassezia pachydermatis*, principal agente causal de las otitis externas en caninos (figura 4.22)[^90^]. De igual modo, Cruz, Tovar y García (2015) observaron el mismo efecto al evaluar *Microsporum canis* (figura 4.20).[^91^]
+Finalmente, Tovar (2016) comprobó a través de la prueba antifúngica *Inhibición de Crecimiento Radial* que el propóleo mexicano proveniente de Cuautitlán, Estado de México a concentraciones de 2, 4, 8 y 16 mg/mL causa inhibición (halos) en el crecimiento de *Malassezia pachydermatis*, principal agente causal de las otitis externas en caninos (figura 4.21)[^90^]. De igual modo, Cruz, Tovar y García (2015) observaron el mismo efecto al evaluar *Microsporum canis* (figura 4.20).[^91^]
 
 <br>
 
-```{r img4_5_4, fig.align='center', fig.cap= "**Figura 4.22. Prueba de inhibición de crecimiento radial de Malassezia pachydermatis, donde se observan halos de inhibición al utilizar discos con EEP (derecha) a concentraciones de 2, 4, 8, y 16 mg/mL (a ,b, c y d). Los resultados se compararon con el efecto de antimicóticos conocidos Ketoconazol (K), Voriconazol (V), Nistatina (N) y Clotrimazol (C), sobre la levadura.**", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_5_4, fig.align='center', fig.cap= "**Figura 4.21. Prueba de inhibición de crecimiento radial de Malassezia pachydermatis, donde se observan halos de inhibición al utilizar discos con EEP (derecha) a concentraciones de 2, 4, 8, y 16 mg/mL (a ,b, c y d). Los resultados se compararon con el efecto de antimicóticos conocidos Ketoconazol (K), Voriconazol (V), Nistatina (N) y Clotrimazol (C), sobre la levadura.**", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
-knitr::include_graphics("imag/4_5_fig4.png")
+knitr::include_graphics("imag/4_5_Fig4.png")
 
 ```
 
@@ -695,9 +688,9 @@ knitr::include_graphics("imag/4_5_fig4.png")
 
 <br>
 
-```{r img4_5_5, fig.align='center', fig.cap= "**Figura 4.23. Prueba de inhibición de crecimiento radial de Microsporum canis, donde se observan halos de inhibición con discos impregnados con EEP a 4, 8, 12, 16 mg/mL. Los resultados fueron comparados con los halos producidos por Ketoconazol y Clotrimazol **", echo=FALSE, out.width = "50%", cache=TRUE}
+```{r img4_5_5, fig.align='center', fig.cap= "**Figura 4.22. Prueba de inhibición de crecimiento radial de Microsporum canis, donde se observan halos de inhibición con discos impregnados con EEP a 4, 8, 12, 16 mg/mL. Los resultados fueron comparados con los halos producidos por Ketoconazol y Clotrimazol **", echo=FALSE, out.width = "50%", cache=TRUE}
  #par(mfrow = c(2, 2),
-knitr::include_graphics("imag/4_5_fig5.png")
+knitr::include_graphics("imag/4_5_Fig5.png")
 
 ```
 
@@ -754,7 +747,7 @@ El propóleo ha sido utilizado en medicina veterinaria en diferentes especies an
 
 El propóleo es capaz de inhibir la propagación viral, la mayoría de los estudios publicados describen esta actividad en contra de virus que afectan a humanos. Asimismo, estudios in vitro demuestran los efectos del propóleo tanto en virus ADN como ARN. Los efectos observados incluyen reducción en la multiplicación viral e incluso una acción virucida, pero el mecanismo de esta acción antiviral aún no es claro. Las primeras pistas sobre el mecanismo de acción antiviral del propóleo fueron aportadas por Selway en 1986 al mencionar que los flavonoides pueden estar relacionados con la inhibición de la polimerasa viral y la unión al ácido nucleico viral o a proteínas de la cápside viral. En la actualidad, los hallazgos reportados sobre el mecanismo de acción del propóleo sugieren el bloqueo de receptores de la membrana celular y/o el desarrollo de interacciones con la célula huésped que inducen cambios internos que terminan afectando el ciclo de replicación del virus.
 
-Otros autores afirman que el efecto se debe a los flavonoides y a otros compuestos fenólicos que están presentes en el propóleo que interactúan con proteínas virales, formando complejos inestables y por lo tanto alterando las etapas de adsorción y penetración del virus (ver [González et al. 2017. In Vitro Activity of Propolis on Domestic Animal Viruses: a review](pdfs/González et al. 2017.PDF){target="_blank"}).
+Otros autores afirman que el efecto se debe a los flavonoides y a otros compuestos fenólicos que están presentes en el propóleo que interactúan con proteínas virales, formando complejos inestables y por lo tanto alterando las etapas de adsorción y penetración del virus (ver [González et al. 2017. In Vitro Activity of Propolis on Domestic Animal Viruses: a review](pdfs/González et al. 2017.pdf){target="_blank"}).
 
 Los diferentes componentes del propóleo parecen actuar sinérgicamente, lo cual explica el hecho de que la miel y el propóleo poseen una mayor actividad antiviral que sus componentes individuales. La actividad antiviral del propóleo ha sido probada, con resultados prometedores, contra algunos virus patógenos de humanos y animales, tales como el virus del herpes simple tipo 1 (HSV-1) y tipo 2 (HSV-2), virus de inmunodeficiencia humana (VIH) e Influenza aviar. Sin embargo, pocos estudios han sido publicados sobre el uso de propóleo en enfermedades virales de interés veterinario.
 
@@ -762,7 +755,7 @@ En un estudio publicado en el año 2015 y desarrollado en la Universidad Naciona
 
 <br/>
 
-```{r img4_6_1, fig.align='center', fig.cap= "**Figura 4.24. Cultivo de células MDBK teñidas con cristal violeta. A. Cultivo celular sin infección. B. Cultivo celular infectado con virus de Aujeszky. C. Cultivo celular tratado con 0.5 mg/ml de propóleo dos horas antes de la infección con virus. D. Cultivo tratado con 0.5 mg/ml de propóleo simultáneamente a la infección. E. Cultivo tratado con propóleo dos horas después de realizar la infección con virus. 250×.**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r img4_6_1, fig.align='center', fig.cap= "**Figura 4.23. Cultivo de células MDBK teñidas con cristal violeta. A. Cultivo celular sin infección. B. Cultivo celular infectado con virus de Aujeszky. C. Cultivo celular tratado con 0.5 mg/ml de propóleo dos horas antes de la infección con virus. D. Cultivo tratado con 0.5 mg/ml de propóleo simultáneamente a la infección. E. Cultivo tratado con propóleo dos horas después de realizar la infección con virus. 250×.**", echo=FALSE, out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/4_6_Fig1.png")
 
@@ -771,7 +764,7 @@ knitr::include_graphics("imag/4_6_Fig1.png")
 <br/>
 
 
-```{r img4_6_2, fig.align='center', fig.cap= "**Figura 4.25. Microscopía electronica de células MDBK. A. Presencia de partículas virales (marcas triangulares) en el citoplasma (C) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (▲) son observadas fuera de la membrana celular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r img4_6_2, fig.align='center', fig.cap= "**Figura 4.24. Microscopía electronica de células MDBK. A. Presencia de partículas virales (marcas triangulares) en el citoplasma (C) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (▲) son observadas fuera de la membrana celular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.**", echo=FALSE, out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/4_6_Fig2.png")
 
@@ -779,7 +772,7 @@ knitr::include_graphics("imag/4_6_Fig2.png")
 
 <br/>
 
-```{r img4_6_3, fig.align='center', fig.cap= "**Figura 4.26. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky. A. partículas virales (marcas triangulares) en el citoplasma de la célula (C), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.**", echo=FALSE, out.width = "80%", cache=TRUE}
+```{r img4_6_3, fig.align='center', fig.cap= "**Figura 4.25. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky. A. partículas virales (marcas triangulares) en el citoplasma de la célula (C), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.**", echo=FALSE, out.width = "80%", cache=TRUE}
 
 knitr::include_graphics("imag/4_6_Fig3.png")
 
@@ -787,9 +780,9 @@ knitr::include_graphics("imag/4_6_Fig3.png")
 
 <br/>
 
-En ambos casos el número de placas fue semejante a las encontradas en el cultivo infectado sin tratamiento (16.4 ufp), con lo cual se comprueba la capacidad del uso profiláctico del propóleo en contra de la enfermedad de Aujeszky. Para mayor detalle, véase el trabajo de [Burquez et al. 2015. *Protective Effect of a Mexican Propolis on MDBK Cells Exposed to Aujeszky Disease Virus*. Pseudorabies Virus](pdfs/Burquez et al. 2015.PDF){target="_blank"}.
+En ambos casos el número de placas fue semejante a las encontradas en el cultivo infectado sin tratamiento (16.4 ufp), con lo cual se comprueba la capacidad del uso profiláctico del propóleo en contra de la enfermedad de Aujeszky. Para mayor detalle, véase el trabajo de [Burquez et al. 2015. *Protective Effect of a Mexican Propolis on MDBK Cells Exposed to Aujeszky Disease Virus*. Pseudorabies Virus](pdfs/Burquez et al. 2015.pdf){target="_blank"}.
 
-En una segunda investigación, realizada por el mismo grupo de investigadores y publicada en el año 2017, se evaluó la actividad antiviral in vitro de un propóleo originario de México (FESC) y de tres flavonoides comerciales (quercetina, naringenina y pinocembrina). Los tratamientos se realizaron en tres momentos diferentes. 1) Tratamiento dos horas antes de la infección, 2) Tratamiento simultáneo a la infección y 3) Tratamiento dos horas después de la infección viral. La actividad antiviral se evaluó como la capacidad de inhibir la expresión relativa del gen de la nucleoproteína del virus de distemper canino (RT-PCR tiempo real) y determinando la viabilidad del cultivo celular (ensayo colorimétrico MTT). El propóleo aplicado al cultivo 2 horas antes de la infección disminuyó la expresión viral y este hallazgo correlacionó con un aumento en la viabilidad celular. Adicionando de forma conjunta los tres flavonoides comerciales dos horas antes de la infección, se observó una disminución de la expresión viral pero no hubo diferencia en la viabilidad celular entre el grupo experimental y el grupo control positivo. La quercetina aplicada simultáneamente a la infección también produjo una disminución de la expresión génica viral. Ninguno de los otros compuestos (pinocembrina y naringenina) tuvieron efecto antiviral a los tiempos evaluados. En conclusión, se demostró la actividad antiviral del propóleo y su relación con la expresión génica viral como un mecanismo de acción. Asimismo, se comprobó la sinergia presente entre los flavonoides estudiados sobre la disminución del efecto citopático y la expresión génica del virus de distemper canino (veáse el trabajo de [González et al. 2017. *Comparison between In Vitro Antiviral Effect of Mexican Propolis and Three Commercial Flavonoids against Canine Distemper Virus*](pdfs/González et al. 2018.PDF){target="_blank"}).
+En una segunda investigación, realizada por el mismo grupo de investigadores y publicada en el año 2017, se evaluó la actividad antiviral in vitro de un propóleo originario de México (FESC) y de tres flavonoides comerciales (quercetina, naringenina y pinocembrina). Los tratamientos se realizaron en tres momentos diferentes. 1) Tratamiento dos horas antes de la infección, 2) Tratamiento simultáneo a la infección y 3) Tratamiento dos horas después de la infección viral. La actividad antiviral se evaluó como la capacidad de inhibir la expresión relativa del gen de la nucleoproteína del virus de distemper canino (RT-PCR tiempo real) y determinando la viabilidad del cultivo celular (ensayo colorimétrico MTT). El propóleo aplicado al cultivo 2 horas antes de la infección disminuyó la expresión viral y este hallazgo correlacionó con un aumento en la viabilidad celular. Adicionando de forma conjunta los tres flavonoides comerciales dos horas antes de la infección, se observó una disminución de la expresión viral pero no hubo diferencia en la viabilidad celular entre el grupo experimental y el grupo control positivo. La quercetina aplicada simultáneamente a la infección también produjo una disminución de la expresión génica viral. Ninguno de los otros compuestos (pinocembrina y naringenina) tuvieron efecto antiviral a los tiempos evaluados. En conclusión, se demostró la actividad antiviral del propóleo y su relación con la expresión génica viral como un mecanismo de acción. Asimismo, se comprobó la sinergia presente entre los flavonoides estudiados sobre la disminución del efecto citopático y la expresión génica del virus de distemper canino (veáse el trabajo de [González et al. 2017. *Comparison between In Vitro Antiviral Effect of Mexican Propolis and Three Commercial Flavonoids against Canine Distemper Virus*](pdfs/González et al. 2017.pdf){target="_blank"}).
 
 <br>
 
@@ -944,6 +937,17 @@ La NOM-003-SAG/GAN-2017 en donde se establecen las especificaciones de producci�
 
 <br/>
 
+
+```{r img4_26, fig.align='center', fig.cap= "**Figura 4.26. Volumen de la Producción de polen y propóleos en México durante el periodo 2000-2008. Fuente: SADER, Coordinación General de Ganadería.**", echo=FALSE, out.width = "100%", cache=TRUE}
+
+knitr::include_graphics("imag/4_8_Fig1.png")
+
+```
+
+<br/>
+
+<br/>
+
 **Potencial de producción de propóleo mexicano**
 
 Es de suma importancia la diversificación del sector apícola, toda vez que la obtención de diferentes productos de las colmenas puede realizarse a la par que la obtención de miel, ya que es posible producir dichos productos y podría permitir el incremento sustancial de los recursos económicos en los 43 mil productores, generando beneficios a los integrantes de cadena apícola nuestro país. Particularmente, existe un amplio potencial de producción de propóleos considerando que el stock de colmenas que se estima que existe en nuestro país es de 2.7 millones de unidades y una producción nacional, la cual se estima en 7 toneladas al año, con un valor comercial de 3.5 millones de pesos.
@@ -1047,7 +1051,7 @@ Con la evaluación de propóleos conforme a la NOM-003-SAG/GAN-2017, **se permit
 ## **4.9 Etiquetado de Productos**
 ****
 
-Por [M.V.Z. Elizabeth Bacilio López](#a002)  
+Por [M.V.Z. Elizabeth Bacilio López y M.C. Patxi Machín Munguía Villavicencio](#a002)  
 
 <br/>
 
@@ -1285,7 +1289,7 @@ Tras una búsqueda exhaustiva en las legislaturas estatales se pudo concentrar e
 
 <br/>
 
-<p align="center"> **Cuadro 4.7. Comparación entre los estados y algunas de las especificaciones en función de la ubicación con relación de otros apiarios** [`r icon::fa("download")`](tabs/4_10_tab1.csv) </p>
+<p align="center"> **Cuadro 4.7. Comparación entre los estados y algunas de las especificaciones en función de la ubicación con relación de otros apiarios** [`r icon::fa("download")`](tabs/4_10_Tab1.csv) </p>
 
 <br/>
 <center>
@@ -1293,7 +1297,7 @@ Tras una búsqueda exhaustiva en las legislaturas estatales se pudo concentrar e
 ```{r tab4101, echo=FALSE, fig.align='left', warning=FALSE}
 
 library(DT)
-tab4101 <- read.csv("tabs/4_10_tab1.csv", encoding = "UTF-8")
+tab4101 <- read.csv("tabs/4_10_Tab1.csv")
 names(tab4101) <- c("Estado", "Otros apiarios", "Zonas habitadas", "Caminos Vecinales", "Otros", "Promulgación")
 
 DT::datatable(tab4101[,-2],filter = 'top', options = list(
@@ -1351,7 +1355,7 @@ Otros lineamientos que jurídicamente no son instrumentos válidos, pero que son
 
 -	[Manual de Producción de miel Orgánica](https://coba.com.gt/wp-content/uploads/2015/07/MANUAL-DE-PRODUCCION-DE-MIEL-ORGANICA.pdf){target="_blank"}. Coordinación General de Ganadería de SAGARPA-México.
 
--	[Manual de Buenas Prácticas Pecuarias en la Producción Primaria de Miel](https://atlasapi2019.github.io/pdfs/Manual_BPP_en_la_Producci_n_primaria_de_Miel_octubre_2018.pdf){target="_blank"}. Coordinación General de Ganadería de SAGARPA-México (2018).
+-	[Manual de Buenas Prácticas Pecuarias en la Producción Primaria de Miel](pdfs/Manual_BPP_en_la_Producci_n_primaria_de_Miel_octubre_2018.pdf){target="_blank"}. Coordinación General de Ganadería de SAGARPA-México (2018).
 
 
 Y sin embargo el tema de la apicultura orgánica es un tema que concierne a muchos sectores, entre los que se encuentran las disposiciones aplicables a otros países, tal y como se muestra a continuación en siguiente cuadro:
@@ -1432,7 +1436,7 @@ Una de las regulaciones pendientes es la que omite a la Hidromiel dentro de la N
 
 <a name=a002></a> 
 
-### **Colaboradores:**
+## **Colaboradores:**
 
 <br/>
 
@@ -1449,9 +1453,9 @@ Una de las regulaciones pendientes es la que omite a la Hidromiel dentro de la N
 
 **M.A. Liborio Carrillo Miranda.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
 
-**Dra. Elisa Gutiérrez Hernández.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
+**M.C. Elisa Gutiérrez Hernández.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
 
-**M. C. Nelly Tovar Betancourt.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
+**M.C. Nelly Tovar Betancourt.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
 
 **Dra. María de Jesús González Búrquez.** *Facultad de Estudios Superiores Cuautitlán. UNAM.*
 
@@ -1479,7 +1483,7 @@ Una de las regulaciones pendientes es la que omite a la Hidromiel dentro de la N
 <br/>
 <br/>
 
-### ***Referencias:***
+## ***Referencias:***
 
 [^1^]: Arnold, N., Zepeda, R., Vásquez, M. y Aldasoro, M.  (2018). *Las abejas sin aguijón y su cultivo en Oaxaca, México. El Colegio de la Frontera Sur y Comisión Nacional para el Conocimiento y Uso de la Biodiversidad. 1a. ed. [http://bioteca.biodiversidad.gob.mx/janium/Documentos/14197.pdf](http://bioteca.biodiversidad.gob.mx/janium/Documentos/14197.pdf){target="_blank"}
 

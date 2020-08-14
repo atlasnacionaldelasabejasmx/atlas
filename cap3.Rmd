@@ -267,7 +267,7 @@ En particular, el *Servicio Nacional de Sanidad, Inocuidad y Calidad Agroaliment
 
 ```{r tab0008, echo=FALSE, out.width= "60%",warning=FALSE}
 library(kableExtra)
-tab0008 <- read.csv("tabs/nutrientes_miel.csv", encoding = "UTF")
+tab0008 <- read.csv("tabs/nutrientes_miel.csv", encoding = "latin1")
 names(tab0008) <- c( "NUTRIENTE", "CANTIDAD PROMEDIO EN 100 g")
 #knitr::kable(tab0008, format = "markdown")
 
@@ -632,7 +632,7 @@ Debido a la ausencia de estudios sobre el mantenimiento de las colmenas es neces
 
 La siguiente es una lista de los documentos disponibles sobre las especies vegetales que se pueden encontrar en cada entidad federativa.
 
-[Universidad Autónoma de Aguascalientes. (2012). **Flora Apícola del Estado de Aguascalientes.**](https://www.uaa.mx/direcciones/dgdv/editorial/catalogo/cca_floraapicola_9786078227938.html){target="_blank"}
+[Universidad Autónoma de Aguascalientes. (2012). **Flora Apícola del Estado de Aguascalientes.**](https://editorial.uaa.mx/catalogo/cca_floraapicola_9786078227938.html){target="_blank"}
 
 [SADER. (2000). **Flora Nectarífera y Polinífera en el Estado de Chiapas.**](pdfs/FloraNectarifera y polinifera Chiapas.pdf){target="_blank"}
 
@@ -740,7 +740,7 @@ La siguiente es una tabla donde se muestra la posición de cada entidad federati
 
 ```{r tab00010, echo=FALSE, fig.align='left', warning=FALSE}
 library(DT)
-tab0010 <- read.csv("tabs/Ranking_tab_1_s.csv", encoding = "UTF")
+tab0010 <- read.csv("tabs/Ranking_tab_1_s.csv", encoding = "latin1")
 
 DT::datatable(tab0010[,-2],filter = 'top', options = list(
   pageLength = 5, autoWidth = TRUE, scrollX = TRUE,
@@ -906,13 +906,13 @@ Los siguientes videos muestran algunas de las actividades de este laboratorio.
 
 <div class=text-center>
 
-<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
 
 
-<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos_unam_global.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos_unam_global.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
@@ -924,7 +924,7 @@ Los siguientes videos muestran algunas de las actividades de este laboratorio.
 
 ***Fuente:***
 
-[Gaceta Digital, UNAM. (2017). *Primer laboratorio de análisis de propóleos en la FES Cuautitlán.* Marzo.](http://www.gaceta.unam.mx/20170316/primer-laboratorio-de-analisis-de-propoleos-en-la-fes-cuautitlan/){target="_blank"}
+[Gaceta Digital, UNAM. (2017). *Primer laboratorio de análisis de propóleos en la FES Cuautitlán.* Marzo.](http://gacetacomunidad.cuautitlan.unam.mx/2017/03/inauguran-en-la-fes-cuautitlan-el-primer-laboratorio-de-analisis-de-propoleos/){target="_blank"}
 
 <br/>
 <br/>
@@ -970,7 +970,7 @@ Con el propósito de inducir la producción de estas abejas la SADER, a través 
  
 
 ```{r tab001, echo=FALSE }
-tab0001 <- read.csv("tabs/t001.csv", encoding = "UTF")
+tab0001 <- read.csv("tabs/t001.csv", encoding = "latin1")
 names(tab0001) <- c( "Estado", "Nombre", "Ubicación","Capacidad de producción")
 
 DT::datatable(tab0001,filter = 'top', options = list(
@@ -993,7 +993,7 @@ DT::datatable(tab0001,filter = 'top', options = list(
 
 ```{r tab0002, echo=FALSE }
 
-tab0002 <- read.csv("tabs/t0002.csv", encoding = "UTF")
+tab0002 <- read.csv("tabs/t0002.csv", encoding = "latin1")
 names(tab0002) <- c( "Estado", "Nombre", "Ubicación","Capacidad de producción")
 #knitr::kable(tab0002, format = "markdown")
 
@@ -1013,7 +1013,7 @@ kableExtra::kable(tab0002) %>%
 
 ```{r tab0003, echo=FALSE }
 
-tab0003 <- read.csv("tabs/t0003.csv", encoding = "UTF")
+tab0003 <- read.csv("tabs/t0003.csv", encoding = "latin1")
 names(tab0003) <- c( "Estado", "Nombre", "Ubicación","Capacidad de producción")
 
 DT::datatable(tab0003,filter = 'top', options = list(
