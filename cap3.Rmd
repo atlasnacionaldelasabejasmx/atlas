@@ -906,13 +906,13 @@ Los siguientes videos muestran algunas de las actividades de este laboratorio.
 
 <div class=text-center>
 
-<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos.mp4?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 <br>
 
 
-<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos_unam_global.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="710" height="430" src="media/laboratorio_analisis_propoleos_unam_global.mp4?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
