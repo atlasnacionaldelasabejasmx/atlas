@@ -76,11 +76,9 @@ map_prod_miel %>%
 
 <p align="center"> **Mapa 6.1. Producción de miel por Entidad Federativa, 2019.** [`r icon::fa("download")`](tabs/prodmiel2019.csv) </p>
 
-<br/>
-
-***Fuente:***
-
-SADER. (2019). 
+<center>
+***Fuente: SADER***
+</center>
 
 <br/>
 <br/>
@@ -137,9 +135,10 @@ map_colm %>%
 
 <p align="center"> **Mapa 6.2. Número de Colmenas por Entidad Federativa, 2017.** [`r icon::fa("download")`](tabs/colmenas.csv) </p>
 
-***Fuente:***
+<center>
+***Fuente: [SADER. (2018). Datos abiertos.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}***
+</center>
 
-[SADER. (2018). *Datos abiertos*.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}
 
 <br/>
 <br/>
@@ -196,9 +195,10 @@ map_apicult %>%
 
 <p align="center"> **Mapa 6.3. Número de Apicultores por Entidad Federativa, 2017.** [`r icon::fa("download")`](tabs/estadisticas.csv) </p>
 
-***Fuente:***
+<center>
+***Fuente: [SIAP. Datos Abiertos.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}***
+</center>
 
-[SIAP. (2014). *Registros Administrativos*.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}
 <br/>
 <br/>
 <br/>

@@ -1,35 +1,21 @@
-﻿Estado,Otros apiarios,Zonas habitadas,Caminos Vecinales,Otros,Promulgación
-Baja California Sur,4 kilómetros,300 metros,30 metros,"4 kilómetros mínimo de cultivos transgénicos;
-1.5 kilómetros de zonas escolares.",28 de enero de 2017
-Campeche,"2 kilómetros, pudiendo haber excepciones",2 kilómetros,-------,--------,"21 de mayo de 2008, reformado: 15 nov 2013"
-Coahuila,3 kilómetros,200 metros,200 metros,"Prohibida en casas habitación y zonas urbanas;
-8 kilómetros para criaderos de reinas.","31 de agosto de 1993, reformado: 12 de mayo de 2009"
-Colima,800 metros,1500 metros,*Letreros a 100 metros por los caminos de acceso,--------,"17 de mayo de 2008, reformado: 24 de marzo de 2018"
-Guanajuato,1.5 kilómetros,500 metros,300 metros,-------- ,25 de noviembre de 2019
-Guerrero,"2 kilómetros
-*Excepciones por capacidad floral",300 metros,"10 metros federales
-20 metros vecinales",1 kilómetro de basureros o aguas negras,16 de noviembre de 2007
-Hidalgo,"300 metros en cítricos;
-800 metros otras floraciones",200 metros,*Letreros a 100 metros por los caminos de acceso,No en zonas urbanas,"25 julio 2015, reformado: 31 de diciembre de 2017"
-Jalisco,1500 metros,300 metros,"200 metros.
-*Letreros a 100 metros ","No más de 50 colmenas por apiario.
-No en zonas urbanas",21 de octubre de 2015
-Estado de México,"*Más de 30 colmenas:
-1 km",*200 metros,*200 metros,"Excepciones por floración.
-No más de 40 colmenas.",21 de octubre de 2014
-Michoacán,"3 kilómetros y
-5 kilómetros de criadores de reinas","200 metros de fábricas;
-300 de zonas habitadas",50 metros,1 kilómetro de los límites municipales,"14 de mayo de 2004, reformado: 29 de diciembre de 2016"
-Nuevo León,500 metros,200 metros,50 metros,"No en zonas urbanas.
-Extractoras a 500 metros de zona urbana.","7 de diciembre de 2007, reformado: 14 de noviembre de 2014"
-Querétaro,3000 metros o depende la floración o si poliniza a 200 metros,200 metros,200 metros,*Letrero a 50 metros  ,28 de agosto de 2018
-Quintana Roo,"*Más de 60 colmenas: 
-3 kilómetros","300 metros de zonas urbanas y 200 metros de escuelas
-",50 metros de caminos rurales y 300 de caminos urbanos,,13 de agosto de 2013
-San Luis Potosí,2 kilómetros,500 metros,50 metros,,27de mayo de 2017
-Tamaulipas,3 kilómetros,200 metros,200 metros,No tener colmenas dentro de casas-habitación y de zonas urbanas.,"17 noviembre 2004, reformado: 21 de diciembre de 2016"
-Tlaxcala,500 metros con excepciones,800 metros los familiares y escolares.,100 metros y 800 en terreno abierto,"No en zona urbana.
-Letreros a 100 metros",06 de octubre de 2000
-Veracruz,500 metros,200 metros,50 metros,Los apiarios familiares y los escolares tendrán preferencia. Máximo 19 cajas,12 de febrero de 2004
-Yucatán,*Más de 60 colmenas a 3 kilómetros,300 metros,300 metros,Excepción dependiente de la floración,"6 de julio de 2004, reformado: 28 de diciembre de 2016"
-Zacatecas ,"1 a 2 kilómetros, según la densidad floral",300 metros,300 metros,Prohibido en zona habitacional,"21 de mayo de 2005, reformado: 23 de marzo de 2013"
+"entidad","distancia otros apiarios","distancia zonas habitadas","distancia caminos vecinales","observaciones","promulgacion"
+"Baja California Sur","4 kilómetros","300 metros","30 metros","4 kilómetros mínimos de cultivos transgénicos. 1.5 km apiarios escolares","10 agosto 2004.  Ref. 31 octubre 2016."
+"Campeche","2 kilómetros, pudiendo haber excepciones","2 kilómetros","-------","--------","21 mayo 2008. Ref. 15 nov 2013."
+"Coahuila","3 kilómetros","200 metros","200 metros","Prohibida en casas habitación y urbanas. 8 km para criaderos de reinas","31 agosto 1993. Ref. 31 enero 2020."
+"Colima","800 metros","1500 metros","Letreros a 100 metros por los caminos de acceso","--------","17  Mayo 2008. Ref. 24 marzo 2018."
+"Guanajuato","1.5 kilómetros","500 metros","300 metros","-------- ","25 de noviembre de 2019."
+"Guerrero","2 kilómetros. Excepciones por capacidad floral","300 metros","10 metros federales, 20 metros vecinales","1 kilómetro de basureros o aguas negras.","16 de noviembre de 2007."
+"Hidalgo","300  Metros en cítricos. 800 metros otras floraciones","200 metros","Letreros a 100 metros por los caminos de acceso","No en zonas urbanas.","25 julio 2015. Ref. 31 diciembre 2017."
+"Jalisco","1500 metros","300 metros","200 metros, letreros a 100 metros ","No más de 50 colmenas por apiario. No en zonas urbanas","24 septiembre 2015. Ref. 26 Noviembre 2019."
+"Estado de México","Más de 30 colmenas, 1 km","200 metros","200 metros","Excepciones por floración. No más de 40 colmenas.","21 de octubre de 2014"
+"Michoacán","3 kilómetros. 5 kilómetros para criadores de reinas","200 metros de fábricas, 300 metros de zonas habitadas","50 metros","1 kilómetro de los límites municipales.","14 mayo 2004. Ref. 29 diciembre 2016."
+"Nuevo León","500 metros","200 metros","50 metros","No en zonas urbanas. Extractoras a 500 metros de zona urbana.","29 enero 2020. Abroga ley de 2007."
+"Querétaro","3000 metros dependiendo de la floración. Si poliniza, 200 metros.","200 metros","200 metros","Letrero a 50 metros. ","11de mayo de 2018."
+"Quintana Roo","Más de 60 colmenas, a 3 kilómetros","300 metros, 200 metros de escuelas","300 metros",,"13 agosto 2013. Ref. 9 agosto 2019."
+"San Luis Potosí","2 kilómetros","500 metros","50 metros",,"27de mayo de 2017."
+"Sonora","3 kilómetros","200 metros ","50 metros de brechas","No en zonas habitadas, leyenda a 100 metros.","08 de agosto de 2019."
+"Tamaulipas","3 kilómetros","200 metros","200 metros","No tener colmenas dentro de casas-habitación y de zonas urbanas.","17 noviembre 2004. Ref. 21 diciembre 2016."
+"Tlaxcala","500 metros con excepciones","800 metros zonas habitadas y escolares.","100 metros y 800 en terreno abierto","No en zona urbana. Letreros a 100 metros.","06 de octubre de 2000."
+"Veracruz","500 metros","200 metros","50 metros","Los apiarios familiares y los escolares tendrán preferencia.  Máximo 19 cajas.","12 febrero 2004. Ref. 4 febrero 2019."
+"Yucatán","Más de 60 colmenas, a 3 kilómetros","300 metros","300 metros","Excepción dependiente de la floración","6 de julio 2004. Ref. 28 diciembre 2016."
+"Zacatecas ","1 a 2 kilómetro,s según la densidad floral","300 metros","300 metros","Prohibido en zona habitacional.","21 mayo 2005. Ref. 23 marzo 2013."

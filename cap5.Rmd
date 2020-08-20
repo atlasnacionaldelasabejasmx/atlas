@@ -333,7 +333,7 @@ Con respecto a la crianza de abejas reina y producción de núcleos, también ex
 
 ```{r tab5_6_1, echo=FALSE }
 
-tab5_6_1 <- read.csv("tabs/Criadores_Tabla_a1.csv")
+tab5_6_1 <- read.csv("tabs/Criadores_Tabla_a1.csv", encoding="latin1")
 names(tab5_6_1) <- c( "Entidad", "Criaderos de Abejas Reinas Certificados durante 2017", "Criaderos de Abejas Reinas Certificados durante 2018", "Criaderos de Abejas Reinas Certificados durante 2019", "Capacidad de Criaderos de Abejas Reinas Certificados durante 2017", "Capacidad de Criaderos de Abejas Reinas Certificados durante 2018",  "Capacidad de Criaderos de Abejas Reinas Certificados durante 2019")
 
 DT::datatable(tab5_6_1,filter = 'top', options = list(
@@ -353,7 +353,7 @@ DT::datatable(tab5_6_1,filter = 'top', options = list(
 
 ```{r tab5_6_2, echo=FALSE }
 
-tab5_6_2 <- read.csv("tabs/Criadores_Tabla_a2.csv")
+tab5_6_2 <- read.csv("tabs/Criadores_Tabla_a2.csv", encoding="latin1")
 names(tab5_6_2) <- c( "Entidad", "Criaderos de Abejas Reina Progenitoras Certificados durante 2017", "Criaderos de Abejas Reina Progenitoras Certificados durante 2018", "Criaderos de Abejas Reina Progenitoras Certificados durante 2019", "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 2017",  "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 201",  "Capacidad de Criaderos de Abejas Reina Progenitoras Certificados durante 2019")
 
 DT::datatable(tab5_6_2,filter = 'top', options = list(
@@ -374,7 +374,7 @@ DT::datatable(tab5_6_2,filter = 'top', options = list(
 
 ```{r tab5_6_3, echo=FALSE }
 
-tab5_6_3 <- read.csv("tabs/Criadores_Tabla_a3.csv")
+tab5_6_3 <- read.csv("tabs/Criadores_Tabla_a3.csv", encoding="latin1")
 names(tab5_6_3) <- c( "Entidad", "Criaderos de núcleos de abejas Certificados durante 2017", "Criaderos de núcleos de abejas Certificados durante 2018", "Criaderos de núcleos de abejas Certificados durante 2019", "Capacidad de Criaderos de núcleos de abejas Certificados durante 2017",  "Capacidad de Criaderos de núcleos de abejas Certificados durante 2018", "Capacidad de Criaderos de núcleos de abejas Certificados durante 2019")
 
 DT::datatable(tab5_6_3,filter = 'top', options = list(
