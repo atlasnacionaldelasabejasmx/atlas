@@ -549,7 +549,7 @@ La actividad antibacteriana del propóleo ha sido reportada por múltiples autor
 
 Los efectos del propóleo sobre agentes bacterianos están mayormente estudiados sobre bacterias del grupo constituido por los gran positivas, siendo _Staphylococcus aureus_ de los agentes más estudiados de este grupo de microorganismos. Así mismo se ha reportado una menor actividad en contra de bacterias gran negativas donde *Escherichia coli* es la más estudiada.
 
-Dentro de sus propiedades bactericidas y bacteriostáticas se ha comprobado que es activo contra _Staphylococcus spp., Streptococcus spp., Pasteurella multocida, Salmonella spp., Bacíllus subtilis, Proteus vulgaris, Pseudomona aeruginosa, Klebsiella pneumoniae, Escherichia coli, Helicobacter pilori_.
+Dentro de sus propiedades bactericidas y bacteriostáticas se ha comprobado que es activo contra _Staphylococcus spp., Streptococcus spp., Pasteurella multocida, Salmonella spp., Bacillus subtilis, Proteus vulgaris, Pseudomona aeruginosa, Klebsiella pneumoniae, Escherichia coli, Helicobacter pilori_.
 
 <br>
 
@@ -563,13 +563,13 @@ knitr::include_graphics("imag/4_4_Fig1.png")
 
 
 
-En cuanto a los mecanismos de acción mediante los cuales el propóleo es capaz de inhibir el crecimiento bacteriano, estos apuntan a que es la presencia de fenoles y flavonoides en el propóleo los responsables de cumplir esta función.
+En cuanto a los mecanismos de acción mediante los cuales el propóleo es capaz de inhibir el crecimiento bacteriano, estos apuntan a que los fenoles y flavonoides presentes en el propóleo, son los responsables de cumplir esta función.
 
 El mecanismo de acción antibacteriana del flavonoide pinocembrina se ha estudiado en bacterias como *Neisseria gonorrhoeae, Escherichia coli, Pseudomonas aeruginosa, Bacillus subtilis, Staphylocccus aureus, Staphylococcus lentus* y *Klebsiella pneumoniae*, donde se han determinado cambios en la composición de la membrana y lisis celular[^82^]. 
 
-En cuanto al mecanismo de acción propio de los propóleos se ha reportado daño de la pared celular lo que afecta el flujo energético de la membrana causando un daño irreversible en las estructuras, esto reportado en propóleos coreanos sobre el microorganismo _Bacillus cereus_.
+En cuanto al mecanismo de acción propio de los propóleos se ha reportado daño de la pared celular, lo que afecta el flujo energético de la membrana causando un daño irreversible en las estructuras, esto reportado en propóleos coreanos sobre el microorganismo _Bacillus cereus_.
  
-En los propóleos mexicanos se ha estudiado el efecto en contra de _Pasteurella multocida_ y se ha observado mediante microscopia electrónica que se produce daño en la pared celular, observando discontinuidad de la estructura, lo que provoca la salida de contenido intracelular[^83^].
+En los propóleos mexicanos, se ha estudiado el efecto en contra de _Pasteurella multocida_ y se ha observado mediante microscopia electrónica, que se produce daño en la pared celular, observando discontinuidad de la estructura, lo que provoca la salida de contenido intracelular[^83^].
 
 <br>
 
@@ -643,7 +643,7 @@ knitr::include_graphics("imag/4_5_Fig1.png")
 <br/>
 
 
-En el mismo estudio, al observar micrografías electrónicas de transmisión de secciones ultrafinas de *C. albicans* ATCC 10231, se identificó la formación de gránulos de almacenamiento además de alteración y ruptura de las estructuras de la cubierta externa de la levadura. Por otro lado, la misma autora administró tratamiento con propóleo a *Criptococcus neoformansy*, y observó con Microscopio Electrónico de Transmisión, levaduras degeneradas acompañadas de una pérdida de la integridad de las envolturas externas (figura 4.19)[^94^]^,^[^95^]
+En el mismo estudio, al observar micrografías electrónicas de transmisión de secciones ultrafinas de *C. albicans* ATCC 10231, se identificó la formación de gránulos de almacenamiento además de alteración y ruptura de las estructuras de la cubierta externa de la levadura. Por otro lado, la misma autora administró tratamiento con propóleo a *Cryptococcus neoformans*, y observó con Microscopio Electrónico de Transmisión, levaduras degeneradas acompañadas de una pérdida de la integridad de las envolturas externas (figura 4.19)[^94^]^,^[^95^]
 
 <br>
 
@@ -671,7 +671,7 @@ knitr::include_graphics("imag/4_5_Fig3.png")
 
 Cabe señalar la importancia de evaluar el efecto antimicótico del propóleo contra *C. albicans* ya que es considerada uno de los agentes de mayor importancia que provoca micosis oportunistas en humanos y animales dañando piel, tracto respiratorio, digestivo, reproductor y urinario.[^99^]
 
-Finalmente, Tovar (2016)[^100^] comprobó a través de la prueba antifúngica *Inhibición de Crecimiento Radial* que el propóleo mexicano proveniente de Cuautitlán, Estado de México a concentraciones de 2, 4, 8 y 16 mg/mL causa inhibición (halos) en el crecimiento de *Malassezia pachydermatis*, principal agente causal de las otitis externas en caninos (figura 4.21). De igual modo, Tovar *et al.* (2015)[^101^] observaron el mismo efecto al evaluar *Microsporum canis* (figura 4.22).
+Finalmente, Tovar (2016)[^100^] comprobó a través de la prueba antifúngica *Inhibición de Crecimiento Radial* que el propóleo mexicano proveniente de Cuautitlán, Estado de México a concentraciones de 2, 4, 8 y 16 mg/mL causa inhibición (halos) en el crecimiento de *Malassezia pachydermatis*, principal agente causal de las otitis externas en caninos (figura 4.21). De igual modo, Cruz *et al.* (2015)[^101^] observaron el mismo efecto al evaluar *Microsporum canis* (figura 4.22).
 
 <br>
 
@@ -697,18 +697,30 @@ Otros hongos sobre los cuales se ha evaluado el efecto antimicótico del propól
 
 <br>
 
-<center>
-
-**Cuadro 4.5. Hongos en los que se ha observado el efecto antimicótico del propóleo mexicano en el Laboratorio de Análisis de Propóleos, FES Cuautitlán, UNAM.**
-
-| Hongos filamentosos  | Hongos levaduriformes |
-|--------------------- | -------------------- |
-|•	*Microsporum canis* <br/> •	*Microsporum gypseum* <br/> •	*Trichophyton mentagrophytes* <br/> •	*Saprolegnia spp.* <br/> •	*Aspergillus flavus* <br/> •	*Aspergillus fumigatus* <br/> •	*Aspergillus niger* <br/>•	*Fusarium moniliforme* |•	*Candida albicans* <br/> •	*Criyptococcus neoformans* <br/> •	*Malassezia pachydermatis* |
-|  |  |
+</div>
+<div class=text-center>
 
 <br>
 
-</center>
+<p align="center"> **Cuadro 4.5. Hongos en los que se ha observado el efecto antimicótico del propóleo mexicano en el Laboratorio de Análisis de Propóleos, FES Cuautitlán, UNAM.** </p>
+
+```{r tab_hongos, echo=FALSE, warning=FALSE }
+library(kableExtra)
+tab_hongos <- read.csv("tabs/hongos.csv", header = F, encoding = "latin1")
+names(tab_hongos) <- c("Hongos filamentosos", "Hongos levaduriformes")
+
+kableExtra::kable(tab_hongos) %>%
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover")) %>%
+  column_spec(1,  italic = T) %>%
+   column_spec(2, italic = T) 
+
+```
+
+
+</div>
+
+<div class=text-justify>
+<br>
 
 El siguiente video del canal de Youtube, *El Botiquín Mágico*, muestra algunas de las propiedades medicinales del propóleo.
 
@@ -1675,7 +1687,7 @@ Una de las regulaciones pendientes es la que omite a la Hidromiel dentro de la [
 
 [^100^]: Tovar Betancourt N. (2017). *Evaluación antimicótica in vitro del propóleo mexicano sobre Malassezia pachydermatis*. Tesis de Maestría. UNAM.
 
-[^101^]: Tovar Betancourt N., García Contreras L., Cruz Sánchez T. A. (2015). *Propolis in dog: Clinical Experiences and perspectives (A brief review).* Open Journal of Veterinary Medicine, 5: 11-17.
+[^101^]: Cruz Sánchez T. A., Tovar Betancourt N., García Contreras L.  (2015). *Propolis in dog: Clinical Experiences and perspectives (A brief review).* Open Journal of Veterinary Medicine, 5: 11-17.
 
 [^102^]: Selway J. W. T. (1986). *Antiviral activity of flavones and flavans*. Citado en: Cody V., Middleton E., Harborne J. B. (Eds.). *Plant Flavonoids in Biology and Medicine: Biochemical, Pharmacological and Structure Activity Relationships*. Alan Liss. New York, USA. pp. 75-125.
 
