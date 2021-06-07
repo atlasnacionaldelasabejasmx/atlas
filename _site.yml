@@ -1,6 +1,7 @@
 head: <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
   integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-  crossorigin="anonymous">
+  crossorigin="anonymous" 
+  font-family="Font Awesome 5 Free">
 name: atlas
 output_dir: '.'
 navbar:
@@ -12,10 +13,10 @@ navbar:
     icon: fa-home
   - text: Abejas y Apicultura
     href: cap2.html
-    icon: fa-forumbee
+    icon: fa-globe
   - text: La Miel en México
     href: cap3.html
-    icon: fa-globe
+    icon: fa-tasks
   - text: Propóleos
     href: cap4.html
     icon: fa-vial   

@@ -223,7 +223,7 @@ Actualmente, los equipos de CG-EM cuentan con una vasta información de espectro
 <center> 
 
 **Análisis de Cromatografía de Gases de Propóleos, FES Cuautitlán, UNAM.** <br> **Créditos: M.C. Elisa Gutiérrez Hernández y Dr. José Guillermo Penieres Carrillo.** <br>
-*(Use las flechas de dirección de su teclado para visualizar correctamente todos los elementos de la presentación. Evite usar los botones de avance de diapositivas que están en la parte inferior)*.
+*(Use las flechas de dirección de su teclado para visualizar correctamente todos los elementos de la presentación)*.
 
 <iframe src="https://onedrive.live.com/embed?cid=B1C61545BBEEC34C&amp;resid=B1C61545BBEEC34C%21574&amp;authkey=AOnB8gCv80E3R2g&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=0" width="610px" height="481px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
@@ -298,7 +298,7 @@ De esas especies propolizadoras, muchas también son productoras de néctar y po
 ```{r tab4_2, echo=FALSE, warning=FALSE }
 library(kableExtra)
 
-c4_2 <- read.csv("tabs/flora.csv", encoding = "latin1")
+c4_2 <- read.csv("tabs/flora.csv", encoding = "utf8")
 names(c4_2) <- c( "Familia", "Género")
 
 kableExtra::kable(c4_2) %>%
@@ -706,7 +706,7 @@ Otros hongos sobre los cuales se ha evaluado el efecto antimicótico del propól
 
 ```{r tab_hongos, echo=FALSE, warning=FALSE }
 library(kableExtra)
-tab_hongos <- read.csv("tabs/hongos.csv", header = F, encoding = "latin1")
+tab_hongos <- read.csv("tabs/hongos.csv", header = F, encoding = "utf8")
 names(tab_hongos) <- c("Hongos filamentosos", "Hongos levaduriformes")
 
 kableExtra::kable(tab_hongos) %>%
@@ -1291,7 +1291,7 @@ Tras una búsqueda exhaustiva en las legislaturas estatales se pudo concentrar e
 
 <br/>
 
-<p align="center"> **Cuadro 4.7. Comparación entre algunas de las especificaciones en función de la ubicación con relación de otros apiarios, de las entidades federativas.** [`r icon::fa("download")`](tabs/4_10_Tab1.csv) </p>
+<p align="center"> **Cuadro 4.7. Comparación entre algunas de las especificaciones en función de la ubicación con relación de otros apiarios, de las entidades federativas.** </p>
 
 <br/>
 <center>
@@ -1299,7 +1299,7 @@ Tras una búsqueda exhaustiva en las legislaturas estatales se pudo concentrar e
 ```{r tab4101, echo=FALSE, fig.align='left', warning=FALSE}
 
 library(DT)
-tab4101 <- read.csv("tabs/4_10_Tab1.csv")
+tab4101 <- read.csv("tabs/4_10_Tab1.csv", encoding = 'utf-8')
 names(tab4101) <- c("Estado", "Distancia de Otros apiarios", "Distancia de Zonas habitadas", "Distancia de Caminos Vecinales", "Otras observaciones", "Promulgación")
 
 DT::datatable(tab4101, filter = 'top', options = list(

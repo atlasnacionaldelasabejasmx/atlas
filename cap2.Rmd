@@ -366,11 +366,11 @@ El siguiente, es un directorio de algunas de las más importantes instituciones 
 
 <br/>
 
-<p align="center"> **Cuadro 2.1. Asociaciones, cámaras, instituciones y publicaciones relacionadas con la apicultura.** [`r icon::fa("download")`](tabs/asociaciones_api2.csv) </p>
+<p align="center"> **Cuadro 2.1. Asociaciones, cámaras, instituciones y publicaciones relacionadas con la apicultura.** </p>
 
 ```{r tab2_10_1, echo=FALSE, warning=FALSE }
 library(kableExtra)
-tab2_10_1 <- read.csv("tabs/asociaciones_api2.csv", header = F, encoding = "latin1")
+tab2_10_1 <- read.csv("tabs/asociaciones_api2.csv", header = F, encoding = "utf8")
 names(tab2_10_1) <- c("Nombre", "Dirección")
 
 kableExtra::kable(tab2_10_1) %>%
@@ -425,19 +425,15 @@ En 2008, más de 135 mil 500 colmenas fueron destinadas a la polinización de cu
 Los cultivos beneficiados con la polinización por abejas son principalmente los orientados a obtener productos destinados a la exportación, destacando el pepino, berenjena, calabacita, sandia, melón, cártamo, manzana, fresa, aguacate, cítricos, entre otros.  
 
 
-<p align="center"> **Cuadro 2.2. Colmenas utilizadas en polinización durante el 2008.**  [`r icon::fa("download")`](tabs/poliniza_colm.csv) </p>
+<p align="center"> **Cuadro 2.2. Colmenas utilizadas en polinización durante el 2008.** </p>
 
 ```{r tab0x11, echo=FALSE }
 library(kableExtra)
-tabtab0x11 <- read.csv("tabs/poliniza_colm.csv", encoding = "latin1")
+tabtab0x11 <- read.csv("tabs/poliniza_colm.csv", encoding = "utf8")
 names(tabtab0x11) <- c( "DELEGACIÓN SADER", "CULTIVOS", "COLMENAS")
 
 kableExtra::kable(tabtab0x11, align = c('l','l','r')) %>%
   kableExtra::kable_styling(bootstrap_options = c("striped", "hover"))
-
-# para icon:
-# devtools::install_github("rstudio/fontawesome")
-# devtools::install_github("ropenscilabs/icon")
 
 ```
 
@@ -584,12 +580,12 @@ La sola práctica de cambiar la abeja reina una vez al año a la colonia comerci
 
 <br/>
 
-<p align="center"> **Cuadro 2.3. Principales enfermedades de las crías de abejas en México.**  [`r icon::fa("download")`](tabs/cua_enferm_1s.csv) </p>
+<p align="center"> **Cuadro 2.3. Principales enfermedades de las crías de abejas en México.** </p>
 
 ```{r tab0004, echo=FALSE }
 
 library(kableExtra)
-tab0004 <- read.csv("tabs/cua_enferm_1s.csv", encoding = "latin1")
+tab0004 <- read.csv("tabs/cua_enferm_1s.csv", encoding = "utf8")
 names(tab0004) <- c( "ENFERMEDAD", "TIPO", "CAUSADO POR","AFECTA A", "SIGNOS", "DIAGNÓSTICO EN LABORATORIO", "TRATAMIENTO")
 #knitr::kable(tab0004, format = "markdown")
 
@@ -609,11 +605,11 @@ Si desea saber más sobre las enfermedades que afectan a las abejas y su tratami
 
 <br/>
 
-<p align="center"> **Cuadro 2.4. Principales enfermedades de las abejas adultas en México.**  [`r icon::fa("download")`](tabs/cua_enferm_2s.csv) </p>
+<p align="center"> **Cuadro 2.4. Principales enfermedades de las abejas adultas en México.** </p>
 
 ```{r tab0005, echo=FALSE }
 
-tab0005 <- read.csv("tabs/cua_enferm_2s.csv", encoding = "latin1")
+tab0005 <- read.csv("tabs/cua_enferm_2s.csv", encoding = "utf8")
 names(tab0005) <- c( "ENFERMEDAD", "TIPO", "CAUSADO POR","AFECTA A", "SIGNOS", "DIAGNÓSTICO EN LABORATORIO", "TRATAMIENTO")
 #knitr::kable(tab0005, format = "markdown")
 
@@ -634,11 +630,11 @@ Si desea saber más sobre las enfermedades que afectan a las abejas y su tratami
 
 <br/>
 
-<p align="center"> **Cuadro 2.5. Principales plagas de las abejas en México.**  [`r icon::fa("download")`](tabs/cua_plaga_4s.csv) </p>
+<p align="center"> **Cuadro 2.5. Principales plagas de las abejas en México.** (tabs/cua_plaga_4s.csv) </p>
 
 ```{r tab0006, echo=FALSE }
 
-tab0006 <- read.csv("tabs/cua_plaga_4s.csv", encoding = "latin1")
+tab0006 <- read.csv("tabs/cua_plaga_4s.csv", encoding = "utf8")
 names(tab0006) <- c( "PLAGA", "TIPO", "CAUSADO POR","DAÑOS", "PRESENCIA EN MÉXICO", "PREVENCIÓN", "CONTROL")
 #knitr::kable(tab0006, format = "markdown")
 
@@ -656,11 +652,11 @@ Además de las anteriores, las abejas pueden ser infestadas por otras plagas:
 
 <br/>
 
-<p align="center"> **Cuadro 2.6. Otros tipos de plagas de las abejas.**  [`r icon::fa("download")`](tabs/cua_otras_6s.csv) </p>
+<p align="center"> **Cuadro 2.6. Otros tipos de plagas de las abejas.** </p>
 
 ```{r tab0007, echo=FALSE }
 
-tab0007 <- read.csv("tabs/cua_otras_6s.csv", encoding = "latin1")
+tab0007 <- read.csv("tabs/cua_otras_6s.csv", encoding = "utf8")
 names(tab0007) <- c( "Plaga por", "Tipo", "Daños", "Control/Prevención")
 #knitr::kable(tab0007, format = "markdown")
 

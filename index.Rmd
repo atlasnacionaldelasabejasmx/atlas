@@ -7,6 +7,8 @@ title: "**Introducción**"
 knitr::include_graphics("imag/Portada5.gif")
 # install.packages("devtools")
 # devtools::install_github("ropenscilabs/icon")
+# install.packages("remotes")
+# remotes::install_github("mitchelloharawild/icon")
 
 ```
 

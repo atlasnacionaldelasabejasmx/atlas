@@ -261,13 +261,13 @@ En particular, el *Servicio Nacional de Sanidad, Inocuidad y Calidad Agroaliment
 
 <br/>
 
-<p align="center"> **Cuadro 3.1. Composición nutricional característica de la miel** [`r icon::fa("download")`](tabs/nutrientes_miel.csv) </p>
+<p align="center"> **Cuadro 3.1. Composición nutricional característica de la miel** </p>
 
 <br/>
 
 ```{r tab0008, echo=FALSE, out.width= "60%",warning=FALSE}
 library(kableExtra)
-tab0008 <- read.csv("tabs/nutrientes_miel.csv", encoding = "latin1")
+tab0008 <- read.csv("tabs/nutrientes_miel.csv", encoding = "utf8")
 names(tab0008) <- c( "NUTRIENTE", "CANTIDAD PROMEDIO EN 100 g")
 #knitr::kable(tab0008, format = "markdown")
 
@@ -836,7 +836,7 @@ La siguiente es una tabla donde se muestra la posición de cada entidad federati
 
 ```{r tab00010, echo=FALSE, fig.align='left', warning=FALSE}
 library(DT)
-tab0010 <- read.csv("tabs/Ranking_tab_1_s.csv", encoding = "latin1")
+tab0010 <- read.csv("tabs/Ranking_tab_1_s.csv", encoding = "utf8")
 
 DT::datatable(tab0010[,-2],filter = 'top', options = list(
   pageLength = 5, autoWidth = TRUE, scrollX = TRUE,
@@ -850,7 +850,7 @@ DT::datatable(tab0010[,-2],filter = 'top', options = list(
 
 <br/>
 
-<p align="center"> **Cuadro 3.2. Posición que ocuparon las entidades por nivel de producción de miel de abeja, 2003-2019** [`r icon::fa("download")`](tabs/Ranking_tab_1_s.csv) </p>
+<p align="center"> **Cuadro 3.2. Posición que ocuparon las entidades por nivel de producción de miel de abeja, 2003-2019** </p>
 
 <br/>
 
@@ -1065,13 +1065,13 @@ Con el propósito de inducir la producción de estas abejas la SADER, a través 
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 3.3. Criaderos de Abejas Reina F1 certificados durante 2017-2018 (Certificación genética y sanitaria).** [`r icon::fa("download")`](tabs/t001.csv) </p>
+<p align="center"> **Cuadro 3.3. Criaderos de Abejas Reina F1 certificados durante 2017-2018 (Certificación genética y sanitaria).** </p>
 
 <br/>
  
 
 ```{r tab001, echo=FALSE }
-tab0001 <- read.csv("tabs/t001.csv", encoding = "latin1")
+tab0001 <- read.csv("tabs/t001.csv", encoding = "utf8")
 names(tab0001) <- c( "Estado", "Nombre", "Ubicación","Capacidad de producción")
 
 DT::datatable(tab0001,filter = 'top', options = list(
@@ -1087,14 +1087,14 @@ DT::datatable(tab0001,filter = 'top', options = list(
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 3.4. Criaderos de Abejas Reina Progenitora certificados durante 2017-2018 (Certificación Genética y Sanitaria).** [`r icon::fa("download")`](tabs/t0002.csv) </p>
+<p align="center"> **Cuadro 3.4. Criaderos de Abejas Reina Progenitora certificados durante 2017-2018 (Certificación Genética y Sanitaria).** </p>
 
 <br/>
 
 
 ```{r tab0002, echo=FALSE }
 
-tab0002 <- read.csv("tabs/t0002.csv", encoding = "latin1")
+tab0002 <- read.csv("tabs/t0002.csv", encoding = "utf8")
 names(tab0002) <- c( "Estado", "Nombre", "Ubicación","Capacidad de producción")
 #knitr::kable(tab0002, format = "markdown")
 
@@ -1107,14 +1107,14 @@ kableExtra::kable(tab0002) %>%
 <br/>
 <br/>
 
-<p align="center"> **Cuadro 3.5. Productores de Núcleos certificados durante 2017-2018. (Certificación sanitaria).** [`r icon::fa("download")`](tabs/t0003.csv) </p>
+<p align="center"> **Cuadro 3.5. Productores de Núcleos certificados durante 2017-2018. (Certificación sanitaria).** </p>
 
 <br/>
 
 
 ```{r tab0003, echo=FALSE }
 
-tab0003 <- read.csv("tabs/t0003.csv", encoding = "latin1")
+tab0003 <- read.csv("tabs/t0003.csv", encoding = "utf8")
 names(tab0003) <- c( "Estado", "Nombre", "Ubicación","Capacidad de producción")
 
 DT::datatable(tab0003,filter = 'top', options = list(

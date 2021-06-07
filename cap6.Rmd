@@ -40,7 +40,7 @@ library(mapview)
 
 
 
-prod_miel <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "latin1")
+prod_miel <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "utf8")
 prodmiel2019 <- read.csv("tabs/prodmiel2019.csv", head= T)
 prod_miel$total2019 <- prodmiel2019[,3]
 map_prod_miel <- leaflet(data=prod_miel)
@@ -74,11 +74,13 @@ map_prod_miel %>%
 
 ```
 
-<p align="center"> **Mapa 6.1. Producción de miel por Entidad Federativa, 2019.** [`r icon::fa("download")`](tabs/prodmiel2019.csv) </p>
+<p align="center"> **Mapa 6.1. Producción de miel por Entidad Federativa, 2019.** </p>
 
 <center>
 ***Fuente: SADER***
 </center>
+
+[*Descargar datos*](tabs/prodmiel2019.csv)
 
 <br/>
 <br/>
@@ -98,7 +100,7 @@ library(leaflet)
 library(leaflet.extras)
 library(mapview)  
 
-mapa_base <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "latin1")
+mapa_base <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "utf8")
 colm_ent <- read.csv("tabs/colmenas.csv")
 mapa_base$colmenas <- colm_ent[,2]
 map_colm <- leaflet(data=mapa_base)
@@ -133,13 +135,15 @@ map_colm %>%
 
 ```
 
-<p align="center"> **Mapa 6.2. Número de Colmenas por Entidad Federativa, 2017.** [`r icon::fa("download")`](tabs/colmenas.csv) </p>
+<p align="center"> **Mapa 6.2. Número de Colmenas por Entidad Federativa, 2017.** </p>
 
 <center>
 ***Fuente: [SADER. (2018). Datos abiertos.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}***
 </center>
 
+<br/>
 
+[*Descargar datos*](tabs/colmenas.csv) 
 <br/>
 <br/>
 <br/>
@@ -158,7 +162,7 @@ library(leaflet)
 library(leaflet.extras)
 library(mapview)  
 
-mapa_base2 <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "latin1")
+mapa_base2 <- readOGR("geodata", "ent_a", verbose=FALSE, encoding = "utf8")
 apic_ent <- read.csv("tabs/estadisticas.csv")
 mapa_base2$apicult <- apic_ent[,2]
 map_apicult <- leaflet(data=mapa_base2)
@@ -193,13 +197,16 @@ map_apicult %>%
 
 ```
 
-<p align="center"> **Mapa 6.3. Número de Apicultores por Entidad Federativa, 2017.** [`r icon::fa("download")`](tabs/estadisticas.csv) </p>
+<p align="center"> **Mapa 6.3. Número de Apicultores por Entidad Federativa, 2017.** </p>
 
 <center>
 ***Fuente: [SIAP. Datos Abiertos.](https://datos.gob.mx/busca/dataset/produccion-de-miel-2017){target="_blank"}***
 </center>
 
 <br/>
+
+[*Descargar datos*](tabs/estadisticas.csv)
+
 <br/>
 <br/>
 <br/>
@@ -228,12 +235,12 @@ library(rjson)
 library(xts)
 
 
-puntos <- read.csv("denue2020/INEGI_DENUE_27042020_2.csv", header = T, encoding = "latin1")
+puntos <- read.csv("denue2020/INEGI_DENUE_27042020_2.csv", header = T, encoding = "utf8")
 crs_4326 <- CRS('+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs')
 puntos_sp <- SpatialPointsDataFrame(puntos[,c(40,39)],puntos[,-c(40,39)], proj4string = crs_4326)
-writeOGR(puntos_sp, "shape_files", "puntos", driver="ESRI Shapefile", encoding = 'latin1',
+writeOGR(puntos_sp, "shape_files", "puntos", driver="ESRI Shapefile", encoding = 'utf8',
          overwrite_layer=T)
-puntos_sp2 <- readOGR("shape_files/puntos.shp", encoding = 'latin1',
+puntos_sp2 <- readOGR("shape_files/puntos.shp", encoding = 'utf8',
                       "puntos", verbose=FALSE)
 puntos_sp2@data$lat <- puntos$lat
 puntos_sp2@data$lon <- puntos$lon
@@ -249,18 +256,14 @@ m %>% setView(lng = -102.43, lat = 22.37, zoom = 5.4)  %>%
 
 ```
 
-<p align="center"> **Mapa 6.4. Unidades Económicas de Venta de Miel, Fabricación de Insumos y Otros Servicios Relacionados con la Apicultura en México, DENUE 2020.** [`r icon::fa("download")`](denue2020/INEGI_DENUE_27042020_2.csv) </p>
+<p align="center"> **Mapa 6.4. Unidades Económicas de Venta de Miel, Fabricación de Insumos y Otros Servicios Relacionados con la Apicultura en México, DENUE 2020.** </p>
 
 <br/>
+
+[*Descargar datos*](denue2020/INEGI_DENUE_27042020_2.csv)
+
 <br/>
+
+
 </div>
-
-
-
-
-
-
-
-
-
 

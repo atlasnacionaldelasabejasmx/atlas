@@ -13,21 +13,31 @@
 
 <title>Propóleos</title>
 
-<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
-<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
 <link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="site_libs/datatables-binding-0.13/datatables.js"></script>
+<script src="site_libs/datatables-binding-0.18/datatables.js"></script>
 <link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
 <link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
 <script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
@@ -35,38 +45,24 @@
 <script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
 <link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
 <script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
-<link href="site_libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
-<script src="site_libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
-
-
-
+<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
 
 
 
@@ -76,10 +72,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -96,40 +88,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -157,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -169,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -180,10 +145,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -195,7 +173,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -321,13 +298,13 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3">
 <div id="TOC" class="tocify">
 </div>
 </div>
 
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+<div class="toc-content col-sm-12 col-md-8 col-lg-9">
 
 
 
@@ -346,42 +323,42 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fa fa-home"></span>
+    <span class="fas fa-home"></span>
      
     Introducción
   </a>
 </li>
 <li>
   <a href="cap2.html">
-    <span class="fa fa-forumbee"></span>
+    <span class="fas fa-globe"></span>
      
     Abejas y Apicultura
   </a>
 </li>
 <li>
   <a href="cap3.html">
-    <span class="fa fa-globe"></span>
+    <span class="fas fa-tasks"></span>
      
     La Miel en México
   </a>
 </li>
 <li>
   <a href="cap4.html">
-    <span class="fa fa-vial"></span>
+    <span class="fas fa-vial"></span>
      
     Propóleos
   </a>
 </li>
 <li>
   <a href="cap5.html">
-    <span class="fa fa-chart-bar"></span>
+    <span class="fas fa-chart-bar"></span>
      
     Estadísticas
   </a>
 </li>
 <li>
   <a href="cap6.html">
-    <span class="fa fa-map"></span>
+    <span class="fas fa-map"></span>
      
     Mapas
   </a>
@@ -394,7 +371,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -404,8 +381,7 @@ div.tocify {
 
 
 <p><img src="imag/6_Propoleo.gif" style="display: block; margin: auto;" /></p>
-<div class=text-justify>
-
+<div class="text-justify">
 <p><br/></p>
 <div id="introducción" class="section level2">
 <h2><strong>Introducción</strong></h2>
@@ -603,7 +579,7 @@ div.tocify {
 <p>Actualmente, los equipos de CG-EM cuentan con una vasta información de espectros de masas de muchos compuestos químicos, conocida como “biblioteca”, por lo que, con base a cada espectro de masas obtenido para cada sustancia contenida en la mezcla y separada por CG, el equipo correlaciona cada espectro con alguno o algunos de los que contiene en su biblioteca, con diferentes porcentajes de aproximación, es decir, un mismo compuesto puede ser correlacionado con más de uno de los compuestos contenidos en la biblioteca, pero con diferentes grados de aproximación (una aproximación del 100%, indica que el equipo tiene una información que señala que el compuesto analizado realmente es el propuesto). En la siguiente presentación, se muestra el análisis de cromatografía de gases y la asignación del equipo de CG-EM de diferentes propóleos estudiados en la FES Cuautitlán.</p>
 <p><br></p>
 <center>
-<p><strong>Análisis de Cromatografía de Gases de Propóleos, FES Cuautitlán, UNAM.</strong> <br> <strong>Créditos: M.C. Elisa Gutiérrez Hernández y Dr. José Guillermo Penieres Carrillo.</strong> <br> <em>(Use las flechas de dirección de su teclado para visualizar correctamente todos los elementos de la presentación. Evite usar los botones de avance de diapositivas que están en la parte inferior)</em>.</p>
+<p><strong>Análisis de Cromatografía de Gases de Propóleos, FES Cuautitlán, UNAM.</strong> <br> <strong>Créditos: M.C. Elisa Gutiérrez Hernández y Dr. José Guillermo Penieres Carrillo.</strong> <br> <em>(Use las flechas de dirección de su teclado para visualizar correctamente todos los elementos de la presentación)</em>.</p>
 <iframe src="https://onedrive.live.com/embed?cid=B1C61545BBEEC34C&amp;resid=B1C61545BBEEC34C%21574&amp;authkey=AOnB8gCv80E3R2g&amp;em=2&amp;wdAr=1.3333333333333333&amp;wdEaa=0" width="610px" height="481px" frameborder="0">
 Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.
 </iframe>
@@ -659,7 +635,7 @@ Género
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="10">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Anacardiaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -667,52 +643,79 @@ Amphipterygium
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Anacardium*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Comocladia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Mangifera*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Metopium*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Pistacia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Pseudosmodingium
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Schinus*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Tapirira
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Anacardiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Toxicodendron
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Apocynaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -720,12 +723,15 @@ Thevetia*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Apocynaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Gonolobus
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Araceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -733,12 +739,15 @@ Monstera
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Araceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Philodendron
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="12">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Asteraceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -746,56 +755,89 @@ Gymnosperma
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Grindelia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Gutierrezia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Haplopappus
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Heterotheca
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Brickellia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Tagetes*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Balsamorhiza
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Flourensia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Helianthus*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Partenium
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Asteraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Silphium
 </td>
@@ -809,7 +851,7 @@ Podophyllum
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Betulaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -817,12 +859,15 @@ Alnus*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Betulaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Ostrya
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="5">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Burseraceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -830,27 +875,39 @@ Protium*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Burseraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Bursera*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Burseraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Dacryoides
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Burseraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Tetragastris
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Burseraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Trattinnickia
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="3">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Clusiaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -858,11 +915,17 @@ Clusia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Clusiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Monorobea
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Clusiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Symphonia
 </td>
@@ -892,7 +955,7 @@ Dracaena
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Euphorbiaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -900,6 +963,9 @@ Dalechampia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Euphorbiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Ricinus*
 </td>
@@ -929,7 +995,7 @@ Eriodictyon
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="11">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Fabaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -937,57 +1003,87 @@ Eperua
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Hymenanea
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Prioria
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Acacia*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Myroxylon*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Havardia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Prosopis*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Parkinsonia*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Swartzia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Aplopanesia
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Fabaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Ateleia
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Moraceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -995,6 +1091,9 @@ Ficus*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Moraceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Castilla
 </td>
@@ -1016,7 +1115,7 @@ Piper
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="3">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Podocarpaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -1024,11 +1123,17 @@ Prummopitys
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Podocarpaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Retrophyllum
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Podocarpaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Saxegothaea
 </td>
@@ -1042,7 +1147,7 @@ Prunus
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Rubiaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -1050,12 +1155,15 @@ Carphalea
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Rubiaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Coutarea
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Rutaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -1063,12 +1171,15 @@ Amyris
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Rutaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Xanthoxylon*
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="2">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Salicaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -1076,6 +1187,9 @@ Populus
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Salicaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Salix*
 </td>
@@ -1105,7 +1219,7 @@ Styrax
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;font-style: italic;vertical-align: middle !important;" rowspan="7">
+<td style="text-align:left;font-weight: bold;font-style: italic;">
 Zygophyllaceae
 </td>
 <td style="text-align:left;font-style: italic;">
@@ -1113,31 +1227,49 @@ Guaicacum*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Zygophyllaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Larrea*
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Zygophyllaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Methame
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Zygophyllaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Pintoa
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Zygophyllaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Plectocarpa
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Zygophyllaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Porlieria
 </td>
 </tr>
 <tr>
+<td style="text-align:left;font-weight: bold;font-style: italic;">
+Zygophyllaceae
+</td>
 <td style="text-align:left;font-style: italic;">
 Sericoides
 </td>
@@ -1478,8 +1610,8 @@ Sericoides
 <p>Otros hongos sobre los cuales se ha evaluado el efecto antimicótico del propóleo mexicano se enlistan en el siguiente cuadro:</p>
 <p><br></p>
 </div>
-<div class=text-center>
-
+</div>
+<div class="text-center">
 <p><br></p>
 <p align="center">
 <strong>Cuadro 4.5. Hongos en los que se ha observado el efecto antimicótico del propóleo mexicano en el Laboratorio de Análisis de Propóleos, FES Cuautitlán, UNAM.</strong>
@@ -1567,7 +1699,8 @@ Fusarium moniliforme
 </iframe>
 </center>
 <p><br/> <br/> <br/></p>
-<h2 id="actividad-antiviral"><strong>4.6 Actividad antiviral</strong></h2>
+<div id="actividad-antiviral" class="section level2">
+<h2><strong>4.6 Actividad antiviral</strong></h2>
 <hr />
 <p>Por <a href="#a002">Dra. María de Jesús González Búrquez, Dr. Carlos Ignacio Soto Zarate, Dr. Carlos Gerardo García Tovar</a></p>
 <p><br/></p>
@@ -1589,16 +1722,16 @@ Fusarium moniliforme
 </div>
 <p><br/></p>
 <div class="figure" style="text-align: center">
-<img src="imag/4_6_Fig2.png" alt="**Figura 4.24. Microscopía electronica de células MDBK. A. Presencia de partículas virales (marcas triangulares) en el citoplasma (C) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (▲) son observadas fuera de la membrana celular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.**" width="80%" />
+<img src="imag/4_6_Fig2.png" alt="**Figura 4.24. Microscopía electronica de células MDBK. A. Presencia de partículas virales (marcas triangulares) en el citoplasma (C) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (&lt;U+25B2&gt;) son observadas fuera de la membrana celular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.**" width="80%" />
 <p class="caption">
-<strong>Figura 4.24. Microscopía electronica de células MDBK. A. Presencia de partículas virales (marcas triangulares) en el citoplasma (C) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (▲) son observadas fuera de la membrana celular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.</strong>
+<strong>Figura 4.24. Microscopía electronica de células MDBK. A. Presencia de partículas virales (marcas triangulares) en el citoplasma (C) de una célula infectada con virus de Aujeszky sin tratamiento con propóleo. B. Partículas virales (&lt;U+25B2&gt;) son observadas fuera de la membrana celular y contenidas en una estructura electro (P) que se encuentra fuera de la célula.</strong>
 </p>
 </div>
 <p><br/></p>
 <div class="figure" style="text-align: center">
-<img src="imag/4_6_Fig3.png" alt="**Figura 4.25. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky. A. partículas virales (▲) en el citoplasma de la célula (C), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.**" width="80%" />
+<img src="imag/4_6_Fig3.png" alt="**Figura 4.25. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky. A. partículas virales (&lt;U+25B2&gt;) en el citoplasma de la célula (C), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.**" width="80%" />
 <p class="caption">
-<strong>Figura 4.25. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky. A. partículas virales (▲) en el citoplasma de la célula (C), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.</strong>
+<strong>Figura 4.25. Células tratadas con propóleo (0.5 mg/ml) dos horas antes de la infección con Aujeszky. A. partículas virales (&lt;U+25B2&gt;) en el citoplasma de la célula (C), también se observó una estructura densa y grumosa ubicada en la membrana celular (M) en la que las partículas virales quedan atrapadas. B. Micrografía amplificada de la figura A en la que se observa posible deterioro en la superficie de una partícula viral de Aujeszky ubicada fuera de la membrana plasmática de la célula infectada.</strong>
 </p>
 </div>
 <p><br/></p>
@@ -1640,7 +1773,9 @@ Fusarium moniliforme
 <li><p>Schnitzler P., Neuner A., Nolkemper S., Zundel C., Nowack H., Heinz S., Reichling J. (2010). <em>Antiviral Activity and Mode of Action of Propolis Extracts and Selected Compounds</em>. Phytother. Res. 24: 20–28. DOI: 10.1002/ptr.2868.</p></li>
 </ul>
 <p><br/> <br/> <br/></p>
-<h2 id="norma-oficial-mexicana-de-propóleos"><strong>4.7 Norma Oficial Mexicana de Propóleos</strong></h2>
+</div>
+<div id="norma-oficial-mexicana-de-propóleos" class="section level2">
+<h2><strong>4.7 Norma Oficial Mexicana de Propóleos</strong></h2>
 <hr />
 <p>Tomada del <a href="https://www.dgcs.unam.mx/boletin/bdboletin/2017_810.html" target="_blank">Boletín UNAM-DGCS-810. 3 de diciembre de 2017.</a></p>
 <p><br/></p>
@@ -1663,7 +1798,9 @@ Fusarium moniliforme
 <p><br/></p>
 <p>La Norma Oficial Mexicana para la Producción y Especificaciones de Propóleos, fue aprobada por la Comisión Federal de Mejora Regulatoria y publicada en el Diario Oficial de la Federación (7 de octubre de 2017) bajo el registro NOM-003-SAG/GAN-2017</p>
 <p><br/> <br/> <br/></p>
-<h2 id="beneficios-económicos-de-la-producción-de-propóleo"><strong>4.8 Beneficios Económicos de la Producción de Propóleo</strong></h2>
+</div>
+<div id="beneficios-económicos-de-la-producción-de-propóleo" class="section level2">
+<h2><strong>4.8 Beneficios Económicos de la Producción de Propóleo</strong></h2>
 <hr />
 <p>Por <a href="#a002">Dr. Tonatiuh Cruz Sánchez, M.C. Betsabe Rodríguez Pérez, Dra. Margarita Canales-Martínez, Dr. Guillermo Penieres Carrillo, Dr. Luis Roberto Martínez Pérez de Ayala<sup>†</sup>, M.V.Z. Raúl García Tinajero, M.A. Liborio Carrillo Miranda, M.V.Z. Erika Esquivel Núñez, M.V.Z. Rodrigo Medellín Pico, M.V.Z. Ricardo D. Vázquez Castillo</a></p>
 <p><br/></p>
@@ -1813,11 +1950,14 @@ Fusarium moniliforme
 <li><p>SAGARPA, (2017), <em>NOM-003-SAG/GAN-2017, Propóleos, producción y especificaciones para su procesamiento</em>. Diario Oficial de la Federación. Tomo DCCLXIX No. 6 :27-35.</p></li>
 </ol>
 <p><br/> <br/> <br/></p>
-<h2 id="etiquetado"><strong>4.9 Etiquetado</strong></h2>
+</div>
+<div id="etiquetado" class="section level2">
+<h2><strong>4.9 Etiquetado</strong></h2>
 <hr />
 <p>Por <a href="#a002">M.V.Z. Elizabeth Bacilio López y M.C. Patxi Machín Munguía Villavicencio</a></p>
 <p><br/></p>
-<h4 id="introducción-1"><strong>Introducción</strong></h4>
+<div id="introducción-1" class="section level4">
+<h4><strong>Introducción</strong></h4>
 <p>La apicultura es una actividad que ha representado y representa un papel fundamental dentro de la ganadería del país, tanto por la generación de un importante número de empleos, como por constituirse como la tercera fuente captadora de divisas del subsector ganadero.<a href="#fn104" class="footnote-ref" id="fnref104"><sup>104</sup></a></p>
 <p>Además de la polinización y la producción de miel, existen otros productos que se pueden obtener de la apicultura, como son los propóleos, la cera, la jalea real, el polen y la apitoxina. A su vez, derivado de estos se puede obtener una gran variedad de subproductos, los cuales permiten diversificar la fuente de ingresos y al mismo tiempo cubrir las necesidades y exigencias de los consumidores.</p>
 <p>Ante la situación actual del mercado nacional de la miel, y los precios bajos a los que se les paga a los productores, los apicultores deben unirse para innovar y lograr entrar directamente en el mercado, sin intermediarios, por lo que es importante ofrecer productos atractivos para el consumidor que satisfagan sus expectativas en cuanto a calidad comercial y sanitaria.</p>
@@ -1847,7 +1987,9 @@ D. Extractos de propóleos</p>
 <p>Al ser productos consumidos o vendidos en el territorio nacional, otra de las características que tienen en común es el idioma en el que debe de estar escrita la etiqueta, el español, si se trata de productos de importación en los que la información se encuentre en otro idioma diferente al español deberá tener una etiqueta adicional o sobrepuesta con la traducción de todo su contenido.</p>
 <p>Así mismo es premisa fundamental no engañar o intentar sobresaltar características o propiedades que no se le pueden atribuir o que pueden crear falsas esperanzas de su uso para el consumidor.</p>
 <p><br></p>
-<h4 id="especificaciones-del-etiquetado-de-alimentos"><strong>Especificaciones del Etiquetado de Alimentos</strong></h4>
+</div>
+<div id="especificaciones-del-etiquetado-de-alimentos" class="section level4">
+<h4><strong>Especificaciones del Etiquetado de Alimentos</strong></h4>
 <p>La Ley general de Salud define los siguientes conceptos:</p>
 <p><strong>Alimento</strong>: Cualquier substancia o producto, sólido o semisólido, natural o transformado, que proporcione al organismo elementos para su nutrición y</p>
 <p><strong>Suplementos alimenticios</strong>: Productos a base de hierbas, extractos vegetales, alimentos tradicionales, deshidratados o concentrados de frutas, adicionados o no, de vitaminas o minerales, que se puedan presentar en forma farmacéutica y cuya finalidad de uso sea incrementar la ingesta dietética total, complementarla o suplir alguno de sus componentes (<a href="http://www.salud.gob.mx/cnts/pdfs/LEY_GENERAL_DE_SALUD.pdf" target="_blank">Ley General de Salud</a>).</p>
@@ -1899,7 +2041,9 @@ D. Extractos de propóleos</p>
 <p>Como se ha mencionado, de forma general el etiquetado de todos los productos debe ser tal que no induzca al error o confunda al consumidor con respecto a la naturaleza y características del producto.</p>
 <p>Para evaluar de forma ágil el cumplimiento de la normatividad correspondiente, es importante recordar que en la <a href="https://www.dof.gob.mx/2020/SEECO/NOM_051.pdf" target="_blank">Modificación a la NOM-051-SCFI/SSA1-2010</a> existen aclaraciones y especificaciones más detalladas para cada uno de los puntos antes mencionados, y por lo tanto durante una verificación exhaustiva se debe consultar para determinar el cumplimiento preciso de la misma para cada uno de los productos evaluados, tales como el tamaño mínimo de letra, y de los símbolos empleados.</p>
 <p><br/></p>
-<h4 id="especificaciones-del-etiquetado-en-extractos-de-propóleos"><strong>Especificaciones del Etiquetado en Extractos de Propóleos</strong></h4>
+</div>
+<div id="especificaciones-del-etiquetado-en-extractos-de-propóleos" class="section level4">
+<h4><strong>Especificaciones del Etiquetado en Extractos de Propóleos</strong></h4>
 <p>Existe un gran vacío legal para poder etiquetar los propóleos, sus extractos etanólicos o productos que contengan sus principios activos. Si bien, como ya se mencionó, existe la <a href="http://www.dof.gob.mx/normasOficiales/6794/sagarpa11_C/sagarpa11_C.html" target="_blank">NOM-003-SAG/GAN-2017</a> en la que se regula su producción y especificaciones para su procesamiento y el avance en el conocimiento y usos medicinales de propóleos a nivel nacional e internacional, ha generado un incremento en su consumo y como consiguiente una mayor demanda por la sociedad el usuario debe ser cuidadoso al determinar el uso de los propóleos obtenidos.</p>
 <p>Los propóleos se pueden vender como extractos etanólicos, como parte de la formulación de cosméticos, productos de la confitería o suplementos alimenticios. Claro, para cada uno de estos subproductos se deberá usar la información de los apartados anteriores para dar cumplimiento a la normatividad vigente.</p>
 <p>Cuando se le quiera atribuir su presencia a un efecto antimicrobiano se debe de cumplir con las pruebas de calidad mencionadas en la <a href="http://www.dof.gob.mx/normasOficiales/6794/sagarpa11_C/sagarpa11_C.html" target="_blank">NOM-003-SAG/GAN-2017</a>, evaluando y cumpliendo las concentraciones mínimas de flavonoides, fenoles, índice de oxidación y las pruebas de desafío antimicrobiano contra <em>Staphylococcus aureus</em>, <em>Escherichia coli</em> y <em>Candida albicans</em>. Mismas pruebas que se realizan en el laboratorio autorizado por SADER en la Facultad de Estudios Superiores Cuautitlán de la UNAM.</p>
@@ -1931,7 +2075,10 @@ D. Extractos de propóleos</p>
 <li><p><a href="http://www.fao.org/3/a-a1390s.pdf" target="_blank">OMS-FAO. (2007). <em>Codex Alimentarius. Etiquetado de los Alimentos.</em> 5a. ed. Roma.</a>.</p></li>
 </ul>
 <p><br/> <br/> <br/></p>
-<h2 id="normalización"><strong>4.10 Normalización</strong></h2>
+</div>
+</div>
+<div id="normalización" class="section level2">
+<h2><strong>4.10 Normalización</strong></h2>
 <hr />
 <p>Por <a href="#a002">M.C. Patxi Machín Munguía Villavicencio</a></p>
 <p><br/></p>
@@ -1970,12 +2117,12 @@ D. Extractos de propóleos</p>
 <p>Tras una búsqueda exhaustiva en las legislaturas estatales se pudo concentrar en el siguiente cuadro una comparación entre los estados y algunas de las especificaciones en función de la ubicación con relación de otros apiarios, zonas habitadas, caminos vecinales, otras especificaciones, así como la fecha en la que se promulgó.</p>
 <p><br/></p>
 <p align="center">
-<strong>Cuadro 4.7. Comparación entre algunas de las especificaciones en función de la ubicación con relación de otros apiarios, de las entidades federativas.</strong> <a href="tabs/4_10_Tab1.csv"><i class="fas  fa-download "></i></a>
+<strong>Cuadro 4.7. Comparación entre algunas de las especificaciones en función de la ubicación con relación de otros apiarios, de las entidades federativas.</strong>
 </p>
 <br/>
 <center>
-<div id="htmlwidget-4915400e289364e0bb5e" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4915400e289364e0bb5e">{"x":{"filter":"top","filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Baja California Sur&quot;,&quot;Campeche&quot;,&quot;Coahuila&quot;,&quot;Colima&quot;,&quot;Estado de México&quot;,&quot;Guanajuato&quot;,&quot;Guerrero&quot;,&quot;Hidalgo&quot;,&quot;Jalisco&quot;,&quot;Michoacán&quot;,&quot;Nuevo León&quot;,&quot;Querétaro&quot;,&quot;Quintana Roo&quot;,&quot;San Luis Potosí&quot;,&quot;Sonora&quot;,&quot;Tamaulipas&quot;,&quot;Tlaxcala&quot;,&quot;Veracruz&quot;,&quot;Yucatán&quot;,&quot;Zacatecas &quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;1 a 2 kilómetro,s según la densidad floral&quot;,&quot;1.5 kilómetros&quot;,&quot;1500 metros&quot;,&quot;2 kilómetros&quot;,&quot;2 kilómetros, pudiendo haber excepciones&quot;,&quot;2 kilómetros. Excepciones por capacidad floral&quot;,&quot;3 kilómetros&quot;,&quot;3 kilómetros. 5 kilómetros para criadores de reinas&quot;,&quot;300  Metros en cítricos. 800 metros otras floraciones&quot;,&quot;3000 metros dependiendo de la floración. Si poliniza, 200 metros.&quot;,&quot;4 kilómetros&quot;,&quot;500 metros&quot;,&quot;500 metros con excepciones&quot;,&quot;800 metros&quot;,&quot;Más de 30 colmenas, 1 km&quot;,&quot;Más de 60 colmenas, a 3 kilómetros&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;1500 metros&quot;,&quot;2 kilómetros&quot;,&quot;200 metros&quot;,&quot;200 metros &quot;,&quot;200 metros de fábricas, 300 metros de zonas habitadas&quot;,&quot;300 metros&quot;,&quot;300 metros, 200 metros de escuelas&quot;,&quot;500 metros&quot;,&quot;800 metros zonas habitadas y escolares.&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;-------&quot;,&quot;10 metros federales, 20 metros vecinales&quot;,&quot;100 metros y 800 en terreno abierto&quot;,&quot;200 metros&quot;,&quot;200 metros, letreros a 100 metros &quot;,&quot;30 metros&quot;,&quot;300 metros&quot;,&quot;50 metros&quot;,&quot;50 metros de brechas&quot;,&quot;Letreros a 100 metros por los caminos de acceso&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;&quot;,&quot;--------&quot;,&quot;-------- &quot;,&quot;1 kilómetro de basureros o aguas negras.&quot;,&quot;1 kilómetro de los límites municipales.&quot;,&quot;4 kilómetros mínimos de cultivos transgénicos. 1.5 km apiarios escolares&quot;,&quot;Excepción dependiente de la floración&quot;,&quot;Excepciones por floración. No más de 40 colmenas.&quot;,&quot;Letrero a 50 metros. &quot;,&quot;Los apiarios familiares y los escolares tendrán preferencia.  Máximo 19 cajas.&quot;,&quot;No en zona urbana. Letreros a 100 metros.&quot;,&quot;No en zonas habitadas, leyenda a 100 metros.&quot;,&quot;No en zonas urbanas.&quot;,&quot;No en zonas urbanas. Extractoras a 500 metros de zona urbana.&quot;,&quot;No más de 50 colmenas por apiario. No en zonas urbanas&quot;,&quot;No tener colmenas dentro de casas-habitación y de zonas urbanas.&quot;,&quot;Prohibida en casas habitación y urbanas. 8 km para criaderos de reinas&quot;,&quot;Prohibido en zona habitacional.&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;06 de octubre de 2000.&quot;,&quot;08 de agosto de 2019.&quot;,&quot;10 agosto 2004.  Ref. 31 octubre 2016.&quot;,&quot;11de mayo de 2018.&quot;,&quot;12 febrero 2004. Ref. 4 febrero 2019.&quot;,&quot;13 agosto 2013. Ref. 9 agosto 2019.&quot;,&quot;14 mayo 2004. Ref. 29 diciembre 2016.&quot;,&quot;16 de noviembre de 2007.&quot;,&quot;17  Mayo 2008. Ref. 24 marzo 2018.&quot;,&quot;17 noviembre 2004. Ref. 21 diciembre 2016.&quot;,&quot;21 de octubre de 2014&quot;,&quot;21 mayo 2005. Ref. 23 marzo 2013.&quot;,&quot;21 mayo 2008. Ref. 15 nov 2013.&quot;,&quot;24 septiembre 2015. Ref. 26 Noviembre 2019.&quot;,&quot;25 de noviembre de 2019.&quot;,&quot;25 julio 2015. Ref. 31 diciembre 2017.&quot;,&quot;27de mayo de 2017.&quot;,&quot;29 enero 2020. Abroga ley de 2007.&quot;,&quot;31 agosto 1993. Ref. 31 enero 2020.&quot;,&quot;6 de julio 2004. Ref. 28 diciembre 2016.&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],["Baja California Sur","Campeche","Coahuila","Colima","Guanajuato","Guerrero","Hidalgo","Jalisco","Estado de México","Michoacán","Nuevo León","Querétaro","Quintana Roo","San Luis Potosí","Sonora","Tamaulipas","Tlaxcala","Veracruz","Yucatán","Zacatecas "],["4 kilómetros","2 kilómetros, pudiendo haber excepciones","3 kilómetros","800 metros","1.5 kilómetros","2 kilómetros. Excepciones por capacidad floral","300  Metros en cítricos. 800 metros otras floraciones","1500 metros","Más de 30 colmenas, 1 km","3 kilómetros. 5 kilómetros para criadores de reinas","500 metros","3000 metros dependiendo de la floración. Si poliniza, 200 metros.","Más de 60 colmenas, a 3 kilómetros","2 kilómetros","3 kilómetros","3 kilómetros","500 metros con excepciones","500 metros","Más de 60 colmenas, a 3 kilómetros","1 a 2 kilómetro,s según la densidad floral"],["300 metros","2 kilómetros","200 metros","1500 metros","500 metros","300 metros","200 metros","300 metros","200 metros","200 metros de fábricas, 300 metros de zonas habitadas","200 metros","200 metros","300 metros, 200 metros de escuelas","500 metros","200 metros ","200 metros","800 metros zonas habitadas y escolares.","200 metros","300 metros","300 metros"],["30 metros","-------","200 metros","Letreros a 100 metros por los caminos de acceso","300 metros","10 metros federales, 20 metros vecinales","Letreros a 100 metros por los caminos de acceso","200 metros, letreros a 100 metros ","200 metros","50 metros","50 metros","200 metros","300 metros","50 metros","50 metros de brechas","200 metros","100 metros y 800 en terreno abierto","50 metros","300 metros","300 metros"],["4 kilómetros mínimos de cultivos transgénicos. 1.5 km apiarios escolares","--------","Prohibida en casas habitación y urbanas. 8 km para criaderos de reinas","--------","-------- ","1 kilómetro de basureros o aguas negras.","No en zonas urbanas.","No más de 50 colmenas por apiario. No en zonas urbanas","Excepciones por floración. No más de 40 colmenas.","1 kilómetro de los límites municipales.","No en zonas urbanas. Extractoras a 500 metros de zona urbana.","Letrero a 50 metros. ","","","No en zonas habitadas, leyenda a 100 metros.","No tener colmenas dentro de casas-habitación y de zonas urbanas.","No en zona urbana. Letreros a 100 metros.","Los apiarios familiares y los escolares tendrán preferencia.  Máximo 19 cajas.","Excepción dependiente de la floración","Prohibido en zona habitacional."],["10 agosto 2004.  Ref. 31 octubre 2016.","21 mayo 2008. Ref. 15 nov 2013.","31 agosto 1993. Ref. 31 enero 2020.","17  Mayo 2008. Ref. 24 marzo 2018.","25 de noviembre de 2019.","16 de noviembre de 2007.","25 julio 2015. Ref. 31 diciembre 2017.","24 septiembre 2015. Ref. 26 Noviembre 2019.","21 de octubre de 2014","14 mayo 2004. Ref. 29 diciembre 2016.","29 enero 2020. Abroga ley de 2007.","11de mayo de 2018.","13 agosto 2013. Ref. 9 agosto 2019.","27de mayo de 2017.","08 de agosto de 2019.","17 noviembre 2004. Ref. 21 diciembre 2016.","06 de octubre de 2000.","12 febrero 2004. Ref. 4 febrero 2019.","6 de julio 2004. Ref. 28 diciembre 2016.","21 mayo 2005. Ref. 23 marzo 2013."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Estado<\/th>\n      <th>Distancia de Otros apiarios<\/th>\n      <th>Distancia de Zonas habitadas<\/th>\n      <th>Distancia de Caminos Vecinales<\/th>\n      <th>Otras observaciones<\/th>\n      <th>Promulgación<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"scrollX":true,"fixedColumns":true,"language":{"info":"Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros","paginate":{"previous":"Anterior","next":"Siguiente"},"search":"Buscar:","lengthMenu":"Mostrar _MENU_ registros"},"order":[],"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-21b2b845e3a9a262c0ba" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-21b2b845e3a9a262c0ba">{"x":{"filter":"top","filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],["Baja California Sur","Campeche","Coahuila","Colima","Guanajuato","Guerrero","Hidalgo","Jalisco","Estado de México","Michoacán","Nuevo León","Querétaro","Quintana Roo","San Luis Potosí","Sonora","Tamaulipas","Tlaxcala","Veracruz","Yucatán","Zacatecas "],["4 kilómetros","2 kilómetros, pudiendo haber excepciones","3 kilómetros","800 metros","1.5 kilómetros","2 kilómetros. Excepciones por capacidad floral","300  Metros en cítricos. 800 metros otras floraciones","1500 metros","Más de 30 colmenas, 1 km","3 kilómetros. 5 kilómetros para criadores de reinas","500 metros","3000 metros dependiendo de la floración. Si poliniza, 200 metros.","Más de 60 colmenas, a 3 kilómetros","2 kilómetros","3 kilómetros","3 kilómetros","500 metros con excepciones","500 metros","Más de 60 colmenas, a 3 kilómetros","1 a 2 kilómetro,s según la densidad floral"],["300 metros","2 kilómetros","200 metros","1500 metros","500 metros","300 metros","200 metros","300 metros","200 metros","200 metros de fábricas, 300 metros de zonas habitadas","200 metros","200 metros","300 metros, 200 metros de escuelas","500 metros","200 metros ","200 metros","800 metros zonas habitadas y escolares.","200 metros","300 metros","300 metros"],["30 metros","-------","200 metros","Letreros a 100 metros por los caminos de acceso","300 metros","10 metros federales, 20 metros vecinales","Letreros a 100 metros por los caminos de acceso","200 metros, letreros a 100 metros ","200 metros","50 metros","50 metros","200 metros","300 metros","50 metros","50 metros de brechas","200 metros","100 metros y 800 en terreno abierto","50 metros","300 metros","300 metros"],["4 kilómetros mínimos de cultivos transgénicos. 1.5 km apiarios escolares","--------","Prohibida en casas habitación y urbanas. 8 km para criaderos de reinas","--------","-------- ","1 kilómetro de basureros o aguas negras.","No en zonas urbanas.","No más de 50 colmenas por apiario. No en zonas urbanas","Excepciones por floración. No más de 40 colmenas.","1 kilómetro de los límites municipales.","No en zonas urbanas. Extractoras a 500 metros de zona urbana.","Letrero a 50 metros. ","","","No en zonas habitadas, leyenda a 100 metros.","No tener colmenas dentro de casas-habitación y de zonas urbanas.","No en zona urbana. Letreros a 100 metros.","Los apiarios familiares y los escolares tendrán preferencia.  Máximo 19 cajas.","Excepción dependiente de la floración","Prohibido en zona habitacional."],["10 agosto 2004.  Ref. 31 octubre 2016.","21 mayo 2008. Ref. 15 nov 2013.","31 agosto 1993. Ref. 31 enero 2020.","17  Mayo 2008. Ref. 24 marzo 2018.","25 de noviembre de 2019.","16 de noviembre de 2007.","25 julio 2015. Ref. 31 diciembre 2017.","24 septiembre 2015. Ref. 26 Noviembre 2019.","21 de octubre de 2014","14 mayo 2004. Ref. 29 diciembre 2016.","29 enero 2020. Abroga ley de 2007.","11de mayo de 2018.","13 agosto 2013. Ref. 9 agosto 2019.","27de mayo de 2017.","08 de agosto de 2019.","17 noviembre 2004. Ref. 21 diciembre 2016.","06 de octubre de 2000.","12 febrero 2004. Ref. 4 febrero 2019.","6 de julio 2004. Ref. 28 diciembre 2016.","21 mayo 2005. Ref. 23 marzo 2013."]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Estado<\/th>\n      <th>Distancia de Otros apiarios<\/th>\n      <th>Distancia de Zonas habitadas<\/th>\n      <th>Distancia de Caminos Vecinales<\/th>\n      <th>Otras observaciones<\/th>\n      <th>Promulgación<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"scrollX":true,"fixedColumns":true,"language":{"info":"Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros","paginate":{"previous":"Anterior","next":"Siguiente"},"search":"Buscar:","lengthMenu":"Mostrar _MENU_ registros"},"order":[],"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </center>
 <p><br/></p>
 <p>En función de los aspectos de protección al medio ambiente, se considera en algunas de las leyes estatales antes descritas cosas como:</p>
@@ -2043,7 +2190,7 @@ D. Extractos de propóleos</p>
 <tr class="even">
 <td align="left">Unión Europea</td>
 <td align="left">Norma CERTIMEX 01-2014 equivalente a los reglamentos CE No. 834/2007 y CE No. 889/2008</td>
-<td align="center"><img src="imag/Sello-de-certificaci%C3%B3n-ecol%C3%B3gica-de-la-UE.jpg" alt="" width="100" height="100" /></td>
+<td align="center"><img src="imag/Sello-de-certificación-ecológica-de-la-UE.jpg" alt="" width="100" height="100" /></td>
 </tr>
 <tr class="odd">
 <td align="left">Japón</td>
@@ -2087,7 +2234,9 @@ D. Extractos de propóleos</p>
 </ul>
 <p><br/> <br/></p>
 <p><a name=a002></a></p>
-<h2 id="colaboradores"><strong>Colaboradores:</strong></h2>
+</div>
+<div id="colaboradores" class="section level2">
+<h2><strong>Colaboradores:</strong></h2>
 <p><br/></p>
 <p><strong>Dr. Tonatiuh A. Cruz Sánchez.</strong> <em>Facultad de Estudios Superiores Cuautitlán. UNAM.</em></p>
 <p><strong>Dra. Betsabé Rodríguez Pérez.</strong> <em>Facultad de Estudios Superiores Cuautitlán. UNAM.</em></p>
@@ -2108,7 +2257,9 @@ D. Extractos de propóleos</p>
 <p><strong>M.V.Z. Elizabeth Bacilio López.</strong> <em>Facultad de Estudios Superiores Cuautitlán. UNAM.</em></p>
 <p><strong>M.C. Patxi Machín Munguía Villavicencio.</strong> <em>Facultad de Estudios Superiores Cuautitlán. UNAM.</em></p>
 <p><br/> <br/></p>
-<h2 id="referencias"><strong><em>Referencias:</em></strong></h2>
+</div>
+<div id="referencias" class="section level2">
+<h2><strong><em>Referencias:</em></strong></h2>
 </div>
 </div>
 <div class="footnotes">
@@ -2238,7 +2389,7 @@ D. Extractos de propóleos</p>
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -2256,7 +2407,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
