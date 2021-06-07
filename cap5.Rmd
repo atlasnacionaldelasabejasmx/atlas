@@ -695,14 +695,15 @@ pexp
 
 <br/>
 
-<p align="center"> [*Descargar datos*](tabs/import_export.xlsx) </p>
 
-<br/>
 
 ***Fuente:***
 
 [INEGI. (2019) *Estadísticas de Comercio Exterior* (\*Las cifras de 2019 son preliminares). ](https://www.inegi.org.mx/datos/?t=0030000000000000){target="_blank"}
 
+<br/>
+
+[*Descargar datos*](tabs/import_export.xlsx)
 
 <br/>
 <br/>
